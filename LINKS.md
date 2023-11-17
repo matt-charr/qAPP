@@ -1,0 +1,6 @@
+[GitHub](https://github.com/matt-charr)
+[Twitter](https://twitter.com/matt_charr)
+[YouTube](https://www.youtube.com/channel/UCcpw7B9o7VadmC7YbjCTShA)
+[Twitch](https://www.twitch.tv/mattcharr)
+[LinkedIn](https://www.linkedin.com/in/matthieu-charrier-080820134/)
+[QuantStackExchange](https://quant.stackexchange.com/users/60229/mattcharr)
