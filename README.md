@@ -10,7 +10,7 @@
 
 </div>
 
-## 🍺 Project Status
+# 🍺 Project Status
 
 <table class="no-border">
   <tr>
@@ -20,11 +20,14 @@
     <img src="https://img.shields.io/github/forks/matt-charr/qa-demo?style=social"></td>
     <td><a href="https://github.com/matt-charr/qa-demo/watchers">
     <img src="https://img.shields.io/github/watchers/matt-charr/qa-demo?style=social"></td>
+    <td><a href="https://github.com/matt-charr/qa-demo/issues">
+    <img src="https://img.shields.io/github/issues/matt-charr/qa-demo?style=social"></td>
   <tr>
     <td><a href="https://twitter.com/matt_charr" alt="twitter"><img src="https://img.shields.io/twitter/follow/matt-charr?style=social" alt="twitter"></a></td>
     <td><a href="https://www.youtube.com/c/qacom" alt="youtube"><img src="https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&logo=youtube" alt="youtube"></a></td>
     <td><a href="https://www.twitch.tv/mattcharr" alt="twitch"><img src="https://img.shields.io/badge/twitch-d51561.svg?style=flat-square&logo=twitch" alt="twitch"></a></td>
     <td><a href="https://www.linkedin.com/in/matthieu-charrier-080820134/" alt="linkedin"><img src="https://img.shields.io/badge/linkedin-d00.svg?style=flat-square&logo=linkedin" alt="linkedin"></a></td>
+    <td><a href="https://github.com/matt-charr/" alt="GitHub"><img src="https://img.shields.io/badge/linkedin-d1014.svg?style=flat-square&logo=GitHub" alt="GitHub"></a></td>
   <tr>
   <tr>
     <td><img src="https://img.shields.io/badge/Solution-C++17-blue.svg?style=flat&logo=c%2B%2B&logoColor=b0c0c0&labelColor=363D44" alt="C++ solution"/></td>
@@ -32,85 +35,68 @@
   </tr>
 </table>
 
-⭐ Star the project on GitHub increases its visibility and helps it to progress
+⭐ Star the project on GitHub helps it to progress.
 
 <td>
-<h3>📰 Latest news (as of 2023-11-11) </h3>
+<h3>📰 Latest news </h3>
 <ul>
-    <li>🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.0">qa-v0.1.0</a> is out 🚀</li>
+  <li> <ins>2023-11-18</ins>
+<ul>
+    <li> 🔔 - (<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.0">qa-0.1.0</a> is out 🚀</li>
+</ul>
 </ul>
 </td>
 
 <td>
-<h3>👷 Current work (as of 2023-11-11) </h3>
+<h3>👷 Current work </h3>
 <ul>
-    <li>📗(<strong>Project</strong>) Handling early exercise feature. </li>
-    <li>📙(<strong>Feature</strong>) Making PDE pricer framework.</li>
-    <li>📘(<strong>Misc</strong>) Handling intraday fixings/payments/exercises.</li>
+<li> <ins>2023-11-18</ins>
+<ul>
+    <li>📗(<strong>Project</strong>) Handle early exercise feature. </li>
+    <li>📙(<strong>Feature</strong>) Make PDE pricer framework.</li>
+    <li>📘(<strong>Misc</strong>) Handle intraday fixings/payments/exercises.</li>
     <li>📕(<strong>Issue</strong>)</li>
 </ul>
+</ul>
 </td>
 
-## 🤖 Introduction
+# 🤖 Introduction
 
-`QA-Quantitative Analytics` is a simple cross-platform GUI desktop application to design, inspect and price your own exotic financial derivatives contract. The project is an ecosystem of the following repositories:
+`QA-Quantitative Analytics` is an ecosystem of components which aim to help you with designing, monitoring and pricing your own exotic financial derivatives contract.
 
-### qa-dev (*private*)
+- **qalib** (<em>private</em>) -- This is the core library of the project that implements contract, data, modeling and pricing engine.
 
-This is the core repository of the project, its access is restricted to our developpers only.
-`qa-dev` is a repo that contains:
+- **qapp** (<em>public</em>) -- A GUI desktop application through which the user can interact with `qalib` and have a nice view on the input/output.
 
-- **qalib** -- A library which handles modeling and pricing.
+- **qalgebra** (<em>private</em>) -- `qalib` uses the power of algebraic contract description to build a contract. `qalgebra` is a library that implements a custom language easily understandable for both `qalib` and the users to describe step by step and block by block all the events that occurs during the contract lifetime.
 
-- **qapp** -- A front-end library through which the user can send requests to `qa` and have a nice view on the outputs.
-
-- **qalgebra** -- `qa` uses the power of algebraic contract description to build a contract. `qalgebra` is a library that implements a custom language easily understandable to `qa` and the users to describe step by step and block by block all the events that occurs during the contract lifetime. 
-
-### qa-data (*private*)
-
-coming soon
-
-### [qa-payoff](https://github.com/matt-charr/qa-payoff) (*public*)
-
-For the users to benefit `qalgebra` technology and price their own contracts, our developpers created `qa-payoff`, a friendly factory where all programmer enthusiasts can use and contribute its favorite observable/payoff functions to eventually load, monitor, inspect and price it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
+- **qafactory** (<em>public</em>) -- For the users to benefit `qalgebra` technology and price their own contracts, our developpers created `qafactory`, a friendly factory where all programmer enthusiasts can use and contribute its favorite observable/payoff functions to eventually inspect it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
 
 # ⚡️ Quick Start
 
-- Download the [latest release](https://github.com/matt-charr/qa-demo/releases) and select the package corresponding to your configuration, the package name should looks like: <br> <br> `QA-{MAJOR}.{MINOR}.{PATCH}_{OS}_{COMPILER}-{MAJOR}.{MINOR}.{PATCH}_{BUILD_TYPE}` <br>
-<ins>ex</ins>: <em>QA-0.1.0_Windows_GNU-13.1.0_Release</em>
+todo
 
 # 🙌 Contributions
 
-1. [Fork](https://github.com/matt-charr/qa-payoff) the master branch of `qa-payoff`.
-2. Clone the repo.
-```bash
-git clone https://github.com/{my_github_username}/qa-payoff
-```
-1. Add your files if any and commit your change.
-```bash
-git add {my_file}
-git commit -am "{my_commit_message}"
-```
-1. Push your commit.
-```bash
-git push origin master
-```
-1. Submit your [pull request](https://github.com/matt-charr/qa-payoff).
-
-> [!IMPORTANT]  
-> If possible you can kindly add a contract cpp file that uses your new feature.
-
-> [!NOTE]  
-> Review + Validation + Merge <= 1w
+todo
 
 # 💻 Insights
 
+## 🍯 Work Style
+
+Once a bug or a new feature is submitted, an issue is created with the corresponding flag:
+
+- issue.
+- feature.
+- project.
+- creation.
+
+Once picked from the stack, a dev branch is created and comes down locally to the developper machine and this is where the fun begins 😃
+
 ## 🍏 Build
 
-We are using [CMake](https://cmake.org/) as a build system and our code base is located on a private repository which access is restricted to our developers only. <br> 
-After cloning the project for the first time, we configure and build an embedded CMake project that uses superbuild feature of CMake to clone, build and install all the dependencies that `qa` needs into a dedicated folder. <br>
-
-It is to the following projects that we owe our heartfelt thanks for their generous contribution.
+`qa` uses [CMake](https://cmake.org/) as a build system and has its main code base located on a private repository which access is restricted to our developers only. Besides, it relies on a bunch of repository dependencies that are required at `qa` developpement/build time. <br> 
+It is to the following projects that we owe our heartfelt thanks for their generous Open Source contribution.
 
 - [ImGui]()
 - [ImPlot]()
@@ -123,13 +109,17 @@ It is to the following projects that we owe our heartfelt thanks for their gener
 - [GTest]()
 - [Eigen]()
 
+To load the below dependencies, `qa` uses the power of [superbuild](https://cmake.org/cmake/help/latest/module/ExternalProject.html) feature from CMake. For that purpose, an embedded CMake project is in charge of cloning, building and installing all the dependencies that `qa` requires into a specific folder. <br> That's pretty cool, isn't it ? 😃
+
 ## 🍊 Tests
 
-Once an issue, feature or project is sorted, a new unit test is required to be submitted to the test suite together with a contract source code that replicates the expected behavior of the code change. To ensure that the code change effect is not broken by any subsequent modifications, We use the service of [GoogleTest]() as a testing framework.
+At the end of each dev session, a new unit test is required to be submitted to the test suite together with a contract source code that replicates the expected behavior of the code change. To ensure that the code change effect is not broken by any subsequent modifications, we use the service of [GTest]() as a testing framework.
 
 ## 🍈 Continuous Integration
 
-`qa` embbeds a custom GitHub action that runs at each pull requests. Once triggered, build and tests are running on Windows, Linux and MacOS remote machines in Debug/Release mode with the following configurations:
+`qa` embbeds a custom GitHub action that runs at each pull requests. <br> 
+Once a pull request is submitted, build and tests are triggered on Windows, Linux and MacOS remote machines in Debug/Release mode with the below configurations. <br>
+A dev branch is merged if and only if all builds and tests passed on all configurations.
 
 | Name                          | OS             | CMake         | Generator             | Architecture | Build Type | Compiler            | Status |
 | ----------------------------- | -------------- | ------------- | --------------------- | ------------ | ---------- | ------------------  | --- |
@@ -140,15 +130,14 @@ Once an issue, feature or project is sorted, a new unit test is required to be s
 | MacOS-Release                 | macos-latest   | CMake-v3.27.2 | Unix Makefiles        |              | Release    |                     | ✅  |
 | MacOS-Debug                   | macos-latest   | CMake-v3.27.2 | Xcode                 |              | Debug      |                     | ✅  |
 
-A dev branch is merged if and only if all builds and tests passed on all configurations.
-
 ## 🍇 Continuous Delivery
 
-Our team delivers a release or a patch once a week, and strives to respect as closely as possible the [semantic versioning](https://semver.org/).
-To publish a new release on each OS, we execute a shell script hosted on `qa-release` a remote repository that installs `qapp` executable, `qalgebra` library and `qa` runtime dependencies to a specific folder and push it to [qa-demo](https://github.com/matt-charr/qa-demo) repository.
+Our team delivers a release or a patch on a regular basis, and strives to respect as closely as possible the [semantic versioning](https://semver.org/).
+To publish a new release on each OS, we execute a shell script that installs the package to a specific folder, zip and push it to [qa-demo](https://github.com/matt-charr/qa-demo).
 
 > [!NOTE]
-> `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds and tests on Linux OS.
+> `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds and tests on Linux OS. <br>
+We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
@@ -161,7 +150,7 @@ Coming soon ...
 
 ## 🤝 Missing a specific feature ?
 
-The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of functionalities. Feel free to share your idea. We are happy to discuss with you about your personnal needs and the feasibility of your project.
+The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of functionalities. Feel free to share your ideas. We are happy to discuss with you about your personnal needs and the feasibility of your project.
 
 > [!NOTE]
 > If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qa` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
