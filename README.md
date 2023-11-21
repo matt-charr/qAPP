@@ -1,6 +1,6 @@
 <div align="center">
   <div>
-    <img src="LOGO.png" width="900" height="200"/>
+    <img src="_LOGO.png" width="900" height="200"/>
   </div>
 </a>
 
@@ -27,7 +27,7 @@
     <td><a href="https://www.youtube.com/c/qacom" alt="youtube"><img src="https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&logo=youtube" alt="youtube"></a></td>
     <td><a href="https://www.twitch.tv/mattcharr" alt="twitch"><img src="https://img.shields.io/badge/twitch-d51561.svg?style=flat-square&logo=twitch" alt="twitch"></a></td>
     <td><a href="https://www.linkedin.com/in/matthieu-charrier-080820134/" alt="linkedin"><img src="https://img.shields.io/badge/linkedin-d00.svg?style=flat-square&logo=linkedin" alt="linkedin"></a></td>
-    <td><a href="https://github.com/matt-charr/" alt="GitHub"><img src="https://img.shields.io/badge/linkedin-d1014.svg?style=flat-square&logo=GitHub" alt="GitHub"></a></td>
+    <td><a href="https://github.com/matt-charr/" alt="GitHub"><img src="https://img.shields.io/badge/GitHub-d1014.svg?style=flat-square&logo=GitHub" alt="GitHub"></a></td>
   <tr>
   <tr>
     <td><img src="https://img.shields.io/badge/Solution-C++17-blue.svg?style=flat&logo=c%2B%2B&logoColor=b0c0c0&labelColor=363D44" alt="C++ solution"/></td>
