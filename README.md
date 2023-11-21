@@ -84,14 +84,8 @@ todo
 
 ## 🍯 Work Style
 
-Once a bug or a new feature is submitted, an issue is created with the corresponding flag:
-
-- issue.
-- feature.
-- project.
-- creation.
-
-Once picked from the stack, a dev branch is created and comes down locally to the developper machine and this is where the fun begins 😃
+Once a bug or a new feature is submitted, an issue is created with the corresponding flag (bug, feature, project, creation). <br>
+Once picked from the stack, a dev branch is created, comes down locally to the developper machine and this is where the fun begins 😃
 
 ## 🍏 Build
 
@@ -109,7 +103,7 @@ It is to the following projects that we owe our heartfelt thanks for their gener
 - [GTest]()
 - [Eigen]()
 
-To load the below dependencies, `qa` uses the power of [superbuild](https://cmake.org/cmake/help/latest/module/ExternalProject.html) feature from CMake. For that purpose, an embedded CMake project is in charge of cloning, building and installing all the dependencies that `qa` requires into a specific folder. <br> That's pretty cool, isn't it ? 😃
+To load the below dependencies, `qa` uses the power of [superbuild](https://cmake.org/cmake/help/latest/module/ExternalProject.html) feature from CMake. For that purpose, an embedded CMake project is in charge of cloning, building and installing all the dependencies that `qa` requires into a specific folder. That's pretty cool, isn't it ? 😃
 
 ## 🍊 Tests
 
@@ -121,14 +115,14 @@ At the end of each dev session, a new unit test is required to be submitted to t
 Once a pull request is submitted, build and tests are triggered on Windows, Linux and MacOS remote machines in Debug/Release mode with the below configurations. <br>
 A dev branch is merged if and only if all builds and tests passed on all configurations.
 
-| Name                          | OS             | CMake         | Generator             | Architecture | Build Type | Compiler            | Status |
-| ----------------------------- | -------------- | ------------- | --------------------- | ------------ | ---------- | ------------------  | --- |
-| Windows-Release               | windows-latest | CMake-v3.27.2 | MinGW Makefiles       |              | Release    | GCC-13.2.0          | ✅  |
-| Windows-Debug                 | windows-latest | CMake-v3.27.2 | Visual Studio 17 2022 | x64         | Debug      | MSVC-v19.30.30709.0 | ✅  |
-| Linux-Release                 | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Release    | GCC-v13.2.0         | ✅  |
-| Linux-Debug                   | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Debug      | GCC-v13.2.0         | ✅  |
-| MacOS-Release                 | macos-latest   | CMake-v3.27.2 | Unix Makefiles        |              | Release    |                     | ✅  |
-| MacOS-Debug                   | macos-latest   | CMake-v3.27.2 | Xcode                 |              | Debug      |                     | ✅  |
+| Name                          | OS             | CMake         | Generator             | Architecture | Build Type | Compiler            | Status  |
+| ----------------------------- | -------------- | ------------- | --------------------- | ------------ | ---------- | ------------------  | ---     |
+| Windows-Release               | windows-latest | CMake-v3.27.2 | MinGW Makefiles       |              | Release    | GCC-13.2.0          | ✅     |
+| Windows-Debug                 | windows-latest | CMake-v3.27.2 | Visual Studio 17 2022 | x64          | Debug      | MSVC-19.30.30709.0  | ✅     |
+| Linux-Release                 | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Release    | GCC-13.2.0          | ✅     |
+| Linux-Debug                   | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Debug      | GCC-13.2.0          | ✅     |
+| MacOS-Release                 | macos-latest   | CMake-v3.27.2 | Unix Makefiles        |              | Release    | CLANG-1200.0.32.28  | ❌     |
+| MacOS-Debug                   | macos-latest   | CMake-v3.27.2 | Xcode                 |              | Debug      | CLANG-1200.0.32.28  | ❌     |
 
 ## 🍇 Continuous Delivery
 
@@ -165,9 +159,9 @@ Feel free to report your issue with a respective title and an understandable des
 # 📜 Licence
 
 ```text
-Copyright (C) 2023 Matthieu Charrier <matthieu.charrier.pro@gmail.com>.
-All rights reserved.
-This GitHub repository is part of the project QA - Quantitative Analytics.
+Copyright (C) 2023 Matthieu Charrier. All rights reserved.
+This file is part of the project QA - Quantitative Analytics.
 Hence the latter remains the exclusive property of its author.
-Accordingly, no part of this document may be used in any form for professional or commercial purposes without the express permission of Matthieu Charrier.
+Accordingly, no part of this document may be used in any form for professional or commercial purposes
+without the express permission of Matthieu Charrier.
 ```
