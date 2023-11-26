@@ -75,7 +75,7 @@ language easily understandable by human and mahcine to design your contract with
 
 # ⚡️ Quick Start
 
-### [How To Install Your App ?](https://www.youtube.com/watch?v=dPs0uttR2BY)
+### 📺 [How To Install Your App ?](https://www.youtube.com/watch?v=dPs0uttR2BY)
 
 # 🙌 Contributions
 
