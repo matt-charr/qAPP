@@ -1,6 +1,6 @@
 <div align="center">
   <div>
-    <img src="_LOGO.png" width="900" height="200"/>
+    <img src="LOGO.png" width="900" height="200"/>
   </div>
 </a>
 
@@ -64,8 +64,7 @@
 
 `QA-Quantitative Analytics` is an ecosystem of targets which at the end help you with designing, monitoring and pricing your own exotic financial derivatives contract.
 
-- **qacore** (<em>private</em>) -- This is the core library of the project that is the agregation of embedded libraries 
-that are in charge of implementing contract, data, models and pricers.
+- **qacore** (<em>private</em>) -- This is the core library of the project that is the agregation of embedded libraries that are in charge of implementing contract, data, models and pricers.
 
 - **qapp** (<em>public</em>) -- a GUI desktop application through which the user can interact with `qacore` and send all kind of request such as pricing a contract, feed a database, see model calibration results, inspect the contract lifetime events and much more.
 
@@ -76,7 +75,7 @@ language easily understandable by human and mahcine to design your contract with
 
 # ⚡️ Quick Start
 
-todo
+### [How To Install Your App ?](https://www.youtube.com/watch?v=dPs0uttR2BY)
 
 # 🙌 Contributions
 
@@ -121,19 +120,22 @@ A dev branch is merged if and only if all builds and tests passed on all configu
 | ----------------------------- | -------------- | ------------- | --------------------- | ------------ | ---------- | ------------------  | ---     |
 | Windows-Release               | windows-latest | CMake-v3.27.2 | MinGW Makefiles       |              | Release    | GCC-13.2.0          | ✅     |
 | Windows-Debug                 | windows-latest | CMake-v3.27.2 | Visual Studio 17 2022 | x64          | Debug      | MSVC-19.30.30709.0  | ✅     |
-| Linux-Release                 | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Release    | GCC-13.2.0          | ✅     |
-| Linux-Debug                   | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Debug      | GCC-13.2.0          | ✅     |
-| MacOS-Release                 | macos-latest   | CMake-v3.27.2 | Unix Makefiles        |              | Release    | CLANG-1200.0.32.28  | ❌     |
-| MacOS-Debug                   | macos-latest   | CMake-v3.27.2 | Xcode                 |              | Debug      | CLANG-1200.0.32.28  | ❌     |
+| Linux-Release                 | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Release    | GCC-11.4.0          | ✅     |
+| Linux-Debug                   | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Debug      | GCC-11.4.0          | ✅     |
+| MacOS-Release                 | macos-latest   | CMake-v3.27.2 | Unix Makefiles        |              | Release    |                     | ❌     |
+| MacOS-Debug                   | macos-latest   | CMake-v3.27.2 | Xcode                 |              | Debug      |                     | ❌     |
+
+> [!NOTE]
+> `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds and tests on Linux OS. <br>
+We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
+
+> [!NOTE]
+> `qa` uses the above VPS as a Linux self-hosted runners and a remote Windows runner from Github to execute its actions.
 
 ## 🍇 Continuous Delivery
 
 Our team delivers a release or a patch on a regular basis, and strives to respect as closely as possible the [semantic versioning](https://semver.org/).
 To publish a new release on each OS, we execute a shell script that installs the package to a specific folder, zip and push it to [qa-demo](https://github.com/matt-charr/qa-demo).
-
-> [!NOTE]
-> `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds and tests on Linux OS. <br>
-We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
@@ -142,7 +144,9 @@ We could not find any server providers to run our builds and tests on MacOS and 
 
 ## 📝 List of available features
 
-Coming soon ...
+### [How to load your contract ?](video youtube)
+### [How to design your contract ?](video youtube)
+### [How to report your issue ?](video youtube)
 
 ## 🤝 Missing a specific feature ?
 
@@ -156,7 +160,7 @@ The project is very far from being complete (and will probably never be ...) and
 Feel free to report your issue with a respective title and an understandable description here [issues](https://github.com/matt-charr/qa-demo/issues). For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
 
 > [!IMPORTANT]
-> `qa` embbeds a mecanism to save and open your current mock-up for further usage. If possible please attach your [mock-up](video youtube) file together with the relevant data json files and contract cpp files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly.
+> `qa` embbeds a mecanism to save and open your current mock-up for further usage. If possible please attach your mock-up file together with the relevant data json files and contract cpp files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly.
 
 # 📜 Licence
 
