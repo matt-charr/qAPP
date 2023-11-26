@@ -62,15 +62,17 @@
 
 # 🤖 Introduction
 
-`QA-Quantitative Analytics` is an ecosystem of components which aim to help you with designing, monitoring and pricing your own exotic financial derivatives contract.
+`QA-Quantitative Analytics` is an ecosystem of targets which at the end help you with designing, monitoring and pricing your own exotic financial derivatives contract.
 
-- **qalib** (<em>private</em>) -- This is the core library of the project that implements contract, data, modeling and pricing engine.
+- **qacore** (<em>private</em>) -- This is the core library of the project that is the agregation of embedded libraries 
+that are in charge of implementing contract, data, models and pricers.
 
-- **qapp** (<em>public</em>) -- A GUI desktop application through which the user can interact with `qalib` and have a nice view on the input/output.
+- **qapp** (<em>public</em>) -- a GUI desktop application through which the user can interact with `qacore` and send all kind of request such as pricing a contract, feed a database, see model calibration results, inspect the contract lifetime events and much more.
 
-- **qalgebra** (<em>private</em>) -- `qalib` uses the power of algebraic contract description to build a contract. `qalgebra` is a library that implements a custom language easily understandable for both `qalib` and the users to describe step by step and block by block all the events that occurs during the contract lifetime.
+- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description to build a contract. `qalgebra` is here to implement a custom 
+language easily understandable by human and mahcine to design your contract with a self-explanatory script. Thanks to qalgebra, The user can write down a contract using this simple language and send it to qa for it to run all kind of actions such as pricing, monitoring, and much more. The whole qa ecosystem is built arround qalgebra.
 
-- **qafactory** (<em>public</em>) -- For the users to benefit `qalgebra` technology and price their own contracts, our developpers created `qafactory`, a friendly factory where all programmer enthusiasts can use and contribute its favorite observable/payoff functions to eventually inspect it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
+- **qafactory** (<em>public</em>) -- For the users to benefit `qalgebra` technology and price their own contracts, our developpers created `qafactory`, a friendly factory where all programmer enthusiasts can use and contribute its favorite payoff functions to eventually inspect it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
 
 # ⚡️ Quick Start
 
