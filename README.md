@@ -42,7 +42,7 @@
 <ul>
   <li> <ins>2023-11-18</ins>
 <ul>
-    <li> 🔔 - (<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.0">qa-0.1.0</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.0">qa-0.1.0</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -62,14 +62,14 @@
 
 # 🤖 Introduction
 
-`QA-Quantitative Analytics` is an ecosystem of targets which at the end help you with designing, monitoring and pricing your own exotic financial derivatives contract.
+`QA-Quantitative Analytics` is an ecosystem of components that help you with designing, monitoring and pricing your own exotic financial derivatives contract.
 
-- **qacore** (<em>private</em>) -- This is the core library of the project that is the agregation of embedded libraries that are in charge of implementing contract, data, models and pricers.
+- **qacore** (<em>private</em>) -- This is the core library of the project that is the agregation of embedded libraries in charge of implementing contract, data, models and pricers.
 
 - **qapp** (<em>public</em>) -- a GUI desktop application through which the user can interact with `qacore` and send all kind of request such as pricing a contract, feed a database, see model calibration results, inspect the contract lifetime events and much more.
 
-- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description to build a contract. `qalgebra` is here to implement a custom 
-language easily understandable by human and mahcine to design your contract with a self-explanatory script. Thanks to qalgebra, The user can write down a contract using this simple language and send it to qa for it to run all kind of actions such as pricing, monitoring, and much more. The whole qa ecosystem is built arround qalgebra.
+- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description and 'qalgebra` is the library that implements it: A custom 
+language easily understandable by human and machine to design your contract with a self-explanatory script. Thanks to qalgebra, The user can write down a contract using this simple language and send it to qa for it to run all kind of actions such as pricing, monitoring, and much more. The whole qa ecosystem is built arround qalgebra.
 
 - **qafactory** (<em>public</em>) -- For the users to benefit `qalgebra` technology and price their own contracts, our developpers created `qafactory`, a friendly factory where all programmer enthusiasts can use and contribute its favorite payoff functions to eventually inspect it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
 
