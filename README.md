@@ -135,7 +135,7 @@ We could not find any server providers to run our builds and tests on MacOS and 
 ## 🍇 Continuous Delivery
 
 Our team delivers a release or a patch on a regular basis, and strives to respect as closely as possible the [semantic versioning](https://semver.org/).
-To publish a new release on each OS, we execute a shell script that installs the package to a specific folder, zip and push it to [qa-demo](https://github.com/matt-charr/qa-demo).
+To publish a new release, each tag created on our developement repository triggers a github actions that for each os supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo).
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
