@@ -94,7 +94,7 @@ To download the latest version of our application, go to [Releases](https://gith
 
 <div align="left">
   <div>
-    <img src="capture/Capture.PNG" width="500" height="200"/>
+    <img src="captures/Capture.PNG" width="500" height="200"/>
   </div>
 </div>
 
@@ -102,7 +102,7 @@ After extracting all the files into a nice location of your machine, you are fal
 
 <div align="left">
   <div>
-    <img src="capture/Capture2.PNG" width="500" height="200"/>
+    <img src="captures/Capture2.PNG" width="500" height="200"/>
   </div>
 </div>
 
@@ -110,12 +110,12 @@ Open the `qapp` executable located at <em>qa/bin</em>, you arrive to the main pa
 
 <div align="left">
   <div>
-    <img src="capture/Capture3.PNG" width="500" height="200"/>
+    <img src="captures/Capture3.PNG" width="500" height="200"/>
   </div>
 </div>
 
 Each action triggers by `qapp` - typically pressing a button - throws <FONT COLOR="BLUE"><em>information</em></FONT>, <FONT COLOR="GREEN"><em>warnings</em></FONT>, <FONT COLOR="ORANGE"><em>errors</em></FONT> and/or <FONT COLOR="RED"><em>exceptions</em></FONT>.
-- If an <FONT COLOR="RED"><em>exception</em></FONT> is thrown, it means something went wrong dev side. In that case please [report your issue](https://github.com/matt-charr/qa-demo/issues) by dropping your mockup file together with your contract and data files if any.
+- If an <FONT COLOR="RED"><em>exception</em></FONT> is thrown, it means something went wrong dev side. In that case please [report your issue](https://github.com/matt-charr/qa-demo/issues) by dropping your mockup file together with your contract and data json files if any (see [how-can-i-report-my-issue-?](features/how-can-i-report-my-issue/doc.md)).
 - If an <FONT COLOR="ORANGE"><em>error</em></font> is thrown, it means that something went wrong user side and `qacore` did not manage to perform your request. In that case you need to check the log and correct your request accordingly.
 - If an <FONT COLOR="GREEN"><em>warning</em></font> is thrown, it means that something went wrong user side but `qacore` managed to perform the request.
 At inception, an action always thrown an <FONT COLOR="BLUE"><em>information</em></FONT> message to the user such as "Pricing contract...", the goal is to inform what action `qapp` is performing.
@@ -187,86 +187,11 @@ Our team delivers a release or a patch on a regular basis, and strives to respec
 
 ## <a name="list-of-features">📝 List of features</a>
 
-1. [How can I report my issue ?](#how-can-i-report-my-issue-?)
-2. [How can I build my contract ?](#how-can-i-build-my-contract-?)
-3. [How can I load my contract ?](#how-can-i-load-my-contract-?)
-4. [How can I move my contract ?](#how-can-i-move-my-contract-?)
-5. [How can I edit my fixings ?](#how-can-i-edit-my-fixings-?)
-
-### <a name="how-can-i-report-my-issue-?">📺 How can I report my issue ?</a>
-### <a name="how-can-i-build-my-contract-?">📺 How can I build my contract ?</a>
-
-1. Please ensure you have a C++ compiler (MSBuild, g++, Clang, ...) and a recent CMake version installed in your machine.
-
-```bash
-# Ensure you have a C++ compiler installed in your machine!
-g++ --version
-
-# Ensure you have a recent CMake version installed in your machine!
-cmake --version
-```
-
-2. Go to <em>factory</em> directory and if not already created, create a new cpp file in <em>examples</em> named <em>autocall.cpp</em>. Open it with your favorite editor to have a nice overview of what the language looks like and how to use it to build your own contract.
-
-```bash
-
-# go to factory.
-cd factory &&
-
-# create autocall.cpp.
-touch examples/autocall.cpp &&
-
-# let's see how it looks like.
-vim examples/autocall.cpp
-```
-
-3. You can create your contract json file by running the following commands:
-
-```bash
-
-# configure.
-cmake -S . -B ./build -G "MinGW Makefiles" -DMAIN="examples/autocall.cpp" &&
-
-# build.
-cmake --build ./build &&
-
-# run.
-./bin/run
-```
-
-or execute the shell:
-
-```bash
-# configure, build and run.
-./scripts/build.sh examples/autocall.cpp
-```
-
-4. Check that the contract json file has been create with success.
-
-```bash
-# check that json file exists.
-vim examples/autocall.json
-```
-
-Congratulations! You built your first contract.
-Once you are familiar enough with the syntax, feel free to update it at your convenience or even create your own designed contract cpp files and generate their respective contract json file!
-
-> [!NOTE]
-> If you are more familiar with vscode or msvc, you can open `factory` inside your favorite IDE. We dropped some specific configurations file into it for you to use your best environement at your adavantage.
-
-> [!NOTE]
-> The users familiar with CMake can update the CMakeLists.txt at their advantage, include other source files, use their own CMake generator or C++ compiler or even add external libraries ...
-
-### <a name="how-can-i-load-my-contract-?">📺 How can I load my contract ?</a>
-
-<div align="left">
-  <div>
-    <img src="capture/Capture5.PNG" width="700" height="1000"/>
-  </div>
-</div>
-
-### <a name="how-can-i-move-my-contract-?">📺 How can I move my contract ?</a>
-### <a name="how-can-i-edit-my-fixings-?">📺 How can I edit my fixings ?</a>
+1. 📺 [How can I report my issue ?](features/how-can-i-report-my-issue/doc.md)
+2. 📺 [How can I build my contract ?](features/how-can-i-build-my-contract/doc.md)
+3. 📺 [How can I load my contract ?](features/how-can-i-load-my-contract/doc.md)
+4. 📺 [How can I move my contract ?](features/how-can-i-move-my-contract/doc.md)
+5. 📺 [How can I edit my fixings ?](features/how-can-i-edit-my-fixings/doc.md)
 
 ## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
 
@@ -277,7 +202,7 @@ The project is very far from being complete (and will probably never be ...) and
 
 ## <a name="found-a-bug-?">🔎 Found a bug ?</a>
 
-Feel free to report your issue with a respective title and an understandable description here [issues](https://github.com/matt-charr/qa-demo/issues). For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
+Feel free to report your issue (see [how-can-i-report-my-issue-?](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description here [issues](https://github.com/matt-charr/qa-demo/issues). For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
 
 > [!IMPORTANT]
 > `qa` embbeds a mecanism to save and open your current mockup for further usage. If possible please attach your mockup file together with the relevant data json files and contract cpp/json files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly.
