@@ -74,6 +74,7 @@ language easily understandable by human and machine to design your contract with
 
 # ⚡️ Quick Start
 
+<<<<<<< HEAD
 To download the latest version of the application, follow the link towards [Releases](https://github.com/matt-charr/qa-demo/releases/tag) and download the asset that corresponds to your operating system.
 
 <div align="left">
@@ -108,6 +109,10 @@ When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is throw
 # 🙌 Contributions
 
 Coming soon ...
+
+# 🙌 Contributions
+
+todo
 
 # 💻 Insights
 
@@ -171,8 +176,6 @@ To publish a new release, each tag created on our developement repository trigge
 # 🌴 Features
 
 ## 📝 List of available features
-
-### 📺 How can I build and load my contract ?
 
 - Create a new source file into `qalgebra directory`
 
