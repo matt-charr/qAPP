@@ -24,7 +24,6 @@
     <img src="https://img.shields.io/github/issues/matt-charr/qa-demo?style=social"></td>
   <tr>
     <td><a href="https://twitter.com/matt_charr" alt="twitter"><img src="https://img.shields.io/twitter/follow/matt-charr?style=social" alt="twitter"></a></td>
-    <td><a href="https://www.youtube.com/c/qacom" alt="youtube"><img src="https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&logo=youtube" alt="youtube"></a></td>
     <td><a href="https://www.twitch.tv/mattcharr" alt="twitch"><img src="https://img.shields.io/badge/twitch-d51561.svg?style=flat-square&logo=twitch" alt="twitch"></a></td>
     <td><a href="https://www.linkedin.com/in/matthieu-charrier-080820134/" alt="linkedin"><img src="https://img.shields.io/badge/linkedin-d00.svg?style=flat-square&logo=linkedin" alt="linkedin"></a></td>
     <td><a href="https://github.com/matt-charr/" alt="GitHub"><img src="https://img.shields.io/badge/GitHub-d1014.svg?style=flat-square&logo=GitHub" alt="GitHub"></a></td>
@@ -42,7 +41,7 @@
 <ul>
   <li> <ins>2023-11-18</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.0">qa-0.1.0</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.0">qa-v0.1.0</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -75,11 +74,40 @@ language easily understandable by human and machine to design your contract with
 
 # ⚡️ Quick Start
 
-### 📺 [How To Install Your App ?](https://www.youtube.com/watch?v=dPs0uttR2BY)
+To download the latest version of the application, follow the link towards [Releases](https://github.com/matt-charr/qa-demo/releases/tag) and download the asset that corresponds to your operating system.
+
+<div align="left">
+  <div>
+    <img src="Capture.PNG" width="500" height="200"/>
+  </div>
+</div>
+
+After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qa` directory. 
+
+<div align="left">
+  <div>
+    <img src="Capture2.PNG" width="500" height="200"/>
+  </div>
+</div>
+
+Open the `qapp` executable located at <em>qa/bin</em>, you arrive to the main page which is a logger frame that displays the messages that `qacore` returns after each actions.
+
+<div align="left">
+  <div>
+    <img src="Capture3.PNG" width="500" height="200"/>
+  </div>
+</div>
+
+Each action triggers by `qapp` - typically pressing a button - throws <FONT COLOR="BLUE"><em>information</em></FONT>, <FONT COLOR="GREEN"><em>warnings</em></FONT>, <FONT COLOR="ORANGE"><em>errors</em></FONT> and/or <FONT COLOR="RED"><em>exceptions</em></FONT>.
+- If an <FONT COLOR="RED"><em>exception</em></FONT> is thrown, it means something went wrong dev side. In that case please [report your issue](https://github.com/matt-charr/qa-demo/issues) by dropping your mockup file together with your contract and data files if any.
+- If an <FONT COLOR="ORANGE"><em>error</em></font> is thrown, it means that something went wrong user side and `qacore` did not manage to perform your request. In that case you need to check the log and correct your request accordingly.
+- If an <FONT COLOR="GREEN"><em>warning</em></font> is thrown, it means that something went wrong user side but `qacore` managed to perform the request.
+At inception, an action always thrown an <FONT COLOR="BLUE"><em>information</em></FONT> message to the user such as "Pricing contract...", the goal is to inform what action `qapp` is performing.
+When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is thrown if an only if no error or exception occured during the action lifetime.
 
 # 🙌 Contributions
 
-todo
+Coming soon ...
 
 # 💻 Insights
 
@@ -117,7 +145,7 @@ Once a pull request is submitted, build and tests are triggered on Windows, Linu
 A dev branch is merged if and only if all builds and tests passed on all configurations.
 
 | Name                          | OS             | CMake         | Generator             | Architecture | Build Type | Compiler            | Status  |
-| ----------------------------- | -------------- | ------------- | --------------------- | ------------ | ---------- | ------------------  | ---     |
+| ----------------------------- | -------------- | ------------- | --------------------- | ------------ | ---------- | ------------------  | ------- |
 | Windows-Release               | windows-latest | CMake-v3.27.2 | MinGW Makefiles       |              | Release    | GCC-13.2.0          | ✅     |
 | Windows-Debug                 | windows-latest | CMake-v3.27.2 | Visual Studio 17 2022 | x64          | Debug      | MSVC-19.30.30709.0  | ✅     |
 | Linux-Release                 | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Release    | GCC-11.4.0          | ✅     |
@@ -144,9 +172,14 @@ To publish a new release, each tag created on our developement repository trigge
 
 ## 📝 List of available features
 
-### [How to load your contract ?](video youtube)
-### [How to design your contract ?](video youtube)
-### [How to report your issue ?](video youtube)
+### 📺 How can I build and load my contract ?
+
+- Create a new source file into `qalgebra directory`
+
+```cd qalgebra```
+```touch my_contract.cpp```
+
+### 📺 How can I report my issue ?
 
 ## 🤝 Missing a specific feature ?
 
