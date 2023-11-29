@@ -6,7 +6,7 @@
 
 # QA
 
-<em>Design, monitor and price your own exotic financial derivatives contracts.</em>
+<em>Design, monitor and price your own financial contracts.</em>
 
 </div>
 
@@ -30,7 +30,7 @@
   <tr>
   <tr>
     <td><img src="https://img.shields.io/badge/Solution-C++17-blue.svg?style=flat&logo=c%2B%2B&logoColor=b0c0c0&labelColor=363D44" alt="C++ solution"/></td>
-    <td><img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20Mac-blue??style=flat&logo=Linux&logoColor=b0c0c0&labelColor=363D44" alt="Operating systems"/></td>
+    <td><img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux-blue??style=flat&logo=Linux&logoColor=b0c0c0&labelColor=363D44" alt="Operating systems"/></td>
   </tr>
 </table>
 
@@ -59,27 +59,30 @@
 </ul>
 </td>
 
-# 🤖 Introduction
+## 📋 Table of Contents
 
-`QA-Quantitative Analytics` is an ecosystem of components that help you with designing, monitoring and pricing your own exotic financial derivatives contract.
+1. 🤖 [Introduction](#introduction)
+2. ⚡️ [Quick Start](#quick-start)
 
-- **qacore** (<em>private</em>) -- This is the core library of the project that is the agregation of embedded libraries in charge of implementing contract, data, models and pricers.
+# <a name="introduction">🤖 Introduction</a>
 
-- **qapp** (<em>public</em>) -- a GUI desktop application through which the user can interact with `qacore` and send all kind of request such as pricing a contract, feed a database, see model calibration results, inspect the contract lifetime events and much more.
+`QA-Quantitative Analytics` is an ecosystem of components that help you with designing, monitoring and pricing your own financial derivatives.
 
-- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description and 'qalgebra` is the library that implements it: A custom 
-language easily understandable by human and machine to design your contract with a self-explanatory script. Thanks to qalgebra, The user can write down a contract using this simple language and send it to qa for it to run all kind of actions such as pricing, monitoring, and much more. The whole qa ecosystem is built arround qalgebra.
+- **qacore** (<em>private</em>) -- The core library of the project that is the agregation of embedded libraries in charge of implementing contract, data, modeling and pricing engine.
+
+- **qapp** (<em>public</em>) -- The GUI desktop application through which the user can interact with `qacore` and send all kind of request such as pricing a contract, feed a database, see model calibration results, inspect the contract lifetime events and much more.
+
+- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description and `qalgebra` is the library that implements it: A customized language easily understandable by human and machine to design your contract with a self-explanatory script. Thanks to qalgebra, The user can write down a contract using this simple language and send it to qa for it to run a bunch of actions such as pricing, monitoring and much more. The whole `qa` ecosystem is built arround `qalgebra` device.
 
 - **qafactory** (<em>public</em>) -- For the users to benefit `qalgebra` technology and price their own contracts, our developpers created `qafactory`, a friendly factory where all programmer enthusiasts can use and contribute its favorite payoff functions to eventually inspect it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
 
-# ⚡️ Quick Start
+# <a name="quick-start">⚡️ Quick Start</a>
 
-<<<<<<< HEAD
-To download the latest version of the application, follow the link towards [Releases](https://github.com/matt-charr/qa-demo/releases/tag) and download the asset that corresponds to your operating system.
+To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qa-demo/releases/tag) and download the asset that corresponds to your operating system.
 
 <div align="left">
   <div>
-    <img src="Capture.PNG" width="500" height="200"/>
+    <img src="capture/Capture.PNG" width="500" height="200"/>
   </div>
 </div>
 
@@ -87,7 +90,7 @@ After extracting all the files into a nice location of your machine, you are fal
 
 <div align="left">
   <div>
-    <img src="Capture2.PNG" width="500" height="200"/>
+    <img src="capture/Capture2.PNG" width="500" height="200"/>
   </div>
 </div>
 
@@ -95,7 +98,7 @@ Open the `qapp` executable located at <em>qa/bin</em>, you arrive to the main pa
 
 <div align="left">
   <div>
-    <img src="Capture3.PNG" width="500" height="200"/>
+    <img src="capture/Capture3.PNG" width="500" height="200"/>
   </div>
 </div>
 
@@ -110,15 +113,11 @@ When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is throw
 
 Coming soon ...
 
-# 🙌 Contributions
-
-todo
-
 # 💻 Insights
 
 ## 🍯 Work Style
 
-Once a bug or a new feature is submitted, an issue is created with the corresponding flag (bug, feature, project, creation). <br>
+Once a bug or a new feature is submitted, an issue is created with the corresponding flag (bug, feature, project, creation). 
 Once picked from the stack, a dev branch is created, comes down locally to the developper machine and this is where the fun begins 😃
 
 ## 🍏 Build
@@ -141,13 +140,11 @@ To load the below dependencies, `qa` uses the power of [superbuild](https://cmak
 
 ## 🍊 Tests
 
-At the end of each dev session, a new unit test is required to be submitted to the test suite together with a contract source code that replicates the expected behavior of the code change. To ensure that the code change effect is not broken by any subsequent modifications, we use the service of [GTest]() as a testing framework.
+At the end of each dev session, a new unit test is required to be submitted to the test suite together with a contract file that replicates the expected behavior of the code change. To ensure that the code change effect is not broken by any subsequent modifications, we use the service of [GTest]() as a testing framework.
 
 ## 🍈 Continuous Integration
 
-`qa` embbeds a custom GitHub action that runs at each pull requests. <br> 
-Once a pull request is submitted, build and tests are triggered on Windows, Linux and MacOS remote machines in Debug/Release mode with the below configurations. <br>
-A dev branch is merged if and only if all builds and tests passed on all configurations.
+`qa` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows and Linux self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all configurations.
 
 | Name                          | OS             | CMake         | Generator             | Architecture | Build Type | Compiler            | Status  |
 | ----------------------------- | -------------- | ------------- | --------------------- | ------------ | ---------- | ------------------  | ------- |
@@ -159,16 +156,12 @@ A dev branch is merged if and only if all builds and tests passed on all configu
 | MacOS-Debug                   | macos-latest   | CMake-v3.27.2 | Xcode                 |              | Debug      |                     | ❌     |
 
 > [!NOTE]
-> `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds and tests on Linux OS. <br>
-We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
-
-> [!NOTE]
-> `qa` uses the above VPS as a Linux self-hosted runners and a remote Windows runner from Github to execute its actions.
+> `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds, tests and deployment on Linux. We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
 
 ## 🍇 Continuous Delivery
 
 Our team delivers a release or a patch on a regular basis, and strives to respect as closely as possible the [semantic versioning](https://semver.org/).
-To publish a new release, each tag created on our developement repository triggers a github actions that for each os supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo).
+To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo).
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
@@ -177,7 +170,9 @@ To publish a new release, each tag created on our developement repository trigge
 
 ## 📝 List of available features
 
-- Create a new source file into `qalgebra directory`
+### 📺 How can I build my contract ?
+
+- Create a new cpp file into `factory` directory:
 
 ```cd qalgebra```
 ```touch my_contract.cpp```
@@ -186,7 +181,7 @@ To publish a new release, each tag created on our developement repository trigge
 
 ## 🤝 Missing a specific feature ?
 
-The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of functionalities. Feel free to share your ideas. We are happy to discuss with you about your personnal needs and the feasibility of your project.
+The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to share your ideas! We are happy to discuss with you about your personnal needs and the feasibility of your project.
 
 > [!NOTE]
 > If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qa` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
@@ -196,7 +191,7 @@ The project is very far from being complete (and will probably never be ...) and
 Feel free to report your issue with a respective title and an understandable description here [issues](https://github.com/matt-charr/qa-demo/issues). For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
 
 > [!IMPORTANT]
-> `qa` embbeds a mecanism to save and open your current mock-up for further usage. If possible please attach your mock-up file together with the relevant data json files and contract cpp files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly.
+> `qa` embbeds a mecanism to save and open your current mockup for further usage. If possible please attach your mockup file together with the relevant data json files and contract cpp/json files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly.
 
 # 📜 Licence
 
