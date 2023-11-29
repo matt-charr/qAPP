@@ -30,7 +30,7 @@
   <tr>
   <tr>
     <td><img src="https://img.shields.io/badge/Solution-C++17-blue.svg?style=flat&logo=c%2B%2B&logoColor=b0c0c0&labelColor=363D44" alt="C++ solution"/></td>
-    <td><img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux-blue??style=flat&logo=Linux&logoColor=b0c0c0&labelColor=363D44" alt="Operating systems"/></td>
+    <td><img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20Mac-blue??style=flat&logo=Linux&logoColor=b0c0c0&labelColor=363D44" alt="Operating systems"/></td>
   </tr>
 </table>
 
@@ -63,6 +63,18 @@
 
 1. 🤖 [Introduction](#introduction)
 2. ⚡️ [Quick Start](#quick-start)
+3. 🙌 [Contributions](#contributions)
+4. 💻 [Insights](#insights)
+   1. 🍯 [Developement](#developement)
+   2. 🍏 [Build](#build)
+   3. 🍊 [Tests](#tests)
+   4. 🍈 [Continuous Integration](#continuous-integration)
+   5. 🍇 [Continuous Delivery](#continuous-delivery)
+5. 🌴 [Features](#features)
+   1. 📝 [List of features](#list-of-features)
+   2. 🤝 [Missing a specific feature ?](#missing-a-specific-feature-?)
+   3. 🔎 [Found a bug ?](#found-a-bug-?)
+6. 📜 [Licence](#licence)
 
 # <a name="introduction">🤖 Introduction</a>
 
@@ -109,18 +121,18 @@ Each action triggers by `qapp` - typically pressing a button - throws <FONT COLO
 At inception, an action always thrown an <FONT COLOR="BLUE"><em>information</em></FONT> message to the user such as "Pricing contract...", the goal is to inform what action `qapp` is performing.
 When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is thrown if an only if no error or exception occured during the action lifetime.
 
-# 🙌 Contributions
+# <a name = "contributions"> 🙌 Contributions</a>
 
 Coming soon ...
 
-# 💻 Insights
+# <a name="work-style">💻 Insights</a>
 
-## 🍯 Work Style
+## <a name="developement"> 🍯 Developement</a>
 
 Once a bug or a new feature is submitted, an issue is created with the corresponding flag (bug, feature, project, creation). 
 Once picked from the stack, a dev branch is created, comes down locally to the developper machine and this is where the fun begins 😃
 
-## 🍏 Build
+## <a name="build"> 🍏 Build</a>
 
 `qa` uses [CMake](https://cmake.org/) as a build system and has its main code base located on a private repository which access is restricted to our developers only. Besides, it relies on a bunch of repository dependencies that are required at `qa` developpement/build time. <br> 
 It is to the following projects that we owe our heartfelt thanks for their generous Open Source contribution.
@@ -138,62 +150,139 @@ It is to the following projects that we owe our heartfelt thanks for their gener
 
 To load the below dependencies, `qa` uses the power of [superbuild](https://cmake.org/cmake/help/latest/module/ExternalProject.html) feature from CMake. For that purpose, an embedded CMake project is in charge of cloning, building and installing all the dependencies that `qa` requires into a specific folder. That's pretty cool, isn't it ? 😃
 
-## 🍊 Tests
+## <a name="tests"> 🍊 Tests</a>
 
-At the end of each dev session, a new unit test is required to be submitted to the test suite together with a contract file that replicates the expected behavior of the code change. To ensure that the code change effect is not broken by any subsequent modifications, we use the service of [GTest]() as a testing framework.
+At the end of each dev session, a new unit test is required to be submitted to the test suite together with a contract json file that replicates the expected behavior of the code change. To ensure that the code change effect is not broken by any subsequent modifications, we use the service of [GTest]() as a testing framework.
 
-## 🍈 Continuous Integration
+## <a name = "continuous-integration">🍈 Continuous Integration</a>
 
 `qa` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows and Linux self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all configurations.
 
-| Name                          | OS             | CMake         | Generator             | Architecture | Build Type | Compiler            | Status  |
-| ----------------------------- | -------------- | ------------- | --------------------- | ------------ | ---------- | ------------------  | ------- |
-| Windows-Release               | windows-latest | CMake-v3.27.2 | MinGW Makefiles       |              | Release    | GCC-13.2.0          | ✅     |
-| Windows-Debug                 | windows-latest | CMake-v3.27.2 | Visual Studio 17 2022 | x64          | Debug      | MSVC-19.30.30709.0  | ✅     |
-| Linux-Release                 | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Release    | GCC-11.4.0          | ✅     |
-| Linux-Debug                   | ubuntu-latest  | CMake-v3.27.2 | Unix Makefiles        |              | Debug      | GCC-11.4.0          | ✅     |
-| MacOS-Release                 | macos-latest   | CMake-v3.27.2 | Unix Makefiles        |              | Release    |                     | ❌     |
-| MacOS-Debug                   | macos-latest   | CMake-v3.27.2 | Xcode                 |              | Debug      |                     | ❌     |
+| Name                          | OS             | CMake        | Generator             | Architecture | Build Type | Compiler            | Status  |
+| ----------------------------- | -------------- | -------------------- | --------------------- | ------------ | ---------- | ------------------  | ------- |
+| Windows-Release               | windows-latest | CMake-3.27.2 | MinGW Makefiles       |x64              | Release    | GCC-13.2.0          | ✅     |
+| Windows-Debug                 | windows-latest | CMake-3.27.2 | Visual Studio 17 2022 | x64          | Debug      | MSVC-19.30.30709.0  | ✅     |
+| Linux-Release                 | ubuntu-latest  | CMake-3.22.1 | Unix Makefiles        |x64              | Release    | GCC-11.4.0          | ✅     |
+| Linux-Debug                   | ubuntu-latest  | CMake-3.22.1 | Unix Makefiles        |x64              | Debug      | GCC-11.4.0          | ✅     |
+| MacOS-Release                 | macos-latest   |  | Unix Makefiles        |x64              | Release    |                     | ❌     |
+| MacOS-Debug                   | macos-latest   |  | Xcode                 |x64              | Debug      |                     | ❌     |
 
 > [!NOTE]
 > `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds, tests and deployment on Linux. We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
 
-## 🍇 Continuous Delivery
+## <a name="continuous-delivery">🍇 Continuous Delivery</a>
 
-Our team delivers a release or a patch on a regular basis, and strives to respect as closely as possible the [semantic versioning](https://semver.org/).
-To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo).
+Our team delivers a release or a patch on a regular basis, and strives to respect as closely as possible the [semantic versioning](https://semver.org/). To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo). Here are the configurations on which we deploy our package:
+
+| Name                          | OS             | CMake        | Generator             | Architecture | Build Type | Compiler            | Status  |
+| ----------------------------- | -------------- | -------------------- | --------------------- | ------------ | ---------- | ------------------  | ------- |
+| Windows-Release               | windows-latest | CMake-3.27.2 | MinGW Makefiles       |x64              | Release    | GCC-13.2.0          | ✅     |
+| Linux-Release                 | ubuntu-latest  | CMake-3.22.1 | Unix Makefiles        |x64              | Release    | GCC-11.4.0          | ✅     |
+| MacOS-Release                 | macos-latest   |  | Unix Makefiles        |x64              | Release    |                     | ❌     |
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
 
-# 🌴 Features
+# <a name="features"> 🌴 Features</a>
 
-## 📝 List of available features
+## <a name="list-of-features">📝 List of features</a>
 
-### 📺 How can I build my contract ?
+1. [How can I report my issue ?](#how-can-i-report-my-issue-?)
+2. [How can I build my contract ?](#how-can-i-build-my-contract-?)
+3. [How can I load my contract ?](#how-can-i-load-my-contract-?)
+4. [How can I move my contract ?](#how-can-i-move-my-contract-?)
+5. [How can I edit my fixings ?](#how-can-i-edit-my-fixings-?)
 
-- Create a new cpp file into `factory` directory:
+### <a name="how-can-i-report-my-issue-?">📺 How can I report my issue ?</a>
+### <a name="how-can-i-build-my-contract-?">📺 How can I build my contract ?</a>
 
-```cd qalgebra```
-```touch my_contract.cpp```
+1. Please ensure you have a C++ compiler (MSBuild, g++, Clang, ...) and a recent CMake version installed in your machine.
 
-### 📺 How can I report my issue ?
+```bash
+# Ensure you have a C++ compiler installed in your machine!
+g++ --version
 
-## 🤝 Missing a specific feature ?
+# Ensure you have a recent CMake version installed in your machine!
+cmake --version
+```
+
+2. Go to <em>factory</em> directory and if not already created, create a new cpp file in <em>examples</em> named <em>autocall.cpp</em>. Open it with your favorite editor to have a nice overview of what the language looks like and how to use it to build your own contract.
+
+```bash
+
+# go to factory.
+cd factory &&
+
+# create autocall.cpp.
+touch examples/autocall.cpp &&
+
+# let's see how it looks like.
+vim examples/autocall.cpp
+```
+
+3. You can create your contract json file by running the following commands:
+
+```bash
+
+# configure.
+cmake -S . -B ./build -G "MinGW Makefiles" -DMAIN="examples/autocall.cpp" &&
+
+# build.
+cmake --build ./build &&
+
+# run.
+./bin/run
+```
+
+or execute the shell:
+
+```bash
+# configure, build and run.
+./scripts/build.sh examples/autocall.cpp
+```
+
+4. Check that the contract json file has been create with success.
+
+```bash
+# check that json file exists.
+vim examples/autocall.json
+```
+
+Congratulations! You built your first contract.
+Once you are familiar enough with the syntax, feel free to update it at your convenience or even create your own designed contract cpp files and generate their respective contract json file!
+
+> [!NOTE]
+> If you are more familiar with vscode or msvc, you can open `factory` inside your favorite IDE. We dropped some specific configurations file into it for you to use your best environement at your adavantage.
+
+> [!NOTE]
+> The users familiar with CMake can update the CMakeLists.txt at their advantage, include other source files, use their own CMake generator or C++ compiler or even add external libraries ...
+
+### <a name="how-can-i-load-my-contract-?">📺 How can I load my contract ?</a>
+
+<div align="left">
+  <div>
+    <img src="capture/Capture5.PNG" width="700" height="1000"/>
+  </div>
+</div>
+
+### <a name="how-can-i-move-my-contract-?">📺 How can I move my contract ?</a>
+### <a name="how-can-i-edit-my-fixings-?">📺 How can I edit my fixings ?</a>
+
+## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
 
 The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to share your ideas! We are happy to discuss with you about your personnal needs and the feasibility of your project.
 
 > [!NOTE]
 > If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qa` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
 
-## 🔎 Found a bug ?
+## <a name="found-a-bug-?">🔎 Found a bug ?</a>
 
 Feel free to report your issue with a respective title and an understandable description here [issues](https://github.com/matt-charr/qa-demo/issues). For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
 
 > [!IMPORTANT]
 > `qa` embbeds a mecanism to save and open your current mockup for further usage. If possible please attach your mockup file together with the relevant data json files and contract cpp/json files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly.
 
-# 📜 Licence
+# <a name="licence">📜 Licence</a>
 
 ```text
 Copyright (C) 2023 Matthieu Charrier. All rights reserved.
