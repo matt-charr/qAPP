@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > Enjoy the below experience by opening the mockup [features/how-can-i-load-my-contract/mockup.json](mockup.json) in `qapp`
-> <strong>contract json file</strong>: [contracts/autocall.json](../contracts/autocall.json)
+<strong>contract cpp file</strong>: [contracts/autocall.cpp](../contracts/autocall.cpp)
 
 1. Go to <em>Menu/Contract</em>
 
@@ -12,7 +12,7 @@
   </div>
 </div>
 
-2. Input your pricing date, premium currency and the contract json file <em>examples/autocall.json</em> then click on <em>load</em>. Be aware that your contract will be automatically moved to your pricing date (see [How can I move my contract ?](#how-can-i-move-my-contract-?)).
+2. Input your pricing date, premium currency and the contract json file <em>examples/autocall.json</em> then click on <em>load</em>. Be aware that your contract will be automatically moved to your pricing date (see [How can I move my contract ?](../features/how-can-i-move-my-contract/doc.md)).
 
 <div align="left">
   <div>

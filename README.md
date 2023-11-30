@@ -63,17 +63,17 @@
 
 1. 🤖 [Introduction](#introduction)
 2. ⚡️ [Quick Start](#quick-start)
-3. 🙌 [Contributions](#contributions)
-4. 💻 [Insights](#insights)
+3. 💻 [Insights](#insights)
    1. 🍯 [Developement](#developement)
    2. 🍏 [Build](#build)
    3. 🍊 [Tests](#tests)
    4. 🍈 [Continuous Integration](#continuous-integration)
    5. 🍇 [Continuous Delivery](#continuous-delivery)
-5. 🌴 [Features](#features)
+4. 🌴 [Features](#features)
    1. 📝 [List of features](#list-of-features)
    2. 🤝 [Missing a specific feature ?](#missing-a-specific-feature-?)
    3. 🔎 [Found a bug ?](#found-a-bug-?)
+5. 🙌 [How can I contribute ?](#how-can-i-contribute-?)
 6. 📜 [Licence](#licence)
 
 # <a name="introduction">🤖 Introduction</a>
@@ -84,9 +84,9 @@
 
 - **qapp** (<em>public</em>) -- The GUI desktop application through which the user can interact with `qacore` and send all kind of request such as pricing a contract, feed a database, see model calibration results, inspect the contract lifetime events and much more.
 
-- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description and `qalgebra` is the library that implements it: A customized language easily understandable by human and machine to design your contract with a self-explanatory script. Thanks to qalgebra, The user can write down a contract using this simple language and send it to qa for it to run a bunch of actions such as pricing, monitoring and much more. The whole `qa` ecosystem is built arround `qalgebra` device.
+- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description and `qalgebra` is the library that implements it: A customized language easily understandable by human and machine to design your contract with a self-explanatory script. Thanks to qalgebra, The user can write down a contract using this simple language and send it to qa to run any generic actions such as pricing, monitoring and much more. The whole `qa` ecosystem is built arround `qalgebra` device.
 
-- **qafactory** (<em>public</em>) -- For the users to benefit `qalgebra` technology and price their own contracts, our developpers created `qafactory`, a friendly factory where all programmer enthusiasts can use and contribute its favorite payoff functions to eventually inspect it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
+- **qafactory** (<em>public</em>) -- For the users to benefit `qalgebra` technology and price their own contracts, our developpers created [qa-factory](https://github.com/matt-charr/qa-factory), a friendly repository where all programmer enthusiasts can use and contribute its favorite payoff functions and contracts to eventually inspect it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
@@ -120,10 +120,6 @@ Each action triggers by `qapp` - typically pressing a button - throws <FONT COLO
 - If an <FONT COLOR="GREEN"><em>warning</em></font> is thrown, it means that something went wrong user side but `qacore` managed to perform the request.
 At inception, an action always thrown an <FONT COLOR="BLUE"><em>information</em></FONT> message to the user such as "Pricing contract...", the goal is to inform what action `qapp` is performing.
 When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is thrown if an only if no error or exception occured during the action lifetime.
-
-# <a name = "contributions"> 🙌 Contributions</a>
-
-Coming soon ...
 
 # <a name="work-style">💻 Insights</a>
 
@@ -206,6 +202,39 @@ Feel free to report your issue (see [how-can-i-report-my-issue-?](features/how-c
 
 > [!IMPORTANT]
 > `qa` embbeds a mecanism to save and open your current mockup for further usage. If possible please attach your mockup file together with the relevant data json files and contract cpp/json files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly.
+
+# <a name = "how-can-i-contribute-?"> 🙌 How can I contribute ?</a>
+
+`qa-factory` is a repository where you can:
+
+- Contribute your payoffs functions (<em>src/</em> and <em>include/</em>) and your contracts (<em>tests/</em>).
+
+1. Fork the [repo](https://github.com/matt-charr/qa-factory).
+2. Clone your fork.
+
+```bash
+
+# clone qa-factory repository.
+git clone https://github.com/matt-charr/qa-factory.git
+
+```
+
+4. Make your master peace.
+5. Submit your pull request.
+
+- Use additionnal features (functions) provided by other users to ease your contract design.
+
+In order to do this, you just need to clone it inside your <em>factory</em> directory.
+
+```bash
+
+# go to factory.
+cd factory &&
+
+# clone qa-factory repository.
+git clone https://github.com/matt-charr/qa-factory.git
+
+```
 
 # <a name="licence">📜 Licence</a>
 
