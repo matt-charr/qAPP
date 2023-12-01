@@ -61,32 +61,32 @@
 
 ## 📋 Table of Contents
 
-1. 🤖 [Introduction](#introduction)
+1. 💥 [Introduction](#introduction)
 2. ⚡️ [Quick Start](#quick-start)
-3. 💻 [Insights](#insights)
+3. 🌴 [Features](#features)
+   1. 📝 [List of features](#list-of-features)
+   2. 🤝 [Missing a specific feature ?](#missing-a-specific-feature-?)
+   3. 🔎 [Found a bug ?](#found-a-bug-?)
+4. 🙌 [How can I contribute ?](#how-can-i-contribute-?)
+5. 💻 [Insights](#insights)
    1. 🍯 [Developement](#developement)
    2. 🍏 [Build](#build)
    3. 🍊 [Tests](#tests)
    4. 🍈 [Continuous Integration](#continuous-integration)
    5. 🍇 [Continuous Delivery](#continuous-delivery)
-4. 🌴 [Features](#features)
-   1. 📝 [List of features](#list-of-features)
-   2. 🤝 [Missing a specific feature ?](#missing-a-specific-feature-?)
-   3. 🔎 [Found a bug ?](#found-a-bug-?)
-5. 🙌 [How can I contribute ?](#how-can-i-contribute-?)
 6. 📜 [Licence](#licence)
 
-# <a name="introduction">🤖 Introduction</a>
+# <a name="introduction">💥Introduction</a>
 
-`QA-Quantitative Analytics` is an ecosystem of components that help you with designing, monitoring and pricing your own financial derivatives.
+`QA-Quantitative Analytics` is an ecosystem of components that helps you with designing, monitoring and pricing your own financial derivatives.
 
-- **qacore** (<em>private</em>) -- The core library of the project that is the agregation of embedded libraries in charge of implementing contract, data, modeling and pricing engine.
+- **qacore** (<em>private</em>) -- The core library of the project that is the agregation of embedded libraries in charge of implementing <em>contract</em>, <em>data</em>, <em>modeling</em> and <em>pricing</em> engine.
 
 - **qapp** (<em>public</em>) -- The GUI desktop application through which the user can interact with `qacore` and send all kind of request such as pricing a contract, feed a database, see model calibration results, inspect the contract lifetime events and much more.
 
-- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description and `qalgebra` is the library that implements it: A customized language easily understandable by human and machine to design your contract with a self-explanatory script. Thanks to qalgebra, The user can write down a contract using this simple language and send it to qa to run any generic actions such as pricing, monitoring and much more. The whole `qa` ecosystem is built arround `qalgebra` device.
+- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description and `qalgebra` is the library that implements it: A customized language easily understandable by human and machine to design your contract with a self-explanatory script. Thanks to qalgebra, the user can write down a contract using this simple language and send it to `qa`  to run any generic actions such as pricing, monitoring and much more. The whole `qa` ecosystem is built arround `qalgebra` device.
 
-- **qafactory** (<em>public</em>) -- For the users to benefit `qalgebra` technology and price their own contracts, our developpers created [qa-factory](https://github.com/matt-charr/qa-factory), a friendly repository where all programmer enthusiasts can use and contribute its favorite payoff functions and contracts to eventually inspect it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
+- **qafactory** (<em>public</em>) -- For the users to benefit their own `qalgebra` experience and price their own contracts, our developpers created [qa-factory](https://github.com/matt-charr/qa-factory), a friendly repository where all programmer enthusiasts can use and contribute its favorite payoff functions and contracts to eventually use it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
@@ -94,7 +94,7 @@ To download the latest version of our application, go to [Releases](https://gith
 
 <div align="left">
   <div>
-    <img src="captures/Capture.PNG" width="500" height="200"/>
+    <img src="captures/Capture1.PNG" width="500" height="200"/>
   </div>
 </div>
 
@@ -115,11 +115,68 @@ Open the `qapp` executable located at <em>qa/bin</em>, you arrive to the main pa
 </div>
 
 Each action triggers by `qapp` - typically pressing a button - throws <FONT COLOR="BLUE"><em>information</em></FONT>, <FONT COLOR="GREEN"><em>warnings</em></FONT>, <FONT COLOR="ORANGE"><em>errors</em></FONT> and/or <FONT COLOR="RED"><em>exceptions</em></FONT>.
-- If an <FONT COLOR="RED"><em>exception</em></FONT> is thrown, it means something went wrong dev side. In that case please [report your issue](https://github.com/matt-charr/qa-demo/issues) by dropping your mockup file together with your contract and data json files if any (see [how-can-i-report-my-issue-?](features/how-can-i-report-my-issue/doc.md)).
+- If an <FONT COLOR="RED"><em>exception</em></FONT> is thrown, it means something went wrong dev side. In that case please [report your issue](https://github.com/matt-charr/qa-demo/issues) by dropping your `mockup` file together with your contract and data json files if any (see [how-can-i-report-my-issue](features/how-can-i-report-my-issue/doc.md)).
 - If an <FONT COLOR="ORANGE"><em>error</em></font> is thrown, it means that something went wrong user side and `qacore` did not manage to perform your request. In that case you need to check the log and correct your request accordingly.
-- If an <FONT COLOR="GREEN"><em>warning</em></font> is thrown, it means that something went wrong user side but `qacore` managed to perform the request.
+- If a <FONT COLOR="GREEN"><em>warning</em></font> is thrown, it means that something went wrong user side but `qacore` managed to perform the request.
 At inception, an action always thrown an <FONT COLOR="BLUE"><em>information</em></FONT> message to the user such as "Pricing contract...", the goal is to inform what action `qapp` is performing.
 When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is thrown if an only if no error or exception occured during the action lifetime.
+
+# <a name="features"> 🌴 Features</a>
+
+## <a name="list-of-features">📝 List of features</a>
+
+1. 📺 [How can I report my issue ?](features/how-can-i-report-my-issue/doc.md)
+2. 📺 [How can I build my contract ?](features/how-can-i-build-my-contract/doc.md)
+3. 📺 [How can I load my contract ?](features/how-can-i-load-my-contract/doc.md)
+4. 📺 [How can I move my contract ?](features/how-can-i-move-my-contract/doc.md)
+5. 📺 [How can I edit my fixings ?](features/how-can-i-edit-my-fixings/doc.md)
+
+## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
+
+The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to share your ideas! We are happy to discuss with you about your personnal needs and the feasibility of your project.
+
+> [!NOTE]
+> If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qa` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
+
+## <a name="found-a-bug-?">🔎 Found a bug ?</a>
+
+Feel free to [report your issue](https://github.com/matt-charr/qa-demo/issues) (see [how-can-i-report-my-issue](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description. For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
+
+> [!IMPORTANT]
+> `qa` embbeds a mecanism to save and open your current `mockup` for further usage. If possible please attach your `mockup` file together with the relevant data json files and contract cpp/json files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly. See [how-can-i-report-my-issue](features/how-can-i-report-my-issue/doc.md) for further details on how to proceed.
+
+# <a name = "how-can-i-contribute-?"> 🙌 How can I contribute ?</a>
+
+`qa-factory` is a repository where you can:
+
+- Contribute your payoff functions (<em>src/</em> and <em>include/</em>) and your contracts (<em>tests/</em>).
+
+1. Fork the [repo](https://github.com/matt-charr/qa-factory).
+2. Clone your fork.
+
+```bash
+
+# clone qa-factory repository.
+git clone https://github.com/matt-charr/qa-factory.git
+
+```
+
+4. Make your masterpeace.
+5. Submit your pull request.
+
+- Use additionnal features (functions) provided by other users to ease your contract design.
+
+In order to do this, you just need to clone it inside your <em>factory</em> directory.
+
+```bash
+
+# go to factory.
+cd factory &&
+
+# clone qa-factory repository.
+git clone https://github.com/matt-charr/qa-factory.git
+
+```
 
 # <a name="work-style">💻 Insights</a>
 
@@ -179,69 +236,13 @@ Our team delivers a release or a patch on a regular basis, and strives to respec
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
 
-# <a name="features"> 🌴 Features</a>
-
-## <a name="list-of-features">📝 List of features</a>
-
-1. 📺 [How can I report my issue ?](features/how-can-i-report-my-issue/doc.md)
-2. 📺 [How can I build my contract ?](features/how-can-i-build-my-contract/doc.md)
-3. 📺 [How can I load my contract ?](features/how-can-i-load-my-contract/doc.md)
-4. 📺 [How can I move my contract ?](features/how-can-i-move-my-contract/doc.md)
-5. 📺 [How can I edit my fixings ?](features/how-can-i-edit-my-fixings/doc.md)
-
-## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
-
-The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to share your ideas! We are happy to discuss with you about your personnal needs and the feasibility of your project.
-
-> [!NOTE]
-> If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qa` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
-
-## <a name="found-a-bug-?">🔎 Found a bug ?</a>
-
-Feel free to report your issue (see [how-can-i-report-my-issue-?](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description here [issues](https://github.com/matt-charr/qa-demo/issues). For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
-
-> [!IMPORTANT]
-> `qa` embbeds a mecanism to save and open your current mockup for further usage. If possible please attach your mockup file together with the relevant data json files and contract cpp/json files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly.
-
-# <a name = "how-can-i-contribute-?"> 🙌 How can I contribute ?</a>
-
-`qa-factory` is a repository where you can:
-
-- Contribute your payoffs functions (<em>src/</em> and <em>include/</em>) and your contracts (<em>tests/</em>).
-
-1. Fork the [repo](https://github.com/matt-charr/qa-factory).
-2. Clone your fork.
-
-```bash
-
-# clone qa-factory repository.
-git clone https://github.com/matt-charr/qa-factory.git
-
-```
-
-4. Make your master peace.
-5. Submit your pull request.
-
-- Use additionnal features (functions) provided by other users to ease your contract design.
-
-In order to do this, you just need to clone it inside your <em>factory</em> directory.
-
-```bash
-
-# go to factory.
-cd factory &&
-
-# clone qa-factory repository.
-git clone https://github.com/matt-charr/qa-factory.git
-
-```
-
 # <a name="licence">📜 Licence</a>
 
 ```text
-Copyright (C) 2023 Matthieu Charrier. All rights reserved.
-This file is part of the project QA - Quantitative Analytics.
-Hence the latter remains the exclusive property of its author.
-Accordingly, no part of this document may be used in any form for professional or commercial purposes
+Copyright © 2023 QA - Quantitative Analytics. All rights reserved.
+This file is part of the project QA - Quantitative Analytics. 
+Hence the latter remains the exclusive property of its author. 
+Accordingly, no part of this document may be used or transmitted 
+in any form for professional, educational or commercial purposes 
 without the express permission of Matthieu Charrier.
 ```

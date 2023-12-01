@@ -8,7 +8,7 @@
 
 <div align="left">
   <div>
-    <img src="Capture5.PNG" width="600" height="200"/>
+    <img src="captures/Capture1.PNG" width="600" height="200"/>
   </div>
 </div>
 
@@ -16,34 +16,34 @@
 
 <div align="left">
   <div>
-    <img src="Capture6.PNG" width="1000" height="100"/>
+    <img src="captures/Capture2.PNG" width="1000" height="100"/>
   </div>
 </div>
 
-3. You can inspect the script, observe contract fixings and underlyings together with their correlation matrix, eventually you have a complete view on the contract past/future lifetime events i.e. fixings, payments, barriers, purchases and sells, settings.
+3. You can now inspect the script, observe contract fixings and underlyings together with their correlation matrix, eventually you have a complete view on the contract past/future lifetime events i.e. fixings, payments, barriers, purchases, sells and also settings.
 
 <div align="left">
   <div>
-    <img src="Capture7.PNG" width="1000" height="300"/>
+    <img src="captures/Capture3.PNG" width="1000" height="300"/>
   </div>
 </div>
 <div align="left">
   <div>
-    <img src="Capture8.PNG" width="1000" height="150"/>
+    <img src="captures/Capture4.PNG" width="1000" height="150"/>
   </div>
 </div>
 <div align="left">
   <div>
-    <img src="Capture9.PNG" width="1000" height="500"/>
+    <img src="captures/Capture5.PNG" width="1000" height="500"/>
   </div>
 </div>
 <div align="left">
   <div>
-    <img src="Capture10.PNG" width="1000" height="150"/>
+    <img src="captures/Capture6.PNG" width="1000" height="150"/>
   </div>
 </div>
 <div align="left">
   <div>
-    <img src="Capture11.PNG" width="1000" height="300"/>
+    <img src="captures/Capture7.PNG" width="1000" height="300"/>
   </div>
 </div>
