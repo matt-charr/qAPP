@@ -140,6 +140,9 @@ When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is throw
 3. 📺 [How can I load my contract ?](features/how-can-i-load-my-contract/doc.md)
 4. 📺 [How can I move my contract ?](features/how-can-i-move-my-contract/doc.md)
 5. 📺 [How can I edit my fixings ?](features/how-can-i-edit-my-fixings/doc.md)
+6. 📺 [How can I manage my data sources ?](features/how-can-i-manage-my-data-sources/doc.md)
+7. 📺 [How can I feed my data sources ?](features/how-can-i-feed-my-data-sources/doc.md)
+8. 📺 [How can I display my observable ?](features/how-can-i-display-my-observable/doc.md)
 
 ## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
 
