@@ -49,9 +49,9 @@
 <td>
 <h3>📰 Latest news </h3>
 <ul>
-  <li> <ins>2023-11-18</ins>
+  <li> <ins>2023-12-03</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.0">qa-v0.1.0</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.1">qa-v0.1.0</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -59,7 +59,7 @@
 <td>
 <h3>👷 Current work </h3>
 <ul>
-<li> <ins>2023-11-18</ins>
+<li> <ins>2023-12-03</ins>
 <ul>
     <li>📗(<strong>Project</strong>) Handle early exercise feature. </li>
     <li>📙(<strong>Feature</strong>) Make PDE pricer framework.</li>
@@ -232,6 +232,12 @@ At the end of each dev session, a new unit test is required to be submitted to t
 | Linux-Debug                   | ubuntu-latest  | CMake-3.22.1 | Unix Makefiles        |x64              | Debug      | GCC-11.4.0          | ✅     |
 | MacOS-Release                 | macos-latest   |  | Unix Makefiles        |x64              | Release    |                     | ❌     |
 | MacOS-Debug                   | macos-latest   |  | Xcode                 |x64              | Debug      |                     | ❌     |
+
+<div align="left">
+  <div>
+    <img src="captures/Capture5.PNG" width="500" height="200"/>
+  </div>
+</a>
 
 > [!NOTE]
 > `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds, tests and deployment on Linux. We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
