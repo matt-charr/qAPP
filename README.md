@@ -104,7 +104,7 @@
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
-To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qa-demo/releases/tag) and download the asset that corresponds to your operating system.
+To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qa-demo/releases) and download the asset that corresponds to your operating system.
 
 <div align="left">
   <div>
