@@ -51,7 +51,7 @@
 <ul>
   <li> <ins>2023-12-10</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.2">qa-v0.1.2</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/QA">qa-v0.1.3</a> is out 🚀</li>
 </ul>
   <li> <ins>2023-12-03</ins>
 <ul>
