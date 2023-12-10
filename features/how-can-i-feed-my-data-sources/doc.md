@@ -1,9 +1,9 @@
 # 📺 How can I feed my data sources ?
 
 > [!NOTE]
-> Enjoy the below experience by opening the `mockup` [features/how-can-i-feed-my-data-sources/mockup.json](mockup.json) in `qapp`
+> Enjoy the below experience by opening the mockup <em>qa/mockup/how-can-i-feed-my-data.json</em> in `qapp` (See [How can I report my issue](../features/how-can-i-report-my-issue/doc.md))
 
-In <em>Data/Feed</em>, you can populate all the databases contained in your sources (see [How can I manage my data sources ?](../features/how-can-i-manage-my-data-sources/doc.md)) using external market data providers like Yahoo Finance.
+In <em>Data/Feed</em> tab bar item, you can populate all the databases contained in your sources (see [How can I manage my data ?](../features/how-can-i-manage-my-data/doc.md)) using external market data providers like Yahoo Finance.
 
 <div align="left">
   <div>

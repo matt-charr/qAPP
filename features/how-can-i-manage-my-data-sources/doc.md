@@ -1,7 +1,7 @@
 # 📺 How can I manage my data sources ?
 
-Most of the actions triggered by `qapp` require market data. For instance, this is the case when you load your contract (see [How can I load my contract ?](../features/how-can-i-load-my-contract/doc.md)) or when you exit your fixings (see [How can I edit my fixings ?](../features/how-can-i-load-my-contract/doc.md)) where at inception, `qa` first asks for the market data that he needs to perform the action.
-In <em>Menu/Data/Manager</em>, you can control which sources `qa` is going to use and set their rank in the list of priorities.
+Most of the actions triggered by `qapp` require market data. For instance, this is the case when you load your contract (see [How can I load my contract ?](../features/how-can-i-load-my-contract/doc.md)) or when you edit your fixings (see [How can I edit my fixings ?](../features/how-can-i-load-my-contract/doc.md)) where at inception, `qa` first asks for the market data that it needs to perform the action.
+In <em>Data/Manager</em> tab bar item, you can control which sources `qa` is going to use and set their rank in the list of priorities.
 
 <div align="left">
   <div>

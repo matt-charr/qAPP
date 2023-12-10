@@ -49,13 +49,13 @@
 <td>
 <h3>📰 Latest news </h3>
 <ul>
+  <li> <ins>2023-12-10</ins>
+<ul>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.1">qa-v0.1.2</a> is out 🚀</li>
+</ul>
   <li> <ins>2023-12-03</ins>
 <ul>
     <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.1">qa-v0.1.1</a> is out 🚀</li>
-</ul>
-  <li> <ins>2023-11-30</ins>
-<ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.0">qa-v0.1.0</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -104,29 +104,9 @@
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
-To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qa-demo/releases) and download the asset that corresponds to your operating system.
+To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qa-demo/releases) and download the asset that corresponds to your operating system. After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qa` directory. Open the `qapp` executable located at <em>qa/bin</em> and you arrive to the main page. 
 
-<div align="left">
-  <div>
-    <img src="captures/Capture1.PNG" width="500" height="200"/>
-  </div>
-</div>
-
-After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qa` directory. 
-
-<div align="left">
-  <div>
-    <img src="captures/Capture2.PNG" width="500" height="200"/>
-  </div>
-</div>
-
-Open the `qapp` executable located at <em>qa/bin</em>, you arrive to the main page which is a logger frame that displays the messages that `qacore` returns after each actions.
-
-<div align="left">
-  <div>
-    <img src="captures/Capture3.PNG" width="500" height="200"/>
-  </div>
-</div>
+On the left hand side of the screen is located a logger that displays the messages that `qacore` returns after each actions.
 
 Each action triggers by `qapp` - typically pressing a button - throws <FONT COLOR="BLUE"><em>information</em></FONT>, <FONT COLOR="GREEN"><em>warnings</em></FONT>, <FONT COLOR="ORANGE"><em>errors</em></FONT> and/or <FONT COLOR="RED"><em>exceptions</em></FONT>.
 - If an <FONT COLOR="RED"><em>exception</em></FONT> is thrown, it means something went wrong dev side. In that case please [report your issue](https://github.com/matt-charr/qa-demo/issues) by dropping your `mockup` file together with your contract and data json files if any (see [How can I report my issue](features/how-can-i-report-my-issue/doc.md)).
@@ -147,6 +127,7 @@ When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is throw
 6. 📺 [How can I manage my data sources ?](features/how-can-i-manage-my-data-sources/doc.md)
 7. 📺 [How can I feed my data sources ?](features/how-can-i-feed-my-data-sources/doc.md)
 8. 📺 [How can I display my observable ?](features/how-can-i-display-my-observable/doc.md)
+9. 📺 [How can I price my contract with Monte Carlo ?](features/how-can-i-price-my-contract-with-monte-carlo/doc.md)
 
 ## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
 
