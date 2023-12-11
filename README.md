@@ -222,7 +222,7 @@ At the end of each dev session, a new unit test is required to be submitted to t
   <div>
     <img src="captures/Capture5.PNG" width="500" height="200"/>
   </div>
-</a>
+</div>
 
 > [!NOTE]
 > `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds, tests and deployment on Linux. We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
