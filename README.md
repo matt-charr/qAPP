@@ -49,13 +49,9 @@
 <td>
 <h3>📰 Latest news </h3>
 <ul>
-  <li> <ins>2023-12-10</ins>
+  <li> <ins>2023-12-17</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/QA">qa-v0.1.3</a> is out 🚀</li>
-</ul>
-  <li> <ins>2023-12-03</ins>
-<ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/v0.1.1">qa-v0.1.1</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases/tag/QA">qa-v2023.1.1</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -65,10 +61,10 @@
 <ul>
 <li> <ins>2023-12-03</ins>
 <ul>
-    <li>📗(<strong>Project</strong>) Handle early exercise feature. </li>
-    <li>📙(<strong>Feature</strong>) Make PDE pricer framework.</li>
-    <li>📘(<strong>Misc</strong>) Handle intraday fixings/payments/exercises.</li>
-    <li>📕(<strong>Issue</strong>)</li>
+    <li>📗(<strong>Project</strong>) Handling early exercise feature. </li>
+    <li>📙(<strong>Feature</strong>) Making Static replication 1D pricer.</li>
+    <li>📘(<strong>Misc</strong>) Handling intraday fixings/payments/exercises.</li>
+    <li>📕(<strong>Issue</strong>) Checking why remote database connection takes so long</li> 
 </ul>
 </ul>
 </td>
@@ -128,6 +124,7 @@ When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is throw
 7. 📺 [How can I feed my data sources ?](features/how-can-i-feed-my-data-sources/doc.md)
 8. 📺 [How can I display my observable ?](features/how-can-i-display-my-observable/doc.md)
 9. 📺 [How can I price my contract with Monte Carlo ?](features/how-can-i-price-my-contract-with-monte-carlo/doc.md)
+10. 📺 [How can I inspect my Monte Carlo ?](features/how-can-i-inspect-my-monte-carlo/doc.md)
 
 ## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
 
@@ -229,7 +226,13 @@ At the end of each dev session, a new unit test is required to be submitted to t
 
 ## <a name="continuous-delivery">🍇 Continuous Delivery</a>
 
-Our team delivers a release or a patch on a regular basis, and strives to respect as closely as possible the [semantic versioning](https://semver.org/). To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo). Here are the configurations on which we deploy our package:
+Our team delivers a release on a weekly basis:
+
+- ~One <strong>major</strong> release per year (coming out with the <em>current project</em>)
+- ~One <strong>minor</strong> release per month (coming out with the <em>current feature</em>)
+- ~One <strong>patch</strong> release per week (coming out with the <em>current issue</em>)
+   
+To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo). Here are the configurations on which we deploy our package:
 
 | Name                          | OS             | CMake        | Generator             | Architecture | Build Type | Compiler            | Status  |
 | ----------------------------- | -------------- | -------------------- | --------------------- | ------------ | ---------- | ------------------  | ------- |

@@ -5,9 +5,9 @@
 
 1. Load the contract json file <em>factory/examples/autocall.json</em> ([How can I load my contract ?](../features/how_can_i_load_my_contract/doc.md))
 
-2. Go to <em>Model/Configuration</em> tab bar item, and select your model to <em>BlackScholes</em>
+2. Go to <em>Model/Configuration</em> tab bar item, and set your model to <em>BlackScholes</em>
 
-3. Go to <em>Pricer/Pricer</em> tab bar item and hiy <em>price</em>. You can check the pricing configuration in the tab bar item <em>Pricer/Configuration</em> where you can play with a bunch of parameters such as:
+3. Go to <em>Pricer/Pricer</em> tab bar item and hit <em>price</em>. You can check the pricing configuration in the tab bar item <em>Pricer/Configuration</em> where you can play with a bunch of parameters such as:
 
 - <em>antithetic factor</em>: Decrease the standard deviation. 
 - <em>number of threads</em>: Decrease the computational time (in some cases)
