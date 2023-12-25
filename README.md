@@ -49,9 +49,9 @@
 <td>
 <h3>📰 Latest news </h3>
 <ul>
-  <li> <ins>2023-12-17</ins>
+  <li> <ins>2023-12-25</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.1.1</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.1.2</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -59,11 +59,11 @@
 <td>
 <h3>👷 Current work </h3>
 <ul>
-<li> <ins>2023-12-03</ins>
+<li> <ins>2023-12-25</ins>
 <ul>
     <li>📗(<strong>Project</strong>) Handling early exercise feature. </li>
-    <li>📙(<strong>Feature</strong>) Making Static replication 1D pricer.</li>
-    <li>📘(<strong>Misc</strong>) Handling intraday fixings/payments/exercises.</li>
+    <li>📙(<strong>Feature</strong>) Making PDE pricing method framework.</li>
+    <li>📘(<strong>Misc</strong>) Making a contract feature(s) solver.</li>
     <li>📕(<strong>Issue</strong>) Checking why remote database connection takes so long</li> 
 </ul>
 </ul>
