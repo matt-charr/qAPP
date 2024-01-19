@@ -1,6 +1,7 @@
-from device.qalgebra import *
+from qapy.algebra.language import *
+
 CONTRACT(
-    "call_composite",
+    "factory/tests/output/call_composite",
     PAY(
         MAX(
             SPOT_COMPOSITE("undl1", "2022-05-03", "cc2") / SPOT_COMPOSITE("undl1", "2021-05-03", "cc2") - 1,

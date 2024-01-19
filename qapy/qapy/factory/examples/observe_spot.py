@@ -1,4 +1,4 @@
-from device.qalgebra import *
+from qapy.algebra.language import *
 
 my_schedule = [
     "2021-05-03",
@@ -368,6 +368,6 @@ my_schedule = [
 ]
 
 OBSERVABLE(
-    "observe_spot",
+    "factory/tests/output/observe_spot",
     [OBSERVE(date, SPOT("undl1", date)) for date in my_schedule]
 )

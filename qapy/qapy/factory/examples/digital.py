@@ -1,7 +1,7 @@
-from device.qalgebra import *
+from qapy.algebra.language import *
 
 CONTRACT(
-    "digital",
+    "factory/tests/output/digital",
     IF(SPOT("undl1", "2021-11-03") > 100.)(
         BUY(
             "2021-11-05",

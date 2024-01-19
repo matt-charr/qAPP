@@ -1,6 +1,7 @@
-from device.qalgebra import *
+from qapy.algebra.language import *
+
 CONTRACT(
-    "basket_call",
+    "factory/tests/output/basket_call",
     PAY(
         MAX(
             (

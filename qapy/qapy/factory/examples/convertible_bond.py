@@ -1,4 +1,4 @@
-from device.qalgebra import *
+from qapy.algebra.language import *
 
 schedule = [
     "2022-05-03",
@@ -36,6 +36,6 @@ def convertible_bond(i = 0):
     )
 
 CONTRACT(
-    "convertible_bond",
+    "factory/tests/output/convertible_bond",
     convertible_bond()
 )
