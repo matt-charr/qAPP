@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: qapi
+Version: 0.2.1.post5+git.3dd74797.dirty
+Summary: Welcome to qapi - a component of qa ecosystem: Design your own financial contract with algebra | Run automated tasks on your contracts.
+Author: mattcharr
+Author-email: matthieu.charrier0pro@gmail.com
+Maintainer-email: mattcharr <matthieu.charrier0pro@gmail.com>
+Project-URL: qapi, https://github.com/matt-charr/qapi
+Project-URL: qapi-issues, https://github.com/matt-charr/qapi/issues
+Project-URL: qa-demo, https://github.com/matt-charr/qa-demo
+Project-URL: qa-demo-releases, https://github.com/matt-charr/qa-demo/releases
+Keywords: cpp,finance,quantitative,trading,structured,products
+Classifier: Programming Language :: Python :: 3
+Classifier: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.

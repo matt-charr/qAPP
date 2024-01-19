@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[project]
+name = "qapi"
+dynamic = ["version"]
+authors = [
+  {email = "matthieu.charrier0pro@gmail.com"},
+  {name = "mattcharr"}
+]
+maintainers = [
+  {name = "mattcharr", email = "matthieu.charrier0pro@gmail.com"}
+]
+description = "Welcome to qapi - a component of qa ecosystem: Design your own financial contract with algebra | Run automated tasks on your contracts."
+readme = "README.md"
+keywords = [ "cpp", "finance", "quantitative", "trading", "structured", "products" ]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/matt-charr/qa-demo"
+Issues = "https://github.com/matt-charr/qa-demo/issues"
+Releases = "https://github.com/matt-charr/qa-demo/releases"
