@@ -1,9 +1,0 @@
-LICENCE
-README.md
-pyproject.toml
-src/qapi/__init__.py
-src/qapi/algebra.py
-src/qapi.egg-info/PKG-INFO
-src/qapi.egg-info/SOURCES.txt
-src/qapi.egg-info/dependency_links.txt
-src/qapi.egg-info/top_level.txt
