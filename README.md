@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="LOGO.png" width="900" height="250"/>
+<img src="LOGO.png" width="900" height="300"/>
 </h1><br>
 
 <tr>
@@ -37,14 +37,16 @@
   <td><a href="" alt="Hostinger"><img src="https://img.shields.io/badge/Linode-00A95C?style=for-the-badge&logo=Linode&logoColor=white" alt="Hostinger"/></a></td>
 </tr>
 
+# 🍺 Project Status
+
 ⭐ Star the project on GitHub helps it to progress.
 
 <td>
 <h3>📰 Latest news </h3>
 <ul>
-  <li> <ins>2024-01-07</ins>
+  <li> <ins>2024-01-21</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.2.0</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.2.1</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -52,12 +54,12 @@
 <td>
 <h3>👷 Current work </h3>
 <ul>
-<li> <ins>2024-01-07</ins>
+<li> <ins>2024-01-21</ins>
 <ul>
     <li>📗(<strong>Long Term Project</strong>) Handling early exercise feature. </li>
     <li>📙(<strong>Short Term Project</strong>) Working on a C++ API library.</li>
-    <li>📘(<strong>Misc</strong>) Making a contract feature(s) solver.</li>
     <li>📕(<strong>Issue</strong>) Checking why remote database connection takes so long</li> 
+    <li>📘(<strong>Misc</strong>) Making a contract feature(s) solver.</li>
 </ul>
 </ul>
 </td>
@@ -69,8 +71,8 @@
 <ul>
     <li>📗(<strong>Long Term Project</strong>) Implemented orthogonal polynomials framework together with quadratures techniques. </li>
     <li>📙(<strong>Short Term Project</strong>) Implemented PDE pricer framework, Romberg-Richardson extrapolation and theta schemes.</li>
-    <li>📘(<strong>Misc</strong>) Implemented intraday fixings, payments and exercises.</li>
-    <li>📕(<strong>Issue</strong>) Identified stack overflow issue for deep conditionnal contracts (ex: 10y daily convertible bond)</li> 
+    <li>📕(<strong>Issue</strong>) Identified stack overflow issue for deep conditionnal contracts (ex: 10y daily convertible bond)</li>
+    <li>📘(<strong>Misc</strong>) Implemented qapy, a python project to design and generate your contract, to read via qapp.</li>
 </ul>
 </ul>
 </td>
