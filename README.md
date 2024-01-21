@@ -1,9 +1,6 @@
-<div align="center">
-  <div>
-    <img src="LOGO.png" width="900" height="250"/>
-  </div>
-</a>
-</div>
+<h1 align="center">
+<img src="LOGO.png" width="900" height="250"/>
+</h1><br>
 
 <tr>
   <td><a href="https://github.com/matt-charr/qa-demo/stargazers">
