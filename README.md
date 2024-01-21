@@ -1,48 +1,44 @@
 <div align="center">
   <div>
-    <img src="LOGO.jpg" width="900" height="600"/>
+    <img src="LOGO.png" width="900" height="250"/>
   </div>
 </a>
-
-# QA
-
-<em>Design, monitor and price your own financial contracts.</em>
-
 </div>
 
-# 🍺 Project Status
-
-<table class="no-border">
-  <tr>
-    <td><a href="https://github.com/matt-charr/qa-demo/stargazers">
-    <img src="https://img.shields.io/github/stars/matt-charr/qa-demo?style=social"></td>
-    <td><a href="https://github.com/matt-charr/qa-demo/network/members">
-    <img src="https://img.shields.io/github/forks/matt-charr/qa-demo?style=social"></td>
-    <td><a href="https://github.com/matt-charr/qa-demo/watchers">
-    <img src="https://img.shields.io/github/watchers/matt-charr/qa-demo?style=social"></td>
-    <td><a href="https://github.com/matt-charr/qa-demo/issues">
-    <img src="https://img.shields.io/github/issues/matt-charr/qa-demo?style=social"></td>
-  <tr>
-    <td><a href="https://twitter.com/matt_charr" alt="twitter"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a></td>
-    <td><a href="https://www.twitch.tv/mattcharr" alt="twitch"><img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" alt="Twitch"></a></td>
-    <td><a href="https://www.linkedin.com/in/matthieu-charrier-080820134/" alt="linkedin"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin"></a></td>
-    <td><a href="https://github.com/matt-charr/" alt="GitHub"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a></td>
-  <tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C"/></td>
-    <td><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/></td>
-    <td><img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" alt="MariaDB"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"/></td>
-    <td><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/></td>
-    <td><img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white" alt="MacOS"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/></td>
-    <td><img src="https://img.shields.io/badge/Linode-00A95C?style=for-the-badge&logo=Linode&logoColor=white" alt="Hostinger"/></td>
-  </tr>
-</table>
+<tr>
+  <td><a href="https://github.com/matt-charr/qa-demo/stargazers">
+  <img src="https://img.shields.io/github/stars/matt-charr/qa-demo?style=social"></td>
+  <td><a href="https://github.com/matt-charr/qa-demo/network/members">
+  <img src="https://img.shields.io/github/forks/matt-charr/qa-demo?style=social"></td>
+  <td><a href="https://github.com/matt-charr/qa-demo/watchers">
+  <img src="https://img.shields.io/github/watchers/matt-charr/qa-demo?style=social"></td>
+  <td><a href="https://github.com/matt-charr/qa-demo/issues">
+  <img src="https://img.shields.io/github/issues/matt-charr/qa-demo?style=social"></td>
+</tr>
+<br>
+<tr>
+  <td><a href="https://twitter.com/matt_charr" alt="twitter"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a></td>
+  <td><a href="https://www.twitch.tv/mattcharr" alt="twitch"><img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" alt="Twitch"></a></td>
+  <td><a href="https://www.linkedin.com/in/matthieu-charrier-080820134/" alt="linkedin"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin"></a></td>
+  <td><a href="https://github.com/matt-charr/" alt="GitHub"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a></td>
+</tr>
+<br>
+<tr>
+  <td><img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C"/></td>
+  <td><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/></td>
+  <td><img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" alt="MariaDB"/></td>
+</tr>
+<br>
+<tr>
+  <td><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"/></td>
+  <td><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/></td>
+  <td><img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white" alt="MacOS"/></td>
+</tr>
+<br>
+<tr>
+  <td><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/></td>
+  <td><img src="https://img.shields.io/badge/Linode-00A95C?style=for-the-badge&logo=Linode&logoColor=white" alt="Hostinger"/></td>
+</tr>
 
 ⭐ Star the project on GitHub helps it to progress.
 
