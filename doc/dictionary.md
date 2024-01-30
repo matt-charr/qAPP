@@ -1,5 +1,7 @@
 # 📺 Dictionary
 
+<br>
+
 - **syn**: <FONT COLOR="BLUE">SPOT</FONT>(`underlying ticker`, `fixing date`, `fixing date shift` = '') <br>
 **doc**: <em><FONT COLOR="GREEN">The value of the fixing of the underlying identified by the ticker `underlying ticker` recorded at date `fixing date` (updated with a date shift of `fixing date shift` if provided)</FONT></em>
 
