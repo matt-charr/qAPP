@@ -35,11 +35,11 @@ CONTRACT(
 
 You see ? Simple, intuitive and easily readable. 
 
-Checkout the [Dictionary](doc/dictionary.md) to explore all the symbols available to describe any derivatives you have in mind.
+Checkout the [Dictionary](dictionary.md) to explore all the symbols available to describe any derivatives you have in mind.
 
 You can find other examples of contract scripts in `factory/examples` located in your `qa` installation folder.
 
-3. **Execute your contract script**
+1. **Execute your contract script**
 
 ```bash
 python -u my_contract.py
