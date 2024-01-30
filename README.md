@@ -44,9 +44,9 @@
 <td>
 <h3>📰 Latest news </h3>
 <ul>
-  <li> <ins>2024-01-21</ins>
+  <li> <ins>2024-01-30</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.2.1</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.2.3</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -54,12 +54,12 @@
 <td>
 <h3>👷 Current work </h3>
 <ul>
-<li> <ins>2024-01-21</ins>
+<li> <ins>2024-01-30</ins>
 <ul>
     <li>📗(<strong>Long Term Project</strong>) Handling early exercise feature. </li>
-    <li>📙(<strong>Short Term Project</strong>) Working on a C++ API library.</li>
+    <li>📙(<strong>Short Term Project</strong>) Working on a C++/Python API library.</li>
     <li>📕(<strong>Issue</strong>) Checking why remote database connection takes so long</li> 
-    <li>📘(<strong>Misc</strong>) Making a contract feature(s) solver.</li>
+    <li>📘(<strong>Misc</strong>) Making a time ladder: produce a grid of price for a set of dates</li>
 </ul>
 </ul>
 </td>
@@ -69,17 +69,17 @@
 <ul>
 <li> <ins>2024-01-07</ins>
 <ul>
-    <li>📗(<strong>Long Term Project</strong>) Implemented orthogonal polynomials framework together with quadratures techniques. </li>
+    <li>📗(<strong>Long Term Project</strong>) Implemented Either structure: Contract buyer or seller can make choices during the contract lifetime. </li>
     <li>📙(<strong>Short Term Project</strong>) Implemented PDE pricer framework, Romberg-Richardson extrapolation and theta schemes.</li>
-    <li>📕(<strong>Issue</strong>) Identified stack overflow issue for deep conditionnal contracts (ex: 10y daily convertible bond)</li>
-    <li>📘(<strong>Misc</strong>) Implemented qapy, a python project to design and generate your contract, to read via qapp.</li>
+    <li>📕(<strong>Issue</strong>) Removed warnings and turned warnings to errors at compile-time</li>
+    <li>📘(<strong>Misc</strong>) Implemented qapy, a python project to design and generate your contract.</li>
 </ul>
 </ul>
 </td>
 
 ## 📋 Table of Contents
 
-1. 💥 [Introduction](#introduction)
+1. 💥 [Genesis](#genesis)
 2. ⚡️ [Quick Start](#quick-start)
 3. 🌴 [Features](#features)
    1. 📝 [List of features](#list-of-features)
@@ -94,17 +94,18 @@
    5. 🍇 [Continuous Delivery](#continuous-delivery)
 6. 📜 [Licence](#licence)
 
-# <a name="introduction">💥Introduction</a>
+# <a name="genesis">Genesis</a>
 
-`QA-Quantitative Analytics` is an ecosystem of components that helps you with designing, monitoring and pricing your own financial derivatives.
+<div align="center">
+<em>"Design, price and monitor your own exotic financial derivatives contracts"</em>
+</div> <br>
 
-- **qacore** (<em>private</em>) -- The core library of the project that is the agregation of embedded libraries in charge of implementing <em>contract</em>, <em>data</em>, <em>modeling</em> and <em>pricing</em> engine.
+`QA-Quantitative Analytics` is an ecosystem of projects that helps you with designing, pricing and monitoring your own derivatives.
 
-- **qapp** (<em>public</em>) -- The GUI desktop application through which the user can interact with `qacore` and send all kind of request such as pricing a contract, feed a database, see model calibration results, inspect the contract lifetime events and much more.
-
-- **qalgebra** (<em>private</em>) -- `qacore` uses the power of algebraic contract description and `qalgebra` is the library that implements it: A customized language easily understandable by human and machine to design your contract with a self-explanatory script. Thanks to qalgebra, the user can write down a contract using this simple language and send it to `qa`  to run any generic actions such as pricing, monitoring and much more. The whole `qa` ecosystem is built arround `qalgebra` device.
-
-- **qafactory** (<em>public</em>) -- For the users to benefit their own `qalgebra` experience and price their own contracts, our developpers created [qa-factory](https://github.com/matt-charr/qa-factory), a friendly repository where all programmer enthusiasts can use and contribute its favorite payoff functions and contracts to eventually use it from `qapp`. This game room is yours, feel free to populate and use it at your convenience.
+- **qacore** (<em>private</em>) -- The core library of the project that is the agregation of embedded libraries in charge of implementing **contract**, **data**, **models** and **pricers** architectures. Its codebase is hosted on a private GitHub repository which access is restricted to our developpers only.
+- **qapi** (<em>public</em>) -- `qa` provides a C++/python API to run your analysis: For example, you can inspect your contract features, compute its price together with greeks, run (multidimensional) scenario and contractual feature ladder/solver, plug and inspect your own market data select a financial model and inspect its characteristics ...
+- **qapp** (<em>public</em>) -- The GUI desktop application that requests `qapi` to run your analysis and visualize the results within a nice graphical interface !
+- **qalgebra** (<em>public</em>) -- `qacore` uses the power of <em>algebraic contract description</em> and `qalgebra` is the python component that implements it: A customized language easily understandable by human and machine to design your contract from a self-explanatory script. Thanks to qalgebra, the user can write down a contract using this simple language. The whole `qa` ecosystem is built arround `qalgebra` device.
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
@@ -123,111 +124,96 @@ When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is throw
 
 ## <a name="list-of-features">📝 List of features</a>
 
-1. 📺 [How can I report my issue ?](features/how-can-i-report-my-issue/doc.md)
-2. 📺 [How can I build my contract ?](features/how-can-i-build-my-contract/doc.md)
-3. 📺 [How can I load my contract ?](features/how-can-i-load-my-contract/doc.md)
-4. 📺 [How can I move my contract ?](features/how-can-i-move-my-contract/doc.md)
-5. 📺 [How can I edit my fixings ?](features/how-can-i-edit-my-fixings/doc.md)
-6. 📺 [How can I manage my data sources ?](features/how-can-i-manage-my-data-sources/doc.md)
-7. 📺 [How can I feed my data sources ?](features/how-can-i-feed-my-data-sources/doc.md)
-8. 📺 [How can I display my observable ?](features/how-can-i-display-my-observable/doc.md)
-9. 📺 [How can I price my contract with Monte Carlo ?](features/how-can-i-price-my-contract-with-monte-carlo/doc.md)
-10. 📺 [How can I inspect my Monte Carlo ?](features/how-can-i-inspect-my-monte-carlo/doc.md)
+1. 📺 [Dictionary](doc/dictionary.md)
+2. 📺 [How can I design my contract ?](doc/how_can_i_design_my_contract.md)
 
 ## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
 
-The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to share your ideas! We are happy to discuss with you about your personnal needs and the feasibility of your project.
+The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to [share your ideas](https://github.com/matt-charr/qa-demo/issues) under the tag <em>features</em> ! We are happy to discuss with you about your personnal needs and the feasibility of your project.
 
 > [!NOTE]
 > If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qa` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
 
 ## <a name="found-a-bug-?">🔎 Found a bug ?</a>
 
-Feel free to [report your issue](https://github.com/matt-charr/qa-demo/issues) (see [How can I report my issue ?](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description. For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
+Feel free to [report your issue](https://github.com/matt-charr/qa-demo/issues) (see [How can I report my issue](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description. For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
 
 > [!IMPORTANT]
-> `qa` embbeds a mecanism to save and open your current `mockup` for further usage. If possible please attach your `mockup` file together with the relevant data json files and contract cpp/json files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to be sort it quickly. See [How can I report my issue ?](features/how-can-i-report-my-issue/doc.md) for further details on how to proceed.
+> `qa` embbeds a mecanism to save and open your current `mockup` for further usage. If possible please attach your `mockup` file together with the relevant data json and contract external files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to sort it quickly. See [How can I report my issue](features/how-can-i-report-my-issue/doc.md) for further details on how to proceed.
 
 # <a name = "how-can-i-contribute-?"> 🙌 How can I contribute ?</a>
 
-`qa-factory` is a repository where you can:
+We are building a payoff base to:
+- Challenge our tool and push it to its limits.
+- Enhance our unit and integration tests.
 
-- Contribute your payoff functions (<em>src/</em> and <em>include/</em>) and your contracts (<em>tests/</em>).
+We propose to every structured products and programmer enthusiasts to contribute its favorite payoff within a shared folder. Here is the process to follow:
 
-1. Fork the [repo](https://github.com/matt-charr/qa-factory).
-2. Clone your fork.
+- Design your contract (see [How can I design my contract](doc/how_can_i_design_my_contract.md))
+
+- Fork and clone this repository.
 
 ```bash
-
-# clone qa-factory repository.
-git clone https://github.com/matt-charr/qa-factory.git
-
+git clone https://github.com/matt-charr/qa-demo.git
 ```
 
-4. Make your masterpeace.
-5. Submit your pull request.
-
-- Use additionnal features (functions) provided by other users to ease your contract design.
-
-In order to do this, you just need to clone it inside your <em>factory</em> directory.
+- Drop your contract python file(s) into <em>qa-demo/factory</em> folder.
 
 ```bash
+mv my_contract.py qa-demo/factory/my_contract.py
+```
 
-# go to factory.
-cd factory &&
+- Commit, push and pull request.
 
-# clone qa-factory repository.
-git clone https://github.com/matt-charr/qa-factory.git
-
+```bash
+cd qa-demo 
+git commit -am "Added my contract"
+git push origin master
 ```
 
 # <a name="work-style">💻 Insights</a>
 
 ## <a name="developement"> 🍯 Developement</a>
 
-Once a bug or a new feature is submitted, an issue is created with the corresponding flag (bug, feature, project, creation). 
-Once picked from the stack, a dev branch is created, comes down locally to the developper machine and this is where the fun begins 😃
+Once a bug or a feature is submitted, an issue is created with the corresponding flag (<em>bug</em>, <em>feature</em>, <em>short project</em>, <em>long project</em>, <em>misc</em>). Once picked from the stack, a dev branch is created, comes down locally to the developper machine and this is where the fun begins 😃
 
 ## <a name="build"> 🍏 Build</a>
 
-`qa` uses [CMake](https://cmake.org/) as a build system and has its main code base located on a private repository which access is restricted to our developers only. Besides, it relies on a bunch of repository dependencies that are required at `qa` developpement/build time. <br> 
-It is to the following projects that we owe our heartfelt thanks for their generous Open Source contribution.
+`qa` uses [CMake](https://cmake.org/) as a build system and has its main code base located on a private repository which access is restricted to our developers only. Besides, it relies on a bunch of repository dependencies that are required at `qa` build time. <br> 
+It is to the following projects that we owe our heartfelt thanks for their generous open source contribution.
 
-- [ImGui]()
-- [ImPlot]()
-- [ImFileBrowser]()
-- [MariaDB]()
-- [Curl]()
-- [OpenGL]()
-- [Glfw]()
-- [JsonCpp]()
-- [GTest]()
-- [Eigen]()
+- [ImGui](https://github.com/matt-charr/imgui-for-qa)
+- [ImPlot](https://github.com/matt-charr/implot-for-qa)
+- [ImFileBrowser](https://github.com/matt-charr/imfilebrowser-for-qa)
+- [MariaDB](https://github.com/matt-charr/mariadb-for-qa)
+- [Curl](https://github.com/matt-charr/curl-for-qa)
+- [OpenSSL](https://github.com/matt-charr/ssl-for-qa)
+- [Glfw](https://github.com/matt-charr/glfw-for-qa)
+- [JsonCpp](https://github.com/matt-charr/jsoncpp-for-qa)
+- [Eigen](https://github.com/matt-charr/eigen-for-qa)
 
 To load the below dependencies, `qa` uses the power of [superbuild](https://cmake.org/cmake/help/latest/module/ExternalProject.html) feature from CMake. For that purpose, an embedded CMake project is in charge of cloning, building and installing all the dependencies that `qa` requires into a specific folder. That's pretty cool, isn't it ? 😃
 
 ## <a name="tests"> 🍊 Tests</a>
 
-At the end of each dev session, a new unit test is required to be submitted to the test suite together with a contract json file that replicates the expected behavior of the code change. To ensure that the code change effect is not broken by any subsequent modifications, we use the service of [GTest]() as a testing framework.
+In order to ensure that the code change effect is not broken by any subsequent modifications, at the end of each dev session, a new unit test is required to be submitted to the test suite together with a contract file that replicates the expected behavior of the code change.
 
 ## <a name = "continuous-integration">🍈 Continuous Integration</a>
 
-`qa` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows and Linux self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all configurations.
+`qa` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows, Linux and MacOS self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all configurations.
 
-| Name                          | OS             | CMake        | Generator             | Architecture | Build Type | Compiler            | Status  |
-| ----------------------------- | -------------- | -------------------- | --------------------- | ------------ | ---------- | ------------------  | ------- |
-| Windows-Release               | windows-latest | CMake-3.27.2 | MinGW Makefiles       |x64              | Release    | GCC-13.2.0          | ✅     |
-| Windows-Debug                 | windows-latest | CMake-3.27.2 | Visual Studio 17 2022 | x64          | Debug      | MSVC-19.30.30709.0  | ✅     |
-| Linux-Release                 | ubuntu-latest  | CMake-3.22.1 | Unix Makefiles        |x64              | Release    | GCC-11.4.0          | ✅     |
-| Linux-Debug                   | ubuntu-latest  | CMake-3.22.1 | Unix Makefiles        |x64              | Debug      | GCC-11.4.0          | ✅     |
-| MacOS-Release                 | macos-latest   |  | Unix Makefiles        |x64              | Release    |                     | ❌     |
-| MacOS-Debug                   | macos-latest   |  | Xcode                 |x64              | Debug      |                     | ❌     |
+| Name | OS | Configuration | RAM | CMake | CMake Generator | Architecture | Build Type | Compiler | Build Status |
+| ---- | -- | ------------- | --- |------ | --------------- | ------------ | ---------- | -------- | ------------ |
+| Windows-Release | Windows 10 Pro 22H2 19045.3930 | Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz 2.11 GHz | 8.00 GB | CMake-3.27.2 | MinGW Makefiles | x64 | Release | GCC-13.2.0 | ✅ |
+| Windows-Debug | Windows 10 Pro 22H2 19045.3930 | Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz 2.11 GHz | 8.00 GB | CMake-3.27.2 | Visual Studio 17 2022 | x64 | Debug | MSVC-19.30.30709.0 | ✅ |
+| Linux-Release | Ubuntu 22.04 64bit | AMD EPYC 7543P 32-Core Processor | 8.00 GB | CMake-3.22.1 | Unix Makefiles | x86_64 | Release | GCC-11.4.0 | ✅ |
+| Linux-Debug | Ubuntu 22.04 64bit | AMD EPYC 7543P 32-Core Processor | 8.00 GB | CMake-3.22.1 | Unix Makefiles | x86_64 | Debug | GCC-11.4.0 | ✅ |
+| MacOS-Release | Coming soon | Coming soon | Coming soon | Coming soon | Unix Makefiles | Coming soon | Release | Coming soon | ❌ |
+| MacOS-Debug | Coming soon | Coming soon | Coming soon | Coming soon | Xcode | Coming soon | Debug | Coming soon | ❌ |
 
-<div align="left">
-  <div>
-    <img src="captures/Capture5.PNG" width="500" height="200"/>
-  </div>
-</div>
+<h1 align="left">
+<img src="build.png" width="300" height="250"/>
+</h1><br>
 
 > [!NOTE]
 > `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds, tests and deployment on Linux. We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
@@ -236,17 +222,21 @@ At the end of each dev session, a new unit test is required to be submitted to t
 
 Our team delivers a release on a weekly basis:
 
-- ~One <strong>major</strong> release per year (coming out with the <em>current project</em>)
-- ~One <strong>minor</strong> release per month (coming out with the <em>current feature</em>)
-- ~One <strong>patch</strong> release per week (coming out with the <em>current issue</em>)
+- ~One <strong>major</strong> release per year (coming out with the current <em>long project</em>)
+- ~One <strong>minor</strong> release per month (coming out with the current <em>short project</em>)
+- ~One <strong>patch</strong> release per week (coming out with the current <em>issue</em>)
    
 To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo). Here are the configurations on which we deploy our package:
 
-| Name                          | OS             | CMake        | Generator             | Architecture | Build Type | Compiler            | Status  |
-| ----------------------------- | -------------- | -------------------- | --------------------- | ------------ | ---------- | ------------------  | ------- |
-| Windows-Release               | windows-latest | CMake-3.27.2 | MinGW Makefiles       |x64              | Release    | GCC-13.2.0          | ✅     |
-| Linux-Release                 | ubuntu-latest  | CMake-3.22.1 | Unix Makefiles        |x64              | Release    | GCC-11.4.0          | ✅     |
-| MacOS-Release                 | macos-latest   |  | Unix Makefiles        |x64              | Release    |                     | ❌     |
+| Name | OS | Configuration | RAM | CMake | CMake Generator | Architecture | Build Type | Compiler | Build Status |
+| ---- | -- | ------------- | --- |------ | --------------- | ------------ | ---------- | -------- | ------------ |
+| Windows | Windows 10 Pro 22H2 19045.3930 | Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz 2.11 GHz | 8.00 GB | CMake-3.27.2 | MinGW Makefiles | x64 | Release | GCC-13.2.0 | ✅ |
+| Linux | Ubuntu 22.04 64bit | AMD EPYC 7543P 32-Core Processor | 8.00 GB | CMake-3.22.1 | Unix Makefiles | x86_64 | Release | GCC-11.4.0 | ✅ |
+| MacOS | Coming soon | Coming soon | Coming soon | Coming soon | Unix Makefiles | Coming soon | Release | Coming soon | ❌ |
+
+<h1 align="left">
+<img src="release.png" width="300" height="200"/>
+</h1><br>
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
