@@ -44,9 +44,9 @@
 <td>
 <h3>📰 Latest news </h3>
 <ul>
-  <li> <ins>2024-02-11</ins>
+  <li> <ins>2024-02-20</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.2.4</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.2.6</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -54,11 +54,11 @@
 <td>
 <h3>👷 Current work </h3>
 <ul>
-<li> <ins>2024-02-11</ins>
+<li> <ins>2024-02-20</ins>
 <ul>
     <li>📗(<strong>Long Term Project</strong>) Handling early exercise feature. </li>
     <li>📙(<strong>Short Term Project</strong>) Working on a C++/Python API library.</li>
-    <li>📕(<strong>Issue</strong>) Checking why remote database connection takes so long</li> 
+    <li>📕(<strong>Issue</strong>) Set MacOS release package</li> 
     <li>📘(<strong>Misc</strong>) Setting market calendars</li>
 </ul>
 </ul>
@@ -67,11 +67,11 @@
 <td>
 <h3>🏆 Achievements </h3>
 <ul>
-<li> <ins>2024-01-07</ins>
+<li> <ins>2024-01-11</ins>
 <ul>
     <li>📗(<strong>Long Term Project</strong>) Generic PDE pricer handles choosing style features.</li>
     <li>📙(<strong>Short Term Project</strong>) Implemented PDE pricer framework, Romberg-Richardson extrapolation and theta schemes.</li>
-    <li>📕(<strong>Issue</strong>) Removed warnings and turned warnings to errors at compile-time</li>
+    <li>📕(<strong>Issue</strong>) Makes filters for file browser dialogs</li>
     <li>📘(<strong>Misc</strong>) Implemented qapy, a python project to design and generate your contract.</li>
 </ul>
 </ul>
