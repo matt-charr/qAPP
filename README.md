@@ -104,7 +104,7 @@
 
 ✍🏻 This flowcharts shows the architecture of the project together with which components the user can consume.
 
-
+![Architecture](https://github.com/matt-charr/qa-demo/assets/68332647/9282f0f0-2023-4d25-9ba6-aef13b857a2d)
 
 ⏩ **𝑞𝐶𝑂𝑅𝐸** (<em>private</em>) is the aggregation of embedded private libraries in charge of implementing 𝘤𝘰𝘯𝘵𝘳𝘢𝘤𝘵, 𝘥𝘢𝘵𝘢, 𝘮𝘰𝘥𝘦𝘭 and 𝘱𝘳𝘪𝘤𝘦𝘳 architectures. Its codebase is hosted on a private GitHub repository which access is restricted to our developpers only.
 
