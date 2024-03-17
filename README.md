@@ -106,10 +106,10 @@
 
 
 
-⏩ **𝑞𝐶𝑂𝑅𝐸** (<em>private</em>) is the aggregation of embedded private libraries in charge of implementing 𝘤𝘰𝘯𝘵𝘳𝘢𝘤𝘵, 𝘥𝘢𝘵𝘢, 𝘮𝘰𝘥𝘦𝘭 and 𝘱𝘳𝘪𝘤𝘦𝘳 architectures. Its codebase is hosted on a private GitHub repository which access is restricted to our developpers only.
-⏩ **𝑞𝐴𝑃𝐼** (<em>public</em>) is the shared object that the user can plug into his or her personal project. A library of functions that request the core to perform generic actions such as getting contract information, getting price and greeks ...
-⏩ **𝑞𝐿𝐴𝑁𝐺** (<em>public</em>) is the internal contract description that uses the power of domain-specific language. A language easily understandable by human and machine to design your contract from a self-explanatory script. The whole ecosystem is built around this.
-⏩ **𝑞𝐺𝑈𝐼** (<em>public</em>) is the up and running GUI desktop application from which the user requests the API and visualize the results through a modern graphical interface.
+⏩ **𝑞𝐶𝑂𝑅𝐸** (<em>private</em>) is the aggregation of embedded private libraries in charge of implementing 𝘤𝘰𝘯𝘵𝘳𝘢𝘤𝘵, 𝘥𝘢𝘵𝘢, 𝘮𝘰𝘥𝘦𝘭 and 𝘱𝘳𝘪𝘤𝘦𝘳 architectures. Its codebase is hosted on a private GitHub repository which access is restricted to our developpers only. \\
+⏩ **𝑞𝐴𝑃𝐼** (<em>public</em>) is the shared object that the user can plug into his or her personal project. A library of functions that request the core to perform generic actions such as getting contract information, getting price and greeks ... \\
+⏩ **𝑞𝐿𝐴𝑁𝐺** (<em>public</em>) is the internal contract description that uses the power of domain-specific language. A language easily understandable by human and machine to design your contract from a self-explanatory script. The whole ecosystem is built around this. \\
+⏩ **𝑞𝐺𝑈𝐼** (<em>public</em>) is the up and running GUI desktop application from which the user requests the API and visualize the results through a modern graphical interface. \\
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
