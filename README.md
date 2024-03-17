@@ -100,12 +100,16 @@
 <em>"Design, price and monitor your own exotic financial derivatives contracts"</em>
 </div> <br>
 
-`QA-Quantitative Analytics` is an ecosystem of projects that helps you with designing, pricing and monitoring your own derivatives.
+🎮 `𝐪𝐀𝐏𝐏` (Quantitative Analytics Application) is a simple ecosystem of devices that helps the users to 𝑏𝑢𝑖𝑙𝑑, 𝑝𝑟𝑖𝑐𝑒 and 𝑎𝑛𝑎𝑙𝑦𝑠𝑒 customized financial derivatives contracts.
 
-- **qacore** (<em>private</em>) -- The core library of the project that is the agregation of embedded libraries in charge of implementing **contract**, **data**, **models** and **pricers** architectures. Its codebase is hosted on a private GitHub repository which access is restricted to our developpers only.
-- **qapi** (<em>public</em>) -- `qa` provides a C++/python API to run your analysis: For example, you can inspect your contract features, compute its price together with greeks, run (multidimensional) scenario and contractual feature ladder/solver, plug and inspect your own market data select a financial model and inspect its characteristics ...
-- **qapp** (<em>public</em>) -- The GUI desktop application that requests `qapi` to run your analysis and visualize the results within a nice graphical interface !
-- **qalgebra** (<em>public</em>) -- `qacore` uses the power of <em>algebraic contract description</em> and `qalgebra` is the python component that implements it: A customized language easily understandable by human and machine to design your contract from a self-explanatory script. Thanks to qalgebra, the user can write down a contract using this simple language. The whole `qa` ecosystem is built arround `qalgebra` device.
+✍🏻 This flowcharts shows the architecture of the project together with which components the user can consume.
+
+
+
+⏩ **𝑞𝐶𝑂𝑅𝐸** (<em>private</em>) is the aggregation of embedded private libraries in charge of implementing 𝘤𝘰𝘯𝘵𝘳𝘢𝘤𝘵, 𝘥𝘢𝘵𝘢, 𝘮𝘰𝘥𝘦𝘭 and 𝘱𝘳𝘪𝘤𝘦𝘳 architectures. Its codebase is hosted on a private GitHub repository which access is restricted to our developpers only.
+⏩ **𝑞𝐴𝑃𝐼** (<em>public</em>) is the shared object that the user can plug into his or her personal project. A library of functions that request the core to perform generic actions such as getting contract information, getting price and greeks ...
+⏩ **𝑞𝐿𝐴𝑁𝐺** (<em>public</em>) is the internal contract description that uses the power of domain-specific language. A language easily understandable by human and machine to design your contract from a self-explanatory script. The whole ecosystem is built around this.
+⏩ **𝑞𝐺𝑈𝐼** (<em>public</em>) is the up and running GUI desktop application from which the user requests the API and visualize the results through a modern graphical interface.
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
