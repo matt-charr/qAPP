@@ -116,15 +116,15 @@
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
-To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qa-demo/releases) and download the asset that corresponds to your operating system. After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qa` directory. Open the `qapp` executable located at <em>qa/bin</em> and you arrive to the main page. 
+To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qa-demo/releases) and download the asset that corresponds to your operating system. After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qAPP` directory. Open the `qGUI` executable located at <em>qa/bin</em> and you arrive to the main page. 
 
-On the left hand side of the screen is located a logger that displays the messages that `qacore` returns after each actions.
+On the left hand side of the screen is located a logger that displays the messages that `qCORE` returns after each actions.
 
-Each action triggers by `qapp` - typically pressing a button - throws <FONT COLOR="BLUE"><em>information</em></FONT>, <FONT COLOR="GREEN"><em>warnings</em></FONT>, <FONT COLOR="ORANGE"><em>errors</em></FONT> and/or <FONT COLOR="RED"><em>exceptions</em></FONT>.
+Each action triggers by `qGUI` - typically pressing a button - throws <FONT COLOR="BLUE"><em>information</em></FONT>, <FONT COLOR="GREEN"><em>warnings</em></FONT>, <FONT COLOR="ORANGE"><em>errors</em></FONT> and/or <FONT COLOR="RED"><em>exceptions</em></FONT>.
 - If an <FONT COLOR="RED"><em>exception</em></FONT> is thrown, it means something went wrong dev side. In that case please [report your issue](https://github.com/matt-charr/qa-demo/issues) by dropping your `mockup` file together with your contract and data json files if any (see [How can I report my issue](features/how-can-i-report-my-issue/doc.md)).
-- If an <FONT COLOR="ORANGE"><em>error</em></font> is thrown, it means that something went wrong user side and `qacore` did not manage to perform your request. In that case you need to check the log and correct your request accordingly.
-- If a <FONT COLOR="GREEN"><em>warning</em></font> is thrown, it means that something went wrong user side but `qacore` managed to perform the request.
-At inception, an action always thrown an <FONT COLOR="BLUE"><em>information</em></FONT> message to the user such as "Pricing contract...", the goal is to inform what action `qapp` is performing.
+- If an <FONT COLOR="ORANGE"><em>error</em></font> is thrown, it means that something went wrong user side and `qCORE` did not manage to perform your request. In that case you need to check the log and correct your request accordingly.
+- If a <FONT COLOR="GREEN"><em>warning</em></font> is thrown, it means that something went wrong user side but `qCORE` managed to perform the request.
+At inception, an action always thrown an <FONT COLOR="BLUE"><em>information</em></FONT> message to the user such as "Pricing contract...", the goal is to inform what action `qGUI` is performing.
 When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is thrown if an only if no error or exception occured during the action lifetime.
 
 # <a name="features"> 🌴 Features</a>
@@ -139,14 +139,14 @@ When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is throw
 The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to [share your ideas](https://github.com/matt-charr/qa-demo/issues) under the tag <em>features</em> ! We are happy to discuss with you about your personnal needs and the feasibility of your project.
 
 > [!NOTE]
-> If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qa` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
+> If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qAPP` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
 
 ## <a name="found-a-bug-?">🔎 Found a bug ?</a>
 
-Feel free to [report your issue](https://github.com/matt-charr/qa-demo/issues) (see [How can I report my issue](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description. For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qa` tag.
+Feel free to [report your issue](https://github.com/matt-charr/qa-demo/issues) (see [How can I report my issue](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description. For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qAPP` tag.
 
 > [!IMPORTANT]
-> `qa` embbeds a mecanism to save and open your current `mockup` for further usage. If possible please attach your `mockup` file together with the relevant data json and contract external files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to sort it quickly. See [How can I report my issue](features/how-can-i-report-my-issue/doc.md) for further details on how to proceed.
+> `qAPP` embbeds a mecanism to save and open your current `mockup` for further usage. If possible please attach your `mockup` file together with the relevant data json and contract external files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to sort it quickly. See [How can I report my issue](features/how-can-i-report-my-issue/doc.md) for further details on how to proceed.
 
 # <a name = "how-can-i-contribute-?"> 🙌 How can I contribute ?</a>
 
@@ -186,7 +186,7 @@ Once a bug or a feature is submitted, an issue is created with the corresponding
 
 ## <a name="build"> 🍏 Build</a>
 
-`qa` uses [CMake](https://cmake.org/) as a build system and has its main code base located on a private repository which access is restricted to our developers only. Besides, it relies on a bunch of repository dependencies that are required at `qa` build time. <br> 
+`qAPP` uses [CMake](https://cmake.org/) as a build system and has its main code base located on a private repository which access is restricted to our developers only. Besides, it relies on a bunch of repository dependencies that are required at `qAPP` build time. <br> 
 It is to the following projects that we owe our heartfelt thanks for their generous open source contribution.
 
 - [ImGui](https://github.com/matt-charr/imgui-for-qa)
@@ -199,7 +199,7 @@ It is to the following projects that we owe our heartfelt thanks for their gener
 - [JsonCpp](https://github.com/matt-charr/jsoncpp-for-qa)
 - [Eigen](https://github.com/matt-charr/eigen-for-qa)
 
-To load the below dependencies, `qa` uses the power of [superbuild](https://cmake.org/cmake/help/latest/module/ExternalProject.html) feature from CMake. For that purpose, an embedded CMake project is in charge of cloning, building and installing all the dependencies that `qa` requires into a specific folder. That's pretty cool, isn't it ? 😃
+To load the below dependencies, `qAPP` uses the power of [superbuild](https://cmake.org/cmake/help/latest/module/ExternalProject.html) feature from CMake. For that purpose, an embedded CMake project is in charge of cloning, building and installing all the dependencies that `qAPP` requires into a specific folder. That's pretty cool, isn't it ? 😃
 
 ## <a name="tests"> 🍊 Tests</a>
 
@@ -207,7 +207,7 @@ In order to ensure that the code change effect is not broken by any subsequent m
 
 ## <a name = "continuous-integration">🍈 Continuous Integration</a>
 
-`qa` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows, Linux and MacOS self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all configurations.
+`qAPP` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows, Linux and MacOS self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all configurations.
 
 | Name | OS | Configuration | RAM | CMake | CMake Generator | Architecture | Build Type | Compiler | Build Status |
 | ---- | -- | ------------- | --- |------ | --------------- | ------------ | ---------- | -------- | ------------ |
@@ -221,7 +221,7 @@ In order to ensure that the code change effect is not broken by any subsequent m
 </h1><br>
 
 > [!NOTE]
-> `qa` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds, tests and deployment on Linux. We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
+> `qAPP` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds, tests and deployment on Linux. We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
 
 ## <a name="continuous-delivery">🍇 Continuous Delivery</a>
 
