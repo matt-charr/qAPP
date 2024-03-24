@@ -44,9 +44,9 @@
 <td>
 <h3>📰 Latest news </h3>
 <ul>
-  <li> <ins>2024-03-18</ins>
+  <li> <ins>2024-03-25</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.3.0</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.3.1</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
@@ -54,11 +54,11 @@
 <td>
 <h3>👷 Current work </h3>
 <ul>
-<li> <ins>2024-03-18</ins>
+<li> <ins>2024-03-25</ins>
 <ul>
     <li>📗(<strong>Long Term Project</strong>) Implementing Longstaff-Schwartz algorithm. </li>
-    <li>📙(<strong>Short Term Project</strong>) Making templates for some standard contracts.</li>
-    <li>📕(<strong>Issue</strong>) Set MacOS release package</li> 
+    <li>📙(<strong>Short Term Project</strong>) Making templates for some standard contracts</li>
+    <li>📕(<strong>Issue</strong>) Fixing stack overflow at deep contract motion time</li> 
     <li>📘(<strong>Misc</strong>) Computing delta (sticky delta) and cega with AAD</li>
 </ul>
 </ul>
@@ -71,7 +71,7 @@
 <ul>
     <li>📗(<strong>Long Term Project</strong>) Generic PDE pricer handles choosing style features.</li>
     <li>📙(<strong>Short Term Project</strong>) Released the C API</li>
-    <li>📕(<strong>Issue</strong>) Makes filters for file browser dialogs</li>
+    <li>📕(<strong>Issue</strong>) Set MacOS release package</li>
     <li>📘(<strong>Misc</strong>) Implemented qapy, a python project to design and generate your contract.</li>
 </ul>
 </ul>
@@ -207,21 +207,18 @@ In order to ensure that the code change effect is not broken by any subsequent m
 
 ## <a name = "continuous-integration">🍈 Continuous Integration</a>
 
-`qAPP` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows, Linux and MacOS self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all configurations.
+`qAPP` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows, Linux and MacOS self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all tested configurations.
 
-| Name | OS | Configuration | RAM | CMake | CMake Generator | Architecture | Build Type | Compiler | Build Status |
-| ---- | -- | ------------- | --- |------ | --------------- | ------------ | ---------- | -------- | ------------ |
-| win32-gcc | Windows 10 Pro 22H2 19045.3930 | Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz 2.11 GHz | 8.00 GB | CMake-3.27.2 | MinGW Makefiles | x64 | Release & Debug | GCC-13.2.0 | ✅ |
-| win32-msvc | Windows 10 Pro 22H2 19045.3930 | Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz 2.11 GHz | 8.00 GB | CMake-3.27.2 | Visual Studio 17 2022 | x64 | Release & Debug | MSVC-19.30.30709.0 | ✅ |
-| linux | Ubuntu 22.04 64bit | AMD EPYC 7543P 32-Core Processor | 8.00 GB | CMake-3.22.1 | Unix Makefiles | x86_64 | Release & Debug | GCC-11.4.0 | ✅ |
-| macos | Coming soon | Coming soon | Coming soon | Coming soon | Unix Makefiles | Coming soon | Release & Debug | Coming soon | ❌ |
+| Name        | OS           | Provider                              | RAM      | CMake        | CMake Generator       | Build Type      | Compiler           | Build Status |
+| ----------- | ------------ | ------------------------------------  | -------- |------------- | --------------------- | --------------- | ------------------ | ------------ | 
+| Win32-MinGW | Windows 10   | -                                     | 16.00 GB | CMake-3.28.3 | MinGW Makefiles       | Release & Debug | GCC-13.2.0         | ✅           |
+| Win32-MSVC  | Windows 10   | -                                     | 16.00 GB | CMake-3.28.3 | Visual Studio 17 2022 | Release & Debug | MSVC-19.30.30709.0 | ✅           |
+| Linux       | Ubuntu 22.04 | [Hostinger](https://www.hostinger.fr) |  8.00 GB | CMake-3.22.1 | Unix Makefiles        | Release & Debug | GCC-11.4.0         | ✅           |
+| MacOS       | Sonoma 14.4  | [UltaHost](https://ultahost.com)      |  2.00 GB | CMake-3.28.3 | Unix Makefiles        | Release & Debug | CLANG-1500.3.9.4   | ✅           |
 
 <h1 align="left">
 <img src="img/build.png" width="300" height="250"/>
 </h1><br>
-
-> [!NOTE]
-> `qAPP` has subscribed to a remote VPS (KVM2 plan - 100Go) provided by [Hostinger](https://www.hostinger.fr) to run builds, tests and deployment on Linux. We could not find any server providers to run our builds and tests on MacOS and are listening to any suggestions 😃.
 
 ## <a name="continuous-delivery">🍇 Continuous Delivery</a>
 
