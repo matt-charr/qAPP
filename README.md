@@ -216,9 +216,7 @@ In order to ensure that the code change effect is not broken by any subsequent m
 | Linux       | Ubuntu 22.04 | [Hostinger](https://www.hostinger.fr) |  8.00 GB | CMake-3.22.1 | Unix Makefiles        | Release & Debug | GCC-11.4.0         | ✅           |
 | MacOS       | Sonoma 14.4  | [UltaHost](https://ultahost.com)      |  2.00 GB | CMake-3.28.3 | Unix Makefiles        | Release & Debug | CLANG-1500.3.9.4   | ✅           |
 
-<h1 align="left">
-<img src="img/build.png" width="300" height="250"/>
-</h1><br>
+![CICD](https://github.com/matt-charr/qa-demo/assets/68332647/9e5b9a78-055f-43ee-98e8-fb4b12e31782)
 
 ## <a name="continuous-delivery">🍇 Continuous Delivery</a>
 
