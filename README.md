@@ -209,12 +209,12 @@ In order to ensure that the code change effect is not broken by any subsequent m
 
 `qAPP` embbeds a custom GitHub action that runs at each pull requests. Once a pull request is submitted, build and tests are triggered on our Windows, Linux and MacOS self-hosted runners in Debug/Release mode with the below configurations. A dev branch is merged if and only if all builds and tests passed on all tested configurations.
 
-| Name        | OS           | Provider                              | RAM      | CMake        | CMake Generator       | Build Type      | Compiler           | Build Status |
-| ----------- | ------------ | ------------------------------------  | -------- |------------- | --------------------- | --------------- | ------------------ | ------------ | 
-| Win32-MinGW | Windows 10   | -                                     | 16.00 GB | CMake-3.28.3 | MinGW Makefiles       | Release & Debug | GCC-13.2.0         | ✅           |
-| Win32-MSVC  | Windows 10   | -                                     | 16.00 GB | CMake-3.28.3 | Visual Studio 17 2022 | Release & Debug | MSVC-19.30.30709.0 | ✅           |
-| Linux       | Ubuntu 22.04 | [Hostinger](https://www.hostinger.fr) |  8.00 GB | CMake-3.22.1 | Unix Makefiles        | Release & Debug | GCC-11.4.0         | ✅           |
-| MacOS       | Sonoma 14.4  | [UltaHost](https://ultahost.com)      |  2.00 GB | CMake-3.28.3 | Unix Makefiles        | Release & Debug | CLANG-1500.3.9.4   | ✅           |
+| Name        | OS           | Provider                              | RAM     | CMake        | CMake Generator       | Build Type      | Compiler           | Build Status |
+| ----------- | ------------ | ------------------------------------  | ------- |------------- | --------------------- | --------------- | ------------------ | ------------ | 
+| Win32-MinGW | Windows 10   | -                                     | 8.00 GB | CMake-3.28.3 | MinGW Makefiles       | Release & Debug | GCC-13.2.0         | ✅           |
+| Win32-MSVC  | Windows 10   | -                                     | 8.00 GB | CMake-3.28.3 | Visual Studio 17 2022 | Release & Debug | MSVC-19.30.30709.0 | ✅           |
+| Linux       | Ubuntu 22.04 | [Hostinger](https://www.hostinger.fr) | 8.00 GB | CMake-3.22.1 | Unix Makefiles        | Release & Debug | GCC-11.4.0         | ✅           |
+| MacOS       | Sonoma 14.4  | [UltaHost](https://ultahost.com)      | 2.00 GB | CMake-3.28.3 | Unix Makefiles        | Release & Debug | CLANG-1500.3.9.4   | ✅           |
 
 ![CICD](https://github.com/matt-charr/qa-demo/assets/68332647/9e5b9a78-055f-43ee-98e8-fb4b12e31782)
 
@@ -227,10 +227,6 @@ Our team delivers a release on a weekly basis:
 - ~One <strong>patch</strong> release per week (coming out with the current <em>issue</em>)
    
 To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo).
-
-<h1 align="left">
-<img src="img/release.png" width="300" height="200"/>
-</h1><br>
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
