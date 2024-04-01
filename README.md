@@ -46,7 +46,7 @@
 <ul>
   <li> <ins>2024-03-25</ins>
 <ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.3.1</a> is out 🚀</li>
+    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.3.2</a> is out 🚀</li>
 </ul>
 </ul>
 </td>
