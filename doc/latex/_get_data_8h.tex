@@ -1,0 +1,75 @@
+\doxysection{C\+:/\+Users/\+User/\+Documents/q\+APP/dev/qa-\/dev/q\+API/\+Get\+Data.h File Reference}
+\hypertarget{_get_data_8h}{}\label{_get_data_8h}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetData.h@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetData.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Interface.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Logger.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Color.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Line.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_observable}{q\+API\+::\+Observable}}
+\begin{DoxyCompactList}\small\item\em The observation of the value of an amount at a specific date. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_observation}{q\+API\+::\+Observation}}
+\begin{DoxyCompactList}\small\item\em The observation of a stream of observable. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_data_results_chart}{q\+API\+::\+Data\+Results\+Chart}}
+\begin{DoxyCompactList}\small\item\em Chart of one observation. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_data_results}{q\+API\+::\+Data\+Results}}
+\begin{DoxyCompactList}\small\item\em Arguments of \doxylink{_get_data_8h_adefdaaa926d13eeb0be0d294ae49eade}{q\+API\+::\+Get\+Data}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+EXTERN\+\_\+C \+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_data_8h_adefdaaa926d13eeb0be0d294ae49eade}{q\+API\+::\+Get\+Data}} (\mbox{\hyperlink{structq_a_p_i_1_1_data}{q\+API\+::\+Data}} \&, \mbox{\hyperlink{structq_a_p_i_1_1_data_results}{q\+API\+::\+Data\+Results}} \&, \mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&)
+\item 
+\+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_data_8h_a12073b1bce6208e97fe6a728b304babf}{q\+API\+::\+Get\+Data\+From\+Json}} (Json\+::\+Value \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_get_data_8h_adefdaaa926d13eeb0be0d294ae49eade}\label{_get_data_8h_adefdaaa926d13eeb0be0d294ae49eade} 
+\index{GetData.h@{GetData.h}!GetData@{GetData}}
+\index{GetData@{GetData}!GetData.h@{GetData.h}}
+\doxysubsubsection{\texorpdfstring{GetData()}{GetData()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structq_a_p_i_1_1_data}{q\+API\+::\+Data}} \&}]{p\+\_\+data,  }\item[{\mbox{\hyperlink{structq_a_p_i_1_1_data_results}{q\+API\+::\+Data\+Results}} \&}]{p\+\_\+results,  }\item[{\mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&}]{p\+\_\+logger }\end{DoxyParamCaption})}
+
+Observe values of amounts given a specified schedule. \begin{DoxyWarning}{Warning}
+User-\/provided market data is restricted to premium users only. ~\newline
+ By default, your market will be defined according to data/my\+\_\+data\+\_\+file.\+json. ~\newline
+ Any modification to this file will not be effective. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+data} & See \doxylink{structq_a_p_i_1_1_data}{q\+API\+::\+Data} \\
+\hline
+{\em p\+\_\+results} & See \doxylink{structq_a_p_i_1_1_data_results}{q\+API\+::\+Data\+Results} \\
+\hline
+{\em p\+\_\+logger} & See \doxylink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_get_data_8h_a12073b1bce6208e97fe6a728b304babf}\label{_get_data_8h_a12073b1bce6208e97fe6a728b304babf} 
+\index{GetData.h@{GetData.h}!GetDataFromJson@{GetDataFromJson}}
+\index{GetDataFromJson@{GetDataFromJson}!GetData.h@{GetData.h}}
+\doxysubsubsection{\texorpdfstring{GetDataFromJson()}{GetDataFromJson()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Data\+From\+Json (\begin{DoxyParamCaption}\item[{Json\+::\+Value \&}]{p\+\_\+root }\end{DoxyParamCaption})}
+
+Apply Get\+Data with the parameters provided in the fields of a Json object. \begin{DoxyNote}{Note}
+Used to communicate with q\+GUI. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+root} & Mockup as a Json\+::\+Value object. \\
+\hline
+\end{DoxyParams}

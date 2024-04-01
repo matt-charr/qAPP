@@ -1,0 +1,165 @@
+\doxysection{C\+:/\+Users/\+User/\+Documents/q\+APP/dev/qa-\/dev/q\+API/\+Pricer.h File Reference}
+\hypertarget{_pricer_8h}{}\label{_pricer_8h}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/Pricer.h@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/Pricer.h}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_pricer}{q\+API\+::\+Pricer}}
+\begin{DoxyCompactList}\small\item\em Pricing parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_pricer_8h_aea1ddd092501b6379a6dee59cc5bc512}{q\+API\+::\+Day\+Counter}} \{ \mbox{\hyperlink{_pricer_8h_aea1ddd092501b6379a6dee59cc5bc512aeec4274e8023c608ee2744e0330c7b3c}{ACT\+\_\+365}}
+ \}
+\item 
+enum class \mbox{\hyperlink{_pricer_8h_a22df745c779e24241d23c982f1808360}{q\+API\+::\+Smoothing\+Type}} \{ \mbox{\hyperlink{_pricer_8h_a22df745c779e24241d23c982f1808360ab50339a10e1de285ac99d4c3990b8693}{NONE}}
+, \mbox{\hyperlink{_pricer_8h_a22df745c779e24241d23c982f1808360aa7c48ba367e019d004bfb0239b85f2b3}{LOWER}}
+, \mbox{\hyperlink{_pricer_8h_a22df745c779e24241d23c982f1808360a9e43f5291e6fcb2ad99c8e3f91acd179}{UPPER}}
+, \mbox{\hyperlink{_pricer_8h_a22df745c779e24241d23c982f1808360acca94fa443d7d3ee6c6778b7eeb8ed0a}{SYMETRIC}}
+ \}
+\item 
+enum class \mbox{\hyperlink{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898}{q\+API\+::\+Pricing\+Method}} \{ \mbox{\hyperlink{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1}{MONTE\+\_\+\+CARLO}}
+, \mbox{\hyperlink{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f}{FINITE\+\_\+\+DIFFERENCE}}
+, \mbox{\hyperlink{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4}{CLOSED\+\_\+\+FORM}}
+ \}
+\item 
+enum class \mbox{\hyperlink{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98d}{q\+API\+::\+Spot\+Volatility\+Dynamic}} \{ \mbox{\hyperlink{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0}{STICKY\+\_\+\+STRIKE}}
+, \mbox{\hyperlink{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da66bdd02fe1ee2e9033f4001c92351c34}{STICKY\+\_\+\+DELTA}}
+, \mbox{\hyperlink{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da393e17ee05f03d481c51019c6a40685a}{STICKY\+\_\+\+OPTION}}
+ \}
+\item 
+enum class \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12}{q\+API\+::\+Greek\+Direction}} \{ \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12a684d325a7303f52e64011467ff5c5758}{LEFT}}
+, \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e}{CENTER}}
+, \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12a21507b40c80068eda19865706fdc2403}{RIGHT}}
+ \}
+\item 
+enum class \mbox{\hyperlink{_pricer_8h_aabe0254f26da93ff17dee5953d8976bd}{q\+API\+::\+Boundary\+Condition}} \{ \mbox{\hyperlink{_pricer_8h_aabe0254f26da93ff17dee5953d8976bdae151350b63efc6c3bbe2e3f0d27863ba}{DIRICHLET}}
+, \mbox{\hyperlink{_pricer_8h_aabe0254f26da93ff17dee5953d8976bda2f2dd8d12511598975b5475371963bd4}{NEUMANN}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_pricer_8h_aabe0254f26da93ff17dee5953d8976bd}\label{_pricer_8h_aabe0254f26da93ff17dee5953d8976bd} 
+\index{Pricer.h@{Pricer.h}!BoundaryCondition@{BoundaryCondition}}
+\index{BoundaryCondition@{BoundaryCondition}!Pricer.h@{Pricer.h}}
+\doxysubsubsection{\texorpdfstring{BoundaryCondition}{BoundaryCondition}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_pricer_8h_aabe0254f26da93ff17dee5953d8976bd}{q\+API\+::\+Boundary\+Condition}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Finite Difference Method boundary condition \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIRICHLET@{DIRICHLET}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!DIRICHLET@{DIRICHLET}}}\Hypertarget{_pricer_8h_aabe0254f26da93ff17dee5953d8976bdae151350b63efc6c3bbe2e3f0d27863ba}\label{_pricer_8h_aabe0254f26da93ff17dee5953d8976bdae151350b63efc6c3bbe2e3f0d27863ba} 
+DIRICHLET&Function constant at the boundaries \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEUMANN@{NEUMANN}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!NEUMANN@{NEUMANN}}}\Hypertarget{_pricer_8h_aabe0254f26da93ff17dee5953d8976bda2f2dd8d12511598975b5475371963bd4}\label{_pricer_8h_aabe0254f26da93ff17dee5953d8976bda2f2dd8d12511598975b5475371963bd4} 
+NEUMANN&Derivative constant at the boundaries \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{_pricer_8h_aea1ddd092501b6379a6dee59cc5bc512}\label{_pricer_8h_aea1ddd092501b6379a6dee59cc5bc512} 
+\index{Pricer.h@{Pricer.h}!DayCounter@{DayCounter}}
+\index{DayCounter@{DayCounter}!Pricer.h@{Pricer.h}}
+\doxysubsubsection{\texorpdfstring{DayCounter}{DayCounter}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_pricer_8h_aea1ddd092501b6379a6dee59cc5bc512}{q\+API\+::\+Day\+Counter}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+The way to compute the year fraction (coverage) between the dates D1 and D2 \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACT\_365@{ACT\_365}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!ACT\_365@{ACT\_365}}}\Hypertarget{_pricer_8h_aea1ddd092501b6379a6dee59cc5bc512aeec4274e8023c608ee2744e0330c7b3c}\label{_pricer_8h_aea1ddd092501b6379a6dee59cc5bc512aeec4274e8023c608ee2744e0330c7b3c} 
+ACT\+\_\+365&Exact number of days between D1 and D2 / 365 \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12}\label{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12} 
+\index{Pricer.h@{Pricer.h}!GreekDirection@{GreekDirection}}
+\index{GreekDirection@{GreekDirection}!Pricer.h@{Pricer.h}}
+\doxysubsubsection{\texorpdfstring{GreekDirection}{GreekDirection}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12}{q\+API\+::\+Greek\+Direction}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+First order derivative approximation kind \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT@{LEFT}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!LEFT@{LEFT}}}\Hypertarget{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12a684d325a7303f52e64011467ff5c5758}\label{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12a684d325a7303f52e64011467ff5c5758} 
+LEFT&(f(x) -\/ f(x-\/dx))/dx \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENTER@{CENTER}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!CENTER@{CENTER}}}\Hypertarget{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e}\label{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e} 
+CENTER&(f(x+dx) -\/ f(x-\/dx))/dx/2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT@{RIGHT}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!RIGHT@{RIGHT}}}\Hypertarget{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12a21507b40c80068eda19865706fdc2403}\label{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12a21507b40c80068eda19865706fdc2403} 
+RIGHT&(f(x+dx) -\/ f(x))/dx \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898}\label{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898} 
+\index{Pricer.h@{Pricer.h}!PricingMethod@{PricingMethod}}
+\index{PricingMethod@{PricingMethod}!Pricer.h@{Pricer.h}}
+\doxysubsubsection{\texorpdfstring{PricingMethod}{PricingMethod}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898}{q\+API\+::\+Pricing\+Method}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+The pricing method \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MONTE\_CARLO@{MONTE\_CARLO}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!MONTE\_CARLO@{MONTE\_CARLO}}}\Hypertarget{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1}\label{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1} 
+MONTE\+\_\+\+CARLO&Monte Carlo Method \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FINITE\_DIFFERENCE@{FINITE\_DIFFERENCE}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!FINITE\_DIFFERENCE@{FINITE\_DIFFERENCE}}}\Hypertarget{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f}\label{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f} 
+FINITE\+\_\+\+DIFFERENCE&Partial Differential Equation Method \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLOSED\_FORM@{CLOSED\_FORM}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!CLOSED\_FORM@{CLOSED\_FORM}}}\Hypertarget{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4}\label{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4} 
+CLOSED\+\_\+\+FORM&Closed Form Formula Method \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{_pricer_8h_a22df745c779e24241d23c982f1808360}\label{_pricer_8h_a22df745c779e24241d23c982f1808360} 
+\index{Pricer.h@{Pricer.h}!SmoothingType@{SmoothingType}}
+\index{SmoothingType@{SmoothingType}!Pricer.h@{Pricer.h}}
+\doxysubsubsection{\texorpdfstring{SmoothingType}{SmoothingType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_pricer_8h_a22df745c779e24241d23c982f1808360}{q\+API\+::\+Smoothing\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+The way to smooth the barrier \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!NONE@{NONE}}}\Hypertarget{_pricer_8h_a22df745c779e24241d23c982f1808360ab50339a10e1de285ac99d4c3990b8693}\label{_pricer_8h_a22df745c779e24241d23c982f1808360ab50339a10e1de285ac99d4c3990b8693} 
+NONE&No smoothing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOWER@{LOWER}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!LOWER@{LOWER}}}\Hypertarget{_pricer_8h_a22df745c779e24241d23c982f1808360aa7c48ba367e019d004bfb0239b85f2b3}\label{_pricer_8h_a22df745c779e24241d23c982f1808360aa7c48ba367e019d004bfb0239b85f2b3} 
+LOWER&Get lower bound of the price \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UPPER@{UPPER}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!UPPER@{UPPER}}}\Hypertarget{_pricer_8h_a22df745c779e24241d23c982f1808360a9e43f5291e6fcb2ad99c8e3f91acd179}\label{_pricer_8h_a22df745c779e24241d23c982f1808360a9e43f5291e6fcb2ad99c8e3f91acd179} 
+UPPER&Get upper bound of the price \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SYMETRIC@{SYMETRIC}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!SYMETRIC@{SYMETRIC}}}\Hypertarget{_pricer_8h_a22df745c779e24241d23c982f1808360acca94fa443d7d3ee6c6778b7eeb8ed0a}\label{_pricer_8h_a22df745c779e24241d23c982f1808360acca94fa443d7d3ee6c6778b7eeb8ed0a} 
+SYMETRIC&Symetric \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98d}\label{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98d} 
+\index{Pricer.h@{Pricer.h}!SpotVolatilityDynamic@{SpotVolatilityDynamic}}
+\index{SpotVolatilityDynamic@{SpotVolatilityDynamic}!Pricer.h@{Pricer.h}}
+\doxysubsubsection{\texorpdfstring{SpotVolatilityDynamic}{SpotVolatilityDynamic}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98d}{q\+API\+::\+Spot\+Volatility\+Dynamic}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Spot-\/\+Volatility Dynamic \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STICKY\_STRIKE@{STICKY\_STRIKE}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!STICKY\_STRIKE@{STICKY\_STRIKE}}}\Hypertarget{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0}\label{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0} 
+STICKY\+\_\+\+STRIKE&Moneyness moves when the spot moves \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STICKY\_DELTA@{STICKY\_DELTA}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!STICKY\_DELTA@{STICKY\_DELTA}}}\Hypertarget{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da66bdd02fe1ee2e9033f4001c92351c34}\label{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da66bdd02fe1ee2e9033f4001c92351c34} 
+STICKY\+\_\+\+DELTA&Moneyness remains constant when the spot moves \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STICKY\_OPTION@{STICKY\_OPTION}!Pricer.h@{Pricer.h}}\index{Pricer.h@{Pricer.h}!STICKY\_OPTION@{STICKY\_OPTION}}}\Hypertarget{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da393e17ee05f03d481c51019c6a40685a}\label{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da393e17ee05f03d481c51019c6a40685a} 
+STICKY\+\_\+\+OPTION&\doxylink{structq_a_p_i_1_1_vanilla}{Vanilla} option prices moves when the spot moves \\
+\hline
+
+\end{DoxyEnumFields}

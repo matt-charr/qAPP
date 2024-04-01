@@ -1,0 +1,67 @@
+\doxysection{C\+:/\+Users/\+User/\+Documents/q\+APP/dev/qa-\/dev/q\+API/\+Get\+Data\+Feed.hpp File Reference}
+\hypertarget{_get_data_feed_8hpp}{}\label{_get_data_feed_8hpp}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetDataFeed.hpp@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetDataFeed.hpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Interface.\+hpp$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Logger.\+hpp$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_feed_data_results}{q\+API\+::\+Feed\+Data\+Results}}
+\begin{DoxyCompactList}\small\item\em Arguments of \doxylink{_get_data_feed_8hpp_ae675c145501088424c61fbed496c55ff}{q\+API\+::\+Feed\+Data}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+EXTERN\+\_\+C \+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_data_feed_8hpp_ae675c145501088424c61fbed496c55ff}{q\+API\+::\+Feed\+Data}} (\mbox{\hyperlink{structq_a_p_i_1_1_data}{q\+API\+::\+Data}} \&, \mbox{\hyperlink{structq_a_p_i_1_1_feed_data_results}{q\+API\+::\+Feed\+Data\+Results}} \&, \mbox{\hyperlink{_logger_8hpp_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&)
+\item 
+\+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_data_feed_8hpp_af0d924170bba66a79e8544acb524d720}{q\+API\+::\+Feed\+Data\+From\+Json}} (Json\+::\+Value \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_get_data_feed_8hpp_ae675c145501088424c61fbed496c55ff}\label{_get_data_feed_8hpp_ae675c145501088424c61fbed496c55ff} 
+\index{GetDataFeed.hpp@{GetDataFeed.hpp}!FeedData@{FeedData}}
+\index{FeedData@{FeedData}!GetDataFeed.hpp@{GetDataFeed.hpp}}
+\doxysubsubsection{\texorpdfstring{FeedData()}{FeedData()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Feed\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structq_a_p_i_1_1_data}{q\+API\+::\+Data}} \&}]{p\+\_\+data,  }\item[{\mbox{\hyperlink{structq_a_p_i_1_1_feed_data_results}{q\+API\+::\+Feed\+Data\+Results}} \&}]{p\+\_\+results,  }\item[{\mbox{\hyperlink{_logger_8hpp_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&}]{p\+\_\+logger }\end{DoxyParamCaption})}
+
+Feed user provided database with requested market data items. \begin{DoxyWarning}{Warning}
+User-\/provided market data is restricted to premium users only. ~\newline
+ By default, your market will be defined according to data/my\+\_\+data\+\_\+file.\+json. ~\newline
+ Any modification to this file will not be effective. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+data} & See \doxylink{structq_a_p_i_1_1_data}{q\+API\+::\+Data} \\
+\hline
+{\em p\+\_\+results} & See \doxylink{structq_a_p_i_1_1_feed_data_results}{q\+API\+::\+Feed\+Data\+Results} \\
+\hline
+{\em p\+\_\+logger} & See \doxylink{_logger_8hpp_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_get_data_feed_8hpp_af0d924170bba66a79e8544acb524d720}\label{_get_data_feed_8hpp_af0d924170bba66a79e8544acb524d720} 
+\index{GetDataFeed.hpp@{GetDataFeed.hpp}!FeedDataFromJson@{FeedDataFromJson}}
+\index{FeedDataFromJson@{FeedDataFromJson}!GetDataFeed.hpp@{GetDataFeed.hpp}}
+\doxysubsubsection{\texorpdfstring{FeedDataFromJson()}{FeedDataFromJson()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Feed\+Data\+From\+Json (\begin{DoxyParamCaption}\item[{Json\+::\+Value \&}]{p\+\_\+root }\end{DoxyParamCaption})}
+
+Apply Feed\+Data with the parameters provided in the fields of a Json object. \begin{DoxyNote}{Note}
+Used to communicate with q\+GUI. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+root} & Mockup as a Json\+::\+Value object. \\
+\hline
+\end{DoxyParams}

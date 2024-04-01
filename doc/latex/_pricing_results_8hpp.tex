@@ -1,0 +1,44 @@
+\doxysection{C\+:/\+Users/\+User/\+Documents/q\+APP/dev/qa-\/dev/q\+API/\+Pricing\+Results.hpp File Reference}
+\hypertarget{_pricing_results_8hpp}{}\label{_pricing_results_8hpp}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/PricingResults.hpp@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/PricingResults.hpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Color.\+hpp$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result}{q\+API\+::\+Pricing\+Result}}
+\begin{DoxyCompactList}\small\item\em A pricing result. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_price_result}{q\+API\+::\+Price\+Result}}
+\begin{DoxyCompactList}\small\item\em The price. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_name_value_result}{q\+API\+::\+Name\+Value\+Result}}
+\begin{DoxyCompactList}\small\item\em A name attached to a pricing result. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_ticker_value_result}{q\+API\+::\+Ticker\+Value\+Result}}
+\begin{DoxyCompactList}\small\item\em A greek attached to one underlying ticker. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_x_greek}{q\+API\+::\+XGreek}}
+\begin{DoxyCompactList}\small\item\em A greek attached to two underlying tickers. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results}{q\+API\+::\+Pricing\+Results}}
+\begin{DoxyCompactList}\small\item\em The structure returned by one pricing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_pricing_results_8hpp_ab0af6b1d07516b55343111a1aaf9251a}\label{_pricing_results_8hpp_ab0af6b1d07516b55343111a1aaf9251a} 
+typedef std\+::vector$<$ \mbox{\hyperlink{structq_a_p_i_1_1_name_value_result}{q\+API\+::\+Name\+Value\+Result}} $>$ {\bfseries q\+API\+::\+All\+Result}
+\begin{DoxyCompactList}\small\item\em The list of names computed by the pricer. \end{DoxyCompactList}\item 
+\Hypertarget{_pricing_results_8hpp_a2bd9fc62d3a54becbd4231a2c14b2de1}\label{_pricing_results_8hpp_a2bd9fc62d3a54becbd4231a2c14b2de1} 
+typedef std\+::vector$<$ \mbox{\hyperlink{structq_a_p_i_1_1_ticker_value_result}{q\+API\+::\+Ticker\+Value\+Result}} $>$ {\bfseries q\+API\+::\+Greek\+Result}
+\begin{DoxyCompactList}\small\item\em The list of greek attached with a specific underlying. \end{DoxyCompactList}\item 
+\Hypertarget{_pricing_results_8hpp_a6e2f581e08c934daccc44ee17bc96717}\label{_pricing_results_8hpp_a6e2f581e08c934daccc44ee17bc96717} 
+typedef std\+::vector$<$ \mbox{\hyperlink{structq_a_p_i_1_1_x_greek}{q\+API\+::\+XGreek}} $>$ {\bfseries q\+API\+::\+XGreek\+Result}
+\begin{DoxyCompactList}\small\item\em The list of greek attached with a specific pair of underlyings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}

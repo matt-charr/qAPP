@@ -1,0 +1,75 @@
+\doxysection{C\+:/\+Users/\+User/\+Documents/q\+APP/dev/qa-\/dev/q\+API/\+Logger.hpp File Reference}
+\hypertarget{_logger_8hpp}{}\label{_logger_8hpp}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/Logger.hpp@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/Logger.hpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_log}{q\+API\+::\+Log}}
+\begin{DoxyCompactList}\small\item\em Register log levels and messages during the calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_logger_8hpp_aa5a1f238844067249387700b036ac80c}\label{_logger_8hpp_aa5a1f238844067249387700b036ac80c} 
+typedef std\+::vector$<$ \mbox{\hyperlink{structq_a_p_i_1_1_log}{q\+API\+::\+Log}} $>$ {\bfseries q\+API\+::\+Logger}
+\begin{DoxyCompactList}\small\item\em The list of log levels and messages thrown during the calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2}{q\+API\+::\+Log\+Level}} \{ \newline
+\mbox{\hyperlink{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a551b723eafd6a31d444fcb2f5920fbd3}{INFO}}
+, \mbox{\hyperlink{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a059e9861e0400dfbe05c98a841f3f96b}{WARNING}}
+, \mbox{\hyperlink{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2acd22bad976363fdd1bfbf6759fede482}{ERR}}
+, \mbox{\hyperlink{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2acccc265b14c17af799a1834f4fbbe7cf}{EXCEPTION}}
+, \newline
+\mbox{\hyperlink{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2ad0749aaba8b833466dfcbb0428e4f89c}{SUCCESS}}
+, \mbox{\hyperlink{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a36fc6065a3e970bc3e6b2e59da52bf2a}{FAILURE}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2}\label{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2} 
+\index{Logger.hpp@{Logger.hpp}!LogLevel@{LogLevel}}
+\index{LogLevel@{LogLevel}!Logger.hpp@{Logger.hpp}}
+\doxysubsubsection{\texorpdfstring{LogLevel}{LogLevel}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2}{q\+API\+::\+Log\+Level}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+The level of the log message \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INFO@{INFO}!Logger.hpp@{Logger.hpp}}\index{Logger.hpp@{Logger.hpp}!INFO@{INFO}}}\Hypertarget{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a551b723eafd6a31d444fcb2f5920fbd3}\label{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a551b723eafd6a31d444fcb2f5920fbd3} 
+INFO&Your program is calling the API \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WARNING@{WARNING}!Logger.hpp@{Logger.hpp}}\index{Logger.hpp@{Logger.hpp}!WARNING@{WARNING}}}\Hypertarget{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a059e9861e0400dfbe05c98a841f3f96b}\label{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a059e9861e0400dfbe05c98a841f3f96b} 
+WARNING&Warning \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR@{ERR}!Logger.hpp@{Logger.hpp}}\index{Logger.hpp@{Logger.hpp}!ERR@{ERR}}}\Hypertarget{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2acd22bad976363fdd1bfbf6759fede482}\label{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2acd22bad976363fdd1bfbf6759fede482} 
+ERR&Something went wrong user side \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXCEPTION@{EXCEPTION}!Logger.hpp@{Logger.hpp}}\index{Logger.hpp@{Logger.hpp}!EXCEPTION@{EXCEPTION}}}\Hypertarget{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2acccc265b14c17af799a1834f4fbbe7cf}\label{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2acccc265b14c17af799a1834f4fbbe7cf} 
+EXCEPTION&Something went wrong dev side \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUCCESS@{SUCCESS}!Logger.hpp@{Logger.hpp}}\index{Logger.hpp@{Logger.hpp}!SUCCESS@{SUCCESS}}}\Hypertarget{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2ad0749aaba8b833466dfcbb0428e4f89c}\label{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2ad0749aaba8b833466dfcbb0428e4f89c} 
+SUCCESS&The request succeeded to run \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FAILURE@{FAILURE}!Logger.hpp@{Logger.hpp}}\index{Logger.hpp@{Logger.hpp}!FAILURE@{FAILURE}}}\Hypertarget{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a36fc6065a3e970bc3e6b2e59da52bf2a}\label{_logger_8hpp_a28ac929c70e0329894b04443131cbfc2a36fc6065a3e970bc3e6b2e59da52bf2a} 
+FAILURE&The request failed to run \\
+\hline
+
+\end{DoxyEnumFields}

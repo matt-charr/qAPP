@@ -1,0 +1,97 @@
+\doxysection{Pricing\+Results.\+hpp}
+\hypertarget{_pricing_results_8hpp_source}{}\label{_pricing_results_8hpp_source}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/PricingResults.hpp@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/PricingResults.hpp}}
+\mbox{\hyperlink{_pricing_results_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ *********************************************************************\ *}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Copyright\ ©\ 2023\ qAPP\ -\/\ Quantitative\ Analytics.\ All\ rights\ reserved.\ **\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ the\ project\ 'qAPP\ -\/\ Quantitative\ Analytics'.\ *****\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Hence\ the\ latter\ remains\ the\ exclusive\ property\ of\ its\ author.\ ******\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Accordingly,\ no\ part\ of\ this\ device\ may\ be\ used\ or\ transmitted\ ******\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ in\ any\ form\ for\ professional,\ educational\ or\ commercial\ purposes\ ****\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ without\ the\ express\ permission\ of\ Matthieu\ Charrier.\ ****************\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ *********************************************************************\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifndef\ \_QAPI\_PRICING\_RESULTS\_HEADER\_INCLUDED}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ \_QAPI\_PRICING\_RESULTS\_HEADER\_INCLUDED}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ std.}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ qAPI.}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_color_8hpp}{qAPI/Color.hpp}}>}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{namespace\ }qAPI\ \{}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_pricing_result}{PricingResult}}\ \{}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result_a19f7218f18dd4274a93863ffb409c656}{Mean}};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result_af8434bec7198de075e4a70039bb61928}{Lower}};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result_abbca0ef69fbd808b78a4f285fc30f2ef}{Upper}};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result_a08c5d9f2fa176bfc230f7c94d029e760}{Stddev}};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_color}{qAPI::Color}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result_af5edf270206b9b0ae402f615e6e39456}{Color}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ PricingResult.}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_price_result}{PriceResult}}\ \{}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result}{qAPI::PricingResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_price_result_affaa1de3832235ffe0b74bd5e522a4d7}{Value}};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ PriceResult.}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_name_value_result}{NameValueResult}}\ \{}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_name_value_result_ae58a5a448773ed24d74f8b95f0fd07d9}{Name}};}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result}{qAPI::PricingResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_name_value_result_ac3ac0b9d539134cc726d350b9abddf0e}{Value}};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ NameValueResult.}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_ticker_value_result}{TickerValueResult}}\ \{}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_ticker_value_result_a608a896f348a0aa6777c5e693b166390}{Ticker}};}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result}{qAPI::PricingResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ticker_value_result_ab39a8a60532715f1688aee263cbc71c4}{Value}};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ TickerValueResult.}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_x_greek}{XGreek}}\ \{}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_x_greek_ad6867dcbc69ba4a1c6a7189fe4b05a83}{FirstTicker}};}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_x_greek_af9948aa46bba6770ec7d5d6d96ad7b6e}{SecondTicker}};}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_result}{qAPI::PricingResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_x_greek_a057c9fdf08a46728d10d986ca43daa11}{Value}};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ XGreek.}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keyword}{typedef}\ std::vector<qAPI::NameValueResult>\ \mbox{\hyperlink{_pricing_results_8hpp_ab0af6b1d07516b55343111a1aaf9251a}{AllResult}};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{typedef}\ std::vector<qAPI::TickerValueResult>\ \mbox{\hyperlink{_pricing_results_8hpp_a2bd9fc62d3a54becbd4231a2c14b2de1}{GreekResult}};}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keyword}{typedef}\ std::vector<qAPI::XGreek>\ \mbox{\hyperlink{_pricing_results_8hpp_a6e2f581e08c934daccc44ee17bc96717}{XGreekResult}};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_pricing_results}{PricingResults}}\ \{}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ All.}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_ab0af6b1d07516b55343111a1aaf9251a}{qAPI::AllResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_acac000807ef349ed90d133a7fd04559c}{All}};}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Price.}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_price_result}{qAPI::PriceResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_a6c868f2af36b5b136d255b974fb3c108}{Price}};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Greeks.}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a2bd9fc62d3a54becbd4231a2c14b2de1}{qAPI::GreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_a9da73a1651697ab7c44d2275750c4125}{Delta}};}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a2bd9fc62d3a54becbd4231a2c14b2de1}{qAPI::GreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_ac49db9fbafff3718a5bd4ee33bba687d}{Gamma}};}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a2bd9fc62d3a54becbd4231a2c14b2de1}{qAPI::GreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_a41630aae987f1202841cdc586fc618d2}{Vega}};}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a2bd9fc62d3a54becbd4231a2c14b2de1}{qAPI::GreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_a6d9443c2ea9da0a86be709f72613c10d}{Volga}};}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a2bd9fc62d3a54becbd4231a2c14b2de1}{qAPI::GreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_ad473ece9119b82d2fc3555c5ebddda5c}{Vanna}};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ XGreeks.}}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a6e2f581e08c934daccc44ee17bc96717}{qAPI::XGreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_a74ef310eafea659d7c992d90cb6a125f}{XGamma}};}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a6e2f581e08c934daccc44ee17bc96717}{qAPI::XGreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_a27e1054576a03af5c8e66a0a056e7d2b}{XVolga}};}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a6e2f581e08c934daccc44ee17bc96717}{qAPI::XGreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_a54f3f1c35996070747aeda4646fcef62}{XVanna}};}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pricing_results_8hpp_a6e2f581e08c934daccc44ee17bc96717}{qAPI::XGreekResult}}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results_a8743e3e3a8e51edb9b030199cd4809b1}{Cega}};}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ PricingResults.}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \}\ \textcolor{comment}{//\ namespace\ qAPI.}}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_QAPI\_PRICING\_RESULTS\_HEADER\_INCLUDED}}
+
+\end{DoxyCode}

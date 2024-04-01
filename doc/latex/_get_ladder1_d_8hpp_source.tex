@@ -1,0 +1,106 @@
+\doxysection{Get\+Ladder1\+D.\+hpp}
+\hypertarget{_get_ladder1_d_8hpp_source}{}\label{_get_ladder1_d_8hpp_source}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetLadder1D.hpp@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetLadder1D.hpp}}
+\mbox{\hyperlink{_get_ladder1_d_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ *********************************************************************\ *}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Copyright\ ©\ 2023\ qAPP\ -\/\ Quantitative\ Analytics.\ All\ rights\ reserved.\ **\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ the\ project\ 'qAPP\ -\/\ Quantitative\ Analytics'.\ *****\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Hence\ the\ latter\ remains\ the\ exclusive\ property\ of\ its\ author.\ ******\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Accordingly,\ no\ part\ of\ this\ device\ may\ be\ used\ or\ transmitted\ ******\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ in\ any\ form\ for\ professional,\ educational\ or\ commercial\ purposes\ ****\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ without\ the\ express\ permission\ of\ Matthieu\ Charrier.\ ****************\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ *********************************************************************\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifndef\ \_QAPI\_GET\_LADDER\_1D\_HEADER\_INCLUDED}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ \_QAPI\_GET\_LADDER\_1D\_HEADER\_INCLUDED}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ std.}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ qAPI.}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <qAPI/Interface.hpp>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_logger_8hpp}{qAPI/Logger.hpp}}>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_pricing_results_8hpp}{qAPI/PricingResults.hpp}}>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_scenario_8hpp}{qAPI/Scenario.hpp}}>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_line_8hpp}{qAPI/Line.hpp}}>}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{namespace\ }Json\ \{}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{class\ }Value;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \}\ \textcolor{comment}{//\ namespace\ Json.}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{namespace\ }qAPI\ \{}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{struct\ }Data;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{struct\ }Contract;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{struct\ }Model;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{struct\ }Pricer;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_plot}{Ladder1DPlot}}\ \{}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Input.}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_plot_a470f6a2d71e11bde7129d5c921bcfce4}{BumpValue}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Output.}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_plot_ae44d0e32f3b070bda524371ba21169f3}{Mean}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_plot_a8b1ba16de9043cd13175582456467194}{Lower}};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_plot_a5debe3ab30e6b013aa926969622b13b4}{Upper}};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_plot_ad12b3e2a6bcbc6f8ca843df781e5b0a7}{Stddev}};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_pricing_results}{qAPI::PricingResults}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_plot_ad89dc19b55ca0b4035ddf7f4ae40be70}{Results}};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_color}{qAPI::Color}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_plot_aab2b055fbe161324279e770970a04c4c}{Color}};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ Ladder1DPlot.}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart}{Ladder1DChart}}\ \{}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Output.}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart_aad666c8c94826227e8316b72dddb7d07}{LadderLabel}};}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart_afa0ee011bfa7896da5e95043ffd9523e}{ValueLabel}};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_line}{qAPI::Line}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart_aee71d2fb84adb9b2dba93706909da845}{LadderValues}};}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_line}{qAPI::Line}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart_a5d3da77f681a91442fbe38c4669e27b6}{MeanValues}};}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_line}{qAPI::Line}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart_a9db44e8a3126cfd76e22808e3ce4e307}{LowerValues}};}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_line}{qAPI::Line}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart_a78e03260bce40b2b0066c8fbcd9e458c}{UpperValues}};}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_line}{qAPI::Line}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart_a365f929f9bfaf51eea052da487f15bd2}{ErrorValues}};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ Ladder1DChart.}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_results}{Ladder1DResults}}\ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Input.}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_results_a6636959b8810c5d55f9bd791568f9c9b}{Name}};}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_scenario_8hpp_a3d552ce80feba557492e111823d19cec}{qAPI::LadderKind}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_results_a28f4a0e6bce4f92e2c1a37641001eccf}{LadderKind}};}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_scenario_8hpp_ae7fb0715330b49c2f5de4eac1c8c71f2}{qAPI::BumpKind}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_results_a1dfaf8623569691ab381fbd7c8461ef6}{BumpKind}};}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_scenario_8hpp_a8724c273b5619c9dd3ea3d15b675f977}{qAPI::BumpUnit}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_results_af34bb409624cd67f151f01e3d233828c}{BumpUnit}};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Input\ \&\ Output.}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ std::vector<qAPI::Ladder1DPlot>\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_results_abb6ceb8c685d6466bc003a3f5ec40fd0}{Plots}};}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Output.}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_chart}{qAPI::Ladder1DChart}}\ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_results_a82ffae0ad82cf8a9e9cfb1f1fbf80e58}{Chart}};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ Ladder1DResults.}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \_EXTERN\_C}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00151\ \ \ \ \ \_qAPI\_EXPORT\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_get_ladder1_d_8hpp_a5516861e88ffe6db3196a07741598e79}{GetLadder1D}}(}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_data}{qAPI::Data}}\&,}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structq_a_p_i_1_1_contract}{qAPI::Contract}}\&,}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structq_a_p_i_1_1_model}{qAPI::Model}}\&,}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structq_a_p_i_1_1_pricer}{qAPI::Pricer}}\&,}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_ladder1_d_results}{qAPI::Ladder1DResults}}\&,}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_logger_8hpp_aa5a1f238844067249387700b036ac80c}{qAPI::Logger}}\&}
+\DoxyCodeLine{00158\ \ \ \ \ );}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00165\ \ \ \ \ \_qAPI\_EXPORT\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_get_ladder1_d_8hpp_a0cb2085a297b77fc84fa95fa701a318f}{GetLadder1DFromJson}}(}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ Json::Value\&}
+\DoxyCodeLine{00167\ \ \ \ \ );}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ \_END\_EXTERN\_C}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \}\ \textcolor{comment}{//\ namespace\ qAPI.}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_QAPI\_GET\_LADDER\_1D\_HEADER\_INCLUDED}}
+
+\end{DoxyCode}

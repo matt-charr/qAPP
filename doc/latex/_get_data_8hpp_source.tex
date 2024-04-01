@@ -1,0 +1,96 @@
+\doxysection{Get\+Data.\+hpp}
+\hypertarget{_get_data_8hpp_source}{}\label{_get_data_8hpp_source}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetData.hpp@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetData.hpp}}
+\mbox{\hyperlink{_get_data_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ *********************************************************************\ *}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Copyright\ ©\ 2023\ qAPP\ -\/\ Quantitative\ Analytics.\ All\ rights\ reserved.\ **\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ the\ project\ 'qAPP\ -\/\ Quantitative\ Analytics'.\ *****\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Hence\ the\ latter\ remains\ the\ exclusive\ property\ of\ its\ author.\ ******\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Accordingly,\ no\ part\ of\ this\ device\ may\ be\ used\ or\ transmitted\ ******\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ in\ any\ form\ for\ professional,\ educational\ or\ commercial\ purposes\ ****\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ without\ the\ express\ permission\ of\ Matthieu\ Charrier.\ ****************\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ *********************************************************************\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifndef\ \_QAPI\_GET\_DATA\_HEADER\_INCLUDED}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ \_QAPI\_GET\_DATA\_HEADER\_INCLUDED}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ std.}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ qAPI.}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <qAPI/Interface.hpp>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_logger_8hpp}{qAPI/Logger.hpp}}>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_color_8hpp}{qAPI/Color.hpp}}>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_line_8hpp}{qAPI/Line.hpp}}>}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{namespace\ }Json\ \{}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{class\ }Value;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \}\ \textcolor{comment}{//\ namespace\ Json.}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{namespace\ }qAPI\ \{}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{struct\ }Data;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_observable}{Observable}}\ \{}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Output.}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_observable_aab69e1cf08b6390bd309a259269e5e0f}{Date}};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_color}{qAPI::Color}}\ \mbox{\hyperlink{structq_a_p_i_1_1_observable_a494043c8570eedc13c39ca0b7ad63a03}{Color}};}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structq_a_p_i_1_1_observable_a6547c1b11c6ce4a4f0e52ed1f535d6b9}{Value}};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structq_a_p_i_1_1_observable_a40ee3f9c1a29db794d96094738093cd3}{Status}};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ Observable.}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_observation}{Observation}}\ \{}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Input.}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_observation_a519ab522c99d6b0998de8c1aadf807c2}{File}};}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_observation_ad51c4d1272d9b3e42d7783b4074caf13}{Currency}};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Output.}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ std::vector<qAPI::Observable>\ \mbox{\hyperlink{structq_a_p_i_1_1_observation_af7675343ea4d09f9e4ec4b2d67145cbc}{TimeSeries}};\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ Observation.}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_data_results_chart}{DataResultsChart}}\ \{}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Output.}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_data_results_chart_aa090261844fee725afcb322ce106f614}{Label}};}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structq_a_p_i_1_1_data_results_chart_a14010fe5c68617148df14d603768c5ba}{Currency}};}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_line}{qAPI::Line}}\ \mbox{\hyperlink{structq_a_p_i_1_1_data_results_chart_a650155afd62a7233e667a80ae7a188d9}{Times}};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_line}{qAPI::Line}}\ \mbox{\hyperlink{structq_a_p_i_1_1_data_results_chart_af857f65680dfc2bc0fa8ab25d3f2d8ee}{Values}};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ Chart.}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_data_results}{DataResults}}\ \{}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Input\ \&\ Output.}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ std::vector<qAPI::Observation>\ \mbox{\hyperlink{structq_a_p_i_1_1_data_results_a8f7a525b330fa68c171464e702b1cab5}{Observations}};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Output.}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ std::vector<qAPI::DataResultsChart>\ \mbox{\hyperlink{structq_a_p_i_1_1_data_results_a231f3f821416fb518b2448a288217ebd}{Chart}};}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ DataResults.}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \_EXTERN\_C}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \_qAPI\_EXPORT\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_get_data_8hpp_adefdaaa926d13eeb0be0d294ae49eade}{GetData}}(}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_data}{qAPI::Data}}\&,}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_data_results}{qAPI::DataResults}}\&,}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_logger_8hpp_aa5a1f238844067249387700b036ac80c}{qAPI::Logger}}\&}
+\DoxyCodeLine{00134\ \ \ \ \ );}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \_qAPI\_EXPORT\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_get_data_8hpp_a12073b1bce6208e97fe6a728b304babf}{GetDataFromJson}}(}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ Json::Value\&}
+\DoxyCodeLine{00143\ \ \ \ \ );}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \_END\_EXTERN\_C}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \}\ \textcolor{comment}{//\ namespace\ qAPI.}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_QAPI\_GET\_DATA\_HEADER\_INCLUDED}}
+
+\end{DoxyCode}

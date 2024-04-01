@@ -1,0 +1,32 @@
+\doxysection{Interface.\+hpp}
+\hypertarget{_interface_8hpp_source}{}\label{_interface_8hpp_source}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/Interface.hpp@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/Interface.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ *********************************************************************\ *}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Copyright\ ©\ 2023\ QA\ -\/\ Quantitative\ Analytics.\ All\ rights\ reserved.\ **\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ the\ project\ 'QA\ -\/\ Quantitative\ Analytics'.\ *****\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Hence\ the\ latter\ remains\ the\ exclusive\ property\ of\ its\ author.\ ******\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Accordingly,\ no\ part\ of\ this\ device\ may\ be\ used\ or\ transmitted\ ******\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ in\ any\ form\ for\ professional,\ educational\ or\ commercial\ purposes\ ****\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ without\ the\ express\ permission\ of\ Matthieu\ Charrier.\ ****************\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ *********************************************************************\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#if\ defined\ \_\_cplusplus}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ \_EXTERN\_C\ extern\ "{}C"{}\ \{}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ \_END\_EXTERN\_C\ \}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ \_EXTERN\_C}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ \_END\_EXTERN\_C}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#if\ defined\ \_WIN32}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#ifdef\ \_BUILD\_DLL}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ \_qAPI\_EXPORT\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ \_qAPI\_EXPORT\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ \_qAPI\_EXPORT}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_WIN32.}}
+
+\end{DoxyCode}

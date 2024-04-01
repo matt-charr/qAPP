@@ -1,0 +1,71 @@
+\doxysection{C\+:/\+Users/\+User/\+Documents/q\+APP/dev/qa-\/dev/q\+API/\+Get\+Sequence.hpp File Reference}
+\hypertarget{_get_sequence_8hpp}{}\label{_get_sequence_8hpp}\index{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetSequence.hpp@{C:/Users/User/Documents/qAPP/dev/qa-\/dev/qAPI/GetSequence.hpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Interface.\+hpp$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_sequence_results}{q\+API\+::\+Sequence\+Results}}
+\begin{DoxyCompactList}\small\item\em Arguments of \doxylink{_get_sequence_8hpp_ae18fad2ed6c0e0f4ee89226c9ab4b71d}{q\+API\+::\+Get\+Sequence}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cde}{q\+API\+::\+Sequence\+Kind}} \{ \mbox{\hyperlink{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdea891f35a29c3d51d02ffd42dd6dcc69b2}{UNIFORM}}
+, \mbox{\hyperlink{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdea8d6b5cada83510220f59e00ce86d4d92}{CONSTANT}}
+, \mbox{\hyperlink{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdeaa8319f012c77bd7d0778f05216c867f1}{CHEBYCHEV}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+EXTERN\+\_\+C \+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_sequence_8hpp_ae18fad2ed6c0e0f4ee89226c9ab4b71d}{q\+API\+::\+Get\+Sequence}} (\mbox{\hyperlink{structq_a_p_i_1_1_sequence_results}{q\+API\+::\+Sequence\+Results}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cde}\label{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cde} 
+\index{GetSequence.hpp@{GetSequence.hpp}!SequenceKind@{SequenceKind}}
+\index{SequenceKind@{SequenceKind}!GetSequence.hpp@{GetSequence.hpp}}
+\doxysubsubsection{\texorpdfstring{SequenceKind}{SequenceKind}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cde}{q\+API\+::\+Sequence\+Kind}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Floating-\/point numbers generation rules \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNIFORM@{UNIFORM}!GetSequence.hpp@{GetSequence.hpp}}\index{GetSequence.hpp@{GetSequence.hpp}!UNIFORM@{UNIFORM}}}\Hypertarget{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdea891f35a29c3d51d02ffd42dd6dcc69b2}\label{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdea891f35a29c3d51d02ffd42dd6dcc69b2} 
+UNIFORM&The numbers are uniformly distributed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONSTANT@{CONSTANT}!GetSequence.hpp@{GetSequence.hpp}}\index{GetSequence.hpp@{GetSequence.hpp}!CONSTANT@{CONSTANT}}}\Hypertarget{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdea8d6b5cada83510220f59e00ce86d4d92}\label{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdea8d6b5cada83510220f59e00ce86d4d92} 
+CONSTANT&The numbers are identically equal to a single value \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHEBYCHEV@{CHEBYCHEV}!GetSequence.hpp@{GetSequence.hpp}}\index{GetSequence.hpp@{GetSequence.hpp}!CHEBYCHEV@{CHEBYCHEV}}}\Hypertarget{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdeaa8319f012c77bd7d0778f05216c867f1}\label{_get_sequence_8hpp_a14d6fd61b129783acda9f9c05e176cdeaa8319f012c77bd7d0778f05216c867f1} 
+CHEBYCHEV&The numbers are the root of the first species Chebychev polynome \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_get_sequence_8hpp_ae18fad2ed6c0e0f4ee89226c9ab4b71d}\label{_get_sequence_8hpp_ae18fad2ed6c0e0f4ee89226c9ab4b71d} 
+\index{GetSequence.hpp@{GetSequence.hpp}!GetSequence@{GetSequence}}
+\index{GetSequence@{GetSequence}!GetSequence.hpp@{GetSequence.hpp}}
+\doxysubsubsection{\texorpdfstring{GetSequence()}{GetSequence()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Sequence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structq_a_p_i_1_1_sequence_results}{q\+API\+::\+Sequence\+Results}} \&}]{p\+\_\+results }\end{DoxyParamCaption})}
+
+Generate the corresponding sequence of floating-\/point numbers given a lower and upper bound together with a specific generation rule. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+results} & See \doxylink{structq_a_p_i_1_1_sequence_results}{q\+API\+::\+Sequence\+Results} \\
+\hline
+\end{DoxyParams}
