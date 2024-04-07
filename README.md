@@ -40,42 +40,7 @@
 # 🍺 Project Status
 
 ⭐ Star the project on GitHub helps it to progress.
-
-<td>
-<h3>📰 Latest news </h3>
-<ul>
-  <li> <ins>2024-03-25</ins>
-<ul>
-    <li> 🔔(<strong>Release</strong>) <a href="https://github.com/matt-charr/qa-demo/releases">qa-v0.3.2</a> is out 🚀</li>
-</ul>
-</ul>
-</td>
-
-<td>
-<h3>👷 Current work </h3>
-<ul>
-<li> <ins>2024-03-25</ins>
-<ul>
-    <li>📗(<strong>Long Term Project</strong>) Implementing Longstaff-Schwartz algorithm. </li>
-    <li>📙(<strong>Short Term Project</strong>) Making templates for some standard contracts</li>
-    <li>📕(<strong>Issue</strong>) Fixing stack overflow at deep contract motion time</li> 
-    <li>📘(<strong>Misc</strong>) Computing delta (sticky delta) and cega with AAD</li>
-</ul>
-</ul>
-</td>
-
-<td>
-<h3>🏆 Achievements </h3>
-<ul>
-<li> <ins>2024-01-11</ins>
-<ul>
-    <li>📗(<strong>Long Term Project</strong>) Generic PDE pricer handles choosing style features.</li>
-    <li>📙(<strong>Short Term Project</strong>) Released the C API</li>
-    <li>📕(<strong>Issue</strong>) Set MacOS release package</li>
-    <li>📘(<strong>Misc</strong>) Implemented qapy, a python project to design and generate your contract.</li>
-</ul>
-</ul>
-</td>
+🚀 Download the <a href="https://github.com/matt-charr/qa-demo/releases">lastest release</a>
 
 ## 📋 Table of Contents
 
