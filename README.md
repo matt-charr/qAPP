@@ -3,14 +3,14 @@
 </h1><br>
 
 <tr>
-  <td><a href="https://github.com/matt-charr/qa-demo/stargazers">
-  <img src="https://img.shields.io/github/stars/matt-charr/qa-demo?style=social"></td>
-  <td><a href="https://github.com/matt-charr/qa-demo/network/members">
-  <img src="https://img.shields.io/github/forks/matt-charr/qa-demo?style=social"></td>
-  <td><a href="https://github.com/matt-charr/qa-demo/watchers">
-  <img src="https://img.shields.io/github/watchers/matt-charr/qa-demo?style=social"></td>
-  <td><a href="https://github.com/matt-charr/qa-demo/issues">
-  <img src="https://img.shields.io/github/issues/matt-charr/qa-demo?style=social"></td>
+  <td><a href="https://github.com/matt-charr/qAPP/stargazers">
+  <img src="https://img.shields.io/github/stars/matt-charr/qAPP?style=social"></td>
+  <td><a href="https://github.com/matt-charr/qAPP/network/members">
+  <img src="https://img.shields.io/github/forks/matt-charr/qAPP?style=social"></td>
+  <td><a href="https://github.com/matt-charr/qAPP/watchers">
+  <img src="https://img.shields.io/github/watchers/matt-charr/qAPP?style=social"></td>
+  <td><a href="https://github.com/matt-charr/qAPP/issues">
+  <img src="https://img.shields.io/github/issues/matt-charr/qAPP?style=social"></td>
 </tr>
 <br>
 <tr>
@@ -37,12 +37,7 @@
   <td><a href="" alt="Hostinger"><img src="https://img.shields.io/badge/Linode-00A95C?style=for-the-badge&logo=Linode&logoColor=white" alt="Hostinger"/></a></td>
 </tr>
 
-# 🍺 Project Status
-
-⭐ Star the project on GitHub helps it to progress.
-🚀 Download the <a href="https://github.com/matt-charr/qa-demo/releases">lastest release</a>
-
-## 📋 Table of Contents
+# 📋 Table of Contents
 
 1. 💥 [Genesis](#genesis)
 2. ⚡️ [Quick Start](#quick-start)
@@ -62,7 +57,7 @@
 # <a name="genesis">Genesis</a>
 
 <div align="center">
-<em>"Design, price and monitor your own exotic financial derivatives contracts"</em>
+<em>"Design, price and manage your own exotic financial derivatives contracts"</em>
 </div> <br>
 
 🎮 `𝐪𝐀𝐏𝐏` (Quantitative Analytics Application) is a simple ecosystem of devices that helps the users to 𝑏𝑢𝑖𝑙𝑑, 𝑝𝑟𝑖𝑐𝑒 and 𝑎𝑛𝑎𝑙𝑦𝑠𝑒 customized financial derivatives contracts.
@@ -77,20 +72,11 @@
 
 ⏩ **𝑞𝐺𝑈𝐼** (<em>public</em>) is the up and running GUI desktop application from which the user requests the API and visualize the results through a modern graphical interface.
 
-![Architecture](https://github.com/matt-charr/qa-demo/assets/68332647/9282f0f0-2023-4d25-9ba6-aef13b857a2d)
+![Architecture](https://github.com/matt-charr/qAPP/assets/68332647/9282f0f0-2023-4d25-9ba6-aef13b857a2d)
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
-To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qa-demo/releases) and download the asset that corresponds to your operating system. After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qAPP` directory. Open the `qGUI` executable located at <em>qa/bin</em> and you arrive to the main page. 
-
-On the left hand side of the screen is located a logger that displays the messages that `qCORE` returns after each actions.
-
-Each action triggers by `qGUI` - typically pressing a button - throws <FONT COLOR="BLUE"><em>information</em></FONT>, <FONT COLOR="GREEN"><em>warnings</em></FONT>, <FONT COLOR="ORANGE"><em>errors</em></FONT> and/or <FONT COLOR="RED"><em>exceptions</em></FONT>.
-- If an <FONT COLOR="RED"><em>exception</em></FONT> is thrown, it means something went wrong dev side. In that case please [report your issue](https://github.com/matt-charr/qa-demo/issues) by dropping your `mockup` file together with your contract and data json files if any (see [How can I report my issue](features/how-can-i-report-my-issue/doc.md)).
-- If an <FONT COLOR="ORANGE"><em>error</em></font> is thrown, it means that something went wrong user side and `qCORE` did not manage to perform your request. In that case you need to check the log and correct your request accordingly.
-- If a <FONT COLOR="GREEN"><em>warning</em></font> is thrown, it means that something went wrong user side but `qCORE` managed to perform the request.
-At inception, an action always thrown an <FONT COLOR="BLUE"><em>information</em></FONT> message to the user such as "Pricing contract...", the goal is to inform what action `qGUI` is performing.
-When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is thrown if an only if no error or exception occured during the action lifetime.
+To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qAPP/releases) and download the asset that corresponds to your operating system. After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qAPP` directory. Open the `qGUI` executable located at <em>qa/bin</em> and you arrive to the main page. 
 
 # <a name="features"> 🌴 Features</a>
 
@@ -101,14 +87,14 @@ When the action is over, a <FONT COLOR="YELLOW"><em>success</em></font> is throw
 
 ## <a name="missing-a-specific-feature-?">🤝 Missing a specific feature ?</a>
 
-The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to [share your ideas](https://github.com/matt-charr/qa-demo/issues) under the tag <em>features</em> ! We are happy to discuss with you about your personnal needs and the feasibility of your project.
+The project is very far from being complete (and will probably never be ...) and a loads of features are still missing. This is why our developpers are working continuously to enrich the list of available functionalities. Feel free to [share your ideas](https://github.com/matt-charr/qAPP/issues) under the tag <em>features</em> ! We are happy to discuss with you about your personnal needs and the feasibility of your project.
 
 > [!NOTE]
 > If your idea is considered as doable by our team, be sure that your request will be added to our stack. But please kindly understand that we cannot give any ETA since our developers are working for `qAPP` as volunteers aside their job and our backlog is already populated by a thousand of new fields to explore.
 
 ## <a name="found-a-bug-?">🔎 Found a bug ?</a>
 
-Feel free to [report your issue](https://github.com/matt-charr/qa-demo/issues) (see [How can I report my issue](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description. For any questions, you can always reach out to us directly via our [twitter](https://twitter.com/matt_charr) or post your question on [QuantStackExchange](https://quant.stackexchange.com/questions/tagged/qa) with the official `qAPP` tag.
+Feel free to [report your issue](https://github.com/matt-charr/qAPP/issues) (see [How can I report my issue](features/how-can-i-report-my-issue/doc.md)) with a respective title and an understandable description.
 
 > [!IMPORTANT]
 > `qAPP` embbeds a mecanism to save and open your current `mockup` for further usage. If possible please attach your `mockup` file together with the relevant data json and contract external files in your issue, it helps our developpers to reproduce the bug and increase the chances for us to sort it quickly. See [How can I report my issue](features/how-can-i-report-my-issue/doc.md) for further details on how to proceed.
@@ -126,19 +112,19 @@ We propose to every structured products and programmer enthusiasts to contribute
 - Fork and clone this repository.
 
 ```bash
-git clone https://github.com/matt-charr/qa-demo.git
+git clone https://github.com/matt-charr/qAPP.git
 ```
 
-- Drop your contract python file(s) into <em>qa-demo/factory</em> folder.
+- Drop your contract python file(s) into <em>qAPP/factory</em> folder.
 
 ```bash
-mv my_contract.py qa-demo/factory/my_contract.py
+mv my_contract.py qAPP/factory/my_contract.py
 ```
 
 - Commit, push and pull request.
 
 ```bash
-cd qa-demo 
+cd qAPP 
 git commit -am "Added my contract"
 git push origin master
 ```
@@ -147,7 +133,7 @@ git push origin master
 
 ## <a name="developement"> 🍯 Developement</a>
 
-Once a bug or a feature is submitted, an issue is created with the corresponding flag (<em>bug</em>, <em>feature</em>, <em>short project</em>, <em>long project</em>, <em>misc</em>). Once picked from the stack, a dev branch is created, comes down locally to the developper machine and this is where the fun begins 😃
+Once a bug or a feature is submitted, an issue is created with the corresponding flag (<em>bug</em>, <em>feature</em>, <em>project</em>, <em>activity</em>, <em>misc</em>). Once picked from the stack, a dev branch is created, comes down locally to the developper machine and this is where the fun begins 😃
 
 ## <a name="build"> 🍏 Build</a>
 
@@ -181,28 +167,66 @@ In order to ensure that the code change effect is not broken by any subsequent m
 | Linux       | Ubuntu 22.04 | [Hostinger](https://www.hostinger.fr) | 8.00 GB | CMake-3.22.1 | Unix Makefiles        | Release & Debug | GCC-11.4.0         | ✅           |
 | MacOS       | Sonoma 14.4  | [UltaHost](https://ultahost.com)      | 2.00 GB | CMake-3.28.3 | Unix Makefiles        | Release & Debug | CLANG-1500.3.9.4   | ✅           |
 
-![CICD](https://github.com/matt-charr/qa-demo/assets/68332647/9e5b9a78-055f-43ee-98e8-fb4b12e31782)
+![CICD](https://github.com/matt-charr/qAPP/assets/68332647/9e5b9a78-055f-43ee-98e8-fb4b12e31782)
 
 ## <a name="continuous-delivery">🍇 Continuous Delivery</a>
 
 Our team delivers a release on a weekly basis:
 
-- ~One <strong>major</strong> release per year (coming out with the current <em>long project</em>)
-- ~One <strong>minor</strong> release per month (coming out with the current <em>short project</em>)
-- ~One <strong>patch</strong> release per week (coming out with the current <em>issue</em>)
+- ~One <strong>major</strong> release per year (coming out with the current <em>project</em>)
+- ~One <strong>minor</strong> release per month (coming out with the current <em>feature</em>)
+- ~One <strong>patch</strong> release per week (coming out with the current <em>bug</em>)
    
-To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qa-demo](https://github.com/matt-charr/qa-demo).
+To publish a new release, each tag created on our developement repository triggers a github actions that for each OS supported will create and upload the package to [qAPP](https://github.com/matt-charr/qAPP).
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
 
+# <a name="Example">📜 Example</a>
+
+◼️ 𝐀 𝐬𝐢𝐦𝐩𝐥𝐞 𝐮𝐬𝐞 𝐜𝐚𝐬𝐞: 𝐷𝑢𝑎𝑙 𝑑𝑖𝑔𝑖𝑡𝑎𝑙 𝑐𝑎𝑙𝑙 𝑜𝑝𝑡𝑖𝑜𝑛 risk profile.
+
+● The contract is described in 𝑞𝐿𝐴𝑁𝐺 as:
+
+```cpp
+𝘐𝘍(
+  𝘔𝘐𝘕(
+    𝘚𝘗𝘖𝘛("undl1", "2022-05-03") / 𝘚𝘗𝘖𝘛("undl1", "2021-05-03"), 
+    𝘚𝘗𝘖𝘛("undl2", "2022-05-03") / 𝘚𝘗𝘖𝘛("undl2", "2021-05-03")
+  ) > 𝘙𝘌𝘍("Strike", 1)
+) 𝘛𝘏𝘌𝘕(
+  𝘗𝘈𝘠(100, "2022-05-03", "cc1")
+)
+```
+
+● The functions called in 𝑞𝐴𝑃𝐼 are:
+
+𝘎𝘦𝘵𝘊𝘰𝘯𝘵𝘳𝘢𝘤𝘵𝘍𝘦𝘢𝘵𝘶𝘳𝘦1𝘋𝘓𝘢𝘥𝘥𝘦𝘳 with 𝘚𝘵𝘳𝘪𝘬𝘦 𝐱 [𝘗𝘳𝘪𝘤𝘦 | 𝐷𝑒𝑙𝑡𝑎 | 𝘝𝘦𝘨𝘢 | 𝘎𝘢𝘮𝘮𝘢 | 𝘊𝘦𝘨𝘢]
+𝘎𝘦𝘵𝘔𝘢𝘳𝘬𝘦𝘵𝘋𝘢𝘵𝘢2𝘋𝘓𝘢𝘥𝘥𝘦𝘳 with 𝘴𝘱𝘰𝘵@𝘶𝘯𝘥𝘭1 𝐱 𝘴𝘱𝘰𝘵@𝘶𝘯𝘥𝘭2 𝐱 [𝘗𝘳𝘪𝘤𝘦 | 𝐷𝑒𝑙𝑡𝑎 | 𝘝𝘦𝘨𝘢 | 𝘎𝘢𝘮𝘮𝘢 | 𝘊𝘦𝘨𝘢]
+
+● Below the results loaded into 𝑞𝐺𝑈𝐼.
+
+- This a tiny frame of what you can do. Check out the examples in the package for more applications.
+- Pricing a 𝐷𝑢𝑎𝑙 𝑑𝑖𝑔𝑖𝑡𝑎𝑙 𝑐𝑎𝑙𝑙 𝑜𝑝𝑡𝑖𝑜𝑛 with 𝐪𝐀𝐏𝐏 is overkilled. It is meant to handle more complex custom derivatives.
+- 𝑞𝐺𝑈𝐼 does not handle 3D visualization. A way to achieve this is to use the upcoming python API.
+
 # <a name="licence">📜 Licence</a>
 
 ```text
-Copyright © 2023 QA - Quantitative Analytics. All rights reserved.
-This file is part of the project QA - Quantitative Analytics. 
+Copyright © 2024 qAPP - Quantitative Analytics. All rights reserved.
+This file is part of the project qAPP - Quantitative Analytics Application. 
 Hence the latter remains the exclusive property of its author. 
 Accordingly, no part of this document may be used or transmitted 
 in any form for professional, educational or commercial purposes 
 without the express permission of Matthieu Charrier.
 ```
+
+---
+
+🙌 Feedbacks more than welcome. <br>
+⭐ Star the project on GitHub helps it to progress. <br>
+🔔 Reach us at https://lnkd.in/eZCcrs9F if: <br>
+⚫ You need 𝘀𝗼𝗺𝗲 𝗵𝗲𝗹𝗽 𝘁𝗼 𝘀𝘁𝗮𝗿𝘁. <br>
+⚫ You want to 𝗽𝗿𝗼𝗽𝗼𝘀𝗲 𝗮 𝗻𝗲𝘄 𝗳𝗲𝗮𝘁𝘂𝗿𝗲. <br>
+⚫ You want to 𝘀𝘂𝗯𝗺𝗶𝘁 𝗮 𝗰𝗼𝗻𝘁𝗿𝗮𝗰𝘁. <br>
+⚫ You want to 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻 𝗶𝘀𝘀𝘂𝗲. <br>
