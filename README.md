@@ -46,13 +46,15 @@
    2. 🤝 [Missing a specific feature ?](#missing-a-specific-feature-?)
    3. 🔎 [Found a bug ?](#found-a-bug-?)
 4. 🙌 [How can I contribute ?](#how-can-i-contribute-?)
-5. 💻 [Insights](#insights)
+5. 🔌 [How can I plug 𝗾𝗔𝗣𝗜 into my project ?](#how-can-i-plug-qapi-into-my-project-?) 
+6. ⏭ [Example](#example) 
+6. 💻 [Insights](#insights)
    1. 🍯 [Developement](#developement)
    2. 🍏 [Build](#build)
    3. 🍊 [Tests](#tests)
    4. 🍈 [Continuous Integration](#continuous-integration)
    5. 🍇 [Continuous Delivery](#continuous-delivery)
-6. 📜 [Licence](#licence)
+7. 📜 [Licence](#licence)
 
 # <a name="genesis">Genesis</a>
 
@@ -76,7 +78,7 @@
 
 # <a name="quick-start">⚡️ Quick Start</a>
 
-To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qAPP/releases) and download the asset that corresponds to your operating system. After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qAPP` directory. Open the `qGUI` executable located at <em>qa/bin</em> and you arrive to the main page. 
+To download the latest version of our application, go to [Releases](https://github.com/matt-charr/qAPP/releases) and download the asset that corresponds to your operating system. After extracting all the files into a nice location of your machine, you are falling onto a folder that contains `qAPP` directory. Open the `qGUI` executable located at <em>qAPP/bin</em> and you arrive to the main page with an example. 
 
 # <a name="features"> 🌴 Features</a>
 
@@ -128,6 +130,47 @@ cd qAPP
 git commit -am "Added my contract"
 git push origin master
 ```
+
+# <a name="How can I plug 𝗾𝗔𝗣𝗜 into my project ?">🔌 How can I plug 𝗾𝗔𝗣𝗜 into my project ?</a>
+
+● From the command line, add:
+-𝘐 [𝘱𝘢𝘵𝘩_𝘵𝘰_𝘲𝘈𝘗𝘗]/𝘪𝘯𝘤𝘭𝘶𝘥𝘦 -𝘓 [𝘱𝘢𝘵𝘩_𝘵𝘰_𝘲𝘈𝘗𝘗]/𝘭𝘪𝘣 -𝘭𝘲𝘈𝘗𝘐 -𝘭𝘲𝘓𝘈𝘕𝘎
+
+● From CMake (and Visual Studio), add:
+𝘪𝘯𝘤𝘭𝘶𝘥𝘦_𝘥𝘪𝘳𝘦𝘤𝘵𝘰𝘳𝘪𝘦𝘴([𝘱𝘢𝘵𝘩_𝘵𝘰_𝘲𝘈𝘗𝘗]/𝘪𝘯𝘤𝘭𝘶𝘥𝘦)
+𝘭𝘪𝘯𝘬_𝘥𝘪𝘳𝘦𝘤𝘵𝘰𝘳𝘪𝘦𝘴([𝘱𝘢𝘵𝘩_𝘵𝘰_𝘲𝘈𝘗𝘗]/𝘭𝘪𝘣)
+𝘭𝘪𝘯𝘬_𝘭𝘪𝘣𝘳𝘢𝘳𝘪𝘦𝘴(𝘲𝘓𝘈𝘕𝘎 𝘲𝘈𝘗𝘐)
+
+# <a name="Example">⏭ Example</a>
+
+◼️ 𝐀 𝐬𝐢𝐦𝐩𝐥𝐞 𝐮𝐬𝐞 𝐜𝐚𝐬𝐞: 𝐷𝑢𝑎𝑙 𝑑𝑖𝑔𝑖𝑡𝑎𝑙 𝑐𝑎𝑙𝑙 𝑜𝑝𝑡𝑖𝑜𝑛 risk profile.
+
+● The contract is described in 𝑞𝐿𝐴𝑁𝐺 as:
+
+```cpp
+𝘐𝘍(
+  𝘔𝘐𝘕(
+    𝘚𝘗𝘖𝘛("undl1", "2022-05-03") / 𝘚𝘗𝘖𝘛("undl1", "2021-05-03"), 
+    𝘚𝘗𝘖𝘛("undl2", "2022-05-03") / 𝘚𝘗𝘖𝘛("undl2", "2021-05-03")
+  ) > 𝘙𝘌𝘍("Strike", 1)
+) 𝘛𝘏𝘌𝘕(
+  𝘗𝘈𝘠(100, "2022-05-03", "cc1")
+)
+```
+
+● The functions called in 𝑞𝐴𝑃𝐼 are:
+
+𝘎𝘦𝘵𝘊𝘰𝘯𝘵𝘳𝘢𝘤𝘵𝘍𝘦𝘢𝘵𝘶𝘳𝘦1𝘋𝘓𝘢𝘥𝘥𝘦𝘳 with 𝘚𝘵𝘳𝘪𝘬𝘦 𝐱 [𝘗𝘳𝘪𝘤𝘦 | 𝐷𝑒𝑙𝑡𝑎 | 𝘝𝘦𝘨𝘢 | 𝘎𝘢𝘮𝘮𝘢 | 𝘊𝘦𝘨𝘢]
+𝘎𝘦𝘵𝘔𝘢𝘳𝘬𝘦𝘵𝘋𝘢𝘵𝘢2𝘋𝘓𝘢𝘥𝘥𝘦𝘳 with 𝘴𝘱𝘰𝘵@𝘶𝘯𝘥𝘭1 𝐱 𝘴𝘱𝘰𝘵@𝘶𝘯𝘥𝘭2 𝐱 [𝘗𝘳𝘪𝘤𝘦 | 𝐷𝑒𝑙𝑡𝑎 | 𝘝𝘦𝘨𝘢 | 𝘎𝘢𝘮𝘮𝘢 | 𝘊𝘦𝘨𝘢]
+
+● Below the results loaded into 𝑞𝐺𝑈𝐼.
+
+![dDigit](https://github.com/matt-charr/qAPP/assets/68332647/18826725-4d54-40bc-83c0-0f3aa273ebd1)
+
+- This a tiny frame of what you can do. Check out the examples in the package for more applications.
+- Pricing a 𝐷𝑢𝑎𝑙 𝑑𝑖𝑔𝑖𝑡𝑎𝑙 𝑐𝑎𝑙𝑙 𝑜𝑝𝑡𝑖𝑜𝑛 with 𝐪𝐀𝐏𝐏 is overkilled. It is meant to handle more complex custom derivatives.
+- 𝑞𝐺𝑈𝐼 does not handle 3D visualization. A way to achieve this is to use the upcoming python API.
+
 
 # <a name="work-style">💻 Insights</a>
 
@@ -181,36 +224,6 @@ To publish a new release, each tag created on our developement repository trigge
 
 > [!IMPORTANT]
 > We are far from being CD experts and know that our solution looks like a rush, better ways of releasing probably exist such as deploying binaries to a more convenient location than GitHub or building on a dedicated production environement. You are more than welcome to suggest improvements or just simply share your CD work styles. 
-
-# <a name="Example">📜 Example</a>
-
-◼️ 𝐀 𝐬𝐢𝐦𝐩𝐥𝐞 𝐮𝐬𝐞 𝐜𝐚𝐬𝐞: 𝐷𝑢𝑎𝑙 𝑑𝑖𝑔𝑖𝑡𝑎𝑙 𝑐𝑎𝑙𝑙 𝑜𝑝𝑡𝑖𝑜𝑛 risk profile.
-
-● The contract is described in 𝑞𝐿𝐴𝑁𝐺 as:
-
-```cpp
-𝘐𝘍(
-  𝘔𝘐𝘕(
-    𝘚𝘗𝘖𝘛("undl1", "2022-05-03") / 𝘚𝘗𝘖𝘛("undl1", "2021-05-03"), 
-    𝘚𝘗𝘖𝘛("undl2", "2022-05-03") / 𝘚𝘗𝘖𝘛("undl2", "2021-05-03")
-  ) > 𝘙𝘌𝘍("Strike", 1)
-) 𝘛𝘏𝘌𝘕(
-  𝘗𝘈𝘠(100, "2022-05-03", "cc1")
-)
-```
-
-● The functions called in 𝑞𝐴𝑃𝐼 are:
-
-𝘎𝘦𝘵𝘊𝘰𝘯𝘵𝘳𝘢𝘤𝘵𝘍𝘦𝘢𝘵𝘶𝘳𝘦1𝘋𝘓𝘢𝘥𝘥𝘦𝘳 with 𝘚𝘵𝘳𝘪𝘬𝘦 𝐱 [𝘗𝘳𝘪𝘤𝘦 | 𝐷𝑒𝑙𝑡𝑎 | 𝘝𝘦𝘨𝘢 | 𝘎𝘢𝘮𝘮𝘢 | 𝘊𝘦𝘨𝘢]
-𝘎𝘦𝘵𝘔𝘢𝘳𝘬𝘦𝘵𝘋𝘢𝘵𝘢2𝘋𝘓𝘢𝘥𝘥𝘦𝘳 with 𝘴𝘱𝘰𝘵@𝘶𝘯𝘥𝘭1 𝐱 𝘴𝘱𝘰𝘵@𝘶𝘯𝘥𝘭2 𝐱 [𝘗𝘳𝘪𝘤𝘦 | 𝐷𝑒𝑙𝑡𝑎 | 𝘝𝘦𝘨𝘢 | 𝘎𝘢𝘮𝘮𝘢 | 𝘊𝘦𝘨𝘢]
-
-● Below the results loaded into 𝑞𝐺𝑈𝐼.
-
-![dDigit](https://github.com/matt-charr/qAPP/assets/68332647/18826725-4d54-40bc-83c0-0f3aa273ebd1)
-
-- This a tiny frame of what you can do. Check out the examples in the package for more applications.
-- Pricing a 𝐷𝑢𝑎𝑙 𝑑𝑖𝑔𝑖𝑡𝑎𝑙 𝑐𝑎𝑙𝑙 𝑜𝑝𝑡𝑖𝑜𝑛 with 𝐪𝐀𝐏𝐏 is overkilled. It is meant to handle more complex custom derivatives.
-- 𝑞𝐺𝑈𝐼 does not handle 3D visualization. A way to achieve this is to use the upcoming python API.
 
 # <a name="licence">📜 Licence</a>
 
