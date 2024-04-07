@@ -206,6 +206,8 @@ To publish a new release, each tag created on our developement repository trigge
 
 ● Below the results loaded into 𝑞𝐺𝑈𝐼.
 
+![dDigit](https://github.com/matt-charr/qAPP/assets/68332647/18826725-4d54-40bc-83c0-0f3aa273ebd1)
+
 - This a tiny frame of what you can do. Check out the examples in the package for more applications.
 - Pricing a 𝐷𝑢𝑎𝑙 𝑑𝑖𝑔𝑖𝑡𝑎𝑙 𝑐𝑎𝑙𝑙 𝑜𝑝𝑡𝑖𝑜𝑛 with 𝐪𝐀𝐏𝐏 is overkilled. It is meant to handle more complex custom derivatives.
 - 𝑞𝐺𝑈𝐼 does not handle 3D visualization. A way to achieve this is to use the upcoming python API.
