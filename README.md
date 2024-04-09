@@ -240,7 +240,7 @@ without the express permission of Matthieu Charrier.
 
 🙌 Feedbacks more than welcome. <br>
 ⭐ Star the project on GitHub helps it to progress. <br>
-🔔 Reach us at https://lnkd.in/eZCcrs9F if: <br>
+🔔 Reach us at https://github.com/matt-charr/qAPP/issues if: <br>
 ⚫ You need 𝘀𝗼𝗺𝗲 𝗵𝗲𝗹𝗽 𝘁𝗼 𝘀𝘁𝗮𝗿𝘁. <br>
 ⚫ You want to 𝗽𝗿𝗼𝗽𝗼𝘀𝗲 𝗮 𝗻𝗲𝘄 𝗳𝗲𝗮𝘁𝘂𝗿𝗲. <br>
 ⚫ You want to 𝘀𝘂𝗯𝗺𝗶𝘁 𝗮 𝗰𝗼𝗻𝘁𝗿𝗮𝗰𝘁. <br>
