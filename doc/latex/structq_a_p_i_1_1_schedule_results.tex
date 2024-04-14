@@ -1,0 +1,52 @@
+\doxysection{q\+API\+::Schedule\+Results Struct Reference}
+\hypertarget{structq_a_p_i_1_1_schedule_results}{}\label{structq_a_p_i_1_1_schedule_results}\index{qAPI::ScheduleResults@{qAPI::ScheduleResults}}
+
+
+Arguments of \doxylink{_get_schedule_8h_ad454a2b0f9628cc6cc7eec26b12243d3}{q\+API\+::\+Get\+Schedule}.  
+
+
+
+
+{\ttfamily \#include $<$Get\+Schedule.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structq_a_p_i_1_1_schedule_results_ab3cc8d107f4ea694985439b23b944b5b}\label{structq_a_p_i_1_1_schedule_results_ab3cc8d107f4ea694985439b23b944b5b} 
+std\+::string {\bfseries Start\+Date}
+\item 
+\Hypertarget{structq_a_p_i_1_1_schedule_results_a24387c53bcfb3dd785ab79b7876fbd79}\label{structq_a_p_i_1_1_schedule_results_a24387c53bcfb3dd785ab79b7876fbd79} 
+std\+::string {\bfseries End\+Date}
+\item 
+\Hypertarget{structq_a_p_i_1_1_schedule_results_a46031bbb0ef929b8ea52c58f7678d312}\label{structq_a_p_i_1_1_schedule_results_a46031bbb0ef929b8ea52c58f7678d312} 
+std\+::string {\bfseries Date\+Shift}
+\item 
+\Hypertarget{structq_a_p_i_1_1_schedule_results_a5011f217d07b75146f09977f7555fc55}\label{structq_a_p_i_1_1_schedule_results_a5011f217d07b75146f09977f7555fc55} 
+enum \mbox{\hyperlink{_calendar_8h_a472485bc78bde754037ded05829e883a}{q\+API\+::\+Calendar}} {\bfseries Calendar}
+\item 
+\Hypertarget{structq_a_p_i_1_1_schedule_results_a22129a5bf018864f57d0e6702474fc96}\label{structq_a_p_i_1_1_schedule_results_a22129a5bf018864f57d0e6702474fc96} 
+std\+::vector$<$ std\+::string $>$ {\bfseries Dates}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Arguments of \doxylink{_get_schedule_8h_ad454a2b0f9628cc6cc7eec26b12243d3}{q\+API\+::\+Get\+Schedule}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Schedule\+Results\+::\+Start\+Date} & (Input) The start date of the schedule (in format YYYY-\/\+MM-\/\+DD). \\
+\hline
+{\em Schedule\+Results\+::\+End\+Date} & (Input) The end date of the schedule (in format YYYY-\/\+MM-\/\+DD). \\
+\hline
+{\em Schedule\+Results\+::\+Date\+Shift} & (Input) The frequency of the schedule (in format +X\{d,bd,m,y\} with X\texorpdfstring{$>$}{>}0). \\
+\hline
+{\em Schedule\+Results\+::\+Calendar} & (Input) The calendar adjustment to be applied after each date shifting. \\
+\hline
+{\em Schedule\+Results\+::\+Dates} & (Output) The schedule generated. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+qa-\/dev/q\+API/\mbox{\hyperlink{_get_schedule_8h}{Get\+Schedule.\+h}}\end{DoxyCompactItemize}

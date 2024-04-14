@@ -1,0 +1,57 @@
+\doxysection{q\+API\+::Contract Struct Reference}
+\hypertarget{structq_a_p_i_1_1_contract}{}\label{structq_a_p_i_1_1_contract}\index{qAPI::Contract@{qAPI::Contract}}
+
+
+The parameters of the contract.  
+
+
+
+
+{\ttfamily \#include $<$Contract.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_a69816021e3caf2819e188d548ad39514}\label{structq_a_p_i_1_1_contract_a69816021e3caf2819e188d548ad39514} 
+std\+::string {\bfseries Date}
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_a092d4dec2929a818aaefec1c38bd5271}\label{structq_a_p_i_1_1_contract_a092d4dec2929a818aaefec1c38bd5271} 
+std\+::string {\bfseries Premium\+Currency}
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_a8e713f48371a6e94af26882390e35ffc}\label{structq_a_p_i_1_1_contract_a8e713f48371a6e94af26882390e35ffc} 
+std\+::string {\bfseries File}
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_ae04269780f22804a5fd5781a36052cec}\label{structq_a_p_i_1_1_contract_ae04269780f22804a5fd5781a36052cec} 
+bool {\bfseries Intraday\+Fixings} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_ac161a598af7644be8f131e0e68b829f3}\label{structq_a_p_i_1_1_contract_ac161a598af7644be8f131e0e68b829f3} 
+bool {\bfseries Intraday\+Payments} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_a73536e47cce4a588b671bce53b9f8253}\label{structq_a_p_i_1_1_contract_a73536e47cce4a588b671bce53b9f8253} 
+bool {\bfseries Intraday\+Choices} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The parameters of the contract. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Contract\+::\+Date} & Today date. \\
+\hline
+{\em Contract\+::\+Premium\+Currency.} & The premium currency of the contract. \\
+\hline
+{\em Contract\+::\+File} & The path to the ENCODED file (without extension) that describes the contract. \\
+\hline
+{\em Contract\+::\+Intraday\+Fixings} & If allow intraday fixings then a fixing fixes in the future if the fixing date is greater than Contract\+::\+Date or is Contract\+::\+Date \\
+\hline
+{\em Contract\+::\+Intraday\+Payments} & If allow intraday payments then a payment occurs in the future if the payment date is greater than Contract\+::\+Date or is Contract\+::\+Date \\
+\hline
+{\em Contract\+::\+Intraday\+Choices} & If allow intraday choices then a choice occurs in the future if the choice date is greater than Contract\+::\+Date or is Contract\+::\+Date \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+qa-\/dev/q\+API/\mbox{\hyperlink{_contract_8h}{Contract.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\doxysection{q\+API\+::Contract\+Results Struct Reference}
+\hypertarget{structq_a_p_i_1_1_contract_results}{}\label{structq_a_p_i_1_1_contract_results}\index{qAPI::ContractResults@{qAPI::ContractResults}}
+
+
+The arguments of \doxylink{_get_contract_8h_a84eb9807e03127193fe2bfa01fa31b26}{q\+API\+::\+Get\+Contract}.  
+
+
+
+
+{\ttfamily \#include $<$Get\+Contract.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_a9486b4b96cc49e6249fbe492c77b5e84}\label{structq_a_p_i_1_1_contract_results_a9486b4b96cc49e6249fbe492c77b5e84} 
+bool {\bfseries Request\+Script} = true
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_a4252e8988eaf9363e7c17e2c1fccf41d}\label{structq_a_p_i_1_1_contract_results_a4252e8988eaf9363e7c17e2c1fccf41d} 
+bool {\bfseries Request\+Underlyings} = true
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_af5828f5aee7d42bce427988228284534}\label{structq_a_p_i_1_1_contract_results_af5828f5aee7d42bce427988228284534} 
+bool {\bfseries Request\+Fixings} = true
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_a115fce49d47f050ff5baf93bce6426d0}\label{structq_a_p_i_1_1_contract_results_a115fce49d47f050ff5baf93bce6426d0} 
+bool {\bfseries Request\+Correlations} = true
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_ae42ebf989b85382a8fe70ca79470ce3d}\label{structq_a_p_i_1_1_contract_results_ae42ebf989b85382a8fe70ca79470ce3d} 
+bool {\bfseries Request\+Events} = true
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_abda4f0c47cf3db948fa476212cef6852}\label{structq_a_p_i_1_1_contract_results_abda4f0c47cf3db948fa476212cef6852} 
+std\+::string {\bfseries Script}
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_ab761cca2c1e99b499a58b52304164980}\label{structq_a_p_i_1_1_contract_results_ab761cca2c1e99b499a58b52304164980} 
+std\+::vector$<$ \mbox{\hyperlink{structq_a_p_i_1_1_underlying}{q\+API\+::\+Underlying}} $>$ {\bfseries Underlyings}
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_a367ca38d1f544f8bfe1b7c01008e6ced}\label{structq_a_p_i_1_1_contract_results_a367ca38d1f544f8bfe1b7c01008e6ced} 
+std\+::vector$<$ \mbox{\hyperlink{structq_a_p_i_1_1_fixing}{q\+API\+::\+Fixing}} $>$ {\bfseries Fixings}
+\item 
+\Hypertarget{structq_a_p_i_1_1_contract_results_acaba65a9d55a569bcb08e80b08be3034}\label{structq_a_p_i_1_1_contract_results_acaba65a9d55a569bcb08e80b08be3034} 
+\mbox{\hyperlink{structq_a_p_i_1_1_correlation_matrix}{q\+API\+::\+Correlation\+Matrix}} {\bfseries Correlation\+Matrix}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The arguments of \doxylink{_get_contract_8h_a84eb9807e03127193fe2bfa01fa31b26}{q\+API\+::\+Get\+Contract}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Contract\+Results\+::\+Request\+Script} & \doxylink{_get_contract_8h_a84eb9807e03127193fe2bfa01fa31b26}{q\+API\+::\+Get\+Contract} writes the script of the contract. \\
+\hline
+{\em Contract\+Results\+::\+Request\+Underlyings} & \doxylink{_get_contract_8h_a84eb9807e03127193fe2bfa01fa31b26}{q\+API\+::\+Get\+Contract} finds the underlyings in the contract. \\
+\hline
+{\em Contract\+Results\+::\+Request\+Fixings} & \doxylink{_get_contract_8h_a84eb9807e03127193fe2bfa01fa31b26}{q\+API\+::\+Get\+Contract} finds the fixings in the contract. \\
+\hline
+{\em Contract\+Results\+::\+Request\+Correlations} & \doxylink{_get_contract_8h_a84eb9807e03127193fe2bfa01fa31b26}{q\+API\+::\+Get\+Contract} computes the correlations for each pair of underlying in the contract. \\
+\hline
+{\em Contract\+Results\+::\+Request\+Events} & \doxylink{_get_contract_8h_a84eb9807e03127193fe2bfa01fa31b26}{q\+API\+::\+Get\+Contract} generates the list of contract lifetime events. \\
+\hline
+{\em Contract\+Results\+::\+Script} & The contract script. \\
+\hline
+{\em Contract\+Results\+::\+Underlyings} & The underlyings in the contract. \\
+\hline
+{\em Contract\+Results\+::\+Fixings} & The fixings in the contract. \\
+\hline
+{\em Contract\+Results\+::\+Correlation\+Matrix} & The correlation matrix for each pair of underlying in the contract. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+qa-\/dev/q\+API/\mbox{\hyperlink{_get_contract_8h}{Get\+Contract.\+h}}\end{DoxyCompactItemize}

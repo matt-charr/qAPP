@@ -1,0 +1,72 @@
+\doxysection{q\+API\+::Underlying Struct Reference}
+\hypertarget{structq_a_p_i_1_1_underlying}{}\label{structq_a_p_i_1_1_underlying}\index{qAPI::Underlying@{qAPI::Underlying}}
+
+
+The underlying description.  
+
+
+
+
+{\ttfamily \#include $<$Get\+Contract.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_a03a4f292bff415102ec49d986066a885}\label{structq_a_p_i_1_1_underlying_a03a4f292bff415102ec49d986066a885} 
+std\+::string {\bfseries Ticker}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_a878f6d996858f254cb51186d6de36e01}\label{structq_a_p_i_1_1_underlying_a878f6d996858f254cb51186d6de36e01} 
+std\+::string {\bfseries Complete\+Name}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_a552f93ce03a12d5cb753d5cb1c8eb0f6}\label{structq_a_p_i_1_1_underlying_a552f93ce03a12d5cb753d5cb1c8eb0f6} 
+std\+::string {\bfseries Quote\+Currency}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_aac66b67a4a30c95cdab90f7aceed75b6}\label{structq_a_p_i_1_1_underlying_aac66b67a4a30c95cdab90f7aceed75b6} 
+float {\bfseries Last\+Quote}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_a87868e7526bcc0bc05408ca8f768c2ed}\label{structq_a_p_i_1_1_underlying_a87868e7526bcc0bc05408ca8f768c2ed} 
+enum \mbox{\hyperlink{_get_contract_8h_a9ea6cd13bb1c5c7ad8c1dce9b8907e07}{q\+API\+::\+Asset\+Class}} {\bfseries Asset\+Class}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_a94def1daeac98eff2631aa662bcd8d36}\label{structq_a_p_i_1_1_underlying_a94def1daeac98eff2631aa662bcd8d36} 
+enum \mbox{\hyperlink{_get_contract_8h_a4179effffc755b076bb96e32de01b5ae}{q\+API\+::\+Asset\+Kind}} {\bfseries Asset\+Kind}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_ad1f733545612460846af84e45c4c9b76}\label{structq_a_p_i_1_1_underlying_ad1f733545612460846af84e45c4c9b76} 
+\mbox{\hyperlink{structq_a_p_i_1_1_color}{q\+API\+::\+Color}} {\bfseries Color}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_a25a42c23d5db40e18aacde616675b9d7}\label{structq_a_p_i_1_1_underlying_a25a42c23d5db40e18aacde616675b9d7} 
+bool {\bfseries Is\+Quanto}
+\item 
+\Hypertarget{structq_a_p_i_1_1_underlying_adec722248efe8800cfe71958e2422097}\label{structq_a_p_i_1_1_underlying_adec722248efe8800cfe71958e2422097} 
+bool {\bfseries Is\+In\+Basket}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The underlying description. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Underlying\+::\+Ticker} & The underlying ticker. \\
+\hline
+{\em Underlying\+::\+Complete\+Name} & The underlying complete name. \\
+\hline
+{\em Underlying\+::\+Quote\+Currency} & The underlying quote currency. \\
+\hline
+{\em Underlying\+::\+Last\+Quote} & The last quote found for the underlying. \\
+\hline
+{\em Underlying\+::\+Asset\+Class} & The underlying asset class. \\
+\hline
+{\em Underlying\+::\+Asset\+Kind} & The underlying asset kind. \\
+\hline
+{\em Underlying\+::\+Color} & The underlying asset class color code. \\
+\hline
+{\em Underlying\+::\+Is\+Quanto} & The underlying is quanto if its quote currency is different from the premium/pricing currency. \\
+\hline
+{\em Underlying\+::\+Is\+In\+Basket} & The underlying is in the basket if the contract explicitly contains fixing with its ticker attached. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+qa-\/dev/q\+API/\mbox{\hyperlink{_get_contract_8h}{Get\+Contract.\+h}}\end{DoxyCompactItemize}

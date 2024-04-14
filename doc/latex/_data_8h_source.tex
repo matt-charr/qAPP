@@ -1,0 +1,53 @@
+\doxysection{Data.\+h}
+\hypertarget{_data_8h_source}{}\label{_data_8h_source}\index{qa-\/dev/qAPI/Data.h@{qa-\/dev/qAPI/Data.h}}
+\mbox{\hyperlink{_data_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ *********************************************************************\ *}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Copyright\ ©\ 2023\ qAPP\ -\/\ Quantitative\ Analytics.\ All\ rights\ reserved.\ **\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ This\ file\ is\ part\ of\ the\ project\ 'qAPP\ -\/\ Quantitative\ Analytics'.\ *****\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Hence\ the\ latter\ remains\ the\ exclusive\ property\ of\ its\ author.\ ******\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Accordingly,\ no\ part\ of\ this\ device\ may\ be\ used\ or\ transmitted\ ******\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ in\ any\ form\ for\ professional,\ educational\ or\ commercial\ purposes\ ****\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ without\ the\ express\ permission\ of\ Matthieu\ Charrier.\ ****************\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ *********************************************************************\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifndef\ \_QAPI\_DATA\_HEADER\_INCLUDED}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ \_QAPI\_DATA\_HEADER\_INCLUDED}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ std.}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ qAPI.}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_color_8h}{qAPI/Color.h}}>}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{namespace\ }qAPI\ \{}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_data_source}{DataSource}}\ \{}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::string\ File;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ IsActivated;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ Status;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structq_a_p_i_1_1_color}{qAPI::Color}}\ \mbox{\hyperlink{structq_a_p_i_1_1_color}{Color}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ DataSource.}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structq_a_p_i_1_1_data}{Data}}\ \{}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ Attempts\ =\ 1;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ std::vector<qAPI::DataSource>\ Sources;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ AllowConnectionToDatabases\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ SuccessOnRepoRequestFailure\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ SuccessOnSpotRequestFailure\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ SuccessOnFXSpotRequestFailure\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ SuccessOnVolatilityRequestFailure\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ SuccessOnYieldRequestFailure\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ SuccessOnCorrelationRequestFailure\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \};\ \textcolor{comment}{//\ struct\ Data.}}
+\DoxyCodeLine{00084\ \ \ \ \ }
+\DoxyCodeLine{00085\ \}\ \textcolor{comment}{//\ namespace\ qAPI.}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_QAPI\_DATA\_HEADER\_INCLUDED.}}
+
+\end{DoxyCode}

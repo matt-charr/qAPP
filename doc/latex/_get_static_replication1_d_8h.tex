@@ -1,0 +1,84 @@
+\doxysection{qa-\/dev/q\+API/\+Get\+Static\+Replication1D.h File Reference}
+\hypertarget{_get_static_replication1_d_8h}{}\label{_get_static_replication1_d_8h}\index{qa-\/dev/qAPI/GetStaticReplication1D.h@{qa-\/dev/qAPI/GetStaticReplication1D.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Interface.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Logger.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Color.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Scenario.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Line.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_zero_coupon}{q\+API\+::\+Zero\+Coupon}}
+\begin{DoxyCompactList}\small\item\em The amount of zero coupon needed to static replicate the payoff. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_static_replication1_d_chart}{q\+API\+::\+Static\+Replication1\+DChart}}
+\begin{DoxyCompactList}\small\item\em The accuracy of the static replication. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_static_replication1_d_hedge_chart}{q\+API\+::\+Static\+Replication1\+DHedge\+Chart}}
+\begin{DoxyCompactList}\small\item\em The quantity of vanilla options to buy or sell with respect to the strike. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_vanilla}{q\+API\+::\+Vanilla}}
+\begin{DoxyCompactList}\small\item\em The vanilla option (call or put) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_static_replication1_d_results}{q\+API\+::\+Static\+Replication1\+DResults}}
+\begin{DoxyCompactList}\small\item\em Arguments of \doxylink{_get_static_replication1_d_8h_a4d9fc454f8d659a3c87a4340f1faf491}{q\+API\+::\+Get\+Static\+Replication1D}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+EXTERN\+\_\+C \+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_static_replication1_d_8h_a4d9fc454f8d659a3c87a4340f1faf491}{q\+API\+::\+Get\+Static\+Replication1D}} (\mbox{\hyperlink{structq_a_p_i_1_1_data}{q\+API\+::\+Data}} \&, const \mbox{\hyperlink{structq_a_p_i_1_1_contract}{q\+API\+::\+Contract}} \&, const \mbox{\hyperlink{structq_a_p_i_1_1_pricer}{q\+API\+::\+Pricer}} \&, \mbox{\hyperlink{structq_a_p_i_1_1_static_replication1_d_results}{q\+API\+::\+Static\+Replication1\+DResults}} \&, \mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&)
+\item 
+\+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_static_replication1_d_8h_a95aaf25686d95846bae6364a731fc6f4}{q\+API\+::\+Get\+Static\+Replication1\+DFrom\+Json}} (Json\+::\+Value \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_get_static_replication1_d_8h_a4d9fc454f8d659a3c87a4340f1faf491}\label{_get_static_replication1_d_8h_a4d9fc454f8d659a3c87a4340f1faf491} 
+\index{GetStaticReplication1D.h@{GetStaticReplication1D.h}!GetStaticReplication1D@{GetStaticReplication1D}}
+\index{GetStaticReplication1D@{GetStaticReplication1D}!GetStaticReplication1D.h@{GetStaticReplication1D.h}}
+\doxysubsubsection{\texorpdfstring{GetStaticReplication1D()}{GetStaticReplication1D()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Static\+Replication1D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structq_a_p_i_1_1_data}{q\+API\+::\+Data}} \&}]{p\+\_\+data,  }\item[{const \mbox{\hyperlink{structq_a_p_i_1_1_contract}{q\+API\+::\+Contract}} \&}]{p\+\_\+contract,  }\item[{const \mbox{\hyperlink{structq_a_p_i_1_1_pricer}{q\+API\+::\+Pricer}} \&}]{p\+\_\+pricer,  }\item[{\mbox{\hyperlink{structq_a_p_i_1_1_static_replication1_d_results}{q\+API\+::\+Static\+Replication1\+DResults}} \&}]{p\+\_\+results,  }\item[{\mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&}]{p\+\_\+logger }\end{DoxyParamCaption})}
+
+Price the payoff by decomposing it into a linear combination of vanilla options and zero coupons. \begin{DoxyWarning}{Warning}
+The contract is eligible if it contains only one fixing with \doxylink{_get_contract_8h_a4179effffc755b076bb96e32de01b5aeac5a59adfd8978be3b64f37b47ecde743}{q\+API\+::\+Asset\+Kind\+::\+EQUITY} or q\+API\+::\+Asset\+Kind\+::\+FOREIGN-\/EXCHANGE underlying attached. 
+
+User-\/provided market data is restricted to premium users only. ~\newline
+ By default, your market will be defined according to data/my\+\_\+data\+\_\+file.\+json. ~\newline
+ Any modification to this file will not be effective. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+data} & See \doxylink{structq_a_p_i_1_1_data}{q\+API\+::\+Data} \\
+\hline
+{\em p\+\_\+contract} & See \doxylink{structq_a_p_i_1_1_contract}{q\+API\+::\+Contract} \\
+\hline
+{\em p\+\_\+pricer} & See \doxylink{structq_a_p_i_1_1_pricer}{q\+API\+::\+Pricer} \\
+\hline
+{\em p\+\_\+results} & See \doxylink{structq_a_p_i_1_1_static_replication1_d_results}{q\+API\+::\+Static\+Replication1\+DResults} \\
+\hline
+{\em p\+\_\+logger} & See \doxylink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_get_static_replication1_d_8h_a95aaf25686d95846bae6364a731fc6f4}\label{_get_static_replication1_d_8h_a95aaf25686d95846bae6364a731fc6f4} 
+\index{GetStaticReplication1D.h@{GetStaticReplication1D.h}!GetStaticReplication1DFromJson@{GetStaticReplication1DFromJson}}
+\index{GetStaticReplication1DFromJson@{GetStaticReplication1DFromJson}!GetStaticReplication1D.h@{GetStaticReplication1D.h}}
+\doxysubsubsection{\texorpdfstring{GetStaticReplication1DFromJson()}{GetStaticReplication1DFromJson()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Static\+Replication1\+DFrom\+Json (\begin{DoxyParamCaption}\item[{Json\+::\+Value \&}]{p\+\_\+root }\end{DoxyParamCaption})}
+
+Apply Get\+Static\+Replication1D with the parameters provided in the fields of a Json object. \begin{DoxyNote}{Note}
+Used to communicate with q\+GUI. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+root} & Mockup as a Json\+::\+Value object. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,66 @@
+\doxysection{qa-\/dev/q\+API/\+Get\+Heston\+Implied\+Volatility.h File Reference}
+\hypertarget{_get_heston_implied_volatility_8h}{}\label{_get_heston_implied_volatility_8h}\index{qa-\/dev/qAPI/GetHestonImpliedVolatility.h@{qa-\/dev/qAPI/GetHestonImpliedVolatility.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Interface.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Logger.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Line.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Scenario.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_option_space_value}{q\+API\+::\+Option\+Space\+Value}}
+\begin{DoxyCompactList}\small\item\em Stores option space and value. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_heston_implied_volatility_slice_chart}{q\+API\+::\+Heston\+Implied\+Volatility\+Slice\+Chart}}
+\begin{DoxyCompactList}\small\item\em Implied volatility chart. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_heston_implied_volatility_results}{q\+API\+::\+Heston\+Implied\+Volatility\+Results}}
+\begin{DoxyCompactList}\small\item\em Arguments of \doxylink{_get_heston_implied_volatility_8h_af4eec01ab9a62f057620e6ac3e65d63b}{q\+API\+::\+Get\+Heston\+Implied\+Volatility}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+EXTERN\+\_\+C \+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_heston_implied_volatility_8h_af4eec01ab9a62f057620e6ac3e65d63b}{q\+API\+::\+Get\+Heston\+Implied\+Volatility}} (\mbox{\hyperlink{structq_a_p_i_1_1_heston_implied_volatility_results}{q\+API\+::\+Heston\+Implied\+Volatility\+Results}} \&, \mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&)
+\item 
+\+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_heston_implied_volatility_8h_ac469f0c21c7f7fb88b9b87cd6428a14d}{q\+API\+::\+Get\+Heston\+Implied\+Volatility\+From\+Json}} (Json\+::\+Value \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/04-\/13 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+3 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_get_heston_implied_volatility_8h_af4eec01ab9a62f057620e6ac3e65d63b}\label{_get_heston_implied_volatility_8h_af4eec01ab9a62f057620e6ac3e65d63b} 
+\index{GetHestonImpliedVolatility.h@{GetHestonImpliedVolatility.h}!GetHestonImpliedVolatility@{GetHestonImpliedVolatility}}
+\index{GetHestonImpliedVolatility@{GetHestonImpliedVolatility}!GetHestonImpliedVolatility.h@{GetHestonImpliedVolatility.h}}
+\doxysubsubsection{\texorpdfstring{GetHestonImpliedVolatility()}{GetHestonImpliedVolatility()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Heston\+Implied\+Volatility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structq_a_p_i_1_1_heston_implied_volatility_results}{q\+API\+::\+Heston\+Implied\+Volatility\+Results}} \&}]{p\+\_\+results,  }\item[{\mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&}]{p\+\_\+logger }\end{DoxyParamCaption})}
+
+Compute the implied volatility slice in function of the model parameters. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+results} & See \doxylink{structq_a_p_i_1_1_heston_implied_volatility_results}{q\+API\+::\+Heston\+Implied\+Volatility\+Results} \\
+\hline
+{\em p\+\_\+logger} & See \doxylink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_get_heston_implied_volatility_8h_ac469f0c21c7f7fb88b9b87cd6428a14d}\label{_get_heston_implied_volatility_8h_ac469f0c21c7f7fb88b9b87cd6428a14d} 
+\index{GetHestonImpliedVolatility.h@{GetHestonImpliedVolatility.h}!GetHestonImpliedVolatilityFromJson@{GetHestonImpliedVolatilityFromJson}}
+\index{GetHestonImpliedVolatilityFromJson@{GetHestonImpliedVolatilityFromJson}!GetHestonImpliedVolatility.h@{GetHestonImpliedVolatility.h}}
+\doxysubsubsection{\texorpdfstring{GetHestonImpliedVolatilityFromJson()}{GetHestonImpliedVolatilityFromJson()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Heston\+Implied\+Volatility\+From\+Json (\begin{DoxyParamCaption}\item[{Json\+::\+Value \&}]{p\+\_\+root }\end{DoxyParamCaption})}
+
+Apply Get\+Heston\+Implied\+Volatility with the parameters provided in the fields of a Json object. \begin{DoxyNote}{Note}
+Used to communicate with q\+GUI. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+root} & Mockup as a Json\+::\+Value object. \\
+\hline
+\end{DoxyParams}

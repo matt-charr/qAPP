@@ -1,0 +1,79 @@
+\doxysection{qa-\/dev/q\+API/\+Get\+Ladder.h File Reference}
+\hypertarget{_get_ladder_8h}{}\label{_get_ladder_8h}\index{qa-\/dev/qAPI/GetLadder.h@{qa-\/dev/qAPI/GetLadder.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Interface.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Logger.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Pricing\+Results.\+h$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Scenario.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_ladder_scenario}{q\+API\+::\+Ladder\+Scenario}}
+\begin{DoxyCompactList}\small\item\em The Ladder scenario. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_ladder_plot}{q\+API\+::\+Ladder\+Plot}}
+\begin{DoxyCompactList}\small\item\em The Ladder plot. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_ladder_results}{q\+API\+::\+Ladder\+Results}}
+\begin{DoxyCompactList}\small\item\em The arguments of \doxylink{_get_ladder_8h_a089894489cc47683ffe93cdb516bc14c}{q\+API\+::\+Get\+Ladder}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+EXTERN\+\_\+C \+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_ladder_8h_a089894489cc47683ffe93cdb516bc14c}{q\+API\+::\+Get\+Ladder}} (\mbox{\hyperlink{structq_a_p_i_1_1_data}{q\+API\+::\+Data}} \&, const \mbox{\hyperlink{structq_a_p_i_1_1_contract}{q\+API\+::\+Contract}} \&, const \mbox{\hyperlink{structq_a_p_i_1_1_model}{q\+API\+::\+Model}} \&, const \mbox{\hyperlink{structq_a_p_i_1_1_pricer}{q\+API\+::\+Pricer}} \&, \mbox{\hyperlink{structq_a_p_i_1_1_ladder_results}{q\+API\+::\+Ladder\+Results}} \&, \mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&)
+\item 
+\+\_\+q\+API\+\_\+\+EXPORT const bool \mbox{\hyperlink{_get_ladder_8h_a24aa21e3a950e5d66248aff2d24d6944}{q\+API\+::\+Get\+Ladder\+From\+Json}} (Json\+::\+Value \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_get_ladder_8h_a089894489cc47683ffe93cdb516bc14c}\label{_get_ladder_8h_a089894489cc47683ffe93cdb516bc14c} 
+\index{GetLadder.h@{GetLadder.h}!GetLadder@{GetLadder}}
+\index{GetLadder@{GetLadder}!GetLadder.h@{GetLadder.h}}
+\doxysubsubsection{\texorpdfstring{GetLadder()}{GetLadder()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Ladder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structq_a_p_i_1_1_data}{q\+API\+::\+Data}} \&}]{p\+\_\+data,  }\item[{const \mbox{\hyperlink{structq_a_p_i_1_1_contract}{q\+API\+::\+Contract}} \&}]{p\+\_\+contract,  }\item[{const \mbox{\hyperlink{structq_a_p_i_1_1_model}{q\+API\+::\+Model}} \&}]{p\+\_\+model,  }\item[{const \mbox{\hyperlink{structq_a_p_i_1_1_pricer}{q\+API\+::\+Pricer}} \&}]{p\+\_\+pricer,  }\item[{\mbox{\hyperlink{structq_a_p_i_1_1_ladder_results}{q\+API\+::\+Ladder\+Results}} \&}]{p\+\_\+results,  }\item[{\mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&}]{p\+\_\+logger }\end{DoxyParamCaption})}
+
+Get the prices and the greeks of the contract by varying simultaneously the value of a set of contract feature or a set of market data. \begin{DoxyWarning}{Warning}
+User-\/provided market data is restricted to premium users only. ~\newline
+ By default, your market will be defined according to data/my\+\_\+data\+\_\+file.\+json. ~\newline
+ Any modification to this file will not be effective. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+data} & See \doxylink{structq_a_p_i_1_1_data}{q\+API\+::\+Data} \\
+\hline
+{\em p\+\_\+contract} & See \doxylink{structq_a_p_i_1_1_contract}{q\+API\+::\+Contract} \\
+\hline
+{\em p\+\_\+model} & See \doxylink{structq_a_p_i_1_1_model}{q\+API\+::\+Model} \\
+\hline
+{\em p\+\_\+pricer} & See \doxylink{structq_a_p_i_1_1_pricer}{q\+API\+::\+Pricer} \\
+\hline
+{\em p\+\_\+results} & See \doxylink{structq_a_p_i_1_1_ladder1_d_results}{q\+API\+::\+Ladder1\+DResults} \\
+\hline
+{\em p\+\_\+logger} & See \doxylink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_get_ladder_8h_a24aa21e3a950e5d66248aff2d24d6944}\label{_get_ladder_8h_a24aa21e3a950e5d66248aff2d24d6944} 
+\index{GetLadder.h@{GetLadder.h}!GetLadderFromJson@{GetLadderFromJson}}
+\index{GetLadderFromJson@{GetLadderFromJson}!GetLadder.h@{GetLadder.h}}
+\doxysubsubsection{\texorpdfstring{GetLadderFromJson()}{GetLadderFromJson()}}
+{\footnotesize\ttfamily const bool q\+API\+::\+Get\+Ladder\+From\+Json (\begin{DoxyParamCaption}\item[{Json\+::\+Value \&}]{p\+\_\+root }\end{DoxyParamCaption})}
+
+Apply Get\+Ladder with the parameters provided in the fields of a Json object. \begin{DoxyNote}{Note}
+Used to communicate with q\+GUI. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+root} & Mockup as a Json\+::\+Value object. \\
+\hline
+\end{DoxyParams}

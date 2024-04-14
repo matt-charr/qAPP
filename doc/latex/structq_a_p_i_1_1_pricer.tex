@@ -1,0 +1,181 @@
+\doxysection{q\+API\+::Pricer Struct Reference}
+\hypertarget{structq_a_p_i_1_1_pricer}{}\label{structq_a_p_i_1_1_pricer}\index{qAPI::Pricer@{qAPI::Pricer}}
+
+
+Pricing parameters.  
+
+
+
+
+{\ttfamily \#include $<$Pricer.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a6ba23028f34c43df70f520e0f9dabca1}\label{structq_a_p_i_1_1_pricer_a6ba23028f34c43df70f520e0f9dabca1} 
+\mbox{\hyperlink{structq_a_p_i_1_1_day_counter}{q\+API\+::\+Day\+Counter}} {\bfseries Day\+Counter}
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a8060a04634b860bb507e1b51a99b28b4}\label{structq_a_p_i_1_1_pricer_a8060a04634b860bb507e1b51a99b28b4} 
+enum \mbox{\hyperlink{_pricer_8h_a22df745c779e24241d23c982f1808360}{q\+API\+::\+Smoothing\+Type}} {\bfseries Smoothing\+Type} = \mbox{\hyperlink{_pricer_8h_a22df745c779e24241d23c982f1808360ab50339a10e1de285ac99d4c3990b8693}{Smoothing\+Type\+::\+NONE}}
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a9558b63f89dd45e3cc11166ab7c2e523}\label{structq_a_p_i_1_1_pricer_a9558b63f89dd45e3cc11166ab7c2e523} 
+enum \mbox{\hyperlink{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898}{q\+API\+::\+Pricing\+Method}} {\bfseries Method} = \mbox{\hyperlink{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1}{Pricing\+Method\+::\+MONTE\+\_\+\+CARLO}}
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_aeb18e54d21d8ae9187ba0dc04fcf88f3}\label{structq_a_p_i_1_1_pricer_aeb18e54d21d8ae9187ba0dc04fcf88f3} 
+enum \mbox{\hyperlink{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98d}{q\+API\+::\+Spot\+Volatility\+Dynamic}} {\bfseries Spot\+Volatility\+Dynamic} = \mbox{\hyperlink{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0}{Spot\+Volatility\+Dynamic\+::\+STICKY\+\_\+\+STRIKE}}
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a372ef25c7a0a1e06c76d865d42b8ef51}\label{structq_a_p_i_1_1_pricer_a372ef25c7a0a1e06c76d865d42b8ef51} 
+int {\bfseries Monte\+Carlo\+Trials} = 100\textquotesingle{}000
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a5db8fa1dd72e3ef0781a20694002f164}\label{structq_a_p_i_1_1_pricer_a5db8fa1dd72e3ef0781a20694002f164} 
+int {\bfseries Monte\+Carlo\+Time\+Step} = 2
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a144ef365d6c065263b02cda6ddce2e29}\label{structq_a_p_i_1_1_pricer_a144ef365d6c065263b02cda6ddce2e29} 
+int {\bfseries Monte\+Carlo\+Seed} = 19940523
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a8db9299bb9bfe485b9530e032c97326c}\label{structq_a_p_i_1_1_pricer_a8db9299bb9bfe485b9530e032c97326c} 
+int {\bfseries Monte\+Carlo\+Nb\+Threads} = 8
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_ad3a3eff23cfe400e510ea2bfbc5c82b6}\label{structq_a_p_i_1_1_pricer_ad3a3eff23cfe400e510ea2bfbc5c82b6} 
+float {\bfseries Monte\+Carlo\+Confidence\+Level} = 97.\+50f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a157b80c602a0a06f35d31a6c98f0f92b}\label{structq_a_p_i_1_1_pricer_a157b80c602a0a06f35d31a6c98f0f92b} 
+float {\bfseries Monte\+Carlo\+Antithetic\+Factor} = 0.\+00f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a7dbb00d1ccd4806300be24600390155c}\label{structq_a_p_i_1_1_pricer_a7dbb00d1ccd4806300be24600390155c} 
+enum \mbox{\hyperlink{_pricer_8h_aabe0254f26da93ff17dee5953d8976bd}{q\+API\+::\+Boundary\+Condition}} {\bfseries Finite\+Difference\+Boundary\+Condition} = \mbox{\hyperlink{_pricer_8h_aabe0254f26da93ff17dee5953d8976bdae151350b63efc6c3bbe2e3f0d27863ba}{Boundary\+Condition\+::\+DIRICHLET}}
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a2d0b00d6c078db0f629472ccc33abde7}\label{structq_a_p_i_1_1_pricer_a2d0b00d6c078db0f629472ccc33abde7} 
+float {\bfseries Finite\+Difference\+Time\+Step} = 1.\+00f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a3d36eef806b0de84bc4e72e6c500a4d5}\label{structq_a_p_i_1_1_pricer_a3d36eef806b0de84bc4e72e6c500a4d5} 
+float {\bfseries Finite\+Difference\+Explicit\+Rate} = 0.\+00f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a1e138b5cbbb3f2451efd8ce03c758383}\label{structq_a_p_i_1_1_pricer_a1e138b5cbbb3f2451efd8ce03c758383} 
+bool {\bfseries Finite\+Difference\+Use\+Richardson\+Romberg\+Extrapolation} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a428fa8e9b953dcce1856aad61d9fe540}\label{structq_a_p_i_1_1_pricer_a428fa8e9b953dcce1856aad61d9fe540} 
+int {\bfseries Closed\+Form\+Moneyness\+Grid\+Size} = 100
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a129def7b8683f528b6c405af670da1d7}\label{structq_a_p_i_1_1_pricer_a129def7b8683f528b6c405af670da1d7} 
+float {\bfseries Closed\+Form\+Moneyness\+Grid\+Lower\+Bound} = 50.\+00f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a4efb67f7c4545afff1e0885a977f3040}\label{structq_a_p_i_1_1_pricer_a4efb67f7c4545afff1e0885a977f3040} 
+float {\bfseries Closed\+Form\+Moneyness\+Grid\+Upper\+Bound} = 150.\+00f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_ae1dfdc88f1afa1d07aa7e239bf8f8e7b}\label{structq_a_p_i_1_1_pricer_ae1dfdc88f1afa1d07aa7e239bf8f8e7b} 
+bool {\bfseries Compute\+Delta} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_aaf5cc4798643dfc901e7ae431b38c673}\label{structq_a_p_i_1_1_pricer_aaf5cc4798643dfc901e7ae431b38c673} 
+float {\bfseries Delta\+Spot\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a7c9a314bd8e8d873133cc030c5f77847}\label{structq_a_p_i_1_1_pricer_a7c9a314bd8e8d873133cc030c5f77847} 
+enum \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12}{q\+API\+::\+Greek\+Direction}} {\bfseries Delta\+Direction} = \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e}{Greek\+Direction\+::\+CENTER}}
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_aed3d74f1f1ac3c8a5c8940a1fe683df9}\label{structq_a_p_i_1_1_pricer_aed3d74f1f1ac3c8a5c8940a1fe683df9} 
+bool {\bfseries Compute\+Gamma} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_ac7f8754bb848c5d3166d4edb0e3b1a39}\label{structq_a_p_i_1_1_pricer_ac7f8754bb848c5d3166d4edb0e3b1a39} 
+float {\bfseries Gamma\+Spot\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_aa794b5c6d2bf87da28813e2c50123a38}\label{structq_a_p_i_1_1_pricer_aa794b5c6d2bf87da28813e2c50123a38} 
+bool {\bfseries Compute\+XGamma} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a07703e8823142423b58cca6b4f43981d}\label{structq_a_p_i_1_1_pricer_a07703e8823142423b58cca6b4f43981d} 
+float {\bfseries XGamma\+Spot\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_abd9457d1ee3968e34726d08ac40ceade}\label{structq_a_p_i_1_1_pricer_abd9457d1ee3968e34726d08ac40ceade} 
+bool {\bfseries Compute\+Vega} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_af703005dd477fe4d9adbeb181b9128d0}\label{structq_a_p_i_1_1_pricer_af703005dd477fe4d9adbeb181b9128d0} 
+float {\bfseries Vega\+Volatility\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a69c1ea50358cd38cdba5f91405eb83f6}\label{structq_a_p_i_1_1_pricer_a69c1ea50358cd38cdba5f91405eb83f6} 
+enum \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12}{q\+API\+::\+Greek\+Direction}} {\bfseries Vega\+Direction} = \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e}{Greek\+Direction\+::\+CENTER}}
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a6fe7b98d604d7a412ce1d7449b42b4aa}\label{structq_a_p_i_1_1_pricer_a6fe7b98d604d7a412ce1d7449b42b4aa} 
+bool {\bfseries Compute\+Volga} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_ac4ceecf80cf36397cf17c94fdb41e2a0}\label{structq_a_p_i_1_1_pricer_ac4ceecf80cf36397cf17c94fdb41e2a0} 
+float {\bfseries Volga\+Volatility\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a4c36ceb3b791aac4b6c5c1e6d4555cd0}\label{structq_a_p_i_1_1_pricer_a4c36ceb3b791aac4b6c5c1e6d4555cd0} 
+bool {\bfseries Compute\+XVolga} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_affbab7ff7c66b0d845c215d2536cb0bd}\label{structq_a_p_i_1_1_pricer_affbab7ff7c66b0d845c215d2536cb0bd} 
+float {\bfseries XVolga\+Volatility\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a527975a5110b41e2807c00352aa094ae}\label{structq_a_p_i_1_1_pricer_a527975a5110b41e2807c00352aa094ae} 
+bool {\bfseries Compute\+Vanna} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_aafbc774f79983403e83a8c2d5ad4fadc}\label{structq_a_p_i_1_1_pricer_aafbc774f79983403e83a8c2d5ad4fadc} 
+float {\bfseries Vanna\+Volatility\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_ae8e96b92f5f3e35e22cb5e3b9d769865}\label{structq_a_p_i_1_1_pricer_ae8e96b92f5f3e35e22cb5e3b9d769865} 
+float {\bfseries Vanna\+Spot\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a591b5982b539d164c1e44cbd4d7989a7}\label{structq_a_p_i_1_1_pricer_a591b5982b539d164c1e44cbd4d7989a7} 
+bool {\bfseries Compute\+XVanna} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_ac9846bb3e4b9c743ec2f21017128e7db}\label{structq_a_p_i_1_1_pricer_ac9846bb3e4b9c743ec2f21017128e7db} 
+float {\bfseries XVanna\+Volatility\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a3719039c1d76c6618c3cb332472d2e1f}\label{structq_a_p_i_1_1_pricer_a3719039c1d76c6618c3cb332472d2e1f} 
+float {\bfseries XVanna\+Spot\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a60408b10a40486f78f7f488c39bb7197}\label{structq_a_p_i_1_1_pricer_a60408b10a40486f78f7f488c39bb7197} 
+bool {\bfseries Compute\+Cega} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a2f3edb59aa559731f7726ec3e20d8ab4}\label{structq_a_p_i_1_1_pricer_a2f3edb59aa559731f7726ec3e20d8ab4} 
+float {\bfseries Cega\+Correlation\+Bump} = 1.\+0f
+\item 
+\Hypertarget{structq_a_p_i_1_1_pricer_a5f47bb02a1af5dba407647308c3e966a}\label{structq_a_p_i_1_1_pricer_a5f47bb02a1af5dba407647308c3e966a} 
+enum \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12}{q\+API\+::\+Greek\+Direction}} {\bfseries Cega\+Direction} = \mbox{\hyperlink{_pricer_8h_a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e}{Greek\+Direction\+::\+CENTER}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pricing parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pricer\+::\+Day\+Counter} & See \doxylink{structq_a_p_i_1_1_day_counter}{q\+API\+::\+Day\+Counter} \\
+\hline
+{\em Pricer\+::\+Smoothing\+Type} & See \doxylink{_pricer_8h_a22df745c779e24241d23c982f1808360}{q\+API\+::\+Smoothing\+Type} \\
+\hline
+{\em Pricer\+::\+Method} & See \doxylink{_pricer_8h_ab8f8ec9f4f106d3c5942b4b5e7aee898}{q\+API\+::\+Pricing\+Method} \\
+\hline
+{\em Pricer\+::\+Spot\+Volatility\+Dynamic} & See \doxylink{_pricer_8h_ac13d6a48edd4e0203c3a3793c82db98d}{q\+API\+::\+Spot\+Volatility\+Dynamic} \\
+\hline
+{\em Pricer\+::\+Monte\+Carlo\+Trials} & Number of simulations \\
+\hline
+{\em Pricer\+::\+Monte\+Carlo\+Time\+Step} & \doxylink{structq_a_p_i_1_1_model}{Model} diffusion time step in number of days (used if the diffusion is not exact) \\
+\hline
+{\em Pricer\+::\+Monte\+Carlo\+Seed} & Seed used to init the random number generator. \\
+\hline
+{\em Pricer\+::\+Monte\+Carlo\+Nb\+Threads} & Number of threads allocated to the pricing. \\
+\hline
+{\em Pricer\+::\+Finite\+Difference\+Boundary\+Condition} & see \doxylink{_pricer_8h_aabe0254f26da93ff17dee5953d8976bd}{q\+API\+::\+Boundary\+Condition} \\
+\hline
+{\em Pricer\+::\+Monte\+Carlo\+Confidence\+Level} & Level \textquotesingle{}L\textquotesingle{} such that the probability that the price returns by the Monte Carlo method is in the confidence interval is greater than \textquotesingle{}L\textquotesingle{} \\
+\hline
+{\em Pricer\+::\+Monte\+Carlo\+Antithetic\+Factor} & Antithetic factor used to reduce the standard deviation (is in \mbox{[}0.\+00\%,100\%\mbox{]}) \\
+\hline
+{\em Pricer\+::\+Finite\+Difference\+Time\+Step} & Partial diffential equation time step in number of days. \\
+\hline
+{\em Pricer\+::\+Finite\+Difference\+Explicit\+Rate} & Partial diffential equation explicit rate (is in \mbox{[}0.\+00\%,100\%\mbox{]}) \\
+\hline
+{\em Pricer\+::\+Closed\+Form\+Moneyness\+Grid\+Size} & The grid size used in Carr-\/\+Madan formula when computing the price with a closed-\/form formula. \\
+\hline
+{\em Pricer\+::\+Closed\+Form\+Moneyness\+Grid\+Lower\+Bound} & The lower bound of grid (in moneyness) used in Carr-\/\+Madan formula when computing the price with a closed-\/form formula. \\
+\hline
+{\em Pricer\+::\+Closed\+Form\+Moneyness\+Grid\+Upper\+Bound} & The upper bound of grid (in moneyness) used in Carr-\/\+Madan formula when computing the price with a closed-\/form formula. \\
+\hline
+{\em Pricer\+::\+Finite\+Difference\+Use\+Richardson\+Romberg\+Extrapolation} & Allow the usage of Richardson-\/\+Romberg extrapolation to reduce the bias induced by the time step in case the diffusion must be approximated by a scheme. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+qa-\/dev/q\+API/\mbox{\hyperlink{_pricer_8h}{Pricer.\+h}}\end{DoxyCompactItemize}

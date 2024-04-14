@@ -1,0 +1,95 @@
+\doxysection{qa-\/dev/q\+API/\+Logger.h File Reference}
+\hypertarget{_logger_8h}{}\label{_logger_8h}\index{qa-\/dev/qAPI/Logger.h@{qa-\/dev/qAPI/Logger.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$q\+API/\+Interface.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structq_a_p_i_1_1_log}{q\+API\+::\+Log}}
+\begin{DoxyCompactList}\small\item\em Register log levels and messages during the calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_logger_8h_aa5a1f238844067249387700b036ac80c}\label{_logger_8h_aa5a1f238844067249387700b036ac80c} 
+typedef std\+::vector$<$ \mbox{\hyperlink{structq_a_p_i_1_1_log}{q\+API\+::\+Log}} $>$ {\bfseries q\+API\+::\+Logger}
+\begin{DoxyCompactList}\small\item\em The list of log levels and messages thrown during the calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_logger_8h_a28ac929c70e0329894b04443131cbfc2}{q\+API\+::\+Log\+Level}} \{ \newline
+\mbox{\hyperlink{_logger_8h_a28ac929c70e0329894b04443131cbfc2a551b723eafd6a31d444fcb2f5920fbd3}{INFO}}
+, \mbox{\hyperlink{_logger_8h_a28ac929c70e0329894b04443131cbfc2a059e9861e0400dfbe05c98a841f3f96b}{WARNING}}
+, \mbox{\hyperlink{_logger_8h_a28ac929c70e0329894b04443131cbfc2acd22bad976363fdd1bfbf6759fede482}{ERR}}
+, \mbox{\hyperlink{_logger_8h_a28ac929c70e0329894b04443131cbfc2acccc265b14c17af799a1834f4fbbe7cf}{EXCEPTION}}
+, \newline
+\mbox{\hyperlink{_logger_8h_a28ac929c70e0329894b04443131cbfc2ad0749aaba8b833466dfcbb0428e4f89c}{SUCCESS}}
+, \mbox{\hyperlink{_logger_8h_a28ac929c70e0329894b04443131cbfc2a36fc6065a3e970bc3e6b2e59da52bf2a}{FAILURE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+EXTERN\+\_\+C \+\_\+q\+API\+\_\+\+EXPORT void \mbox{\hyperlink{_logger_8h_ad26e769962d3921a292d609c0d30b064}{q\+API\+::\+Write\+Logger}} (const \mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+matt-\/charr 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+v0.\+3.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_logger_8h_a28ac929c70e0329894b04443131cbfc2}\label{_logger_8h_a28ac929c70e0329894b04443131cbfc2} 
+\index{Logger.h@{Logger.h}!LogLevel@{LogLevel}}
+\index{LogLevel@{LogLevel}!Logger.h@{Logger.h}}
+\doxysubsubsection{\texorpdfstring{LogLevel}{LogLevel}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_logger_8h_a28ac929c70e0329894b04443131cbfc2}{q\+API\+::\+Log\+Level}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+The level of the log message \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INFO@{INFO}!Logger.h@{Logger.h}}\index{Logger.h@{Logger.h}!INFO@{INFO}}}\Hypertarget{_logger_8h_a28ac929c70e0329894b04443131cbfc2a551b723eafd6a31d444fcb2f5920fbd3}\label{_logger_8h_a28ac929c70e0329894b04443131cbfc2a551b723eafd6a31d444fcb2f5920fbd3} 
+INFO&Your program is calling the API \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WARNING@{WARNING}!Logger.h@{Logger.h}}\index{Logger.h@{Logger.h}!WARNING@{WARNING}}}\Hypertarget{_logger_8h_a28ac929c70e0329894b04443131cbfc2a059e9861e0400dfbe05c98a841f3f96b}\label{_logger_8h_a28ac929c70e0329894b04443131cbfc2a059e9861e0400dfbe05c98a841f3f96b} 
+WARNING&Warning \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR@{ERR}!Logger.h@{Logger.h}}\index{Logger.h@{Logger.h}!ERR@{ERR}}}\Hypertarget{_logger_8h_a28ac929c70e0329894b04443131cbfc2acd22bad976363fdd1bfbf6759fede482}\label{_logger_8h_a28ac929c70e0329894b04443131cbfc2acd22bad976363fdd1bfbf6759fede482} 
+ERR&Something went wrong user side \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXCEPTION@{EXCEPTION}!Logger.h@{Logger.h}}\index{Logger.h@{Logger.h}!EXCEPTION@{EXCEPTION}}}\Hypertarget{_logger_8h_a28ac929c70e0329894b04443131cbfc2acccc265b14c17af799a1834f4fbbe7cf}\label{_logger_8h_a28ac929c70e0329894b04443131cbfc2acccc265b14c17af799a1834f4fbbe7cf} 
+EXCEPTION&Something went wrong dev side \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUCCESS@{SUCCESS}!Logger.h@{Logger.h}}\index{Logger.h@{Logger.h}!SUCCESS@{SUCCESS}}}\Hypertarget{_logger_8h_a28ac929c70e0329894b04443131cbfc2ad0749aaba8b833466dfcbb0428e4f89c}\label{_logger_8h_a28ac929c70e0329894b04443131cbfc2ad0749aaba8b833466dfcbb0428e4f89c} 
+SUCCESS&The request succeeded to run \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FAILURE@{FAILURE}!Logger.h@{Logger.h}}\index{Logger.h@{Logger.h}!FAILURE@{FAILURE}}}\Hypertarget{_logger_8h_a28ac929c70e0329894b04443131cbfc2a36fc6065a3e970bc3e6b2e59da52bf2a}\label{_logger_8h_a28ac929c70e0329894b04443131cbfc2a36fc6065a3e970bc3e6b2e59da52bf2a} 
+FAILURE&The request failed to run \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_logger_8h_ad26e769962d3921a292d609c0d30b064}\label{_logger_8h_ad26e769962d3921a292d609c0d30b064} 
+\index{Logger.h@{Logger.h}!WriteLogger@{WriteLogger}}
+\index{WriteLogger@{WriteLogger}!Logger.h@{Logger.h}}
+\doxysubsubsection{\texorpdfstring{WriteLogger()}{WriteLogger()}}
+{\footnotesize\ttfamily void q\+API\+::\+Write\+Logger (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger}} \&}]{p\+\_\+logger }\end{DoxyParamCaption})}
+
+Write log levels and messages into the console. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+logger} & See \doxylink{_logger_8h_aa5a1f238844067249387700b036ac80c}{q\+API\+::\+Logger} \\
+\hline
+\end{DoxyParams}

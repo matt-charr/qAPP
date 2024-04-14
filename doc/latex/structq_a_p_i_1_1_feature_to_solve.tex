@@ -1,0 +1,77 @@
+\doxysection{q\+API\+::Feature\+To\+Solve Struct Reference}
+\hypertarget{structq_a_p_i_1_1_feature_to_solve}{}\label{structq_a_p_i_1_1_feature_to_solve}\index{qAPI::FeatureToSolve@{qAPI::FeatureToSolve}}
+
+
+Parameters of one feature to solve.  
+
+
+
+
+{\ttfamily \#include $<$Get\+Implied\+Contract\+Feature.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a731e8f2eff8c206079957c40836ac604}\label{structq_a_p_i_1_1_feature_to_solve_a731e8f2eff8c206079957c40836ac604} 
+std\+::string {\bfseries Name}
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a1a0458ce0756ca41a3658a87eb4b4933}\label{structq_a_p_i_1_1_feature_to_solve_a1a0458ce0756ca41a3658a87eb4b4933} 
+float {\bfseries Min}
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_af437ed5eef408a27b692ed9a9fb452a4}\label{structq_a_p_i_1_1_feature_to_solve_af437ed5eef408a27b692ed9a9fb452a4} 
+float {\bfseries Max}
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a20a093db17bf3f58d6df7a83ab02c77f}\label{structq_a_p_i_1_1_feature_to_solve_a20a093db17bf3f58d6df7a83ab02c77f} 
+float {\bfseries Precision}
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a0194a02828a45137b8857311f5cf1753}\label{structq_a_p_i_1_1_feature_to_solve_a0194a02828a45137b8857311f5cf1753} 
+float {\bfseries Lower}
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a79c017e5ecf4548e186db1bf49c15fe0}\label{structq_a_p_i_1_1_feature_to_solve_a79c017e5ecf4548e186db1bf49c15fe0} 
+float {\bfseries Upper}
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a378e69a3d5ebbdfde9da91635e21cbd8}\label{structq_a_p_i_1_1_feature_to_solve_a378e69a3d5ebbdfde9da91635e21cbd8} 
+float {\bfseries Root}
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a2bcbea4b9b0da89cdc101eb0f752fd86}\label{structq_a_p_i_1_1_feature_to_solve_a2bcbea4b9b0da89cdc101eb0f752fd86} 
+bool {\bfseries Has\+Lower} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a94db2ce905b9a1ee650eddc19f06b2d9}\label{structq_a_p_i_1_1_feature_to_solve_a94db2ce905b9a1ee650eddc19f06b2d9} 
+bool {\bfseries Has\+Upper} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_feature_to_solve_a9ab3c8b24873b3095b53e8895e23907f}\label{structq_a_p_i_1_1_feature_to_solve_a9ab3c8b24873b3095b53e8895e23907f} 
+bool {\bfseries Has\+Root} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parameters of one feature to solve. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Feature\+To\+Solve\+::\+Name} & (Input) Name of the feature to solve. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Min} & (Input) The value you guess that Feature\+To\+Solve\+::\+Root should be greater. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Max} & (Input) The value you guess that Feature\+To\+Solve\+::\+Root should be lower. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Precision} & (Input) Number of points in the grid to solve the feature. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Root} & (Output) Feature mid value in the confidence interval computed by the pricer. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Has\+Root} & (Output) The solver has a root value if the solver has succeeded to run. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Lower} & (Output) Feature lower bound value in the confidence interval computed by the pricer. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Has\+Lower} & (Output) The solver has a lower value if the solver has succeeded to run. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Upper} & (Output) Feature upper bound value in the confidence interval computed by the pricer. \\
+\hline
+{\em Feature\+To\+Solve\+::\+Has\+Upper} & (Output) The solver has an upper value if the solver has succeeded to run. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+qa-\/dev/q\+API/\mbox{\hyperlink{_get_implied_contract_feature_8h}{Get\+Implied\+Contract\+Feature.\+h}}\end{DoxyCompactItemize}

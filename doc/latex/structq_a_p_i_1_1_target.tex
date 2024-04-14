@@ -1,0 +1,52 @@
+\doxysection{q\+API\+::Target Struct Reference}
+\hypertarget{structq_a_p_i_1_1_target}{}\label{structq_a_p_i_1_1_target}\index{qAPI::Target@{qAPI::Target}}
+
+
+The price you want for your contract.  
+
+
+
+
+{\ttfamily \#include $<$Get\+Implied\+Contract\+Feature.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structq_a_p_i_1_1_target_af166c1943a1214ead3844b9d1e9ecf91}\label{structq_a_p_i_1_1_target_af166c1943a1214ead3844b9d1e9ecf91} 
+float {\bfseries Price}
+\item 
+\Hypertarget{structq_a_p_i_1_1_target_a39b06db6a3f557b53bb3dbca5aaabe29}\label{structq_a_p_i_1_1_target_a39b06db6a3f557b53bb3dbca5aaabe29} 
+float {\bfseries Lower}
+\item 
+\Hypertarget{structq_a_p_i_1_1_target_a5f0b45a7edae72ab3aad5e539183e537}\label{structq_a_p_i_1_1_target_a5f0b45a7edae72ab3aad5e539183e537} 
+float {\bfseries Upper}
+\item 
+\Hypertarget{structq_a_p_i_1_1_target_aa4a593ff00d788d9c2c64d268a766967}\label{structq_a_p_i_1_1_target_aa4a593ff00d788d9c2c64d268a766967} 
+bool {\bfseries Has\+Lower} = false
+\item 
+\Hypertarget{structq_a_p_i_1_1_target_a7e66592b2bcd59f2e7c7fa7b5be26d7b}\label{structq_a_p_i_1_1_target_a7e66592b2bcd59f2e7c7fa7b5be26d7b} 
+bool {\bfseries Has\+Upper} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The price you want for your contract. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Target\+::\+Price} & (Input) The price you want for your deal. \\
+\hline
+{\em Target\+::\+Lower} & (Output) Price lower bound value in the confidence interval computed by the pricer. \\
+\hline
+{\em Target\+::\+Upper} & (Output) Price upper bound value in the confidence interval computed by the pricer. \\
+\hline
+{\em Target\+::\+Has\+Upper} & (Output) The solver has an upper value if the solver has succeeded to run. \\
+\hline
+{\em Target\+::\+Has\+Lower} & (Output) The solver has a lower value if the solver has succeeded to run. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+qa-\/dev/q\+API/\mbox{\hyperlink{_get_implied_contract_feature_8h}{Get\+Implied\+Contract\+Feature.\+h}}\end{DoxyCompactItemize}
