@@ -1,0 +1,2 @@
+source              : ./docs
+destination         : ./_site
