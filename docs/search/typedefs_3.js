@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['priceresults_0',['PriceResults',['../_get_price_8h.html#a1f0f22165599dee803009c1a72ef2b0c',1,'qAPI']]]
+  ['greekresult_373',['GreekResult',['../PricingResults_8h.html#a2bd9fc62d3a54becbd4231a2c14b2de1',1,'qAPI']]]
 ];

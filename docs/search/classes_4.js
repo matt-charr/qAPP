@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['impliedcontractfeatureresults_0',['ImpliedContractFeatureResults',['../structq_a_p_i_1_1_implied_contract_feature_results.html',1,'qAPI']]]
+  ['hestonimpliedvolatilityresults_246',['HestonImpliedVolatilityResults',['../structqAPI_1_1HestonImpliedVolatilityResults.html',1,'qAPI']]],
+  ['hestonimpliedvolatilityslicechart_247',['HestonImpliedVolatilitySliceChart',['../structqAPI_1_1HestonImpliedVolatilitySliceChart.html',1,'qAPI']]]
 ];

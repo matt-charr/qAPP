@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['underlying_0',['Underlying',['../structq_a_p_i_1_1_underlying.html',1,'qAPI']]]
+  ['target_283',['Target',['../structqAPI_1_1Target.html',1,'qAPI']]],
+  ['tickervalueresult_284',['TickerValueResult',['../structqAPI_1_1TickerValueResult.html',1,'qAPI']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['feeddata_0',['FeedData',['../_get_data_feed_8h.html#ae675c145501088424c61fbed496c55ff',1,'qAPI']]],
-  ['feeddatafromjson_1',['FeedDataFromJson',['../_get_data_feed_8h.html#af0d924170bba66a79e8544acb524d720',1,'qAPI']]]
+  ['abs_315',['Abs',['../Algebra_8hpp.html#a19fcbe804de3446487ce452149844d08',1,'qLANG']]],
+  ['amountref_316',['AmountRef',['../Algebra_8hpp.html#a63ad4d2a72285f019ab38407f8a8df9e',1,'qLANG']]]
 ];

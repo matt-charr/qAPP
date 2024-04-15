@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xgreekresult_0',['XGreekResult',['../_pricing_results_8h.html#a6e2f581e08c934daccc44ee17bc96717',1,'qAPI']]]
+  ['logger_374',['Logger',['../Logger_8h.html#aa5a1f238844067249387700b036ac80c',1,'qAPI']]]
 ];
