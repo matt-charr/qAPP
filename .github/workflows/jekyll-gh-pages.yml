@@ -35,9 +35,7 @@ jobs:
         with:
           source: ./docs/
           destination: ./_site
-          include:
-           - _pages
-           - .htaccess
+          include: "_*.html"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
