@@ -1,2 +1,2 @@
-source: ./docs/
-destination: ./_site
+source              : ./docs
+destination         : ./_site
