@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['pricer_0',['Pricer',['../structq_a_p_i_1_1_pricer.html',1,'qAPI']]],
-  ['priceresult_1',['PriceResult',['../structq_a_p_i_1_1_price_result.html',1,'qAPI']]],
-  ['pricingresult_2',['PricingResult',['../structq_a_p_i_1_1_pricing_result.html',1,'qAPI']]],
-  ['pricingresults_3',['PricingResults',['../structq_a_p_i_1_1_pricing_results.html',1,'qAPI']]]
+  ['pricer_273',['Pricer',['../structqAPI_1_1Pricer.html',1,'qAPI']]],
+  ['priceresult_274',['PriceResult',['../structqAPI_1_1PriceResult.html',1,'qAPI']]],
+  ['pricingresult_275',['PricingResult',['../structqAPI_1_1PricingResult.html',1,'qAPI']]],
+  ['pricingresults_276',['PricingResults',['../structqAPI_1_1PricingResults.html',1,'qAPI']]]
 ];
