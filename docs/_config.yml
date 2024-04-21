@@ -1,2 +1,1 @@
 include: ["_*.html"]
-source: "./docs/"
