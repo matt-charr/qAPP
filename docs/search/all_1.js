@@ -7,5 +7,5 @@ var searchData=
   ['boundarycondition_4',['BoundaryCondition',['../_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd',1,'qAPI']]],
   ['bumpkind_5',['BumpKind',['../_scenario_8h.html#ae7fb0715330b49c2f5de4eac1c8c71f2',1,'qAPI']]],
   ['bumpunit_6',['BumpUnit',['../_scenario_8h.html#a8724c273b5619c9dd3ea3d15b675f977',1,'qAPI']]],
-  ['buy_7',['Buy',['../_algebra_8hpp.html#a4932f96b03eeb3285e2b10a472e4e343',1,'qLANG::Buy(const std::string &amp;, float, const qLANG::CashFlowType &amp;)'],['../_algebra_8hpp.html#a78dfae3c32e7a00a86ce56746712257f',1,'qLANG::Buy(const std::string &amp;, const qLANG::CashFlowType &amp;)']]]
+  ['buy_7',['Buy',['../_algebra_8hpp.html#a9616c04a16c86a6cc705797a94c41afc',1,'qDSL::Buy(const std::string &amp;, float, const qDSL::CashFlowType &amp;)'],['../_algebra_8hpp.html#ad27e76a34394a9cb6524a4aed9266f49',1,'qDSL::Buy(const std::string &amp;, const qDSL::CashFlowType &amp;)']]]
 ];

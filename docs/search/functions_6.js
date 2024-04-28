@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_0',['Log',['../_algebra_8hpp.html#a69b6da0347e5ac00e0841c6c2c3c752b',1,'qLANG']]]
+  ['log_0',['Log',['../_algebra_8hpp.html#abb38552aaea794e6b65a289ddfdfb844',1,'qDSL']]]
 ];

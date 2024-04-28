@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['sell_0',['Sell',['../_algebra_8hpp.html#a0f9158ac174db16a8e820f093fefe8a5',1,'qLANG::Sell(const std::string &amp;, float, const qLANG::CashFlowType &amp;)'],['../_algebra_8hpp.html#a830508ccbcaacf8ebe97dece10ca3f88',1,'qLANG::Sell(const std::string &amp;, const qLANG::CashFlowType &amp;)']]],
-  ['set_1',['Set',['../_algebra_8hpp.html#a74319adfd38229cee834b9b7b642108f',1,'qLANG']]],
-  ['sin_2',['Sin',['../_algebra_8hpp.html#a4a94c13f4188e72df15b4f7b92b63c2d',1,'qLANG']]],
-  ['spot_3',['Spot',['../_algebra_8hpp.html#ae66e8616b0a5b725384170f03feebcec',1,'qLANG']]],
-  ['sqrt_4',['Sqrt',['../_algebra_8hpp.html#a5de52cc4e3a5ea348b7a6cdfa9f99746',1,'qLANG']]]
+  ['save_0',['Save',['../_algebra_8hpp.html#aa0bfdcf399adce2c5f76314b5f3fc7a3',1,'qDSL::Save(const qDSL::CashFlowType &amp;, const std::string &amp;)'],['../_algebra_8hpp.html#ae516e7efb0cc6bdf0e785a6f71054f7b',1,'qDSL::Save(const std::vector&lt; qDSL::ObservableType &gt; &amp;, const std::string &amp;)']]],
+  ['sell_1',['Sell',['../_algebra_8hpp.html#abb0af71008070d9fcd29cc9625346fa8',1,'qDSL::Sell(const std::string &amp;, float, const qDSL::CashFlowType &amp;)'],['../_algebra_8hpp.html#aae8f63a6e7ebf2f1d41ffdc801265055',1,'qDSL::Sell(const std::string &amp;, const qDSL::CashFlowType &amp;)']]],
+  ['set_2',['Set',['../_algebra_8hpp.html#a49b905492cfdada6c4ad0ecef8d19d6f',1,'qDSL']]],
+  ['sin_3',['Sin',['../_algebra_8hpp.html#a6b795f2522e38b11f71a728dccc42bdd',1,'qDSL']]],
+  ['spot_4',['Spot',['../_algebra_8hpp.html#af4d42076cb21bdff581033281bc7c374',1,'qDSL']]],
+  ['sqrt_5',['Sqrt',['../_algebra_8hpp.html#a4449c934cd94da0704fc4805f37027da',1,'qDSL']]]
 ];

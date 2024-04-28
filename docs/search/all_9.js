@@ -14,7 +14,7 @@ var searchData=
   ['left_11',['LEFT',['../_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12a684d325a7303f52e64011467ff5c5758',1,'qAPI']]],
   ['line_12',['Line',['../structq_a_p_i_1_1_line.html',1,'qAPI']]],
   ['line_2eh_13',['Line.h',['../_line_8h.html',1,'']]],
-  ['log_14',['Log',['../structq_a_p_i_1_1_log.html',1,'qAPI::Log'],['../_algebra_8hpp.html#a69b6da0347e5ac00e0841c6c2c3c752b',1,'qLANG::Log()']]],
+  ['log_14',['Log',['../structq_a_p_i_1_1_log.html',1,'qAPI::Log'],['../_algebra_8hpp.html#abb38552aaea794e6b65a289ddfdfb844',1,'qDSL::Log()']]],
   ['log_5fforward_5fmoneyness_15',['LOG_FORWARD_MONEYNESS',['../_scenario_8h.html#ae6a2ee2d617aa9482c9682d3d8eb8ccdabe4c531e03434df6c7d9bd7ea6026ac0',1,'qAPI']]],
   ['log_5fmoneyness_16',['LOG_MONEYNESS',['../_scenario_8h.html#ae6a2ee2d617aa9482c9682d3d8eb8ccda92a58ff1f54df80e65a9296aeea875e2',1,'qAPI']]],
   ['logger_17',['Logger',['../_logger_8h.html#aa5a1f238844067249387700b036ac80c',1,'qAPI']]],

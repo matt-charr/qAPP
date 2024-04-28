@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['observe_0',['Observe',['../_algebra_8hpp.html#a0eb6e4e23d1eb74bed83adb7cbeb2882',1,'qLANG']]]
+  ['observe_0',['Observe',['../_algebra_8hpp.html#ab3256638d2701c9fa7c9d2794e4d09af',1,'qDSL']]]
 ];

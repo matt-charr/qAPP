@@ -6,8 +6,8 @@ var searchData=
   ['call_5fprice_5fvs_5fspot_3',['CALL_PRICE_VS_SPOT',['../_scenario_8h.html#acaf52a5a8f74b41c9a7b350e4b8ae713ad38501b080bc2f122ca5a7e2b668bc37',1,'qAPI']]],
   ['call_5fprice_5fvs_5fspot_5fpct_4',['CALL_PRICE_VS_SPOT_PCT',['../_scenario_8h.html#acaf52a5a8f74b41c9a7b350e4b8ae713a4e8742b191606331cb1d4fa42062211c',1,'qAPI']]],
   ['call_5ftype_5',['CALL_TYPE',['../_scenario_8h.html#a921e44850549374ada2dc9a7799c4cc3a7d8e4fe1b263e0f3410a8dc8e79912e6',1,'qAPI']]],
-  ['cashflowref_6',['CashFlowRef',['../_algebra_8hpp.html#a4dcc3c1ce35c79b8c5906788a43847f4',1,'qLANG']]],
-  ['cashflowtype_7',['CashFlowType',['../_algebra_8hpp.html#a6c064f316575c6830d76cf1d18f42d69',1,'qLANG']]],
+  ['cashflowref_6',['CashFlowRef',['../_algebra_8hpp.html#a8c83cfca47c44ffce5d9e178ae7ff4c0',1,'qDSL']]],
+  ['cashflowtype_7',['CashFlowType',['../_algebra_8hpp.html#abe55416730af67e4b5cb775bcd2febee',1,'qDSL']]],
   ['center_8',['CENTER',['../_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e',1,'qAPI']]],
   ['chebychev_9',['CHEBYCHEV',['../_get_sequence_8h.html#a14d6fd61b129783acda9f9c05e176cdeaa8319f012c77bd7d0778f05216c867f1',1,'qAPI']]],
   ['closed_5fform_10',['CLOSED_FORM',['../_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4',1,'qAPI']]],
@@ -20,7 +20,7 @@ var searchData=
   ['contractresults_17',['ContractResults',['../structq_a_p_i_1_1_contract_results.html',1,'qAPI']]],
   ['correlation_18',['Correlation',['../structq_a_p_i_1_1_correlation.html',1,'qAPI']]],
   ['correlationmatrix_19',['CorrelationMatrix',['../structq_a_p_i_1_1_correlation_matrix.html',1,'qAPI']]],
-  ['cos_20',['Cos',['../_algebra_8hpp.html#aaae2d261caa66c325b80b61e82a696b6',1,'qLANG']]],
-  ['cst_21',['Cst',['../_algebra_8hpp.html#afea7cdeb2cf87c792c3a07fd9eeed999',1,'qLANG::Cst(float)'],['../_algebra_8hpp.html#af188052a95bc3e41dd82779acc7e58c7',1,'qLANG::Cst(bool)']]],
-  ['cstref_22',['CstRef',['../_algebra_8hpp.html#a887957231fd332fd0060a721d6237f8d',1,'qLANG']]]
+  ['cos_20',['Cos',['../_algebra_8hpp.html#ab54749e14ef900235c5703588d4d6956',1,'qDSL']]],
+  ['cst_21',['Cst',['../_algebra_8hpp.html#a233fa1e229d0bceae410525b2e668e76',1,'qDSL::Cst(float)'],['../_algebra_8hpp.html#a3b609804c9857d387c3d4c58a80e8007',1,'qDSL::Cst(bool)']]],
+  ['cstref_22',['CstRef',['../_algebra_8hpp.html#a7fc6b4c82216988ad1bcb5078fa13d6c',1,'qDSL']]]
 ];
