@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['featuretosolve_0',['FeatureToSolve',['../structq_a_p_i_1_1_feature_to_solve.html',1,'qAPI']]],
-  ['feeddataresults_1',['FeedDataResults',['../structq_a_p_i_1_1_feed_data_results.html',1,'qAPI']]],
-  ['fixing_2',['Fixing',['../structq_a_p_i_1_1_fixing.html',1,'qAPI']]]
+  ['either_0',['Either',['../structq_d_s_l_1_1_either.html',1,'qDSL']]],
+  ['endevent_1',['EndEvent',['../structq_a_p_i_1_1_end_event.html',1,'qAPI']]],
+  ['event_2',['Event',['../structq_a_p_i_1_1_event.html',1,'qAPI']]],
+  ['eventmanager_3',['EventManager',['../classq_a_p_i_1_1_event_manager.html',1,'qAPI']]]
 ];

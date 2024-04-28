@@ -85,6 +85,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;qAPI/Interface.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_logger_8h_source.html">qAPI/Logger.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_color_8h_source.html">qAPI/Color.h</a>&gt;</code><br />
@@ -104,6 +105,25 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq_a_p_i_1_1_correlation_matrix.html">qAPI::CorrelationMatrix</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The correlation matrix.  <a href="structq_a_p_i_1_1_correlation_matrix.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_i_event.html">qAPI::IEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_payment_event.html">qAPI::PaymentEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_purchase_event.html">qAPI::PurchaseEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_fixing_event.html">qAPI::FixingEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_setting_event.html">qAPI::SettingEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_choice_event.html">qAPI::ChoiceEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_barrier_event.html">qAPI::BarrierEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq_a_p_i_1_1_end_event.html">qAPI::EndEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq_a_p_i_1_1_event.html">qAPI::Event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A contract event.  <a href="structq_a_p_i_1_1_event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq_a_p_i_1_1_contract_results.html">qAPI::ContractResults</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The arguments of <a class="el" href="#a84eb9807e03127193fe2bfa01fa31b26">qAPI::GetContract</a>.  <a href="structq_a_p_i_1_1_contract_results.html#details">More...</a><br /></td></tr>
@@ -128,6 +148,21 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a4179effffc755b076bb96e32de01b5aeace3e96831f5991dae02d4b54560dc0aa">INTEREST_RATE</a>
  }</td></tr>
 <tr class="separator:a4179effffc755b076bb96e32de01b5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b546ae687933f2f026fdbdeff145bfe" id="r_a1b546ae687933f2f026fdbdeff145bfe"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b546ae687933f2f026fdbdeff145bfe">qAPI::EventKind</a> { <br />
+&#160;&#160;<a class="el" href="#a1b546ae687933f2f026fdbdeff145bfea59838d3bb5866b79a45f7396dc48c22a">BARRIER</a>
+, <a class="el" href="#a1b546ae687933f2f026fdbdeff145bfead8016e00648935707599e94ff896038f">CHOICE</a>
+, <a class="el" href="#a1b546ae687933f2f026fdbdeff145bfea9de2ffb050887701897def5f720c3b01">FIXING</a>
+, <a class="el" href="#a1b546ae687933f2f026fdbdeff145bfea8697250efc73639dd2a6e7da243ac68b">NOTHING</a>
+, <br />
+&#160;&#160;<a class="el" href="#a1b546ae687933f2f026fdbdeff145bfeab842122b631d8b7013d43ed4a643a3d7">PAYMENT</a>
+, <a class="el" href="#a1b546ae687933f2f026fdbdeff145bfea2d2de459c8b56cb693b6223fc1b720bb">PURCHASE</a>
+, <a class="el" href="#a1b546ae687933f2f026fdbdeff145bfea52c9932e7a5247ab8915e56ebc31a319">RECEIPT</a>
+, <a class="el" href="#a1b546ae687933f2f026fdbdeff145bfea456a29cf32ae45eac03f55f9b955fa44">SALE</a>
+, <br />
+&#160;&#160;<a class="el" href="#a1b546ae687933f2f026fdbdeff145bfea9a4ad0490c7f7c16aa78af29e73ac1bf">SETTING</a>
+<br />
+ }</td></tr>
+<tr class="separator:a1b546ae687933f2f026fdbdeff145bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -206,6 +241,49 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a4179effffc755b076bb96e32de01b5aea406b0ccc7909c527f90e0af89739bde4" name="a4179effffc755b076bb96e32de01b5aea406b0ccc7909c527f90e0af89739bde4"></a>FOREIGN_EXCHANGE&#160;</td><td class="fielddoc"><p>Hello! I am a foreign exchange underlying </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4179effffc755b076bb96e32de01b5aeace3e96831f5991dae02d4b54560dc0aa" name="a4179effffc755b076bb96e32de01b5aeace3e96831f5991dae02d4b54560dc0aa"></a>INTEREST_RATE&#160;</td><td class="fielddoc"><p>Hello! I am an interest rate underlying </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1b546ae687933f2f026fdbdeff145bfe" name="a1b546ae687933f2f026fdbdeff145bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b546ae687933f2f026fdbdeff145bfe">&#9670;&#160;</a></span>EventKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a1b546ae687933f2f026fdbdeff145bfe">qAPI::EventKind</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The event kind </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea59838d3bb5866b79a45f7396dc48c22a" name="a1b546ae687933f2f026fdbdeff145bfea59838d3bb5866b79a45f7396dc48c22a"></a>BARRIER&#160;</td><td class="fielddoc"><p>Barrier </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfead8016e00648935707599e94ff896038f" name="a1b546ae687933f2f026fdbdeff145bfead8016e00648935707599e94ff896038f"></a>CHOICE&#160;</td><td class="fielddoc"><p>Choice </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea9de2ffb050887701897def5f720c3b01" name="a1b546ae687933f2f026fdbdeff145bfea9de2ffb050887701897def5f720c3b01"></a>FIXING&#160;</td><td class="fielddoc"><p><a class="el" href="structq_a_p_i_1_1_fixing.html" title="The fixing description.">Fixing</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea8697250efc73639dd2a6e7da243ac68b" name="a1b546ae687933f2f026fdbdeff145bfea8697250efc73639dd2a6e7da243ac68b"></a>NOTHING&#160;</td><td class="fielddoc"><p>Payment </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfeab842122b631d8b7013d43ed4a643a3d7" name="a1b546ae687933f2f026fdbdeff145bfeab842122b631d8b7013d43ed4a643a3d7"></a>PAYMENT&#160;</td><td class="fielddoc"><p>Payment </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea2d2de459c8b56cb693b6223fc1b720bb" name="a1b546ae687933f2f026fdbdeff145bfea2d2de459c8b56cb693b6223fc1b720bb"></a>PURCHASE&#160;</td><td class="fielddoc"><p>Purchase </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea52c9932e7a5247ab8915e56ebc31a319" name="a1b546ae687933f2f026fdbdeff145bfea52c9932e7a5247ab8915e56ebc31a319"></a>RECEIPT&#160;</td><td class="fielddoc"><p>Receipt </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea456a29cf32ae45eac03f55f9b955fa44" name="a1b546ae687933f2f026fdbdeff145bfea456a29cf32ae45eac03f55f9b955fa44"></a>SALE&#160;</td><td class="fielddoc"><p>Sale </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea9a4ad0490c7f7c16aa78af29e73ac1bf" name="a1b546ae687933f2f026fdbdeff145bfea9a4ad0490c7f7c16aa78af29e73ac1bf"></a>SETTING&#160;</td><td class="fielddoc"><p>Setting </p>
 </td></tr>
 </table>
 

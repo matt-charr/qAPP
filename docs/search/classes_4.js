@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['hestonimpliedvolatilityresults_0',['HestonImpliedVolatilityResults',['../structq_a_p_i_1_1_heston_implied_volatility_results.html',1,'qAPI']]],
-  ['hestonimpliedvolatilityslicechart_1',['HestonImpliedVolatilitySliceChart',['../structq_a_p_i_1_1_heston_implied_volatility_slice_chart.html',1,'qAPI']]]
+  ['featuretosolve_0',['FeatureToSolve',['../structq_a_p_i_1_1_feature_to_solve.html',1,'qAPI']]],
+  ['feeddataresults_1',['FeedDataResults',['../structq_a_p_i_1_1_feed_data_results.html',1,'qAPI']]],
+  ['fixing_2',['Fixing',['../structq_a_p_i_1_1_fixing.html',1,'qAPI']]],
+  ['fixingevent_3',['FixingEvent',['../classq_a_p_i_1_1_fixing_event.html',1,'qAPI']]]
 ];
