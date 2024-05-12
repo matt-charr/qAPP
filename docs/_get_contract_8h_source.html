@@ -322,44 +322,45 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    }; <span class="comment">// struct Event.</span></div>
 </div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
-<div class="foldopen" id="foldopen00307" data-start="{" data-end="};">
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_contract_results.html">  307</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_contract_results.html">ContractResults</a> {</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="comment">// Input.</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="keywordtype">bool</span> RequestScript = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        <span class="keywordtype">bool</span> RequestUnderlyings = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        <span class="keywordtype">bool</span> RequestFixings = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <span class="keywordtype">bool</span> RequestCorrelations = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <span class="keywordtype">bool</span> RequestEvents = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="comment">// Output.</span></div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        std::string Script; </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        std::vector&lt;qAPI::Underlying&gt; Underlyings; </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        std::vector&lt;qAPI::Fixing&gt; Fixings; </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_correlation_matrix.html">qAPI::CorrelationMatrix</a> <a class="code hl_struct" href="structq_a_p_i_1_1_correlation_matrix.html">CorrelationMatrix</a>;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        std::vector&lt;qAPI::Event&gt; Events;</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    }; <span class="comment">// struct ContractResults.</span></div>
+<div class="foldopen" id="foldopen00309" data-start="{" data-end="};">
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_contract_results.html">  309</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_contract_results.html">ContractResults</a> {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        <span class="comment">// Input.</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        <span class="keywordtype">bool</span> RequestScript = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <span class="keywordtype">bool</span> RequestUnderlyings = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <span class="keywordtype">bool</span> RequestFixings = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        <span class="keywordtype">bool</span> RequestCorrelations = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="keywordtype">bool</span> RequestEvents = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <span class="comment">// Output.</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        std::string Script; </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <span class="keywordtype">int</span> IndentSize;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        std::vector&lt;qAPI::Underlying&gt; Underlyings; </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        std::vector&lt;qAPI::Fixing&gt; Fixings; </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_correlation_matrix.html">qAPI::CorrelationMatrix</a> <a class="code hl_struct" href="structq_a_p_i_1_1_correlation_matrix.html">CorrelationMatrix</a>;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        std::vector&lt;qAPI::Event&gt; Events;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    }; <span class="comment">// struct ContractResults.</span></div>
 </div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    _EXTERN_C</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>     _qAPI_EXPORT <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="_get_contract_8h.html#a84eb9807e03127193fe2bfa01fa31b26">GetContract</a>(</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_data.html">qAPI::Data</a>&amp;, <span class="comment">// data.</span></div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structq_a_p_i_1_1_contract.html">qAPI::Contract</a>&amp;, <span class="comment">// contract.</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_contract_results.html">qAPI::ContractResults</a>&amp;, <span class="comment">// contract information.</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <a class="code hl_typedef" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a>&amp; <span class="comment">// logger.</span></div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    );</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>     _qAPI_EXPORT <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="_get_contract_8h.html#a79fed022ae0fec5b7b731022ba9b9a83">GetContractFromJson</a>(</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        Json::Value&amp; <span class="comment">// value.</span></div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    );</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>     _END_EXTERN_C</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>} <span class="comment">// namespace qAPI.</span></div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_GET_CONTRACT_HEADER_INCLUDED</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    _EXTERN_C</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>     _qAPI_EXPORT <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="_get_contract_8h.html#a84eb9807e03127193fe2bfa01fa31b26">GetContract</a>(</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_data.html">qAPI::Data</a>&amp;, <span class="comment">// data.</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structq_a_p_i_1_1_contract.html">qAPI::Contract</a>&amp;, <span class="comment">// contract.</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_contract_results.html">qAPI::ContractResults</a>&amp;, <span class="comment">// contract information.</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        <a class="code hl_typedef" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a>&amp; <span class="comment">// logger.</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    );</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>     _qAPI_EXPORT <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="_get_contract_8h.html#a79fed022ae0fec5b7b731022ba9b9a83">GetContractFromJson</a>(</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        Json::Value&amp; <span class="comment">// value.</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    );</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>     _END_EXTERN_C</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>} <span class="comment">// namespace qAPI.</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_GET_CONTRACT_HEADER_INCLUDED</span></div>
 <div class="ttc" id="a_color_8h_html"><div class="ttname"><a href="_color_8h.html">Color.h</a></div></div>
 <div class="ttc" id="a_get_contract_8h_html_a1b546ae687933f2f026fdbdeff145bfe"><div class="ttname"><a href="_get_contract_8h.html#a1b546ae687933f2f026fdbdeff145bfe">qAPI::EventKind</a></div><div class="ttdeci">EventKind</div><div class="ttdef"><b>Definition</b> GetContract.h:158</div></div>
 <div class="ttc" id="a_get_contract_8h_html_a1b546ae687933f2f026fdbdeff145bfea2d2de459c8b56cb693b6223fc1b720bb"><div class="ttname"><a href="_get_contract_8h.html#a1b546ae687933f2f026fdbdeff145bfea2d2de459c8b56cb693b6223fc1b720bb">qAPI::EventKind::PURCHASE</a></div><div class="ttdeci">@ PURCHASE</div></div>
@@ -375,8 +376,8 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="a_get_contract_8h_html_a4179effffc755b076bb96e32de01b5aea406b0ccc7909c527f90e0af89739bde4"><div class="ttname"><a href="_get_contract_8h.html#a4179effffc755b076bb96e32de01b5aea406b0ccc7909c527f90e0af89739bde4">qAPI::AssetKind::FOREIGN_EXCHANGE</a></div><div class="ttdeci">@ FOREIGN_EXCHANGE</div></div>
 <div class="ttc" id="a_get_contract_8h_html_a4179effffc755b076bb96e32de01b5aeac5a59adfd8978be3b64f37b47ecde743"><div class="ttname"><a href="_get_contract_8h.html#a4179effffc755b076bb96e32de01b5aeac5a59adfd8978be3b64f37b47ecde743">qAPI::AssetKind::EQUITY</a></div><div class="ttdeci">@ EQUITY</div></div>
 <div class="ttc" id="a_get_contract_8h_html_a4179effffc755b076bb96e32de01b5aeace3e96831f5991dae02d4b54560dc0aa"><div class="ttname"><a href="_get_contract_8h.html#a4179effffc755b076bb96e32de01b5aeace3e96831f5991dae02d4b54560dc0aa">qAPI::AssetKind::INTEREST_RATE</a></div><div class="ttdeci">@ INTEREST_RATE</div></div>
-<div class="ttc" id="a_get_contract_8h_html_a79fed022ae0fec5b7b731022ba9b9a83"><div class="ttname"><a href="_get_contract_8h.html#a79fed022ae0fec5b7b731022ba9b9a83">qAPI::GetContractFromJson</a></div><div class="ttdeci">_qAPI_EXPORT const bool GetContractFromJson(Json::Value &amp;)</div><div class="ttdef"><b>Definition</b> GetContract.cpp:561</div></div>
-<div class="ttc" id="a_get_contract_8h_html_a84eb9807e03127193fe2bfa01fa31b26"><div class="ttname"><a href="_get_contract_8h.html#a84eb9807e03127193fe2bfa01fa31b26">qAPI::GetContract</a></div><div class="ttdeci">_EXTERN_C _qAPI_EXPORT const bool GetContract(qAPI::Data &amp;, const qAPI::Contract &amp;, qAPI::ContractResults &amp;, qAPI::Logger &amp;)</div><div class="ttdef"><b>Definition</b> GetContract.cpp:295</div></div>
+<div class="ttc" id="a_get_contract_8h_html_a79fed022ae0fec5b7b731022ba9b9a83"><div class="ttname"><a href="_get_contract_8h.html#a79fed022ae0fec5b7b731022ba9b9a83">qAPI::GetContractFromJson</a></div><div class="ttdeci">_qAPI_EXPORT const bool GetContractFromJson(Json::Value &amp;)</div><div class="ttdef"><b>Definition</b> GetContract.cpp:554</div></div>
+<div class="ttc" id="a_get_contract_8h_html_a84eb9807e03127193fe2bfa01fa31b26"><div class="ttname"><a href="_get_contract_8h.html#a84eb9807e03127193fe2bfa01fa31b26">qAPI::GetContract</a></div><div class="ttdeci">_EXTERN_C _qAPI_EXPORT const bool GetContract(qAPI::Data &amp;, const qAPI::Contract &amp;, qAPI::ContractResults &amp;, qAPI::Logger &amp;)</div><div class="ttdef"><b>Definition</b> GetContract.cpp:264</div></div>
 <div class="ttc" id="a_get_contract_8h_html_a9ea6cd13bb1c5c7ad8c1dce9b8907e07"><div class="ttname"><a href="_get_contract_8h.html#a9ea6cd13bb1c5c7ad8c1dce9b8907e07">qAPI::AssetClass</a></div><div class="ttdeci">AssetClass</div><div class="ttdef"><b>Definition</b> GetContract.h:42</div></div>
 <div class="ttc" id="a_get_contract_8h_html_a9ea6cd13bb1c5c7ad8c1dce9b8907e07a02d9fb15afb9a723620d04a2cc093948"><div class="ttname"><a href="_get_contract_8h.html#a9ea6cd13bb1c5c7ad8c1dce9b8907e07a02d9fb15afb9a723620d04a2cc093948">qAPI::AssetClass::DEPOSIT_RATE</a></div><div class="ttdeci">@ DEPOSIT_RATE</div></div>
 <div class="ttc" id="a_get_contract_8h_html_a9ea6cd13bb1c5c7ad8c1dce9b8907e07a9947f7c8c2697e59785bbf2c0a14d24d"><div class="ttname"><a href="_get_contract_8h.html#a9ea6cd13bb1c5c7ad8c1dce9b8907e07a9947f7c8c2697e59785bbf2c0a14d24d">qAPI::AssetClass::EXCHANGE_RATE</a></div><div class="ttdeci">@ EXCHANGE_RATE</div></div>
@@ -396,7 +397,7 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="aclassq_a_p_i_1_1_setting_event_html"><div class="ttname"><a href="classq_a_p_i_1_1_setting_event.html">qAPI::SettingEvent</a></div><div class="ttdef"><b>Definition</b> GetContract.h:211</div></div>
 <div class="ttc" id="astructq_a_p_i_1_1_color_html"><div class="ttname"><a href="structq_a_p_i_1_1_color.html">qAPI::Color</a></div><div class="ttdoc">A color is described as a structure of four floating-point numbers.</div><div class="ttdef"><b>Definition</b> Color.h:33</div></div>
 <div class="ttc" id="astructq_a_p_i_1_1_contract_html"><div class="ttname"><a href="structq_a_p_i_1_1_contract.html">qAPI::Contract</a></div><div class="ttdoc">The parameters of the contract.</div><div class="ttdef"><b>Definition</b> Contract.h:43</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_contract_results_html"><div class="ttname"><a href="structq_a_p_i_1_1_contract_results.html">qAPI::ContractResults</a></div><div class="ttdoc">The arguments of qAPI::GetContract.</div><div class="ttdef"><b>Definition</b> GetContract.h:307</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_contract_results_html"><div class="ttname"><a href="structq_a_p_i_1_1_contract_results.html">qAPI::ContractResults</a></div><div class="ttdoc">The arguments of qAPI::GetContract.</div><div class="ttdef"><b>Definition</b> GetContract.h:309</div></div>
 <div class="ttc" id="astructq_a_p_i_1_1_correlation_html"><div class="ttname"><a href="structq_a_p_i_1_1_correlation.html">qAPI::Correlation</a></div><div class="ttdoc">The correlation item.</div><div class="ttdef"><b>Definition</b> GetContract.h:133</div></div>
 <div class="ttc" id="astructq_a_p_i_1_1_correlation_matrix_html"><div class="ttname"><a href="structq_a_p_i_1_1_correlation_matrix.html">qAPI::CorrelationMatrix</a></div><div class="ttdoc">The correlation matrix.</div><div class="ttdef"><b>Definition</b> GetContract.h:149</div></div>
 <div class="ttc" id="astructq_a_p_i_1_1_data_html"><div class="ttname"><a href="structq_a_p_i_1_1_data.html">qAPI::Data</a></div><div class="ttdoc">Data parameters.</div><div class="ttdef"><b>Definition</b> Data.h:71</div></div>

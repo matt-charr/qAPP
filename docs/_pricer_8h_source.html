@@ -185,45 +185,46 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordtype">float</span> ClosedFormMoneynessGridUpperBound = 150.00f;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="comment">// Greeks Parameters.</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <span class="comment">// Delta.</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordtype">bool</span> ComputeDelta = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordtype">float</span> DeltaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> DeltaDirection = GreekDirection::CENTER;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="comment">// Gamma.</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordtype">bool</span> ComputeGamma = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordtype">float</span> GammaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="comment">// XGamma.</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordtype">bool</span> ComputeXGamma = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordtype">float</span> XGammaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="comment">// Vega.</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordtype">bool</span> ComputeVega = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordtype">float</span> VegaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> VegaDirection = GreekDirection::CENTER;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="comment">// Volga.</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordtype">bool</span> ComputeVolga = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordtype">float</span> VolgaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="comment">// XVolga.</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordtype">bool</span> ComputeXVolga = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordtype">float</span> XVolgaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="comment">// Vanna.</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordtype">bool</span> ComputeVanna = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordtype">float</span> VannaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordtype">float</span> VannaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="comment">// XVanna.</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordtype">bool</span> ComputeXVanna = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordtype">float</span> XVannaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordtype">float</span> XVannaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="comment">// Cega.</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordtype">bool</span> ComputeCega = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordtype">float</span> CegaCorrelationBump = 1.0f;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> CegaDirection = GreekDirection::CENTER;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }; <span class="comment">// struct Pricer.</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordtype">bool</span> WithGreeks = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="comment">// Delta.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordtype">bool</span> ComputeDelta = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordtype">float</span> DeltaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> DeltaDirection = GreekDirection::CENTER;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="comment">// Gamma.</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordtype">bool</span> ComputeGamma = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordtype">float</span> GammaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="comment">// XGamma.</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordtype">bool</span> ComputeXGamma = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordtype">float</span> XGammaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="comment">// Vega.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordtype">bool</span> ComputeVega = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordtype">float</span> VegaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> VegaDirection = GreekDirection::CENTER;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="comment">// Volga.</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordtype">bool</span> ComputeVolga = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordtype">float</span> VolgaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="comment">// XVolga.</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordtype">bool</span> ComputeXVolga = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordtype">float</span> XVolgaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="comment">// Vanna.</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordtype">bool</span> ComputeVanna = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordtype">float</span> VannaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordtype">float</span> VannaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="comment">// XVanna.</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordtype">bool</span> ComputeXVanna = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordtype">float</span> XVannaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordtype">float</span> XVannaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="comment">// Cega.</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordtype">bool</span> ComputeCega = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordtype">float</span> CegaCorrelationBump = 1.0f;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> CegaDirection = GreekDirection::CENTER;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }; <span class="comment">// struct Pricer.</span></div>
 </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>} <span class="comment">// namespace qAPI.</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_PRICER_HEADER_INCLUDED</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>} <span class="comment">// namespace qAPI.</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_PRICER_HEADER_INCLUDED</span></div>
 <div class="ttc" id="a_calendar_8h_html"><div class="ttname"><a href="_calendar_8h.html">Calendar.h</a></div></div>
 <div class="ttc" id="a_calendar_8h_html_a472485bc78bde754037ded05829e883a"><div class="ttname"><a href="_calendar_8h.html#a472485bc78bde754037ded05829e883a">qAPI::Calendar</a></div><div class="ttdeci">Calendar</div><div class="ttdef"><b>Definition</b> Calendar.h:24</div></div>
 <div class="ttc" id="a_pricer_8h_html_a22df745c779e24241d23c982f1808360"><div class="ttname"><a href="_pricer_8h.html#a22df745c779e24241d23c982f1808360">qAPI::SmoothingType</a></div><div class="ttdeci">SmoothingType</div><div class="ttdef"><b>Definition</b> Pricer.h:32</div></div>
