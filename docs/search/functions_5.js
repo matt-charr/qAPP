@@ -1,7 +1,7 @@
 var searchData=
 [
   ['getconnectionstatus_0',['GetConnectionStatus',['../_get_connection_status_8h.html#a103494cbffc4c78e9a964a57714ca269',1,'qAPI']]],
-  ['getconnectionstatusfromfile_1',['GetConnectionStatusFromFile',['../_get_connection_status_8h.html#ab75f85044fd5502053b0cb685c5dc1a8',1,'qAPI']]],
+  ['getconnectionstatusfromfile_1',['GetConnectionStatusFromFile',['../_get_connection_status_8h.html#ae6fa5932a0c255a6d57c4dbfa91f9b30',1,'qAPI']]],
   ['getconnectionstatusfromjson_2',['GetConnectionStatusFromJson',['../_get_connection_status_8h.html#af5f8c9a66cb64d8f6151db9e7e95e0eb',1,'qAPI']]],
   ['getcontract_3',['GetContract',['../_get_contract_8h.html#a84eb9807e03127193fe2bfa01fa31b26',1,'qAPI']]],
   ['getcontractfromjson_4',['GetContractFromJson',['../_get_contract_8h.html#a79fed022ae0fec5b7b731022ba9b9a83',1,'qAPI']]],
