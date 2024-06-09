@@ -108,7 +108,8 @@ Enumerations</h2></td></tr>
 <tr class="separator:a22df745c779e24241d23c982f1808360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f8ec9f4f106d3c5942b4b5e7aee898" id="r_ab8f8ec9f4f106d3c5942b4b5e7aee898"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8f8ec9f4f106d3c5942b4b5e7aee898">qAPI::PricingMethod</a> { <a class="el" href="#ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1">MONTE_CARLO</a>
 , <a class="el" href="#ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f">FINITE_DIFFERENCE</a>
-, <a class="el" href="#ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4">CLOSED_FORM</a>
+, <a class="el" href="#ab8f8ec9f4f106d3c5942b4b5e7aee898ac5b3f0b386194a88d356813535bc839a">STATIC_REPLICATION</a>
+, <a class="el" href="#ab8f8ec9f4f106d3c5942b4b5e7aee898a308e6f3dfba7abc2a5cc986668b8a0dc">AUTOMATIC_ADJOINT_DIFFERENTIATION</a>
  }</td></tr>
 <tr class="separator:ab8f8ec9f4f106d3c5942b4b5e7aee898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13d6a48edd4e0203c3a3793c82db98d" id="r_ac13d6a48edd4e0203c3a3793c82db98d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac13d6a48edd4e0203c3a3793c82db98d">qAPI::SpotVolatilityDynamic</a> { <a class="el" href="#ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0">STICKY_STRIKE</a>
@@ -240,11 +241,13 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>The pricing method </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1" name="ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1"></a>MONTE_CARLO&#160;</td><td class="fielddoc"><p>Monte Carlo Method </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1" name="ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1"></a>MONTE_CARLO&#160;</td><td class="fielddoc"><p>Monte Carlo Method (MC) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f" name="ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f"></a>FINITE_DIFFERENCE&#160;</td><td class="fielddoc"><p>Partial Differential Equation Method </p>
+<tr><td class="fieldname"><a id="ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f" name="ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f"></a>FINITE_DIFFERENCE&#160;</td><td class="fielddoc"><p>Partial Differential Equation Method (PDE) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4" name="ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4"></a>CLOSED_FORM&#160;</td><td class="fielddoc"><p>Closed Form Formula Method </p>
+<tr><td class="fieldname"><a id="ab8f8ec9f4f106d3c5942b4b5e7aee898ac5b3f0b386194a88d356813535bc839a" name="ab8f8ec9f4f106d3c5942b4b5e7aee898ac5b3f0b386194a88d356813535bc839a"></a>STATIC_REPLICATION&#160;</td><td class="fielddoc"><p>Static Replication Method </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab8f8ec9f4f106d3c5942b4b5e7aee898a308e6f3dfba7abc2a5cc986668b8a0dc" name="ab8f8ec9f4f106d3c5942b4b5e7aee898a308e6f3dfba7abc2a5cc986668b8a0dc"></a>AUTOMATIC_ADJOINT_DIFFERENTIATION&#160;</td><td class="fielddoc"><p>Automatic Adjoint Differentiation Method (AAD) </p>
 </td></tr>
 </table>
 

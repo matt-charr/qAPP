@@ -120,111 +120,112 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898">   40</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898">PricingMethod</a> {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1">MONTE_CARLO</a>, </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f">FINITE_DIFFERENCE</a>, </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4">CLOSED_FORM</a> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }; <span class="comment">// enum class PricingMethod.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898ac5b3f0b386194a88d356813535bc839a">STATIC_REPLICATION</a>, </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898a308e6f3dfba7abc2a5cc986668b8a0dc">AUTOMATIC_ADJOINT_DIFFERENTIATION</a> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }; <span class="comment">// enum class PricingMethod.</span></div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">   47</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">SpotVolatilityDynamic</a> {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0">STICKY_STRIKE</a>, </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da66bdd02fe1ee2e9033f4001c92351c34">STICKY_DELTA</a>, </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da393e17ee05f03d481c51019c6a40685a">STICKY_OPTION</a> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }; <span class="comment">// enum class SpotVolatilityDynamic.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">   48</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">SpotVolatilityDynamic</a> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0">STICKY_STRIKE</a>, </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da66bdd02fe1ee2e9033f4001c92351c34">STICKY_DELTA</a>, </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da393e17ee05f03d481c51019c6a40685a">STICKY_OPTION</a> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }; <span class="comment">// enum class SpotVolatilityDynamic.</span></div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">   54</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">GreekDirection</a> {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12a684d325a7303f52e64011467ff5c5758">LEFT</a>, </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e">CENTER</a>, </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12a21507b40c80068eda19865706fdc2403">RIGHT</a> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }; <span class="comment">// enum class GreekDirection.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">   55</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">GreekDirection</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12a684d325a7303f52e64011467ff5c5758">LEFT</a>, </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e">CENTER</a>, </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12a21507b40c80068eda19865706fdc2403">RIGHT</a> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }; <span class="comment">// enum class GreekDirection.</span></div>
 </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd">   61</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd">BoundaryCondition</a> {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bdae151350b63efc6c3bbe2e3f0d27863ba">DIRICHLET</a>, </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bda2f2dd8d12511598975b5475371963bd4">NEUMANN</a> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }; <span class="comment">// enum class BoundaryCondition.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd">   62</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd">BoundaryCondition</a> {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bdae151350b63efc6c3bbe2e3f0d27863ba">DIRICHLET</a>, </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <a class="code hl_enumvalue" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bda2f2dd8d12511598975b5475371963bd4">NEUMANN</a> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }; <span class="comment">// enum class BoundaryCondition.</span></div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="};">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_day_counter.html">   73</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_day_counter.html">DayCounter</a> {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#aa238d042bee704b0aa9436199a11f6ca">qAPI::Basis</a> <a class="code hl_enumeration" href="_pricer_8h.html#aa238d042bee704b0aa9436199a11f6ca">Basis</a> = qAPI::Basis::ACT_365;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_calendar_8h.html#a472485bc78bde754037ded05829e883a">qAPI::Calendar</a> <a class="code hl_enumeration" href="_calendar_8h.html#a472485bc78bde754037ded05829e883a">Calendar</a> = qAPI::Calendar::DUMMY;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }; <span class="comment">// struct DayCounter.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="};">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_day_counter.html">   74</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_day_counter.html">DayCounter</a> {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#aa238d042bee704b0aa9436199a11f6ca">qAPI::Basis</a> <a class="code hl_enumeration" href="_pricer_8h.html#aa238d042bee704b0aa9436199a11f6ca">Basis</a> = qAPI::Basis::ACT_365;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_calendar_8h.html#a472485bc78bde754037ded05829e883a">qAPI::Calendar</a> <a class="code hl_enumeration" href="_calendar_8h.html#a472485bc78bde754037ded05829e883a">Calendar</a> = qAPI::Calendar::DUMMY;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }; <span class="comment">// struct DayCounter.</span></div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="foldopen" id="foldopen00117" data-start="{" data-end="};">
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_pricer.html">  117</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_pricer.html">Pricer</a> {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="comment">// Generic Parameters.</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_day_counter.html">qAPI::DayCounter</a> <a class="code hl_struct" href="structq_a_p_i_1_1_day_counter.html">DayCounter</a>;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a22df745c779e24241d23c982f1808360">qAPI::SmoothingType</a> <a class="code hl_enumeration" href="_pricer_8h.html#a22df745c779e24241d23c982f1808360">SmoothingType</a> = SmoothingType::NONE;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898">qAPI::PricingMethod</a> Method = PricingMethod::MONTE_CARLO;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">qAPI::SpotVolatilityDynamic</a> <a class="code hl_enumeration" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">SpotVolatilityDynamic</a> = SpotVolatilityDynamic::STICKY_STRIKE;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="comment">// Monte Carlo Parameters.</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordtype">int</span> MonteCarloTrials = 100&#39;000;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">int</span> MonteCarloTimeStep = 2;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordtype">int</span> MonteCarloSeed = 19940523;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordtype">int</span> MonteCarloNbThreads = 8;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordtype">float</span> MonteCarloConfidenceLevel = 97.50f;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordtype">float</span> MonteCarloAntitheticFactor = 0.00f;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="comment">// Finite Difference Parameters.</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd">qAPI::BoundaryCondition</a> FiniteDifferenceBoundaryCondition = BoundaryCondition::DIRICHLET;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordtype">int</span> FiniteDifferenceTimeStep = 1;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordtype">float</span> FiniteDifferenceExplicitRate = 0.00f;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordtype">bool</span> FiniteDifferenceUseRichardsonRombergExtrapolation = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="comment">// Closed Form Parameters.</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordtype">int</span> ClosedFormMoneynessGridSize = 100;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordtype">float</span> ClosedFormMoneynessGridLowerBound = 50.00f;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordtype">float</span> ClosedFormMoneynessGridUpperBound = 150.00f;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="comment">// Greeks Parameters.</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordtype">bool</span> WithGreeks = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="comment">// Delta.</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordtype">bool</span> ComputeDelta = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordtype">float</span> DeltaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> DeltaDirection = GreekDirection::CENTER;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="comment">// Gamma.</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordtype">bool</span> ComputeGamma = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordtype">float</span> GammaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="comment">// XGamma.</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordtype">bool</span> ComputeXGamma = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordtype">float</span> XGammaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="comment">// Vega.</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordtype">bool</span> ComputeVega = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordtype">float</span> VegaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> VegaDirection = GreekDirection::CENTER;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="comment">// Volga.</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordtype">bool</span> ComputeVolga = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordtype">float</span> VolgaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="comment">// XVolga.</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordtype">bool</span> ComputeXVolga = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordtype">float</span> XVolgaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="comment">// Vanna.</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordtype">bool</span> ComputeVanna = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordtype">float</span> VannaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordtype">float</span> VannaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="comment">// XVanna.</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordtype">bool</span> ComputeXVanna = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordtype">float</span> XVannaVolatilityBump = 1.0f;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordtype">float</span> XVannaSpotBump = 1.0f;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="comment">// Cega.</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordtype">bool</span> ComputeCega = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordtype">float</span> CegaCorrelationBump = 1.0f;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> CegaDirection = GreekDirection::CENTER;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }; <span class="comment">// struct Pricer.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="};">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_pricer.html">  118</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_pricer.html">Pricer</a> {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="comment">// Generic Parameters.</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_day_counter.html">qAPI::DayCounter</a> <a class="code hl_struct" href="structq_a_p_i_1_1_day_counter.html">DayCounter</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a22df745c779e24241d23c982f1808360">qAPI::SmoothingType</a> <a class="code hl_enumeration" href="_pricer_8h.html#a22df745c779e24241d23c982f1808360">SmoothingType</a> = SmoothingType::NONE;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898">qAPI::PricingMethod</a> Method = PricingMethod::MONTE_CARLO;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">qAPI::SpotVolatilityDynamic</a> <a class="code hl_enumeration" href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">SpotVolatilityDynamic</a> = SpotVolatilityDynamic::STICKY_STRIKE;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="comment">// Monte Carlo Parameters.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">int</span> MonteCarloTrials = 100&#39;000;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordtype">int</span> MonteCarloTimeStep = 2;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordtype">int</span> MonteCarloSeed = 19940523;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordtype">int</span> MonteCarloNbThreads = 8;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordtype">float</span> MonteCarloConfidenceLevel = 97.50f;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordtype">float</span> MonteCarloAntitheticFactor = 0.00f;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="comment">// Finite Difference Parameters.</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd">qAPI::BoundaryCondition</a> FiniteDifferenceBoundaryCondition = BoundaryCondition::DIRICHLET;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordtype">int</span> FiniteDifferenceTimeStep = 1;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordtype">float</span> FiniteDifferenceExplicitRate = 0.00f;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordtype">bool</span> FiniteDifferenceUseRichardsonRombergExtrapolation = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="comment">// Closed Form Parameters.</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordtype">int</span> ClosedFormMoneynessGridSize = 100;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordtype">float</span> ClosedFormMoneynessGridLowerBound = 50.00f;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordtype">float</span> ClosedFormMoneynessGridUpperBound = 150.00f;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="comment">// Greeks Parameters.</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordtype">bool</span> WithGreeks = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="comment">// Delta.</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordtype">bool</span> ComputeDelta = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordtype">float</span> DeltaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> DeltaDirection = GreekDirection::CENTER;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="comment">// Gamma.</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordtype">bool</span> ComputeGamma = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordtype">float</span> GammaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="comment">// XGamma.</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordtype">bool</span> ComputeXGamma = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordtype">float</span> XGammaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="comment">// Vega.</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordtype">bool</span> ComputeVega = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordtype">float</span> VegaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> VegaDirection = GreekDirection::CENTER;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="comment">// Volga.</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordtype">bool</span> ComputeVolga = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordtype">float</span> VolgaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="comment">// XVolga.</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordtype">bool</span> ComputeXVolga = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordtype">float</span> XVolgaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="comment">// Vanna.</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordtype">bool</span> ComputeVanna = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordtype">float</span> VannaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordtype">float</span> VannaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <span class="comment">// XVanna.</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordtype">bool</span> ComputeXVanna = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordtype">float</span> XVannaVolatilityBump = 1.0f;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordtype">float</span> XVannaSpotBump = 1.0f;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="comment">// Cega.</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordtype">bool</span> ComputeCega = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordtype">float</span> CegaCorrelationBump = 1.0f;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a> CegaDirection = GreekDirection::CENTER;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }; <span class="comment">// struct Pricer.</span></div>
 </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>} <span class="comment">// namespace qAPI.</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_PRICER_HEADER_INCLUDED</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>} <span class="comment">// namespace qAPI.</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_PRICER_HEADER_INCLUDED</span></div>
 <div class="ttc" id="a_calendar_8h_html"><div class="ttname"><a href="_calendar_8h.html">Calendar.h</a></div></div>
 <div class="ttc" id="a_calendar_8h_html_a472485bc78bde754037ded05829e883a"><div class="ttname"><a href="_calendar_8h.html#a472485bc78bde754037ded05829e883a">qAPI::Calendar</a></div><div class="ttdeci">Calendar</div><div class="ttdef"><b>Definition</b> Calendar.h:24</div></div>
 <div class="ttc" id="a_pricer_8h_html_a22df745c779e24241d23c982f1808360"><div class="ttname"><a href="_pricer_8h.html#a22df745c779e24241d23c982f1808360">qAPI::SmoothingType</a></div><div class="ttdeci">SmoothingType</div><div class="ttdef"><b>Definition</b> Pricer.h:32</div></div>
@@ -232,25 +233,26 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="a_pricer_8h_html_a22df745c779e24241d23c982f1808360aa7c48ba367e019d004bfb0239b85f2b3"><div class="ttname"><a href="_pricer_8h.html#a22df745c779e24241d23c982f1808360aa7c48ba367e019d004bfb0239b85f2b3">qAPI::SmoothingType::LOWER</a></div><div class="ttdeci">@ LOWER</div></div>
 <div class="ttc" id="a_pricer_8h_html_a22df745c779e24241d23c982f1808360ab50339a10e1de285ac99d4c3990b8693"><div class="ttname"><a href="_pricer_8h.html#a22df745c779e24241d23c982f1808360ab50339a10e1de285ac99d4c3990b8693">qAPI::SmoothingType::NONE</a></div><div class="ttdeci">@ NONE</div></div>
 <div class="ttc" id="a_pricer_8h_html_a22df745c779e24241d23c982f1808360acca94fa443d7d3ee6c6778b7eeb8ed0a"><div class="ttname"><a href="_pricer_8h.html#a22df745c779e24241d23c982f1808360acca94fa443d7d3ee6c6778b7eeb8ed0a">qAPI::SmoothingType::SYMETRIC</a></div><div class="ttdeci">@ SYMETRIC</div></div>
-<div class="ttc" id="a_pricer_8h_html_a7c455f09f60f3bda07f5a259a439fd12"><div class="ttname"><a href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a></div><div class="ttdeci">GreekDirection</div><div class="ttdef"><b>Definition</b> Pricer.h:54</div></div>
+<div class="ttc" id="a_pricer_8h_html_a7c455f09f60f3bda07f5a259a439fd12"><div class="ttname"><a href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12">qAPI::GreekDirection</a></div><div class="ttdeci">GreekDirection</div><div class="ttdef"><b>Definition</b> Pricer.h:55</div></div>
 <div class="ttc" id="a_pricer_8h_html_a7c455f09f60f3bda07f5a259a439fd12a21507b40c80068eda19865706fdc2403"><div class="ttname"><a href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12a21507b40c80068eda19865706fdc2403">qAPI::GreekDirection::RIGHT</a></div><div class="ttdeci">@ RIGHT</div></div>
 <div class="ttc" id="a_pricer_8h_html_a7c455f09f60f3bda07f5a259a439fd12a684d325a7303f52e64011467ff5c5758"><div class="ttname"><a href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12a684d325a7303f52e64011467ff5c5758">qAPI::GreekDirection::LEFT</a></div><div class="ttdeci">@ LEFT</div></div>
 <div class="ttc" id="a_pricer_8h_html_a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e"><div class="ttname"><a href="_pricer_8h.html#a7c455f09f60f3bda07f5a259a439fd12ac397289ee45877be0cd49811fe245b4e">qAPI::GreekDirection::CENTER</a></div><div class="ttdeci">@ CENTER</div></div>
 <div class="ttc" id="a_pricer_8h_html_aa238d042bee704b0aa9436199a11f6ca"><div class="ttname"><a href="_pricer_8h.html#aa238d042bee704b0aa9436199a11f6ca">qAPI::Basis</a></div><div class="ttdeci">Basis</div><div class="ttdef"><b>Definition</b> Pricer.h:27</div></div>
 <div class="ttc" id="a_pricer_8h_html_aa238d042bee704b0aa9436199a11f6caaeec4274e8023c608ee2744e0330c7b3c"><div class="ttname"><a href="_pricer_8h.html#aa238d042bee704b0aa9436199a11f6caaeec4274e8023c608ee2744e0330c7b3c">qAPI::Basis::ACT_365</a></div><div class="ttdeci">@ ACT_365</div></div>
-<div class="ttc" id="a_pricer_8h_html_aabe0254f26da93ff17dee5953d8976bd"><div class="ttname"><a href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd">qAPI::BoundaryCondition</a></div><div class="ttdeci">BoundaryCondition</div><div class="ttdef"><b>Definition</b> Pricer.h:61</div></div>
+<div class="ttc" id="a_pricer_8h_html_aabe0254f26da93ff17dee5953d8976bd"><div class="ttname"><a href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bd">qAPI::BoundaryCondition</a></div><div class="ttdeci">BoundaryCondition</div><div class="ttdef"><b>Definition</b> Pricer.h:62</div></div>
 <div class="ttc" id="a_pricer_8h_html_aabe0254f26da93ff17dee5953d8976bda2f2dd8d12511598975b5475371963bd4"><div class="ttname"><a href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bda2f2dd8d12511598975b5475371963bd4">qAPI::BoundaryCondition::NEUMANN</a></div><div class="ttdeci">@ NEUMANN</div></div>
 <div class="ttc" id="a_pricer_8h_html_aabe0254f26da93ff17dee5953d8976bdae151350b63efc6c3bbe2e3f0d27863ba"><div class="ttname"><a href="_pricer_8h.html#aabe0254f26da93ff17dee5953d8976bdae151350b63efc6c3bbe2e3f0d27863ba">qAPI::BoundaryCondition::DIRICHLET</a></div><div class="ttdeci">@ DIRICHLET</div></div>
 <div class="ttc" id="a_pricer_8h_html_ab8f8ec9f4f106d3c5942b4b5e7aee898"><div class="ttname"><a href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898">qAPI::PricingMethod</a></div><div class="ttdeci">PricingMethod</div><div class="ttdef"><b>Definition</b> Pricer.h:40</div></div>
-<div class="ttc" id="a_pricer_8h_html_ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4"><div class="ttname"><a href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898a05336f2928f0b70b25dfa4f7c3e2a8f4">qAPI::PricingMethod::CLOSED_FORM</a></div><div class="ttdeci">@ CLOSED_FORM</div></div>
 <div class="ttc" id="a_pricer_8h_html_ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f"><div class="ttname"><a href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898a2a02a5c52dbcc03ac818e95fad21619f">qAPI::PricingMethod::FINITE_DIFFERENCE</a></div><div class="ttdeci">@ FINITE_DIFFERENCE</div></div>
+<div class="ttc" id="a_pricer_8h_html_ab8f8ec9f4f106d3c5942b4b5e7aee898a308e6f3dfba7abc2a5cc986668b8a0dc"><div class="ttname"><a href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898a308e6f3dfba7abc2a5cc986668b8a0dc">qAPI::PricingMethod::AUTOMATIC_ADJOINT_DIFFERENTIATION</a></div><div class="ttdeci">@ AUTOMATIC_ADJOINT_DIFFERENTIATION</div></div>
 <div class="ttc" id="a_pricer_8h_html_ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1"><div class="ttname"><a href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898ab79e80fa82fb7ca2fa7fd447784ae9e1">qAPI::PricingMethod::MONTE_CARLO</a></div><div class="ttdeci">@ MONTE_CARLO</div></div>
-<div class="ttc" id="a_pricer_8h_html_ac13d6a48edd4e0203c3a3793c82db98d"><div class="ttname"><a href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">qAPI::SpotVolatilityDynamic</a></div><div class="ttdeci">SpotVolatilityDynamic</div><div class="ttdef"><b>Definition</b> Pricer.h:47</div></div>
+<div class="ttc" id="a_pricer_8h_html_ab8f8ec9f4f106d3c5942b4b5e7aee898ac5b3f0b386194a88d356813535bc839a"><div class="ttname"><a href="_pricer_8h.html#ab8f8ec9f4f106d3c5942b4b5e7aee898ac5b3f0b386194a88d356813535bc839a">qAPI::PricingMethod::STATIC_REPLICATION</a></div><div class="ttdeci">@ STATIC_REPLICATION</div></div>
+<div class="ttc" id="a_pricer_8h_html_ac13d6a48edd4e0203c3a3793c82db98d"><div class="ttname"><a href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98d">qAPI::SpotVolatilityDynamic</a></div><div class="ttdeci">SpotVolatilityDynamic</div><div class="ttdef"><b>Definition</b> Pricer.h:48</div></div>
 <div class="ttc" id="a_pricer_8h_html_ac13d6a48edd4e0203c3a3793c82db98da393e17ee05f03d481c51019c6a40685a"><div class="ttname"><a href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da393e17ee05f03d481c51019c6a40685a">qAPI::SpotVolatilityDynamic::STICKY_OPTION</a></div><div class="ttdeci">@ STICKY_OPTION</div></div>
 <div class="ttc" id="a_pricer_8h_html_ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0"><div class="ttname"><a href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da4a24af1e94425ee99fb61a7fc02edbd0">qAPI::SpotVolatilityDynamic::STICKY_STRIKE</a></div><div class="ttdeci">@ STICKY_STRIKE</div></div>
 <div class="ttc" id="a_pricer_8h_html_ac13d6a48edd4e0203c3a3793c82db98da66bdd02fe1ee2e9033f4001c92351c34"><div class="ttname"><a href="_pricer_8h.html#ac13d6a48edd4e0203c3a3793c82db98da66bdd02fe1ee2e9033f4001c92351c34">qAPI::SpotVolatilityDynamic::STICKY_DELTA</a></div><div class="ttdeci">@ STICKY_DELTA</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_day_counter_html"><div class="ttname"><a href="structq_a_p_i_1_1_day_counter.html">qAPI::DayCounter</a></div><div class="ttdoc">The way to compute the year fraction (coverage) between the dates D1 and D2.</div><div class="ttdef"><b>Definition</b> Pricer.h:73</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_pricer_html"><div class="ttname"><a href="structq_a_p_i_1_1_pricer.html">qAPI::Pricer</a></div><div class="ttdoc">Pricing parameters.</div><div class="ttdef"><b>Definition</b> Pricer.h:117</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_day_counter_html"><div class="ttname"><a href="structq_a_p_i_1_1_day_counter.html">qAPI::DayCounter</a></div><div class="ttdoc">The way to compute the year fraction (coverage) between the dates D1 and D2.</div><div class="ttdef"><b>Definition</b> Pricer.h:74</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_pricer_html"><div class="ttname"><a href="structq_a_p_i_1_1_pricer.html">qAPI::Pricer</a></div><div class="ttdoc">Pricing parameters.</div><div class="ttdef"><b>Definition</b> Pricer.h:118</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
