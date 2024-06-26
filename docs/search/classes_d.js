@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['target_0',['Target',['../structq_a_p_i_1_1_target.html',1,'qAPI']]],
-  ['testimpliedvolatilitycomputationerror_1',['TestImpliedVolatilityComputationError',['../structq_a_p_i_1_1_test_implied_volatility_computation_error.html',1,'qAPI']]],
-  ['testimpliedvolatilitycomputationerrormatrix_2',['TestImpliedVolatilityComputationErrorMatrix',['../structq_a_p_i_1_1_test_implied_volatility_computation_error_matrix.html',1,'qAPI']]],
-  ['testimpliedvolatilitycomputationerrors_3',['TestImpliedVolatilityComputationErrors',['../struct_test_implied_volatility_computation_errors.html',1,'']]],
-  ['testimpliedvolatilitycomputationresults_4',['TestImpliedVolatilityComputationResults',['../structq_a_p_i_1_1_test_implied_volatility_computation_results.html',1,'qAPI']]],
-  ['testimpliedvolatilitycomputationspace_5',['TestImpliedVolatilityComputationSpace',['../structq_a_p_i_1_1_test_implied_volatility_computation_space.html',1,'qAPI']]],
-  ['testimpliedvolatilitycomputationvalue_6',['TestImpliedVolatilityComputationValue',['../structq_a_p_i_1_1_test_implied_volatility_computation_value.html',1,'qAPI']]],
-  ['tickervalueresult_7',['TickerValueResult',['../structq_a_p_i_1_1_ticker_value_result.html',1,'qAPI']]]
+  ['scheduleresults_0',['ScheduleResults',['../structq_a_p_i_1_1_schedule_results.html',1,'qAPI']]],
+  ['sequenceresults_1',['SequenceResults',['../structq_a_p_i_1_1_sequence_results.html',1,'qAPI']]],
+  ['settingevent_2',['SettingEvent',['../classq_a_p_i_1_1_setting_event.html',1,'qAPI']]],
+  ['sorted_3',['Sorted',['../structq_d_s_l_1_1_sorted.html',1,'qDSL']]],
+  ['staticreplication1dresults_4',['StaticReplication1DResults',['../structq_a_p_i_1_1_static_replication1_d_results.html',1,'qAPI']]]
 ];

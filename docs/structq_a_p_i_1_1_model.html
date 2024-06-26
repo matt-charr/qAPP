@@ -94,7 +94,7 @@ Public Attributes</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>CalibrationDate</b></td></tr>
 <tr class="separator:a8317e3b5c39444efded26ef5ddda5ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e25906a5c5c7f622dce71f9d49776e7" id="r_a9e25906a5c5c7f622dce71f9d49776e7"><td class="memItemLeft" align="right" valign="top"><a id="a9e25906a5c5c7f622dce71f9d49776e7" name="a9e25906a5c5c7f622dce71f9d49776e7"></a>
-enum <a class="el" href="_model_8h.html#a6c729d9b6f53687e93ff1a213ba0b246">qAPI::ModelName</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b> = <a class="el" href="_model_8h.html#a6c729d9b6f53687e93ff1a213ba0b246a3adf0dcad331c84b66d9b265d04b6070">ModelName::BLACK_SCHOLES_MODEL</a></td></tr>
+enum <a class="el" href="_model_8h.html#a6c729d9b6f53687e93ff1a213ba0b246">qAPI::ModelName</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b></td></tr>
 <tr class="separator:a9e25906a5c5c7f622dce71f9d49776e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0751314d8d93075a59dcd80a3538f57a" id="r_a0751314d8d93075a59dcd80a3538f57a"><td class="memItemLeft" align="right" valign="top"><a id="a0751314d8d93075a59dcd80a3538f57a" name="a0751314d8d93075a59dcd80a3538f57a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>BlackScholesFiniteDifferenceGridSize</b> = 500</td></tr>
@@ -102,6 +102,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>BlackScholesFiniteDiff
 <tr class="memitem:aa944283e4ddc4ff31948f3e5ed2bffea" id="r_aa944283e4ddc4ff31948f3e5ed2bffea"><td class="memItemLeft" align="right" valign="top"><a id="aa944283e4ddc4ff31948f3e5ed2bffea" name="aa944283e4ddc4ff31948f3e5ed2bffea"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>BlackScholesFiniteDifferenceConfidenceLevel</b> = 97.50f</td></tr>
 <tr class="separator:aa944283e4ddc4ff31948f3e5ed2bffea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade72db2b209257eaeb84f1cd36a1602f" id="r_ade72db2b209257eaeb84f1cd36a1602f"><td class="memItemLeft" align="right" valign="top"><a id="ade72db2b209257eaeb84f1cd36a1602f" name="ade72db2b209257eaeb84f1cd36a1602f"></a>
+enum <a class="el" href="_model_8h.html#a0025ced6c5c6cffb33c86508a7b751e5">qAPI::BlackScholesCalibrationKind</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BlackScholesCalibrationKind</b> = <a class="el" href="_model_8h.html#a0025ced6c5c6cffb33c86508a7b751e5aa60a6a471c0681e5a49c4f5d00f6bc5a">qAPI::BlackScholesCalibrationKind::MANUAL</a></td></tr>
+<tr class="separator:ade72db2b209257eaeb84f1cd36a1602f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3264856ac1cce5303401d13b56961b0e" id="r_a3264856ac1cce5303401d13b56961b0e"><td class="memItemLeft" align="right" valign="top"><a id="a3264856ac1cce5303401d13b56961b0e" name="a3264856ac1cce5303401d13b56961b0e"></a>
+<a class="el" href="structq_a_p_i_1_1_date_shift.html">qAPI::DateShift</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BlackScholesVolatilityCalibrationTenor</b> = { &quot;+1y&quot;, <a class="el" href="_calendar_8h.html#a472485bc78bde754037ded05829e883aabd2103035a8021942390a78a431ba0c4">qAPI::Calendar::DUMMY</a> }</td></tr>
+<tr class="separator:a3264856ac1cce5303401d13b56961b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad257562822d892c61d626e3b2de6319" id="r_aad257562822d892c61d626e3b2de6319"><td class="memItemLeft" align="right" valign="top"><a id="aad257562822d892c61d626e3b2de6319" name="aad257562822d892c61d626e3b2de6319"></a>
+<a class="el" href="structq_a_p_i_1_1_date_shift.html">qAPI::DateShift</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BlackScholesHistoricalCalibrationDepth</b></td></tr>
+<tr class="separator:aad257562822d892c61d626e3b2de6319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9571a4e0c12ab338769a3e3f44a07e43" id="r_a9571a4e0c12ab338769a3e3f44a07e43"><td class="memItemLeft" align="right" valign="top"><a id="a9571a4e0c12ab338769a3e3f44a07e43" name="a9571a4e0c12ab338769a3e3f44a07e43"></a>
+<a class="el" href="structq_a_p_i_1_1_date_shift.html">qAPI::DateShift</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BlackScholesHistoricalCalibrationFrequency</b></td></tr>
+<tr class="separator:a9571a4e0c12ab338769a3e3f44a07e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The model parameters. </p>

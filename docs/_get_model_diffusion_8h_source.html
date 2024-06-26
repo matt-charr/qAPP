@@ -103,83 +103,69 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// qAPI.</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;qAPI/Interface.h&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="_logger_8h.html">qAPI/Logger.h</a>&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="_line_8h.html">qAPI/Line.h</a>&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span>Json {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">class </span>Value;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>} <span class="comment">// namespace Json.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span>qAPI {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">struct </span>Data;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">struct </span>Model;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_model_diffusion_series.html">   47</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_model_diffusion_series.html">ModelDiffusionSeries</a> {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="comment">// Output.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        std::string Date;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span>Json {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">class </span>Value;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>} <span class="comment">// namespace Json.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span>qAPI {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">struct </span>Data;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">struct </span>Model;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_model_diffusion_series.html">   46</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_model_diffusion_series.html">ModelDiffusionSeries</a> {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="comment">// Output.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        std::string Date;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">int</span> Epoch;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordtype">float</span> Value;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }; <span class="comment">// struct DiffuseModelRecord.</span></div>
 </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_model_diffusion_chart.html">   62</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_model_diffusion_chart.html">ModelDiffusionChart</a> {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">// Output.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_line.html">qAPI::Line</a> Times;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_line.html">qAPI::Line</a> Values;</div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="};">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_model_diffusion_results.html">   66</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_model_diffusion_results.html">ModelDiffusionResults</a> {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }; <span class="comment">// struct ModelDiffusionChart.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">// Input.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        std::string File;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        std::string Currency;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">int</span> Trajectory;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="comment">// Output.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        std::vector&lt;qAPI::ModelDiffusionSeries&gt; Series;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }; <span class="comment">// struct ModelDiffusionResults.</span></div>
 </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_model_diffusion_results.html">   83</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_model_diffusion_results.html">ModelDiffusionResults</a> {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="comment">// Input.</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        std::string File;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        std::string Currency;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordtype">int</span> Trajectory;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="comment">// Output.</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        std::vector&lt;qAPI::ModelDiffusionSeries&gt; Series;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_model_diffusion_chart.html">qAPI::ModelDiffusionChart</a> Chart;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }; <span class="comment">// struct ModelDiffusionResults.</span></div>
-</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    _EXTERN_C</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    _EXTERN_C</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>     _qAPI_EXPORT <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="_get_model_diffusion_8h.html#a40fbb1de38d8548cfa749b6227c3a7fb">GetModelDiffusion</a>(</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_data.html">qAPI::Data</a>&amp;,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structq_a_p_i_1_1_model.html">qAPI::Model</a>&amp;,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_model_diffusion_results.html">qAPI::ModelDiffusionResults</a>&amp;,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <a class="code hl_typedef" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a>&amp;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    );</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>     _qAPI_EXPORT <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="_get_model_diffusion_8h.html#a40fbb1de38d8548cfa749b6227c3a7fb">GetModelDiffusion</a>(</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_data.html">qAPI::Data</a>&amp;,</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structq_a_p_i_1_1_model.html">qAPI::Model</a>&amp;,</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_struct" href="structq_a_p_i_1_1_model_diffusion_results.html">qAPI::ModelDiffusionResults</a>&amp;,</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <a class="code hl_typedef" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a>&amp;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    );</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>     _qAPI_EXPORT <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="_get_model_diffusion_8h.html#ab29edd926f2c0b6c6e38c38b4a55c045">GetModelDiffusionFromJson</a>(</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        Json::Value&amp;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    );</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>     _END_EXTERN_C</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>} <span class="comment">// namespace qAPI.</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_GET_MODEL_DIFFUSION_HEADER_INCLUDED</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>     _qAPI_EXPORT <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="_get_model_diffusion_8h.html#ab29edd926f2c0b6c6e38c38b4a55c045">GetModelDiffusionFromJson</a>(</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        Json::Value&amp;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    );</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>     _END_EXTERN_C</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>} <span class="comment">// namespace qAPI.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_GET_MODEL_DIFFUSION_HEADER_INCLUDED</span></div>
 <div class="ttc" id="a_get_model_diffusion_8h_html_a40fbb1de38d8548cfa749b6227c3a7fb"><div class="ttname"><a href="_get_model_diffusion_8h.html#a40fbb1de38d8548cfa749b6227c3a7fb">qAPI::GetModelDiffusion</a></div><div class="ttdeci">_EXTERN_C _qAPI_EXPORT const bool GetModelDiffusion(qAPI::Data &amp;, const qAPI::Model &amp;, qAPI::ModelDiffusionResults &amp;, qAPI::Logger &amp;)</div><div class="ttdef"><b>Definition</b> GetModelDiffusion.cpp:40</div></div>
-<div class="ttc" id="a_get_model_diffusion_8h_html_ab29edd926f2c0b6c6e38c38b4a55c045"><div class="ttname"><a href="_get_model_diffusion_8h.html#ab29edd926f2c0b6c6e38c38b4a55c045">qAPI::GetModelDiffusionFromJson</a></div><div class="ttdeci">_qAPI_EXPORT const bool GetModelDiffusionFromJson(Json::Value &amp;)</div><div class="ttdef"><b>Definition</b> GetModelDiffusion.cpp:136</div></div>
-<div class="ttc" id="a_line_8h_html"><div class="ttname"><a href="_line_8h.html">Line.h</a></div></div>
+<div class="ttc" id="a_get_model_diffusion_8h_html_ab29edd926f2c0b6c6e38c38b4a55c045"><div class="ttname"><a href="_get_model_diffusion_8h.html#ab29edd926f2c0b6c6e38c38b4a55c045">qAPI::GetModelDiffusionFromJson</a></div><div class="ttdeci">_qAPI_EXPORT const bool GetModelDiffusionFromJson(Json::Value &amp;)</div><div class="ttdef"><b>Definition</b> GetModelDiffusion.cpp:131</div></div>
 <div class="ttc" id="a_logger_8h_html"><div class="ttname"><a href="_logger_8h.html">Logger.h</a></div></div>
 <div class="ttc" id="a_logger_8h_html_aa5a1f238844067249387700b036ac80c"><div class="ttname"><a href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a></div><div class="ttdeci">std::vector&lt; qAPI::Log &gt; Logger</div><div class="ttdoc">The list of log levels and messages thrown during the calculation.</div><div class="ttdef"><b>Definition</b> Logger.h:64</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_data_html"><div class="ttname"><a href="structq_a_p_i_1_1_data.html">qAPI::Data</a></div><div class="ttdoc">Data parameters.</div><div class="ttdef"><b>Definition</b> Data.h:71</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_line_html"><div class="ttname"><a href="structq_a_p_i_1_1_line.html">qAPI::Line</a></div><div class="ttdoc">A Line.</div><div class="ttdef"><b>Definition</b> Line.h:32</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_model_diffusion_chart_html"><div class="ttname"><a href="structq_a_p_i_1_1_model_diffusion_chart.html">qAPI::ModelDiffusionChart</a></div><div class="ttdoc">Chart of the model diffusion.</div><div class="ttdef"><b>Definition</b> GetModelDiffusion.h:62</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_model_diffusion_results_html"><div class="ttname"><a href="structq_a_p_i_1_1_model_diffusion_results.html">qAPI::ModelDiffusionResults</a></div><div class="ttdoc">Arguments of qAPI::GetModelDiffusion.</div><div class="ttdef"><b>Definition</b> GetModelDiffusion.h:83</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_model_diffusion_series_html"><div class="ttname"><a href="structq_a_p_i_1_1_model_diffusion_series.html">qAPI::ModelDiffusionSeries</a></div><div class="ttdoc">One sample value for the corresponding amount at a specified date.</div><div class="ttdef"><b>Definition</b> GetModelDiffusion.h:47</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_model_html"><div class="ttname"><a href="structq_a_p_i_1_1_model.html">qAPI::Model</a></div><div class="ttdoc">The model parameters.</div><div class="ttdef"><b>Definition</b> Model.h:45</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_data_html"><div class="ttname"><a href="structq_a_p_i_1_1_data.html">qAPI::Data</a></div><div class="ttdoc">Data parameters.</div><div class="ttdef"><b>Definition</b> Data.h:65</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_model_diffusion_results_html"><div class="ttname"><a href="structq_a_p_i_1_1_model_diffusion_results.html">qAPI::ModelDiffusionResults</a></div><div class="ttdoc">Arguments of qAPI::GetModelDiffusion.</div><div class="ttdef"><b>Definition</b> GetModelDiffusion.h:66</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_model_diffusion_series_html"><div class="ttname"><a href="structq_a_p_i_1_1_model_diffusion_series.html">qAPI::ModelDiffusionSeries</a></div><div class="ttdoc">One sample value for the corresponding amount at a specified date.</div><div class="ttdef"><b>Definition</b> GetModelDiffusion.h:46</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_model_html"><div class="ttname"><a href="structq_a_p_i_1_1_model.html">qAPI::Model</a></div><div class="ttdoc">The model parameters.</div><div class="ttdef"><b>Definition</b> Model.h:54</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
