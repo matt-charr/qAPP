@@ -104,8 +104,6 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ac8ec4e22a8f5374e41ef53cbe2098440" id="r_ac8ec4e22a8f5374e41ef53cbe2098440"><td class="memItemLeft" align="right" valign="top">_EXTERN_C _qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8ec4e22a8f5374e41ef53cbe2098440">qAPI::GetModelImpliedVolatility</a> (<a class="el" href="structq_a_p_i_1_1_data.html">qAPI::Data</a> &amp;, const <a class="el" href="structq_a_p_i_1_1_model.html">qAPI::Model</a> &amp;, const <a class="el" href="structq_a_p_i_1_1_pricer.html">qAPI::Pricer</a> &amp;, <a class="el" href="structq_a_p_i_1_1_model_implied_volatility_results.html">qAPI::ModelImpliedVolatilityResults</a> &amp;, <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a> &amp;p_logger)</td></tr>
 <tr class="separator:ac8ec4e22a8f5374e41ef53cbe2098440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace3188094b027eb18840556d1c0690af" id="r_ace3188094b027eb18840556d1c0690af"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace3188094b027eb18840556d1c0690af">qAPI::GetModelImpliedVolatilityFromJson</a> (Json::Value &amp;)</td></tr>
-<tr class="separator:ace3188094b027eb18840556d1c0690af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>matt-charr </dd></dl>
@@ -155,30 +153,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">p_pricer</td><td>See <a class="el" href="structq_a_p_i_1_1_pricer.html" title="Pricing parameters.">qAPI::Pricer</a> </td></tr>
     <tr><td class="paramname">p_results</td><td>See <a class="el" href="structq_a_p_i_1_1_model_implied_volatility_results.html" title="Arguments of qAPI::GetModelImpliedVolatility.">qAPI::ModelImpliedVolatilityResults</a> </td></tr>
     <tr><td class="paramname">p_logger</td><td>See <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c" title="The list of log levels and messages thrown during the calculation.">qAPI::Logger</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ace3188094b027eb18840556d1c0690af" name="ace3188094b027eb18840556d1c0690af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace3188094b027eb18840556d1c0690af">&#9670;&#160;</a></span>GetModelImpliedVolatilityFromJson()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool qAPI::GetModelImpliedVolatilityFromJson </td>
-          <td>(</td>
-          <td class="paramtype">Json::Value &amp;</td>          <td class="paramname"><span class="paramname"><em>p_root</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Apply GetModelImpliedVolatility with the parameters provided in the fields of a Json object. </p><dl class="section note"><dt>Note</dt><dd>Used to communicate with qGUI. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_root</td><td>Mockup as a Json::Value object. </td></tr>
   </table>
   </dd>
 </dl>

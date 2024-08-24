@@ -84,14 +84,14 @@ $(function() { codefold.init(0); });
   <div class="headertitle"><div class="title">Logger.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_logger_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* ********************************************************************* *</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright © 2024 qAPP - Quantitative Analytics. All rights reserved. ** *</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of the project &#39;qAPP - Quantitative Analytics&#39;. ***** *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Hence the latter remains the exclusive property of its author. ****** *</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * Accordingly, no part of this device may be used or transmitted ****** *</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * in any form for professional, educational or commercial purposes **** *</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * without the express permission of Matthieu Charrier. **************** *</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * ********************************************************************* */</span></div>
+<a href="_logger_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* **************************************************************** *</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright © 2024 Quantitative Analytics. All rights reserved. ** *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of the project &#39;Quantitative Analytics&#39;. ***** *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Hence the latter remains the exclusive property of its author. * *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * Accordingly, no part of this document may be used or transmitted *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * in any form for professional, educational or commercial purposes *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * without the express permission of Matthieu Charrier. *********** *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * **************************************************************** */</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef _QAPI_LOGGER_HEADER_INCLUDED</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define _QAPI_LOGGER_HEADER_INCLUDED</span></div>
@@ -124,7 +124,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="_logger_8h.html#a28ac929c70e0329894b04443131cbfc2">qAPI::LogLevel</a> Level;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        std::string Message;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#ifdef _qAPP_DEBUG</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        std::string File;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        std::string <a class="code hl_class" href="classq_a_p_i_1_1_file.html">File</a>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        std::string Function;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordtype">int</span> Line;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// _qAPP_DEBUG</span></div>
@@ -154,6 +154,7 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="a_logger_8h_html_a28ac929c70e0329894b04443131cbfc2ad0749aaba8b833466dfcbb0428e4f89c"><div class="ttname"><a href="_logger_8h.html#a28ac929c70e0329894b04443131cbfc2ad0749aaba8b833466dfcbb0428e4f89c">qAPI::LogLevel::SUCCESS</a></div><div class="ttdeci">@ SUCCESS</div></div>
 <div class="ttc" id="a_logger_8h_html_aa5a1f238844067249387700b036ac80c"><div class="ttname"><a href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a></div><div class="ttdeci">std::vector&lt; qAPI::Log &gt; Logger</div><div class="ttdoc">The list of log levels and messages thrown during the calculation.</div><div class="ttdef"><b>Definition</b> Logger.h:64</div></div>
 <div class="ttc" id="a_logger_8h_html_ad26e769962d3921a292d609c0d30b064"><div class="ttname"><a href="_logger_8h.html#ad26e769962d3921a292d609c0d30b064">qAPI::WriteLogger</a></div><div class="ttdeci">_EXTERN_C _qAPI_EXPORT void WriteLogger(const qAPI::Logger &amp;)</div><div class="ttdef"><b>Definition</b> Logger.cpp:17</div></div>
+<div class="ttc" id="aclassq_a_p_i_1_1_file_html"><div class="ttname"><a href="classq_a_p_i_1_1_file.html">qAPI::File</a></div><div class="ttdef"><b>Definition</b> Contract.h:137</div></div>
 <div class="ttc" id="astructq_a_p_i_1_1_log_html"><div class="ttname"><a href="structq_a_p_i_1_1_log.html">qAPI::Log</a></div><div class="ttdoc">Register log levels and messages during the calculation.</div><div class="ttdef"><b>Definition</b> Logger.h:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -90,15 +90,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a3f2f72ab4e8fa06378f7dfc3263948d1" id="r_a3f2f72ab4e8fa06378f7dfc3263948d1"><td class="memItemLeft" align="right" valign="top"><a id="a3f2f72ab4e8fa06378f7dfc3263948d1" name="a3f2f72ab4e8fa06378f7dfc3263948d1"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Username</b></td></tr>
+<tr class="separator:a3f2f72ab4e8fa06378f7dfc3263948d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396b9d4b14159fe7cfbcf240f9441bdc" id="r_a396b9d4b14159fe7cfbcf240f9441bdc"><td class="memItemLeft" align="right" valign="top"><a id="a396b9d4b14159fe7cfbcf240f9441bdc" name="a396b9d4b14159fe7cfbcf240f9441bdc"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Password</b></td></tr>
+<tr class="separator:a396b9d4b14159fe7cfbcf240f9441bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e37694e71d83f573b6bed8735524a09" id="r_a4e37694e71d83f573b6bed8735524a09"><td class="memItemLeft" align="right" valign="top"><a id="a4e37694e71d83f573b6bed8735524a09" name="a4e37694e71d83f573b6bed8735524a09"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Attempts</b> = 1</td></tr>
 <tr class="separator:a4e37694e71d83f573b6bed8735524a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38cdc7ce70b1e460d02d0af744f1f32f" id="r_a38cdc7ce70b1e460d02d0af744f1f32f"><td class="memItemLeft" align="right" valign="top"><a id="a38cdc7ce70b1e460d02d0af744f1f32f" name="a38cdc7ce70b1e460d02d0af744f1f32f"></a>
-std::vector&lt; <a class="el" href="structq_a_p_i_1_1_data_source.html">qAPI::DataSource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Sources</b></td></tr>
-<tr class="separator:a38cdc7ce70b1e460d02d0af744f1f32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac455960ff7501654537a0c62891db875" id="r_ac455960ff7501654537a0c62891db875"><td class="memItemLeft" align="right" valign="top"><a id="ac455960ff7501654537a0c62891db875" name="ac455960ff7501654537a0c62891db875"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AllowConnectionToDatabases</b> = true</td></tr>
-<tr class="separator:ac455960ff7501654537a0c62891db875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ef175868d8e4e43d5edf735099a9bca" id="r_a8ef175868d8e4e43d5edf735099a9bca"><td class="memItemLeft" align="right" valign="top"><a id="a8ef175868d8e4e43d5edf735099a9bca" name="a8ef175868d8e4e43d5edf735099a9bca"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SuccessOnRepoRequestFailure</b> = false</td></tr>
 <tr class="separator:a8ef175868d8e4e43d5edf735099a9bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +117,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>SuccessOnYieldRequest
 <tr class="memitem:a60d7319cf7ed512cb1dfabbc9040d82a" id="r_a60d7319cf7ed512cb1dfabbc9040d82a"><td class="memItemLeft" align="right" valign="top"><a id="a60d7319cf7ed512cb1dfabbc9040d82a" name="a60d7319cf7ed512cb1dfabbc9040d82a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SuccessOnCorrelationRequestFailure</b> = true</td></tr>
 <tr class="separator:a60d7319cf7ed512cb1dfabbc9040d82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cdc7ce70b1e460d02d0af744f1f32f" id="r_a38cdc7ce70b1e460d02d0af744f1f32f"><td class="memItemLeft" align="right" valign="top"><a id="a38cdc7ce70b1e460d02d0af744f1f32f" name="a38cdc7ce70b1e460d02d0af744f1f32f"></a>
+std::vector&lt; <a class="el" href="structq_a_p_i_1_1_data_source.html">qAPI::DataSource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Sources</b></td></tr>
+<tr class="separator:a38cdc7ce70b1e460d02d0af744f1f32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structq_a_p_i_1_1_data.html" title="Data parameters.">Data</a> parameters. </p>
@@ -125,7 +128,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>SuccessOnCorrelationR
     <tr><td class="paramname">Data::Attempts</td><td>For each market data item, while you fail requesting its value at date D <br  />
  you will request it at date D-1. </td></tr>
     <tr><td class="paramname">Data::Sources</td><td>List of data sources. </td></tr>
-    <tr><td class="paramname">Data::AllowConnectionToDatabases</td><td>If false then database source are ignored. </td></tr>
     <tr><td class="paramname">Data::SuccessOnRepoRequestFailure</td><td>If you fail requesting the repo (q) then continue with q = 0. </td></tr>
     <tr><td class="paramname">Data::SuccessOnSpotRequestFailure</td><td>If you fail requesting the spot (S) then continue with S = 0. </td></tr>
     <tr><td class="paramname">Data::SuccessOnFXSpotRequestFailure</td><td>If you fail requesting the FX spot (X) then continue with X = 1. </td></tr>

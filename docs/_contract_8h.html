@@ -77,11 +77,15 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">Contract.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;qAPI/Interface.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_algebra_8hpp_source.html">qDSL/Algebra.hpp</a>&gt;</code><br />
 </div>
 <p><a href="_contract_8h_source.html">Go to the source code of this file.</a></p>
@@ -91,12 +95,63 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq_a_p_i_1_1_contract.html">qAPI::Contract</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameters of the contract.  <a href="structq_a_p_i_1_1_contract.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_i_cash_flow.html">qAPI::ICashFlow</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_cash_flow.html">qAPI::CashFlow</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_console.html">qAPI::Console</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_file.html">qAPI::File</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aa1fb39fbdfc1841c12bb0ff4a94df4df" id="r_aa1fb39fbdfc1841c12bb0ff4a94df4df"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1fb39fbdfc1841c12bb0ff4a94df4df">qAPI::ContractKind</a> { <a class="el" href="#aa1fb39fbdfc1841c12bb0ff4a94df4dfa8e768457990a43945074340b0f91cf17">AUTOCALL</a>
+, <a class="el" href="#aa1fb39fbdfc1841c12bb0ff4a94df4dfa7f9df4462ccfd5b474428c4478cb92db">VANILLA</a>
+, <a class="el" href="#aa1fb39fbdfc1841c12bb0ff4a94df4dfa4695859f52d337ca3d7020b2c8f7882a">CONSOLE</a>
+, <a class="el" href="#aa1fb39fbdfc1841c12bb0ff4a94df4dfa9fc5887c030f7a3e19821ebec457e719">FILE</a>
+ }</td></tr>
+<tr class="separator:aa1fb39fbdfc1841c12bb0ff4a94df4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>matt-charr </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024-03-30 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>v0.3.1 </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aa1fb39fbdfc1841c12bb0ff4a94df4df" name="aa1fb39fbdfc1841c12bb0ff4a94df4df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1fb39fbdfc1841c12bb0ff4a94df4df">&#9670;&#160;</a></span>ContractKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#aa1fb39fbdfc1841c12bb0ff4a94df4df">qAPI::ContractKind</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Contract kind </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa1fb39fbdfc1841c12bb0ff4a94df4dfa8e768457990a43945074340b0f91cf17" name="aa1fb39fbdfc1841c12bb0ff4a94df4dfa8e768457990a43945074340b0f91cf17"></a>AUTOCALL&#160;</td><td class="fielddoc"><p><a class="el" href="classq_a_p_i_1_1_autocall.html">Autocall</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa1fb39fbdfc1841c12bb0ff4a94df4dfa7f9df4462ccfd5b474428c4478cb92db" name="aa1fb39fbdfc1841c12bb0ff4a94df4dfa7f9df4462ccfd5b474428c4478cb92db"></a>VANILLA&#160;</td><td class="fielddoc"><p><a class="el" href="classq_a_p_i_1_1_vanilla.html" title="The vanilla option (call or put)">Vanilla</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa1fb39fbdfc1841c12bb0ff4a94df4dfa4695859f52d337ca3d7020b2c8f7882a" name="aa1fb39fbdfc1841c12bb0ff4a94df4dfa4695859f52d337ca3d7020b2c8f7882a"></a>CONSOLE&#160;</td><td class="fielddoc"><p><a class="el" href="classq_a_p_i_1_1_console.html">Console</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa1fb39fbdfc1841c12bb0ff4a94df4dfa9fc5887c030f7a3e19821ebec457e719" name="aa1fb39fbdfc1841c12bb0ff4a94df4dfa9fc5887c030f7a3e19821ebec457e719"></a>FILE&#160;</td><td class="fielddoc"><p><a class="el" href="classq_a_p_i_1_1_file.html">File</a> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0

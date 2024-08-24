@@ -84,55 +84,59 @@ $(function() { codefold.init(0); });
   <div class="headertitle"><div class="title">Data.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_data_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* ********************************************************************* *</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright © 2024 qAPP - Quantitative Analytics. All rights reserved. ** *</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of the project &#39;qAPP - Quantitative Analytics&#39;. ***** *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Hence the latter remains the exclusive property of its author. ****** *</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * Accordingly, no part of this device may be used or transmitted ****** *</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * in any form for professional, educational or commercial purposes **** *</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * without the express permission of Matthieu Charrier. **************** *</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * ********************************************************************* */</span></div>
+<a href="_data_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* **************************************************************** *</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright © 2024 Quantitative Analytics. All rights reserved. ** *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of the project &#39;Quantitative Analytics&#39;. ***** *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Hence the latter remains the exclusive property of its author. * *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * Accordingly, no part of this document may be used or transmitted *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * in any form for professional, educational or commercial purposes *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * without the express permission of Matthieu Charrier. *********** *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * **************************************************************** */</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef _QAPI_DATA_HEADER_INCLUDED</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define _QAPI_DATA_HEADER_INCLUDED</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// std.</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>qAPI {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_data_source.html">   35</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_data_source.html">DataSource</a> {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        std::string File;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">bool</span> IsActivated;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">bool</span> Status;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }; <span class="comment">// struct DataSource.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>qAPI {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_data_source.html">   34</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_data_source.html">DataSource</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        std::string <a class="code hl_class" href="classq_a_p_i_1_1_file.html">File</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">bool</span> IsActivated;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">bool</span> Status;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }; <span class="comment">// struct DataSource.</span></div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_data.html">   65</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_data.html">Data</a> {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structq_a_p_i_1_1_data.html">   62</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structq_a_p_i_1_1_data.html">Data</a> {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">// input.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::string Username;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        std::string Password;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">int</span> Attempts = 1;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        std::vector&lt;qAPI::DataSource&gt; Sources;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">bool</span> AllowConnectionToDatabases = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">bool</span> SuccessOnRepoRequestFailure = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">bool</span> SuccessOnSpotRequestFailure = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">bool</span> SuccessOnFXSpotRequestFailure = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">bool</span> SuccessOnVolatilityRequestFailure = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">bool</span> SuccessOnYieldRequestFailure = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">bool</span> SuccessOnCorrelationRequestFailure = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }; <span class="comment">// struct Data.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">bool</span> SuccessOnRepoRequestFailure = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">bool</span> SuccessOnSpotRequestFailure = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">bool</span> SuccessOnFXSpotRequestFailure = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">bool</span> SuccessOnVolatilityRequestFailure = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">bool</span> SuccessOnYieldRequestFailure = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">bool</span> SuccessOnCorrelationRequestFailure = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">// input/output.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        std::vector&lt;qAPI::DataSource&gt; Sources;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }; <span class="comment">// struct Data.</span></div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>} <span class="comment">// namespace qAPI.</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_DATA_HEADER_INCLUDED.</span></div>
-<div class="ttc" id="astructq_a_p_i_1_1_data_html"><div class="ttname"><a href="structq_a_p_i_1_1_data.html">qAPI::Data</a></div><div class="ttdoc">Data parameters.</div><div class="ttdef"><b>Definition</b> Data.h:65</div></div>
-<div class="ttc" id="astructq_a_p_i_1_1_data_source_html"><div class="ttname"><a href="structq_a_p_i_1_1_data_source.html">qAPI::DataSource</a></div><div class="ttdoc">One market data source.</div><div class="ttdef"><b>Definition</b> Data.h:35</div></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>} <span class="comment">// namespace qAPI.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_DATA_HEADER_INCLUDED.</span></div>
+<div class="ttc" id="aclassq_a_p_i_1_1_file_html"><div class="ttname"><a href="classq_a_p_i_1_1_file.html">qAPI::File</a></div><div class="ttdef"><b>Definition</b> Contract.h:137</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_data_html"><div class="ttname"><a href="structq_a_p_i_1_1_data.html">qAPI::Data</a></div><div class="ttdoc">Data parameters.</div><div class="ttdef"><b>Definition</b> Data.h:62</div></div>
+<div class="ttc" id="astructq_a_p_i_1_1_data_source_html"><div class="ttname"><a href="structq_a_p_i_1_1_data_source.html">qAPI::DataSource</a></div><div class="ttdoc">One market data source.</div><div class="ttdef"><b>Definition</b> Data.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

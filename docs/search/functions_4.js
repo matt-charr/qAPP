@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['feeddata_0',['FeedData',['../_get_data_feed_8h.html#ae675c145501088424c61fbed496c55ff',1,'qAPI']]],
-  ['feeddatafromjson_1',['FeedDataFromJson',['../_get_data_feed_8h.html#af0d924170bba66a79e8544acb524d720',1,'qAPI']]]
+  ['getblackscholescalibration_0',['GetBlackScholesCalibration',['../_get_black_scholes_calibration_8h.html#a1eac16858b27dbbd3947dbdc5dbb401a',1,'qAPI']]],
+  ['getblackscholestermstructurecalibration_1',['GetBlackScholesTermStructureCalibration',['../_get_black_scholes_term_structure_calibration_8h.html#aef4556a24250781c94177746e179c299',1,'qAPI']]],
+  ['getconnectionstatus_2',['GetConnectionStatus',['../_get_connection_status_8h.html#a103494cbffc4c78e9a964a57714ca269',1,'qAPI']]],
+  ['getcontract_3',['GetContract',['../_get_contract_8h.html#a84eb9807e03127193fe2bfa01fa31b26',1,'qAPI']]],
+  ['getdata_4',['GetData',['../_get_data_8h.html#adefdaaa926d13eeb0be0d294ae49eade',1,'qAPI']]],
+  ['gethestonimpliedvolatility_5',['GetHestonImpliedVolatility',['../_get_heston_implied_volatility_8h.html#af4eec01ab9a62f057620e6ac3e65d63b',1,'qAPI']]],
+  ['getimpliedcontractfeature_6',['GetImpliedContractFeature',['../_get_implied_contract_feature_8h.html#ac1e338a10418030d52872d390ebb6b05',1,'qAPI']]],
+  ['getladder_7',['GetLadder',['../_get_ladder_8h.html#a089894489cc47683ffe93cdb516bc14c',1,'qAPI']]],
+  ['getladder1d_8',['GetLadder1D',['../_get_ladder1_d_8h.html#a5516861e88ffe6db3196a07741598e79',1,'qAPI']]],
+  ['getladder2d_9',['GetLadder2D',['../_get_ladder2_d_8h.html#a0a54e9f0f6fc429cf06e03ba40a89b1b',1,'qAPI']]],
+  ['getmcpricewithdetails_10',['GetMCPriceWithDetails',['../_get_m_c_price_with_details_8h.html#a5eb6cd5f9a241d85d63f5de4751949ca',1,'qAPI']]],
+  ['getmodeldiffusion_11',['GetModelDiffusion',['../_get_model_diffusion_8h.html#a40fbb1de38d8548cfa749b6227c3a7fb',1,'qAPI']]],
+  ['getmodelimpliedvolatility_12',['GetModelImpliedVolatility',['../_get_model_implied_volatility_8h.html#ac8ec4e22a8f5374e41ef53cbe2098440',1,'qAPI']]],
+  ['getprice_13',['GetPrice',['../_get_price_8h.html#ab232d03ba968ebabc3c86846752fcc04',1,'qAPI']]],
+  ['getschedule_14',['GetSchedule',['../_get_schedule_8h.html#ad454a2b0f9628cc6cc7eec26b12243d3',1,'qAPI']]],
+  ['getsequence_15',['GetSequence',['../_get_sequence_8h.html#ae18fad2ed6c0e0f4ee89226c9ab4b71d',1,'qAPI']]],
+  ['getstaticreplication1d_16',['GetStaticReplication1D',['../_get_static_replication1_d_8h.html#a4d9fc454f8d659a3c87a4340f1faf491',1,'qAPI']]]
 ];

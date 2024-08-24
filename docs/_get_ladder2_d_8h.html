@@ -107,8 +107,6 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a0a54e9f0f6fc429cf06e03ba40a89b1b" id="r_a0a54e9f0f6fc429cf06e03ba40a89b1b"><td class="memItemLeft" align="right" valign="top">_EXTERN_C _qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a54e9f0f6fc429cf06e03ba40a89b1b">qAPI::GetLadder2D</a> (<a class="el" href="structq_a_p_i_1_1_data.html">qAPI::Data</a> &amp;, const <a class="el" href="structq_a_p_i_1_1_contract.html">qAPI::Contract</a> &amp;, const <a class="el" href="structq_a_p_i_1_1_model.html">qAPI::Model</a> &amp;, const <a class="el" href="structq_a_p_i_1_1_pricer.html">qAPI::Pricer</a> &amp;, <a class="el" href="structq_a_p_i_1_1_ladder2_d_results.html">qAPI::Ladder2DResults</a> &amp;, <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a> &amp;)</td></tr>
 <tr class="separator:a0a54e9f0f6fc429cf06e03ba40a89b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a252f2c8a87e1a9f1aa16e934a81735c2" id="r_a252f2c8a87e1a9f1aa16e934a81735c2"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a252f2c8a87e1a9f1aa16e934a81735c2">qAPI::GetLadder2DFromJson</a> (Json::Value &amp;)</td></tr>
-<tr class="separator:a252f2c8a87e1a9f1aa16e934a81735c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>matt-charr </dd></dl>
@@ -164,30 +162,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">p_pricer</td><td>See <a class="el" href="structq_a_p_i_1_1_pricer.html" title="Pricing parameters.">qAPI::Pricer</a> </td></tr>
     <tr><td class="paramname">p_results</td><td>See <a class="el" href="structq_a_p_i_1_1_ladder2_d_results.html" title="The arguments of qAPI::GetLadder2D.">qAPI::Ladder2DResults</a> </td></tr>
     <tr><td class="paramname">p_logger</td><td>See <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c" title="The list of log levels and messages thrown during the calculation.">qAPI::Logger</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a252f2c8a87e1a9f1aa16e934a81735c2" name="a252f2c8a87e1a9f1aa16e934a81735c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a252f2c8a87e1a9f1aa16e934a81735c2">&#9670;&#160;</a></span>GetLadder2DFromJson()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool qAPI::GetLadder2DFromJson </td>
-          <td>(</td>
-          <td class="paramtype">Json::Value &amp;</td>          <td class="paramname"><span class="paramname"><em>p_root</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Apply GetLadder2D with the parameters provided in the fields of a Json object. </p><dl class="section note"><dt>Note</dt><dd>Used to communicate with qGUI. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_root</td><td>Mockup as a Json::Value object. </td></tr>
   </table>
   </dd>
 </dl>

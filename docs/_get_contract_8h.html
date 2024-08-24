@@ -167,8 +167,6 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a84eb9807e03127193fe2bfa01fa31b26" id="r_a84eb9807e03127193fe2bfa01fa31b26"><td class="memItemLeft" align="right" valign="top">_EXTERN_C _qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84eb9807e03127193fe2bfa01fa31b26">qAPI::GetContract</a> (<a class="el" href="structq_a_p_i_1_1_data.html">qAPI::Data</a> &amp;, const <a class="el" href="structq_a_p_i_1_1_contract.html">qAPI::Contract</a> &amp;, <a class="el" href="structq_a_p_i_1_1_contract_results.html">qAPI::ContractResults</a> &amp;, <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a> &amp;)</td></tr>
 <tr class="separator:a84eb9807e03127193fe2bfa01fa31b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79fed022ae0fec5b7b731022ba9b9a83" id="r_a79fed022ae0fec5b7b731022ba9b9a83"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79fed022ae0fec5b7b731022ba9b9a83">qAPI::GetContractFromJson</a> (Json::Value &amp;)</td></tr>
-<tr class="separator:a79fed022ae0fec5b7b731022ba9b9a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>matt-charr </dd></dl>
@@ -266,7 +264,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The event kind </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea59838d3bb5866b79a45f7396dc48c22a" name="a1b546ae687933f2f026fdbdeff145bfea59838d3bb5866b79a45f7396dc48c22a"></a>BARRIER&#160;</td><td class="fielddoc"><p>Barrier </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfea59838d3bb5866b79a45f7396dc48c22a" name="a1b546ae687933f2f026fdbdeff145bfea59838d3bb5866b79a45f7396dc48c22a"></a>BARRIER&#160;</td><td class="fielddoc"><p><a class="el" href="structq_a_p_i_1_1_barrier.html">Barrier</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1b546ae687933f2f026fdbdeff145bfead8016e00648935707599e94ff896038f" name="a1b546ae687933f2f026fdbdeff145bfead8016e00648935707599e94ff896038f"></a>CHOICE&#160;</td><td class="fielddoc"><p>Choice </p>
 </td></tr>
@@ -326,30 +324,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">p_contract</td><td>See <a class="el" href="structq_a_p_i_1_1_contract.html" title="The parameters of the contract.">qAPI::Contract</a> </td></tr>
     <tr><td class="paramname">p_results</td><td>See <a class="el" href="structq_a_p_i_1_1_contract_results.html" title="The arguments of qAPI::GetContract.">qAPI::ContractResults</a> </td></tr>
     <tr><td class="paramname">p_logger</td><td>See <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c" title="The list of log levels and messages thrown during the calculation.">qAPI::Logger</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a79fed022ae0fec5b7b731022ba9b9a83" name="a79fed022ae0fec5b7b731022ba9b9a83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79fed022ae0fec5b7b731022ba9b9a83">&#9670;&#160;</a></span>GetContractFromJson()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool qAPI::GetContractFromJson </td>
-          <td>(</td>
-          <td class="paramtype">Json::Value &amp;</td>          <td class="paramname"><span class="paramname"><em>p_root</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Apply GetContract with the parameters provided in the fields of a Json object. </p><dl class="section note"><dt>Note</dt><dd>Used to communicate with qGUI. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_root</td><td>Mockup as a Json::Value object. </td></tr>
   </table>
   </dd>
 </dl>

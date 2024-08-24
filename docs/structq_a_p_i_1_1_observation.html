@@ -90,12 +90,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a99e062d381c00612f3a2798f10de0a9f" id="r_a99e062d381c00612f3a2798f10de0a9f"><td class="memItemLeft" align="right" valign="top"><a id="a99e062d381c00612f3a2798f10de0a9f" name="a99e062d381c00612f3a2798f10de0a9f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>File</b></td></tr>
-<tr class="separator:a99e062d381c00612f3a2798f10de0a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88ec4d6ba646181afaa444a93b6c8de8" id="r_a88ec4d6ba646181afaa444a93b6c8de8"><td class="memItemLeft" align="right" valign="top"><a id="a88ec4d6ba646181afaa444a93b6c8de8" name="a88ec4d6ba646181afaa444a93b6c8de8"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Currency</b></td></tr>
-<tr class="separator:a88ec4d6ba646181afaa444a93b6c8de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac84f41d158eee34cd925804d2249b91" id="r_aac84f41d158eee34cd925804d2249b91"><td class="memItemLeft" align="right" valign="top"><a id="aac84f41d158eee34cd925804d2249b91" name="aac84f41d158eee34cd925804d2249b91"></a>
+std::shared_ptr&lt; qDSL::Encoded &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Observations</b></td></tr>
+<tr class="separator:aac84f41d158eee34cd925804d2249b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85694a8e4ae65c4546e271b6a5b5be77" id="r_a85694a8e4ae65c4546e271b6a5b5be77"><td class="memItemLeft" align="right" valign="top"><a id="a85694a8e4ae65c4546e271b6a5b5be77" name="a85694a8e4ae65c4546e271b6a5b5be77"></a>
+enum qAPI::ObservationKind&#160;</td><td class="memItemRight" valign="bottom"><b>Kind</b></td></tr>
+<tr class="separator:a85694a8e4ae65c4546e271b6a5b5be77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9937671e4e7b567b003a91c65b829a4" id="r_ad9937671e4e7b567b003a91c65b829a4"><td class="memItemLeft" align="right" valign="top"><a id="ad9937671e4e7b567b003a91c65b829a4" name="ad9937671e4e7b567b003a91c65b829a4"></a>
 std::vector&lt; <a class="el" href="structq_a_p_i_1_1_observable.html">qAPI::Observable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TimeSeries</b></td></tr>
 <tr class="separator:ad9937671e4e7b567b003a91c65b829a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,8 +104,7 @@ std::vector&lt; <a class="el" href="structq_a_p_i_1_1_observable.html">qAPI::Obs
 <div class="textblock"><p>The observation of a stream of observable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Observation::File</td><td>(Input) Path to the file (without extension) that describes the observation. </td></tr>
-    <tr><td class="paramname">Observation::Currency</td><td>(Input) Domestic currency. </td></tr>
+    <tr><td class="paramname">Observation::Encoded</td><td>(Input) Encoded. </td></tr>
     <tr><td class="paramname">Observation::TimeSeries</td><td>(Output) The Series of observable. </td></tr>
   </table>
   </dd>

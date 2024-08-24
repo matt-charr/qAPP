@@ -78,14 +78,17 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">GetData.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;qAPI/Interface.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_logger_8h_source.html">qAPI/Logger.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_algebra_8hpp_source.html">qDSL/Algebra.hpp</a>&gt;</code><br />
 </div>
 <p><a href="_get_data_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -101,12 +104,23 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arguments of <a class="el" href="#adefdaaa926d13eeb0be0d294ae49eade">qAPI::GetData</a>.  <a href="structq_a_p_i_1_1_data_results.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a3576fed76a4d1d7ced48e6d10322ec56" id="r_a3576fed76a4d1d7ced48e6d10322ec56"><td class="memItemLeft" align="right" valign="top"><a id="a3576fed76a4d1d7ced48e6d10322ec56" name="a3576fed76a4d1d7ced48e6d10322ec56"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ObservationKind</b> { <b>FILE</b>
+, <b>SPOT</b>
+ }</td></tr>
+<tr class="separator:a3576fed76a4d1d7ced48e6d10322ec56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adefdaaa926d13eeb0be0d294ae49eade" id="r_adefdaaa926d13eeb0be0d294ae49eade"><td class="memItemLeft" align="right" valign="top">_EXTERN_C _qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adefdaaa926d13eeb0be0d294ae49eade">qAPI::GetData</a> (<a class="el" href="structq_a_p_i_1_1_data.html">qAPI::Data</a> &amp;, <a class="el" href="structq_a_p_i_1_1_data_results.html">qAPI::DataResults</a> &amp;, <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a> &amp;)</td></tr>
+<tr class="memitem:a69355a436e64b56c025f30e52e97e25e" id="r_a69355a436e64b56c025f30e52e97e25e"><td class="memItemLeft" align="right" valign="top"><a id="a69355a436e64b56c025f30e52e97e25e" name="a69355a436e64b56c025f30e52e97e25e"></a>
+_EXTERN_C _qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><b>qAPI::SetObservable</b> (std::shared_ptr&lt; qDSL::Encoded &gt; &amp;, const std::vector&lt; <a class="el" href="structq_d_s_l_1_1_observation.html">qDSL::Observation</a> &gt; &amp;)</td></tr>
+<tr class="separator:a69355a436e64b56c025f30e52e97e25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1487dbe0a29aeff051f9ce46c9fcbd19" id="r_a1487dbe0a29aeff051f9ce46c9fcbd19"><td class="memItemLeft" align="right" valign="top"><a id="a1487dbe0a29aeff051f9ce46c9fcbd19" name="a1487dbe0a29aeff051f9ce46c9fcbd19"></a>
+_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><b>qAPI::SetObservableFromFile</b> (std::shared_ptr&lt; qDSL::Encoded &gt; &amp;, const std::string &amp;)</td></tr>
+<tr class="separator:a1487dbe0a29aeff051f9ce46c9fcbd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefdaaa926d13eeb0be0d294ae49eade" id="r_adefdaaa926d13eeb0be0d294ae49eade"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adefdaaa926d13eeb0be0d294ae49eade">qAPI::GetData</a> (<a class="el" href="structq_a_p_i_1_1_data.html">qAPI::Data</a> &amp;, <a class="el" href="structq_a_p_i_1_1_data_results.html">qAPI::DataResults</a> &amp;, <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a> &amp;)</td></tr>
 <tr class="separator:adefdaaa926d13eeb0be0d294ae49eade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12073b1bce6208e97fe6a728b304babf" id="r_a12073b1bce6208e97fe6a728b304babf"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12073b1bce6208e97fe6a728b304babf">qAPI::GetDataFromJson</a> (Json::Value &amp;)</td></tr>
-<tr class="separator:a12073b1bce6208e97fe6a728b304babf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>matt-charr </dd></dl>
@@ -144,30 +158,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">p_data</td><td>See <a class="el" href="structq_a_p_i_1_1_data.html" title="Data parameters.">qAPI::Data</a> </td></tr>
     <tr><td class="paramname">p_results</td><td>See <a class="el" href="structq_a_p_i_1_1_data_results.html" title="Arguments of qAPI::GetData.">qAPI::DataResults</a> </td></tr>
     <tr><td class="paramname">p_logger</td><td>See <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c" title="The list of log levels and messages thrown during the calculation.">qAPI::Logger</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a12073b1bce6208e97fe6a728b304babf" name="a12073b1bce6208e97fe6a728b304babf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12073b1bce6208e97fe6a728b304babf">&#9670;&#160;</a></span>GetDataFromJson()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool qAPI::GetDataFromJson </td>
-          <td>(</td>
-          <td class="paramtype">Json::Value &amp;</td>          <td class="paramname"><span class="paramname"><em>p_root</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Apply GetData with the parameters provided in the fields of a Json object. </p><dl class="section note"><dt>Note</dt><dd>Used to communicate with qGUI. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_root</td><td>Mockup as a Json::Value object. </td></tr>
   </table>
   </dd>
 </dl>

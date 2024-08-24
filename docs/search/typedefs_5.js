@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['observabletype_0',['ObservableType',['../_algebra_8hpp.html#ad3f907ed228da214dc304bf2852249f0',1,'qDSL']]]
+  ['priceresults_0',['PriceResults',['../_get_price_8h.html#a1f0f22165599dee803009c1a72ef2b0c',1,'qAPI']]]
 ];

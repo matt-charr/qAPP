@@ -90,10 +90,6 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a103494cbffc4c78e9a964a57714ca269" id="r_a103494cbffc4c78e9a964a57714ca269"><td class="memItemLeft" align="right" valign="top">_EXTERN_C _qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a103494cbffc4c78e9a964a57714ca269">qAPI::GetConnectionStatus</a> (<a class="el" href="structq_a_p_i_1_1_data.html">qAPI::Data</a> &amp;, <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a> &amp;)</td></tr>
 <tr class="separator:a103494cbffc4c78e9a964a57714ca269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f8c9a66cb64d8f6151db9e7e95e0eb" id="r_af5f8c9a66cb64d8f6151db9e7e95e0eb"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5f8c9a66cb64d8f6151db9e7e95e0eb">qAPI::GetConnectionStatusFromJson</a> (Json::Value &amp;)</td></tr>
-<tr class="separator:af5f8c9a66cb64d8f6151db9e7e95e0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6fa5932a0c255a6d57c4dbfa91f9b30" id="r_ae6fa5932a0c255a6d57c4dbfa91f9b30"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6fa5932a0c255a6d57c4dbfa91f9b30">qAPI::GetConnectionStatusFromFile</a> (const char *const)</td></tr>
-<tr class="separator:ae6fa5932a0c255a6d57c4dbfa91f9b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>matt-charr </dd></dl>
@@ -125,55 +121,6 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">p_data</td><td>See documentation for Data object. </td></tr>
     <tr><td class="paramname">p_logger</td><td>See documentation for Logger object. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae6fa5932a0c255a6d57c4dbfa91f9b30" name="ae6fa5932a0c255a6d57c4dbfa91f9b30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6fa5932a0c255a6d57c4dbfa91f9b30">&#9670;&#160;</a></span>GetConnectionStatusFromFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_qAPI_EXPORT const bool qAPI::GetConnectionStatusFromFile </td>
-          <td>(</td>
-          <td class="paramtype">const char * const</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Apply GetConnectionStatus with the parameters provided in the fields of a Json file. <br  />
- The file can then be plugged as a mockup into qGUI to get a nice view of the results. </p><dl class="section note"><dt>Note</dt><dd>Used to communicate with qPY. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_file_ptr</td><td>Path to the file containing the mockup. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af5f8c9a66cb64d8f6151db9e7e95e0eb" name="af5f8c9a66cb64d8f6151db9e7e95e0eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f8c9a66cb64d8f6151db9e7e95e0eb">&#9670;&#160;</a></span>GetConnectionStatusFromJson()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool qAPI::GetConnectionStatusFromJson </td>
-          <td>(</td>
-          <td class="paramtype">Json::Value &amp;</td>          <td class="paramname"><span class="paramname"><em>p_root</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Apply GetConnectionStatus with the parameters provided in the fields of a Json object. </p><dl class="section note"><dt>Note</dt><dd>Used to communicate with qGUI. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_root</td><td>Mockup as a Json::Value object. </td></tr>
   </table>
   </dd>
 </dl>

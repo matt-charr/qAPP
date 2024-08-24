@@ -102,8 +102,6 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a1eac16858b27dbbd3947dbdc5dbb401a" id="r_a1eac16858b27dbbd3947dbdc5dbb401a"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1eac16858b27dbbd3947dbdc5dbb401a">qAPI::GetBlackScholesCalibration</a> (<a class="el" href="structq_a_p_i_1_1_data.html">qAPI::Data</a> &amp;, const <a class="el" href="structq_a_p_i_1_1_contract.html">qAPI::Contract</a> &amp;, const <a class="el" href="structq_a_p_i_1_1_model.html">qAPI::Model</a> &amp;, <a class="el" href="structq_a_p_i_1_1_black_scholes_calibration_results.html">qAPI::BlackScholesCalibrationResults</a> &amp;, <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a> &amp;)</td></tr>
 <tr class="separator:a1eac16858b27dbbd3947dbdc5dbb401a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f2d5a8711aeed8cbc51c424db65f0e" id="r_aa5f2d5a8711aeed8cbc51c424db65f0e"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5f2d5a8711aeed8cbc51c424db65f0e">qAPI::GetBlackScholesCalibrationFromJson</a> (Json::Value &amp;)</td></tr>
-<tr class="separator:aa5f2d5a8711aeed8cbc51c424db65f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>matt-charr </dd></dl>
@@ -150,30 +148,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">p_model</td><td>See <a class="el" href="structq_a_p_i_1_1_model.html" title="The model parameters.">qAPI::Model</a> </td></tr>
     <tr><td class="paramname">p_results</td><td>See <a class="el" href="structq_a_p_i_1_1_black_scholes_calibration_results.html" title="Arguments of qAPI::GetBlackScholesCalibration.">qAPI::BlackScholesCalibrationResults</a> </td></tr>
     <tr><td class="paramname">p_logger</td><td>See <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c" title="The list of log levels and messages thrown during the calculation.">qAPI::Logger</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa5f2d5a8711aeed8cbc51c424db65f0e" name="aa5f2d5a8711aeed8cbc51c424db65f0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5f2d5a8711aeed8cbc51c424db65f0e">&#9670;&#160;</a></span>GetBlackScholesCalibrationFromJson()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool qAPI::GetBlackScholesCalibrationFromJson </td>
-          <td>(</td>
-          <td class="paramtype">Json::Value &amp;</td>          <td class="paramname"><span class="paramname"><em>p_root</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Apply GetBlackScholesCalibration with the parameters provided in the fields of a Json object. </p><dl class="section note"><dt>Note</dt><dd>Used to communicate with qGUI. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_root</td><td>Mockup as a Json::Value object. </td></tr>
   </table>
   </dd>
 </dl>
