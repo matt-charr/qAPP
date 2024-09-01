@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getmcpricewithdetailsresults_0',['GetMCPriceWithDetailsResults',['../structq_a_p_i_1_1_get_m_c_price_with_details_results.html',1,'qAPI']]]
+  ['hestonimpliedvolatilityresults_0',['HestonImpliedVolatilityResults',['../structq_a_p_i_1_1_heston_implied_volatility_results.html',1,'qAPI']]]
 ];

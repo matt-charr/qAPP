@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['vanilla_0',['VANILLA',['../_contract_8h.html#aa1fb39fbdfc1841c12bb0ff4a94df4dfa7f9df4462ccfd5b474428c4478cb92db',1,'qAPI']]],
-  ['variance_1',['VARIANCE',['../_scenario_8h.html#acaf52a5a8f74b41c9a7b350e4b8ae713ace18bb9a2b22515d0cd36bca6b998bde',1,'qAPI']]],
-  ['volatility_2',['VOLATILITY',['../_scenario_8h.html#acaf52a5a8f74b41c9a7b350e4b8ae713a56fd00a8a6671dbfc39ebf306a1829ea',1,'qAPI']]],
-  ['volatility_5fpct_3',['VOLATILITY_PCT',['../_scenario_8h.html#acaf52a5a8f74b41c9a7b350e4b8ae713a14df9e11570ccc5bb70c00715133c918',1,'qAPI']]]
+  ['uniform_0',['UNIFORM',['../_get_sequence_8h.html#a14d6fd61b129783acda9f9c05e176cdea891f35a29c3d51d02ffd42dd6dcc69b2',1,'qAPI']]],
+  ['upper_1',['UPPER',['../_pricer_8h.html#a22df745c779e24241d23c982f1808360a9e43f5291e6fcb2ad99c8e3f91acd179',1,'qAPI']]]
 ];

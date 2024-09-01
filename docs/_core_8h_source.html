@@ -123,12 +123,34 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;qAPI/GetImpliedVolatilityComputation.h&gt;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;<a class="code" href="_get_m_c_price_with_details_8h.html">qAPI/GetMCPriceWithDetails.h</a>&gt;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// payoff.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;<a class="code" href="_autocall_8h.html">qAPI/Autocall.h</a>&gt;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;<a class="code" href="_vanilla_8h.html">qAPI/Vanilla.h</a>&gt;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_CORE_INCLUDED</span></div>
-<div class="ttc" id="a_autocall_8h_html"><div class="ttname"><a href="_autocall_8h.html">Autocall.h</a></div></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Templates.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// Examples.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// #include &lt;qAPI/Templates/AirbagCertificateExample.h&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;qAPI/Templates/AmericanOptionExample.h&gt;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;qAPI/Templates/AsianOptionExample.h&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;qAPI/Templates/BarrierOptionExample.h&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;qAPI/Templates/BarrierReverseConvertibleExample.h&gt;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// #include &lt;qAPI/Templates/BonusCertificateExample.h&gt;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &lt;qAPI/Templates/ButterflySpreadExample.h&gt;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// #include &lt;qAPI/Templates/CappedBonusCertificateExample.h&gt;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &lt;qAPI/Templates/CondorSpreadExample.h&gt;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#include &lt;qAPI/Templates/DigitalOptionExample.h&gt;</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// #include &lt;qAPI/Templates/DiscountCertificateExample.h&gt;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &lt;qAPI/Templates/DoubleBarrierOptionExample.h&gt;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#include &lt;qAPI/Templates/EuropeanOptionExample.h&gt;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &lt;qAPI/Templates/MultiAssetOptionExample.h&gt;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// #include &lt;qAPI/Templates/OutPerformanceBonusCertificateExample.h&gt;</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#include &lt;qAPI/Templates/ReverseConvertibleExample.h&gt;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#include &lt;qAPI/Templates/RiskReversalExample.h&gt;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#include &lt;qAPI/Templates/SpreadOptionExample.h&gt;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#include &lt;qAPI/Templates/StraddleExample.h&gt;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#include &lt;qAPI/Templates/StrangleExample.h&gt;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// #include &lt;qAPI/Templates/TwinWinCertificateExample.h&gt;</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// Officials.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#include &lt;qAPI/Templates/Autocall.h&gt;</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#include &lt;qAPI/Templates/Vanilla.h&gt;</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">// _QAPI_CORE_INCLUDED</span></div>
 <div class="ttc" id="a_contract_8h_html"><div class="ttname"><a href="_contract_8h.html">Contract.h</a></div></div>
 <div class="ttc" id="a_data_8h_html"><div class="ttname"><a href="_data_8h.html">Data.h</a></div></div>
 <div class="ttc" id="a_get_black_scholes_calibration_8h_html"><div class="ttname"><a href="_get_black_scholes_calibration_8h.html">GetBlackScholesCalibration.h</a></div></div>
@@ -151,7 +173,6 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="a_model_8h_html"><div class="ttname"><a href="_model_8h.html">Model.h</a></div></div>
 <div class="ttc" id="a_pricer_8h_html"><div class="ttname"><a href="_pricer_8h.html">Pricer.h</a></div></div>
 <div class="ttc" id="a_request_8h_html"><div class="ttname"><a href="_request_8h.html">Request.h</a></div></div>
-<div class="ttc" id="a_vanilla_8h_html"><div class="ttname"><a href="_vanilla_8h.html">Vanilla.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

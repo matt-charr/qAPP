@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zero_5fcoupon_5fbond_0',['ZERO_COUPON_BOND',['../_get_contract_8h.html#a9ea6cd13bb1c5c7ad8c1dce9b8907e07ac36b97488022575a6a55647a89c80ab4',1,'qAPI']]]
+  ['warning_0',['WARNING',['../_logger_8h.html#a28ac929c70e0329894b04443131cbfc2a059e9861e0400dfbe05c98a841f3f96b',1,'qAPI']]]
 ];

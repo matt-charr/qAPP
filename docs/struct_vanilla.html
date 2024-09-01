@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>qAPP: qAPI::ICashFlow Class Reference</title>
+<title>qAPP: Vanilla Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,46 +70,31 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>qAPI</b></li><li class="navelem"><a class="el" href="classq_a_p_i_1_1_i_cash_flow.html">ICashFlow</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="classq_a_p_i_1_1_i_cash_flow-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">qAPI::ICashFlow Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">Vanilla Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for qAPI::ICashFlow:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classq_a_p_i_1_1_i_cash_flow.png" usemap="#qAPI::ICashFlow_map" alt=""/>
-  <map id="qAPI::ICashFlow_map" name="qAPI::ICashFlow_map">
-<area href="classq_a_p_i_1_1_cash_flow.html" alt="qAPI::CashFlow" shape="rect" coords="0,56,103,80"/>
-<area href="classq_a_p_i_1_1_console.html" alt="qAPI::Console" shape="rect" coords="113,56,216,80"/>
-<area href="classq_a_p_i_1_1_file.html" alt="qAPI::File" shape="rect" coords="226,56,329,80"/>
-  </map>
-</div></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a5a5a1fdb1736b53788790086cdbda4c6" id="r_a5a5a1fdb1736b53788790086cdbda4c6"><td class="memItemLeft" align="right" valign="top"><a id="a5a5a1fdb1736b53788790086cdbda4c6" name="a5a5a1fdb1736b53788790086cdbda4c6"></a>
-virtual const bool&#160;</td><td class="memItemRight" valign="bottom"><b>build</b> ()=0</td></tr>
-<tr class="separator:a5a5a1fdb1736b53788790086cdbda4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a87531fd8c526fae90e49f258e35305c3" id="r_a87531fd8c526fae90e49f258e35305c3"><td class="memItemLeft" align="right" valign="top"><a id="a87531fd8c526fae90e49f258e35305c3" name="a87531fd8c526fae90e49f258e35305c3"></a>
-qDSL::Encoded *&#160;</td><td class="memItemRight" valign="bottom"><b>Encoded</b></td></tr>
-<tr class="separator:a87531fd8c526fae90e49f258e35305c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>qAPI/<a class="el" href="_contract_8h_source.html">Contract.h</a></li>
-<li>qAPI/<b>Contract.cpp</b></li>
+
+<p>The vanilla option (call or put)  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_get_static_replication1_d_8h_source.html">GetStaticReplication1D.h</a>&gt;</code></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The vanilla option (call or put) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Vanilla::PayoffKind</td><td>(Output) Put or Call option </td></tr>
+    <tr><td class="paramname">Vanilla::MaturityDate</td><td>(Output) Maturity date of the option. </td></tr>
+    <tr><td class="paramname">Vanilla::Strike</td><td>(Output) The strike of the option. </td></tr>
+    <tr><td class="paramname">Vanilla::Quantity</td><td>(Output) The quantity of options to buy or sell in the portfolio. </td></tr>
+    <tr><td class="paramname">Vanilla::Color</td><td>(Output) All the more dark as the quantity is high (in absolute value) with respect to the other quantities. </td></tr>
+    <tr><td class="paramname">Vanilla::Price</td><td>(Output) Price of the option. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>qAPI/<a class="el" href="_get_static_replication1_d_8h_source.html">GetStaticReplication1D.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
