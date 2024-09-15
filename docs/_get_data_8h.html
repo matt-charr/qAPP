@@ -88,6 +88,7 @@ $(function() {
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;qAPI/Interface.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_logger_8h_source.html">qAPI/Logger.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_scenario_8h_source.html">qAPI/Scenario.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_algebra_8hpp_source.html">qDSL/Algebra.hpp</a>&gt;</code><br />
 </div>
 <p><a href="_get_data_8h_source.html">Go to the source code of this file.</a></p>
@@ -103,22 +104,21 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq_a_p_i_1_1_data_results.html">qAPI::DataResults</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arguments of <a class="el" href="#adefdaaa926d13eeb0be0d294ae49eade">qAPI::GetData</a>.  <a href="structq_a_p_i_1_1_data_results.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_i_observable.html">qAPI::IObservable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classq_a_p_i_1_1_basket_observable.html">qAPI::BasketObservable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq_a_p_i_1_1_basket_observable_1_1_basket_item.html">qAPI::BasketObservable::BasketItem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a3576fed76a4d1d7ced48e6d10322ec56" id="r_a3576fed76a4d1d7ced48e6d10322ec56"><td class="memItemLeft" align="right" valign="top"><a id="a3576fed76a4d1d7ced48e6d10322ec56" name="a3576fed76a4d1d7ced48e6d10322ec56"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ObservationKind</b> { <b>FILE</b>
-, <b>SPOT</b>
+<tr class="memitem:a3b7bc6c28e7157402748292f827ae979" id="r_a3b7bc6c28e7157402748292f827ae979"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b7bc6c28e7157402748292f827ae979">qAPI::ObservableKind</a> { <a class="el" href="#a3b7bc6c28e7157402748292f827ae979ab4249d2ffabc2b28540c11a35e8f4f3b">BASKET</a>
  }</td></tr>
-<tr class="separator:a3576fed76a4d1d7ced48e6d10322ec56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3b7bc6c28e7157402748292f827ae979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a69355a436e64b56c025f30e52e97e25e" id="r_a69355a436e64b56c025f30e52e97e25e"><td class="memItemLeft" align="right" valign="top"><a id="a69355a436e64b56c025f30e52e97e25e" name="a69355a436e64b56c025f30e52e97e25e"></a>
-_EXTERN_C _qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><b>qAPI::SetObservable</b> (std::shared_ptr&lt; qDSL::Encoded &gt; &amp;, const std::vector&lt; <a class="el" href="structq_d_s_l_1_1_observation.html">qDSL::Observation</a> &gt; &amp;)</td></tr>
-<tr class="separator:a69355a436e64b56c025f30e52e97e25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1487dbe0a29aeff051f9ce46c9fcbd19" id="r_a1487dbe0a29aeff051f9ce46c9fcbd19"><td class="memItemLeft" align="right" valign="top"><a id="a1487dbe0a29aeff051f9ce46c9fcbd19" name="a1487dbe0a29aeff051f9ce46c9fcbd19"></a>
-_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><b>qAPI::SetObservableFromFile</b> (std::shared_ptr&lt; qDSL::Encoded &gt; &amp;, const std::string &amp;)</td></tr>
-<tr class="separator:a1487dbe0a29aeff051f9ce46c9fcbd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adefdaaa926d13eeb0be0d294ae49eade" id="r_adefdaaa926d13eeb0be0d294ae49eade"><td class="memItemLeft" align="right" valign="top">_qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adefdaaa926d13eeb0be0d294ae49eade">qAPI::GetData</a> (<a class="el" href="structq_a_p_i_1_1_data.html">qAPI::Data</a> &amp;, <a class="el" href="structq_a_p_i_1_1_data_results.html">qAPI::DataResults</a> &amp;, <a class="el" href="_logger_8h.html#aa5a1f238844067249387700b036ac80c">qAPI::Logger</a> &amp;)</td></tr>
 <tr class="separator:adefdaaa926d13eeb0be0d294ae49eade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -126,7 +126,35 @@ _qAPI_EXPORT const bool&#160;</td><td class="memItemRight" valign="bottom"><b>qA
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>matt-charr </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024-03-30 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>v0.3.1 </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a3b7bc6c28e7157402748292f827ae979" name="a3b7bc6c28e7157402748292f827ae979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b7bc6c28e7157402748292f827ae979">&#9670;&#160;</a></span>ObservableKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a3b7bc6c28e7157402748292f827ae979">qAPI::ObservableKind</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Contract kind </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3b7bc6c28e7157402748292f827ae979ab4249d2ffabc2b28540c11a35e8f4f3b" name="a3b7bc6c28e7157402748292f827ae979ab4249d2ffabc2b28540c11a35e8f4f3b"></a>BASKET&#160;</td><td class="fielddoc"><p>Basket </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="adefdaaa926d13eeb0be0d294ae49eade" name="adefdaaa926d13eeb0be0d294ae49eade"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adefdaaa926d13eeb0be0d294ae49eade">&#9670;&#160;</a></span>GetData()</h2>
 

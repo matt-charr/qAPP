@@ -24,9 +24,10 @@ var searchData=
   ['contract_2eh_21',['Contract.h',['../_contract_8h.html',1,'']]],
   ['contractkind_22',['ContractKind',['../_contract_8h.html#aa1fb39fbdfc1841c12bb0ff4a94df4df',1,'qAPI']]],
   ['contractresults_23',['ContractResults',['../structq_a_p_i_1_1_contract_results.html',1,'qAPI']]],
-  ['correlation_24',['Correlation',['../structq_a_p_i_1_1_correlation.html',1,'qAPI']]],
-  ['correlationmatrix_25',['CorrelationMatrix',['../structq_a_p_i_1_1_correlation_matrix.html',1,'qAPI']]],
-  ['cos_26',['Cos',['../_algebra_8hpp.html#ab54749e14ef900235c5703588d4d6956',1,'qDSL']]],
-  ['cst_27',['Cst',['../_algebra_8hpp.html#a233fa1e229d0bceae410525b2e668e76',1,'qDSL::Cst(float)'],['../_algebra_8hpp.html#a3b609804c9857d387c3d4c58a80e8007',1,'qDSL::Cst(bool)']]],
-  ['cstref_28',['CstRef',['../_algebra_8hpp.html#a7fc6b4c82216988ad1bcb5078fa13d6c',1,'qDSL']]]
+  ['convergence_24',['Convergence',['../structq_a_p_i_1_1_convergence.html',1,'qAPI']]],
+  ['correlation_25',['Correlation',['../structq_a_p_i_1_1_correlation.html',1,'qAPI']]],
+  ['correlationmatrix_26',['CorrelationMatrix',['../structq_a_p_i_1_1_correlation_matrix.html',1,'qAPI']]],
+  ['cos_27',['Cos',['../_algebra_8hpp.html#ab54749e14ef900235c5703588d4d6956',1,'qDSL']]],
+  ['cst_28',['Cst',['../_algebra_8hpp.html#a233fa1e229d0bceae410525b2e668e76',1,'qDSL::Cst(float)'],['../_algebra_8hpp.html#a3b609804c9857d387c3d4c58a80e8007',1,'qDSL::Cst(bool)']]],
+  ['cstref_29',['CstRef',['../_algebra_8hpp.html#a7fc6b4c82216988ad1bcb5078fa13d6c',1,'qDSL']]]
 ];
